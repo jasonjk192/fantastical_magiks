@@ -1,0 +1,607 @@
+@high = 16
+@med = 8
+@low = 4
+
+@high_rare = 0.5
+@mid_rare = 0.25
+@low_rare = 0.1
+
+@planet_type_bonus = 1.5
+
+########################
+########  MANA  ########
+########################
+
+magiks_d_powerful_leyline = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+	
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+	
+	planet_modifier = {
+		building_manacite_collector_max = 1
+	}
+	
+	drop_weight = {
+		weight = @high_rare
+		modifier = {
+			factor = 50
+			is_planet_class = pc_magikal
+		}
+
+		modifier = {
+			factor = 1000
+			exists = owner
+			owner = { has_authority = magiks_auth_magocracy }
+		}	
+
+		modifier = {
+			factor = 0
+			solar_system = {
+				OR = {
+					has_star_flag = sol_system
+					has_star_flag = deneb_system
+				}
+			}
+		}			
+	}
+}
+
+magiks_d_leyline_convergence = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+	
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+	
+	planet_modifier = {
+		building_manacite_collector_max = 1
+	}
+	
+	drop_weight = {
+		weight = @low
+		modifier = {
+			factor = 50
+			is_planet_class = pc_magikal
+		}			
+		modifier = {
+			factor = 0
+			solar_system = {
+				OR = {
+					has_star_flag = sol_system
+					has_star_flag = deneb_system
+				}
+			}
+		}			
+	}
+}
+
+magiks_d_natural_manacite_caverns = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+	
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+	
+	planet_modifier = {
+		building_manacite_collector_max = 3
+	}
+	
+	drop_weight = {
+		weight = @high_rare
+		modifier = {
+			factor = 15
+			is_planet_class = pc_magikal
+		}			
+		modifier = {
+			factor = 0
+			solar_system = {
+				OR = {
+					has_star_flag = sol_system
+					has_star_flag = deneb_system
+				}
+			}
+		}			
+	}
+}
+
+##############
+### ENERGY ###
+##############
+
+### MAGIKAL WORLDS ###
+
+magiks_d_cloudforest = {
+	is_for_colonizable = yes
+	use_for_min_max_adjustments = yes
+	
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = yes
+	terraforming_swap_types = {
+		d_hot_springs
+		d_arid_highlands
+		magiks_d_magmatic_upheaval
+	}
+	
+	category = deposit_cat_energy
+	
+	planet_modifier = { 
+		district_generator_max = 1
+	}
+	
+	potential = {
+		is_planet_class = pc_magikal	
+	}
+	
+	drop_weight = {
+		weight = 30
+	}
+}
+
+magiks_d_deepgrandreef = {
+	is_for_colonizable = yes
+	use_for_min_max_adjustments = yes
+	
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = yes
+	terraforming_swap_types = {
+		d_searing_desert
+		d_frozen_gas_lake
+		d_rushing_waterfalls
+		magiks_d_eternal_thunderstorm
+	}
+	
+	category = deposit_cat_energy
+	
+	planet_modifier = { 
+		district_generator_max = 2
+	}
+	
+	potential = {
+		is_planet_class = pc_magikal
+	}
+	
+	drop_weight = {
+		weight = 12		
+	}
+}
+
+magiks_d_electrifruitforest = {
+	is_for_colonizable = yes
+	use_for_min_max_adjustments = yes
+	
+	category = deposit_cat_energy
+	
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = yes
+	terraforming_swap_types = {
+		d_geothermal_vent
+		d_underwater_vent
+	}
+	
+	planet_modifier = { 
+		district_generator_max = 3
+	}
+	
+	potential = {
+		OR = {
+			is_planet_class = pc_magikal
+		}
+	}
+	
+	drop_weight = {
+		weight = 6	
+	}
+}
+
+### SOUR WORLDS ###
+
+magiks_d_magmatic_upheaval = {
+	is_for_colonizable = yes
+	use_for_min_max_adjustments = yes
+	
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = yes
+	terraforming_swap_types = {
+		d_hot_springs
+		d_arid_highlands
+		magiks_d_cloudforest
+	}
+	
+	category = deposit_cat_energy
+	
+	planet_modifier = { 
+		district_generator_max = 1
+	}
+	
+	potential = {
+		is_planet_class = pc_sour	
+	}
+	
+	drop_weight = {
+		weight = 30
+	}
+}
+
+magiks_d_eternal_thunderstorm = {
+	is_for_colonizable = yes
+	use_for_min_max_adjustments = yes
+	
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = yes
+	terraforming_swap_types = {
+		d_searing_desert
+		d_frozen_gas_lake
+		d_rushing_waterfalls
+		magiks_d_deepgrandreef
+	}
+	
+	category = deposit_cat_energy
+	
+	planet_modifier = { 
+		district_generator_max = 2
+	}
+	
+	potential = {
+		is_planet_class = pc_sour
+	}
+	
+	drop_weight = {
+		weight = 12		
+	}
+}
+
+################
+### MINERALS ###
+################
+
+### MAGIKAL WORLDS ###
+
+magiks_d_shimmeringfields = {
+	is_for_colonizable = yes
+	use_for_min_max_adjustments = yes
+	
+	category = deposit_cat_minerals
+	
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = yes
+	terraforming_swap_types = {
+		d_veiny_cliffs
+		d_mineral_fields
+		magiks_d_archane_machinery
+	}
+	
+	planet_modifier = { 
+		district_mining_max = 1
+	}
+	
+	potential = {
+		OR = {
+			is_planet_class = pc_magikal
+		}
+	}
+	
+	drop_weight = {
+		weight = 30	
+	}
+}
+
+magiks_d_forgottenhoard = {
+	is_for_colonizable = yes
+	use_for_min_max_adjustments = yes
+	
+	category = deposit_cat_minerals
+	
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = yes
+	terraforming_swap_types = {
+		d_ore_rich_caverns
+		d_prosperous_mesa
+		magiks_d_mineral_desert
+	}
+	
+	planet_modifier = { 
+		district_mining_max = 2
+	}	
+	
+	potential = {
+		OR = {
+			is_planet_class = pc_magikal
+		}
+	}
+	
+	drop_weight = {
+		weight = 12			
+	}
+}
+
+magiks_d_deepdark = {
+	is_for_colonizable = yes
+	use_for_min_max_adjustments = yes
+	
+	category = deposit_cat_minerals
+	
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = yes
+	terraforming_swap_types = {
+		d_submerged_ore_veins
+		d_rich_mountain
+	}
+	
+	planet_modifier = { 
+		district_mining_max = 3
+	}
+	
+	potential = {
+		OR = {
+			is_planet_class = pc_magikal			
+		}
+	}
+	
+	drop_weight = {
+		weight = 6	
+	}
+}
+
+### SOUR WORLDS ###
+
+magiks_d_archane_machinery = {
+	is_for_colonizable = yes
+	use_for_min_max_adjustments = yes
+	
+	category = deposit_cat_minerals
+	
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = yes
+	terraforming_swap_types = {
+		d_veiny_cliffs
+		d_mineral_fields
+		magiks_d_shimmeringfields
+	}
+	
+	planet_modifier = { 
+		district_mining_max = 1
+	}
+	
+	potential = {
+		OR = {
+			is_planet_class = pc_sour
+		}
+	}
+	
+	drop_weight = {
+		weight = 40	
+	}
+}
+
+magiks_d_mineral_desert = {
+	is_for_colonizable = yes
+	use_for_min_max_adjustments = yes
+	
+	category = deposit_cat_minerals
+	
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = yes
+	terraforming_swap_types = {
+		d_ore_rich_caverns
+		d_prosperous_mesa
+		magiks_d_forgottenhoard
+	}
+	
+	planet_modifier = { 
+		district_mining_max = 2
+	}	
+	
+	potential = {
+		OR = {
+			is_planet_class = pc_sour
+		}
+	}
+	
+	drop_weight = {
+		weight = 20			
+	}
+}
+
+###################
+#####  FOOD   #####
+###################
+
+### MAGIKAL WORLDS ###
+
+magiks_d_blessedfields = {
+	is_for_colonizable = yes
+	use_for_min_max_adjustments = yes
+	
+	category = deposit_cat_food
+	
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = yes
+	terraforming_swap_types = {
+		d_lichen_fields
+		d_bountiful_plains
+		d_rugged_woods
+		d_green_hills
+		d_forgiving_tundra
+		d_boggy_fens
+		d_nutritious_mudland
+		magiks_d_stinking_bog
+	}	
+	
+	planet_modifier = { 
+		district_farming_max = 1
+	}
+	
+	potential = {
+		OR = {
+			is_planet_class = pc_magikal
+		}	
+	}
+	
+	drop_weight = {
+		weight = 30	
+	}
+}
+
+magiks_d_enchantedforest = {
+	is_for_colonizable = yes
+	use_for_min_max_adjustments = yes
+	
+	category = deposit_cat_food
+	
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = yes
+	terraforming_swap_types = {
+		d_fungal_caves
+		d_lush_jungle
+		d_fertile_lands
+		d_great_river
+		magiks_d_fettered_marsh
+	}	
+	
+	planet_modifier = { 
+		district_farming_max = 2
+	}
+	
+	potential = {
+		is_planet_class = pc_magikal		
+	}
+	
+	drop_weight = {
+		weight = 12		
+	}
+}
+
+magiks_d_allignedhills = {
+	is_for_colonizable = yes
+	use_for_min_max_adjustments = yes
+	
+	category = deposit_cat_food
+	
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = yes
+	terraforming_swap_types = {
+		d_black_soil
+		d_teeming_reef
+		d_marvelous_oasis
+		d_tropical_island
+		d_fungal_forest
+	}	
+	
+	planet_modifier = { 
+		district_farming_max = 3
+	}
+	
+	potential = {
+		OR = {
+			is_planet_class = pc_magikal
+		}
+	}
+	
+	drop_weight = {
+		weight = 6		
+	}
+}
+
+### SOUR WORLDS ###
+
+magiks_d_stinking_bog = {
+	is_for_colonizable = yes
+	use_for_min_max_adjustments = yes
+	
+	category = deposit_cat_food
+	
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = yes
+	terraforming_swap_types = {
+		d_lichen_fields
+		d_bountiful_plains
+		d_rugged_woods
+		d_green_hills
+		d_forgiving_tundra
+		d_boggy_fens
+		d_nutritious_mudland
+		magiks_d_blessedfields
+	}	
+	
+	planet_modifier = { 
+		district_farming_max = 1
+	}
+	
+	potential = {
+		OR = {
+			is_planet_class = pc_sour
+		}	
+	}
+	
+	drop_weight = {
+		weight = 20	
+	}
+}
+
+magiks_d_fettered_marsh = {
+	is_for_colonizable = yes
+	use_for_min_max_adjustments = yes
+	
+	category = deposit_cat_food
+	
+	use_weights_for_terraforming_swap_types = yes
+	should_swap_deposit_on_terraforming = yes
+	terraforming_swap_types = {
+		d_fungal_caves
+		d_lush_jungle
+		d_fertile_lands
+		d_great_river
+		magiks_d_enchantedforest
+	}	
+	
+	planet_modifier = { 
+		district_farming_max = 2
+	}
+	
+	potential = {
+		is_planet_class = pc_sour		
+	}
+	
+	drop_weight = {
+		weight = 8		
+	}
+}
+
+##################################
+#########  MANA ORBITAL  #########
+##################################
+
+d_manacite_1 = {
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			manacite = 1
+			# magicite = 1
+		}
+	}
+	station = shipclass_mining_station
+
+	# prerequisites = { "tech_manacite_extraction" }
+	
+	potential = {
+		OR = {
+			is_planet_class = pc_asteroid
+			is_planet_class = pc_molten
+			is_planet_class = pc_toxic
+			is_planet_class = pc_frozen
+			is_planet_class = pc_barren
+			is_planet_class = pc_barren_cold
+			is_planet_class = pc_broken
+			is_planet_class = pc_shattered			
+		}	
+	}
+	
+	drop_weight = {
+		weight = 0		
+	}
+}

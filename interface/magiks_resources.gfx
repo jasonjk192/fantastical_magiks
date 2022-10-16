@@ -1,0 +1,27 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_resource"
+		textureFile = "gfx/interface/icons/resources/default.dds"
+	}
+
+	spriteType = {
+		name = "GFX_resource_manacite"
+		textureFile = "gfx/interface/icons/resources/manacite.dds"
+	}
+
+	spriteType = {
+		name = "GFX_resource_manacite_grey" # grey vs gray lol
+		textureFile = "gfx/interface/icons/resources/manacite_grey.dds"
+	}
+
+	spriteType = {
+		name = "GFX_resource_manacite_top_bar"
+		texturefile = "gfx/interface/icons/resources/manacite.dds"
+	}
+
+	spriteType = {
+		name = "GFX_resource_manacite_large"
+		textureFile = "gfx/interface/icons/resources/manacite_large.dds"
+	}
+}

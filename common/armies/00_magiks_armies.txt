@@ -1,0 +1,360 @@
+#################
+# Undead Armies
+#################
+		
+magiks_zombie_army = {
+	damage = 0.25
+	health = 2.00
+	morale = 6.00
+	morale_damage = 1.00
+	collateral_damage = 5.00
+	war_exhaustion = 0.10
+	time = 25
+	#maintenance = 0.10
+	#icon_frame = 4
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 45
+		}
+		upkeep = {
+			food = 1
+		}
+	}
+	
+	prerequisites = { "magiks_tech_necro1" }
+	allow = {
+			OR = { 
+				has_building = "magiks_building_mass_grave"
+				has_building = "magiks_building_tainted_factory"
+				has_building = "magiks_building_corrupted_sanctum"
+				}
+		}
+	potential = {
+		owner = {
+			AND = {
+				NOT = { 
+					has_authority = auth_machine_intelligence
+				}
+				has_civic = magiks_civic_state_necromancy
+			}
+		}
+	}
+}
+
+magiks_skeleton_army = {
+	damage = 1.00
+	health = 1.50
+	morale = 12.00
+	morale_damage = 1.50
+	collateral_damage = 5
+	war_exhaustion = 0.5
+	time = 50
+	#maintenance = 0.5
+	#icon_frame = 11
+	resources = {
+		category = armies
+		cost = {
+			minerals = 90
+		}
+		upkeep = {
+			food = 2
+		}
+	}
+	prerequisites = { "magiks_tech_necro2" }
+	allow = {
+			OR = { 
+				has_building = "magiks_building_tainted_factory"
+				has_building = "magiks_building_corrupted_sanctum"
+				}
+		}
+	potential = {
+		owner = {
+			AND = {
+				NOT = { 
+					has_authority = auth_machine_intelligence
+				}
+				has_civic = magiks_civic_state_necromancy
+			}
+		}
+	}
+}
+
+magiks_lich_army = {
+	damage = 16.00
+	health = 2
+	morale = 12.00
+	morale_damage = 1.5
+	collateral_damage = 15.00
+	war_exhaustion = 2
+	time = 360
+	#maintenance = 3
+	#icon_frame = 3
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 300
+		}
+		upkeep = {
+			food = 5
+		}
+	}
+	
+	prerequisites = { "magiks_tech_necro3" }
+	allow = {
+		has_building = "magiks_building_corrupted_sanctum"
+		}
+	potential = {
+		owner = {
+			AND = {
+				NOT = { 
+					has_authority = auth_machine_intelligence
+				}
+				has_civic = magiks_civic_state_necromancy
+			}
+		}
+	}
+}
+
+magiks_blood_ops = {
+	damage = 0.50
+	health = 1.50
+	morale = 12.00
+	morale_damage = 12.00
+	collateral_damage = 2.00
+	war_exhaustion = 1.5
+	time = 90
+	#maintenance = 1
+	#icon_frame = 9
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 200
+		}
+		upkeep = {
+			food = 2
+		}
+	}
+	prerequisites = { "magiks_tech_necro3" }
+	allow = {
+		has_building = "magiks_building_corrupted_sanctum"
+		}
+	potential = {
+		owner = {
+			AND = {
+				NOT = { 
+					has_authority = auth_machine_intelligence
+				}
+				has_civic = magiks_civic_state_necromancy
+			}
+		}
+	}
+}
+
+#################
+# Dragon Armies
+#################
+
+magiks_draconic_division = {
+	damage = 3.00
+	health = 1.50
+	morale = 1.00
+	morale_damage = 1.50
+	collateral_damage = 3
+	war_exhaustion = 2
+	time = 100
+	#maintenance = 1.5
+	#icon_frame = 8
+	has_species = yes
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 125
+		}
+		upkeep = {
+			energy = 2
+		}
+	}
+	
+	allow = {
+			OR = { 
+				has_modifier = "magiks_dragons_tamed"
+				}
+		}
+	potential = {
+		owner = {
+			AND = {
+				NOT = { 
+					has_authority = auth_machine_intelligence
+				}
+				has_civic = magiks_civic_dragon_tamers
+			}
+		}
+	}
+}
+
+#################
+# Magikal Armies
+#################
+
+magiks_evoker_army = {
+	damage = 2.0
+	morale_damage = 2.5
+	health = 1.0
+	morale = 2.0
+	collateral_damage = 1.5
+	war_exhaustion = 1.0
+	time = 120
+	#icon_frame = 9
+	has_species = yes
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 150
+		}
+
+		upkeep = {
+			energy = 2.5
+		}
+	}
+
+	prerequisites = { "magiks_tech_mage_academy" }
+	allow = {
+			OR = { 
+				has_building = "magiks_building_mage_academy"
+				has_building = "magiks_building_mage_college"
+				has_building = "magiks_building_mage_university"
+				has_building = "magiks_building_mage_arcanium"
+				}
+		}
+	potential = {
+		owner = {
+			AND = {
+				NOT = { 
+					has_authority = auth_machine_intelligence
+				}
+				has_authority = magiks_auth_magocracy
+			}
+		}
+	}
+}
+
+magiks_golum_army = {
+	damage = 2.00
+	health = 3.75
+	morale_damage = 1.50
+	collateral_damage = 1.0
+	war_exhaustion = 2.00
+	has_morale = no
+	time = 150
+	#icon_frame = 4
+	has_species = no
+
+	resources = {
+		category = armies
+		cost = {
+			minerals = 250
+			manacite = 10
+		}
+
+		upkeep = {
+			energy = 4
+			manacite = 2
+		}
+	}
+
+	prerequisites = { "magiks_tech_mage_university" }
+	allow = {
+			OR = { 
+				has_building = "magiks_building_mage_college"
+				has_building = "magiks_building_mage_university"
+				has_building = "magiks_building_mage_arcanium"
+				}
+		}
+	potential = {
+		owner = {
+			AND = {
+				NOT = { 
+					has_authority = auth_machine_intelligence
+				}
+				has_authority = magiks_auth_magocracy
+			}
+		}
+	}
+}
+
+magiks_dragon_lord_army = {
+	damage = 3.0
+	health = 1.7
+	morale = 1.5
+	morale_damage = 2.5
+	collateral_damage = 3.0
+	war_exhaustion = 2.0
+	time = 180
+	#maintenance = 1.5
+	#icon_frame = 8
+	has_species = yes
+	
+	resources = {
+		category = armies
+		cost = {
+			minerals = 200
+		}
+		upkeep = {
+			energy = 2
+		}
+	}
+	
+	allow = {
+		has_modifier = "magiks_dragons_tamed"				
+			OR = { 
+				has_building = "magiks_building_mage_academy"
+				has_building = "magiks_building_mage_college"
+				has_building = "magiks_building_mage_university"
+				has_building = "magiks_building_mage_arcanium"
+				}
+		}
+	potential = {
+		owner = {
+			AND = {
+				NOT = { 
+					has_authority = auth_machine_intelligence
+				}
+				has_civic = magiks_civic_dragon_tamers
+				has_civic = magiks_civic_duelistic_magics
+			}
+		}
+	}
+}
+
+abjuration_mages_army = {
+	defensive = yes
+	is_pop_spawned = yes
+	health = 2.00
+	damage = 0.50
+	morale = 2.00
+	morale_damage = 2.5
+	collateral_damage = 0.0
+	war_exhaustion = 0.0 # No WE from defense armies
+	#icon_frame = 1
+		
+	prerequisites = { "magiks_tech_mage_university" }
+	allow = {
+		has_building = "magiks_building_mage_university"
+		}
+	potential = {
+		owner = {
+			AND = {
+				NOT = { 
+					has_authority = auth_machine_intelligence
+				}
+				has_authority = magiks_auth_magocracy
+			}
+		}
+	}
+}

@@ -1,0 +1,43 @@
+magiks_generate_start_pops = {	
+	if = { limit = { owner = { has_valid_civic = magiks_civic_reunited_siblings } }
+		
+		last_created_species = {
+			set_citizenship_type = {
+				country = root.owner
+				type = citizenship_full
+			}
+		}
+		while = {
+			count = 4
+			create_pop = {
+				species = last_created_species
+				ethos = random
+			}
+		}
+		while = {
+			count = 4
+			random_owned_pop = { kill_pop = yes }
+			#kill_pop = { species = owner_species }
+		}
+	}
+	else = {
+		while = {
+			limit = { num_pops < 24 }
+			create_pop = {
+				species = owner_main_species
+				ethos = random
+			}
+		}		
+	}
+}
+
+generate_start_the_underground = {
+	if = {
+		limit = { 
+			owner = {
+				has_civic = magiks_civic_reunited_siblings
+			}
+		}
+		add_deposit = magiks_d_the_underground
+	}
+}

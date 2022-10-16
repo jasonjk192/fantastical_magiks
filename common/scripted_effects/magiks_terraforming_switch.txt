@@ -1,0 +1,26 @@
+magiks_terraforming_switch = {
+	from = {
+	
+		if = { 
+            limit = { is_planet_class = pc_magikal }
+			if = {
+				limit = { NOT = { has_modifier = mana_infused } }
+				add_modifier = { modifier = "mana_infused" days = -1 }
+			}
+        }
+		if = { 
+            limit = { is_planet_class = pc_sour }
+			if = {
+				limit = { NOT = { has_modifier = mana_drained } }
+				add_modifier = { modifier = "mana_drained" days = -1 }
+			}
+        }
+		if = {
+			limit = { NOT = { is_planet_class = pc_sour } }
+			if = {
+				limit = { has_modifier = mana_drained }
+				remove_modifier = mana_drained
+			}
+		}
+	}
+} 

@@ -1,0 +1,13 @@
+spriteTypes = {	
+	# Planets
+	spriteType = { 
+		name = "GFX_planet_type_magikal"
+		alwaystransparent = yes
+		textureFile = "gfx/interface/icons/planet_type_magikal.dds"
+	}
+	spriteType = { 
+		name = "GFX_planet_type_sour"
+		alwaystransparent = yes
+		textureFile = "gfx/interface/icons/planet_type_sour.dds"
+	}
+}

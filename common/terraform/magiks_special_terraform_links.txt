@@ -1,0 +1,120 @@
+terraform_link = {
+	from = pc_sour
+	to = pc_desert
+	condition = { has_ascension_perk = "ap_magiks_terraform" }
+	duration = 3600
+	effect = { from = { remove_modifier = mana_drained } }
+	resources = {
+		category = terraforming
+		cost = { energy = 5000 }
+	}
+}
+
+terraform_link = {
+	from = pc_sour
+	to = pc_arid
+	condition = { has_ascension_perk = "ap_magiks_terraform" }
+	duration = 3600
+	effect = { from = { remove_modifier = mana_drained } }
+	resources = {
+		category = terraforming
+		cost = { energy = 5000 }
+	}
+}
+
+terraform_link = {
+	from = pc_sour
+	to = pc_savannah
+	condition = { has_ascension_perk = "ap_magiks_terraform" }
+	duration = 3600
+	effect = { from = { remove_modifier = mana_drained } }
+	resources = {
+		category = terraforming
+		cost = { energy = 5000 }
+	}
+}
+
+terraform_link = {
+	from = pc_sour
+	to = pc_alpine
+	condition = { has_ascension_perk = "ap_magiks_terraform" }
+	duration = 3600
+	effect = { from = { remove_modifier = mana_drained } }
+	resources = {
+		category = terraforming
+		cost = { energy = 5000 }
+	}
+}
+
+terraform_link = {
+	from = pc_sour
+	to = pc_arctic
+	condition = { has_ascension_perk = "ap_magiks_terraform" }
+	duration = 3600
+	effect = { from = { remove_modifier = mana_drained } }
+	resources = {
+		category = terraforming
+		cost = { energy = 5000 }
+	}
+}
+
+terraform_link = {
+	from = pc_sour
+	to = pc_tundra
+	condition = { has_ascension_perk = "ap_magiks_terraform" }
+	duration = 3600
+	effect = { from = { remove_modifier = mana_drained } }
+	resources = {
+		category = terraforming
+		cost = { energy = 5000 }
+	}
+}
+
+terraform_link = {
+	from = pc_sour
+	to = pc_continental
+	condition = { has_ascension_perk = "ap_magiks_terraform" }
+	duration = 3600
+	effect = { from = { remove_modifier = mana_drained } }
+	resources = {
+		category = terraforming
+		cost = { energy = 5000 }
+	}
+}
+
+terraform_link = {
+	from = pc_sour
+	to = pc_tropical
+	condition = { has_ascension_perk = "ap_magiks_terraform" }
+	duration = 3600
+	effect = { from = { remove_modifier = mana_drained } }
+	resources = {
+		category = terraforming
+		cost = { energy = 5000 }
+	}
+}
+
+terraform_link = {
+	from = pc_sour
+	to = pc_ocean
+	condition = { has_ascension_perk = "ap_magiks_terraform" }
+	duration = 3600
+	effect = { from = { remove_modifier = mana_drained } }
+	resources = {
+		category = terraforming
+		cost = { energy = 5000 }
+	}
+}
+
+terraform_link = {
+	from = pc_gaia
+	to = pc_magikal
+	condition = { has_ascension_perk = "ap_magiks_terraform" }
+	duration = 365
+	effect = { from = { add_modifier = { modifier = mana_infused } } }
+	resources = {
+		category = terraforming
+		cost = { energy = 1000 }
+	}
+}
+

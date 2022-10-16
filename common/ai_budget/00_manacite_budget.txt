@@ -1,0 +1,44 @@
+#################
+## Expenditure ##
+#################
+manacite_expenditure_ships = {
+	resource = manacite 
+	type = expenditure
+	category = ships
+	
+	potential = {
+		always = yes
+	}
+	
+	weight  = {
+		weight = 0.5
+	}	
+}
+
+manacite_expenditure_trade = {
+	resource = manacite 
+	type = expenditure
+	category = trade
+	
+	potential = {
+		always = yes
+	}
+	
+	weight  = {
+		weight = 0.5
+	}	
+}
+
+manacite_upkeep_ships = {
+	resource = manacite 
+	type = upkeep
+	category = ships
+	
+	potential = {
+		always = yes
+	}
+	
+	weight = {
+		weight = 1
+	}	
+}

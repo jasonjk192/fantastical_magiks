@@ -1,0 +1,434 @@
+
+		####################
+		### Basic Traits ###
+		####################
+
+magiks_trait_racial_minority = {
+	cost = -1
+	opposites = { "magiks_trait_weak_souls" "magiks_trait_strong_souls" }
+	allowed_archetypes = { BIOLOGICAL }
+	modifier = {
+		pop_government_ethic_attraction = -0.05
+		pop_happiness = -0.10
+	}
+}
+
+magiks_trait_draconic_nobility = {
+	cost = 3
+	potential_crossbreeding_chance = 1.0
+	prerequisites = { "magiks_tech_magiks_gene" }
+	allowed_archetypes = { BIOLOGICAL }
+	opposites = { "magiks_trait_draconic_pride" "trait_charismatic" "trait_repugnant" }
+	modifier = {
+		planet_jobs_engineering_research_produces_mult = 0.08
+		planet_jobs_physics_research_produces_mult = 0.08
+		planet_jobs_society_research_produces_mult = 0.08
+		planet_jobs_unity_produces_mult = 0.08
+		leader_age = 15
+	}
+	slave_cost = {
+		energy = 100
+	}
+}
+
+magiks_trait_draconic_pride = {
+	cost = -2
+	prerequisites = { "magiks_tech_magiks_gene" }
+	allowed_archetypes = { BIOLOGICAL }
+	opposites = { "magiks_trait_draconic_nobility" "trait_charismatic" "trait_repugnant" }
+	modifier = {
+		planet_jobs_engineering_research_produces_mult = -0.05
+		planet_jobs_physics_research_produces_mult = -0.05
+		planet_jobs_society_research_produces_mult = -0.05
+		planet_jobs_unity_produces_mult = -0.05
+		leader_age = 15
+	}
+}
+
+magiks_trait_deal_with_devil = {
+	cost = 2
+	# modification = no
+	species_potential_add = { always = no }
+	species_possible_remove = { always = no }
+	allowed_archetypes = { BIOLOGICAL }
+	opposites = { "magiks_trait_dragon_blooded" }
+	modifier = {
+		planet_jobs_minerals_produces_mult = 0.075
+		planet_jobs_energy_produces_mult = 0.075
+		leader_age = -10
+	}
+}
+
+magiks_trait_abyss_gazers = {
+	cost = 1
+	# modification = no
+	species_potential_add = { always = no }
+	species_possible_remove = { always = no }
+	allowed_archetypes = { BIOLOGICAL }
+	opposites = { "trait_communal" "trait_conformists" "trait_deviants" }
+	modifier = {
+		pop_happiness = -0.10
+		pop_government_ethic_attraction = 0.25
+		planet_jobs_engineering_research_produces_mult = 0.08
+		planet_jobs_physics_research_produces_mult = 0.08
+		planet_jobs_society_research_produces_mult = 0.08
+		planet_jobs_minerals_produces_mult = 0.08
+		planet_jobs_energy_produces_mult = 0.08
+	}
+}
+
+		###################
+		### Magic Types ###
+		###################
+
+magiks_trait_firebender = {
+	cost = 2
+	prerequisites = { "magiks_tech_magiks_gene" }
+	opposites = { "magiks_trait_soft_magicians" "magiks_trait_hard_magicians" "magiks_trait_waterbender" "magiks_trait_lifebender" "magiks_trait_airbender" "magiks_trait_earthbender" "magiks_trait_multibender" "magiks_trait_enchanting_musicians" }
+	allowed_archetypes = { BIOLOGICAL }
+	modifier = {
+		planet_jobs_energy_produces_mult = 0.1
+		army_damage_mult = 0.20
+	}
+}
+
+magiks_trait_waterbender = {
+	cost = 2
+	prerequisites = { "magiks_tech_magiks_gene" }
+	opposites = { "magiks_trait_soft_magicians" "magiks_trait_hard_magicians" "magiks_trait_firebender"  "magiks_trait_lifebender" "magiks_trait_airbender" "magiks_trait_earthbender" "magiks_trait_multibender" "magiks_trait_enchanting_musicians" }
+	allowed_archetypes = { BIOLOGICAL }
+	modifier = {
+		planet_jobs_energy_produces_mult = 0.1
+		planet_jobs_food_produces_mult = 0.1
+	}
+}
+
+magiks_trait_lifebender = {
+	cost = 2
+	prerequisites = { "magiks_tech_magiks_gene" }
+	opposites = { "magiks_trait_soft_magicians" "magiks_trait_hard_magicians" "magiks_trait_waterbender" "magiks_trait_firebender" "magiks_trait_airbender" "magiks_trait_earthbender" "magiks_trait_multibender" "magiks_trait_enchanting_musicians" }
+	allowed_archetypes = { BIOLOGICAL }
+	modifier = {
+		planet_jobs_food_produces_mult = 0.1
+		planet_jobs_energy_produces_mult = 0.1
+	}
+}
+
+magiks_trait_airbender = {
+	cost = 2
+	prerequisites = { "magiks_tech_magiks_gene" }
+	opposites = { "magiks_trait_soft_magicians" "magiks_trait_hard_magicians" "magiks_trait_waterbender" "magiks_trait_lifebender" "magiks_trait_firebender" "magiks_trait_earthbender" "magiks_trait_multibender" "magiks_trait_enchanting_musicians" }
+	allowed_archetypes = { BIOLOGICAL }
+	modifier = {
+		planet_jobs_unity_produces_mult = 0.1
+		pop_growth_from_immigration = 0.15
+		pop_resettlement_cost_mult = -0.25
+	}
+}
+
+magiks_trait_earthbender = {
+	cost = 2
+	prerequisites = { "magiks_tech_magiks_gene" }
+	opposites = { "magiks_trait_soft_magicians" "magiks_trait_hard_magicians" "magiks_trait_waterbender" "magiks_trait_lifebender" "magiks_trait_airbender" "magiks_trait_firebender" "magiks_trait_multibender" "magiks_trait_enchanting_musicians" }
+	allowed_archetypes = { BIOLOGICAL }
+	modifier = {
+		planet_jobs_minerals_produces_mult = 0.1
+		planet_jobs_energy_produces_mult = 0.1
+	}
+}
+
+magiks_trait_multibender = {
+	cost = 4
+	prerequisites = { "magiks_tech_magiks_gene" }
+	opposites = { "magiks_trait_soft_magicians" "magiks_trait_hard_magicians" "magiks_trait_waterbender" "magiks_trait_lifebender" "magiks_trait_airbender" "magiks_trait_earthbender" "magiks_trait_firebender" "magiks_trait_enchanting_musicians" }
+	allowed_archetypes = { BIOLOGICAL }
+	modifier = {
+		planet_jobs_minerals_produces_mult = 0.08
+		planet_jobs_energy_produces_mult = 0.08
+		planet_jobs_food_produces_mult = 0.08
+		planet_jobs_unity_produces_mult = 0.08
+		pop_government_ethic_attraction = -0.10
+	}
+}
+
+magiks_trait_soft_magicians = {
+	cost = 2
+	prerequisites = { "magiks_tech_magiks_gene" }
+	opposites = { "magiks_trait_hard_magicians" "magiks_trait_firebender" "magiks_trait_waterbender" "magiks_trait_lifebender" "magiks_trait_airbender" "magiks_trait_earthbender" "magiks_trait_multibender" "magiks_trait_enchanting_musicians" }
+	allowed_archetypes = { BIOLOGICAL }
+	modifier = {
+		planet_jobs_minerals_produces_mult = 0.15
+		planet_jobs_energy_produces_mult = 0.15
+		planet_jobs_food_produces_mult = 0.15
+		pop_happiness = 0.15
+		species_leader_exp_gain = -0.05
+	}
+}
+
+magiks_trait_hard_magicians = {
+	cost = 2
+	prerequisites = { "magiks_tech_magiks_gene" }
+	opposites = { "magiks_trait_soft_magicians" "magiks_trait_firebender" "magiks_trait_waterbender" "magiks_trait_lifebender" "magiks_trait_airbender" "magiks_trait_earthbender" "magiks_trait_multibender" "magiks_trait_enchanting_musicians" }
+	allowed_archetypes = { BIOLOGICAL }
+	modifier = {
+		planet_jobs_minerals_produces_mult = 0.08
+		planet_jobs_energy_produces_mult = 0.08
+		planet_jobs_food_produces_mult = 0.08
+		pop_happiness = 0.08
+		species_leader_exp_gain = 0.05
+	}
+}
+
+magiks_trait_alchemy = {
+	cost = 2
+	prerequisites = { "magiks_tech_magiks_gene" }
+	opposites = { "magiks_trait_soft_magicians" "magiks_trait_firebender" "magiks_trait_waterbender" "magiks_trait_lifebender" "magiks_trait_airbender" "magiks_trait_earthbender" "magiks_trait_multibender" "magiks_trait_enchanting_musicians" }
+	allowed_archetypes = { BIOLOGICAL }
+	modifier = {
+		planet_jobs_minerals_produces_mult = 0.05
+		planet_jobs_energy_produces_mult = 0.05
+		planet_jobs_food_produces_mult = 0.05
+		pop_happiness = 0.05
+		species_leader_exp_gain = 0.25
+	}
+}
+
+magiks_trait_enchanting_musicians = {
+	cost = 2
+	prerequisites = { "magiks_tech_magiks_gene" }
+	opposites = { "magiks_trait_hard_magicians" "magiks_trait_soft_magicians" }
+	allowed_archetypes = { BIOLOGICAL }
+	modifier = {
+		pop_happiness = 0.10
+		planet_jobs_unity_produces_mult = 0.08
+	}
+}
+
+magiks_trait_persuading_song = {
+	cost = 1
+	prerequisites = { "magiks_tech_magiks_gene" }
+	opposites = { "magiks_trait_hard_magicians" "magiks_trait_soft_magicians" }
+	allowed_archetypes = { BIOLOGICAL }
+	modifier = {
+		pop_happiness = 0.05
+		planet_jobs_unity_produces_mult = 0.04
+		
+	}
+}
+
+magiks_trait_exothermic_enchanters = {
+	cost = 2
+	prerequisites = { "magiks_tech_magiks_gene" }
+	opposites = { "magiks_trait_hard_magicians" "magiks_trait_soft_magicians" "magiks_trait_endothermic_enchanters" "magiks_trait_firebender" }
+	allowed_archetypes = { BIOLOGICAL }
+	modifier = {
+		pop_happiness = -0.05
+		planet_jobs_minerals_produces_mult = 0.1
+		army_damage_mult = 0.20
+	}
+}
+
+magiks_trait_endothermic_enchanters = {
+	cost = 2
+	prerequisites = { "magiks_tech_magiks_gene" }
+	opposites = { "magiks_trait_hard_magicians" "magiks_trait_soft_magicians" "magiks_trait_exothermic_enchanters" }
+	allowed_archetypes = { BIOLOGICAL }
+	modifier = {
+		pop_happiness = -0.05
+		planet_jobs_energy_produces_mult = 0.1
+		army_damage_mult = 0.20
+	}
+}
+
+magiks_trait_undead_reliant = {
+	cost = 1
+	prerequisites = { "magiks_tech_magiks_gene" }
+	initial = no
+	randomized = no
+	allowed_archetypes = { BIOLOGICAL }
+	modifier = {
+		planet_jobs_engineering_research_produces_mult = -0.25
+		planet_jobs_physics_research_produces_mult = -0.25
+		planet_jobs_society_research_produces_mult = -0.25
+		pop_housing_usage_mult = -0.2
+		planet_pops_consumer_goods_upkeep_mult = -0.15
+		planet_pops_food_upkeep_mult = -0.80
+	}
+}
+
+
+		###################
+		### Type Traits ###
+		###################
+
+magiks_trait_demi_folk = {
+	cost = 1
+	prerequisites = { "magiks_tech_magiks_gene" }
+	allowed_archetypes = { BIOLOGICAL }
+	opposites = { "magiks_trait_demi_folk_dnd" "magiks_trait_demi_folk_plants" "magiks_trait_dragon_blooded" }
+	modifier = {
+		pop_happiness = 0.02
+		pop_government_ethic_attraction = -0.05
+		pop_environment_tolerance = 0.05
+	}
+}
+
+magiks_trait_demi_folk_plants = {
+	cost = 1
+	prerequisites = { "magiks_tech_magiks_gene" }
+	allowed_archetypes = { BIOLOGICAL }
+	opposites = { "magiks_trait_demi_folk_dnd" "magiks_trait_demi_folk" "magiks_trait_dragon_blooded" }
+	modifier = {
+		pop_environment_tolerance = 0.10
+		planet_jobs_energy_produces_mult = -0.05
+		planet_jobs_food_produces_mult = 0.1
+	}
+}
+
+magiks_trait_demi_folk_dnd = {
+	cost = 1
+	prerequisites = { "magiks_tech_magiks_gene" }
+	allowed_archetypes = { BIOLOGICAL }
+	opposites = { "magiks_trait_demi_folk" "magiks_trait_demi_folk_plants" "magiks_trait_dragon_blooded" }
+	modifier = {
+		pop_happiness = -0.05
+		pop_environment_tolerance = 0.10
+		planet_jobs_engineering_research_produces_mult = 0.02
+		planet_jobs_physics_research_produces_mult = 0.02
+		planet_jobs_society_research_produces_mult = 0.02
+		planet_jobs_minerals_produces_mult = 0.02
+		planet_jobs_energy_produces_mult = 0.02
+		planet_jobs_food_produces_mult = 0.02
+		planet_jobs_unity_produces_mult = 0.02
+		pop_government_ethic_attraction = -0.05
+	}
+}
+
+magiks_trait_infernal_origin = {
+	cost = 1
+	# modification = no
+	species_potential_add = { always = no }
+	species_possible_remove = { always = no }
+	allowed_archetypes = { BIOLOGICAL }
+	opposites = { "magiks_trait_dragon_blooded" }
+	modifier = {
+		army_damage_mult = 0.1
+		army_health = 0.1
+	}
+}
+
+magiks_trait_dragon_blooded = {
+	cost = 2
+	# modification = no
+	species_potential_add = { always = no }
+	species_possible_remove = { always = no }
+	allowed_archetypes = { BIOLOGICAL }
+	opposites = { "magiks_trait_infernal_origin" "magiks_trait_demi_folk_dnd" "magiks_trait_demi_folk_plants" "magiks_trait_demi_folk" }
+	modifier = {
+		army_health = 0.1
+		planet_jobs_minerals_produces_mult = 0.1
+		planet_jobs_physics_research_produces_mult = 0.1
+		pop_happiness = -0.05
+	}
+}
+
+magiks_trait_strong_souls = {
+	cost = -2
+	prerequisites = { "magiks_tech_magiks_gene" }
+	opposites = { "magiks_trait_racial_minority" "magiks_trait_weak_souls" }
+	allowed_archetypes = { BIOLOGICAL }
+	modifier = {
+		pop_environment_tolerance = -0.10
+		leader_age = -10
+	}
+}
+
+magiks_trait_weak_souls = {
+	cost = 2
+	prerequisites = { "magiks_tech_magiks_gene" }
+	opposites = { "magiks_trait_racial_minority" "magiks_trait_strong_souls" }
+	allowed_archetypes = { BIOLOGICAL }
+	modifier = {
+		pop_environment_tolerance = 0.10
+		leader_age = 10
+	}
+}
+
+magiks_trait_multidimensional_migrants = {
+	cost = 2
+	# modification = no
+	species_potential_add = { always = no }
+	species_possible_remove = { always = no }
+	opposites = { "magiks_trait_infernal_origin" "magiks_trait_dragon_blooded" }
+	allowed_archetypes = { BIOLOGICAL }
+	modifier = {
+		pop_growth_from_immigration = 0.4
+		pop_resettlement_cost_mult = -0.2
+		pop_environment_tolerance = 0.05
+	}
+}
+
+magiks_trait_voidseepers = {
+	cost = 2
+	# modification = no
+	species_potential_add = { always = no }
+	species_possible_remove = { always = no }
+	opposites = { "magiks_trait_infernal_origin" "magiks_trait_dragon_blooded" "magiks_trait_multidimensional_migrants" }
+	allowed_archetypes = { BIOLOGICAL }
+	modifier = {
+		pop_happiness = 0.1
+		planet_jobs_physics_research_produces_mult = 0.1
+	}
+}
+
+magiks_trait_demonic_defaulters = {
+	cost = -2
+	# modification = no
+	species_potential_add = { always = no }
+	species_possible_remove = { always = no }
+	opposites = { "magiks_trait_infernal_origin" "magiks_trait_dragon_blooded" "magiks_trait_multidimensional_migrants" "magiks_trait_voidseepers" "trait_thrifty" }
+	allowed_archetypes = { BIOLOGICAL }
+	modifier = {
+		planet_jobs_energy_produces_mult = -0.1
+	}
+}
+
+magiks_trait_mulcubi = {
+	cost = 2
+	# modification = no
+	species_potential_add = { always = no }
+	species_possible_remove = { always = no }
+	opposites = { "magiks_trait_infernal_origin" "magiks_trait_dragon_blooded" "magiks_trait_multidimensional_migrants" "magiks_trait_voidseepers" "magiks_trait_demonic_defaulters" }
+	allowed_archetypes = { BIOLOGICAL }
+	modifier = {
+		pop_happiness = 0.15
+		planet_jobs_engineering_research_produces_mult = -0.05
+		planet_jobs_physics_research_produces_mult = -0.05
+		planet_jobs_society_research_produces_mult = -0.05
+		planet_jobs_minerals_produces_mult = -0.05
+		planet_jobs_energy_produces_mult = -0.05
+		planet_jobs_food_produces_mult = -0.05
+		planet_jobs_unity_produces_mult = -0.05
+		pop_growth_speed = 0.30
+	}
+}
+
+		#############
+		### Other ###
+		#############
+		
+magiks_trait_adapted_optimists = {
+	cost = 0
+	initial = no
+	randomized = no
+	# modification = no
+	species_potential_add = { always = no }
+	species_possible_remove = { always = no }
+	allowed_archetypes = { BIOLOGICAL }
+	modifier = {
+		pc_sour_habitability = 0.25
+		leader_age = 10
+		pop_happiness = 0.02
+		planet_jobs_food_produces_mult = 0.25
+	}
+}

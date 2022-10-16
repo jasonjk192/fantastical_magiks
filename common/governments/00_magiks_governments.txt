@@ -1,0 +1,395 @@
+########################
+# Others (Was not originally present; Based on stellaris defaults ; proper implementation soon?)
+########################
+
+magiks_gov_celebrated_monarchy = {
+	ruler_title = RT_DEATH_MONARCH
+	ruler_title_female = RT_DEATH_MONARCH_FEMALE
+
+	should_force_rename = yes
+
+	possible = {
+		has_authority = magiks_auth_magocracy
+	}
+
+	weight = {
+		base = 10000
+	}
+}
+
+magiks_gov_band_bureaucracy = {
+	ruler_title = RT_COORDINATOR
+	ruler_title_female = RT_COORDINATOR_FEMALE
+
+	election_candidates = {
+		modifier = {
+			add = 100
+			leader_class = ruler
+		}
+		modifier = {
+			add = 10
+			OR = {
+				leader_class = scientist
+				leader_class = governor
+			}
+		}
+		modifier = {
+			factor = 0
+			leader_class = admiral
+			leader_class = general
+		}
+	}
+
+	possible = {
+		has_authority = magiks_auth_magocracy
+		OR = {
+			has_ethic = ethic_pacifist
+			has_ethic = ethic_fanatic_pacifist
+		}
+	}
+
+	weight = {
+		base = 5
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_agrarian_idyll
+		}
+	}
+}
+
+magiks_gov_instrumental_institution = {
+	ruler_title = RT_DIRECTOR_GENERAL
+	ruler_title_female = RT_DIRECTOR_GENERAL_FEMALE
+
+	should_force_rename = yes
+
+	leader_class = scientist	# Initial ruler will become this if elected out of office
+
+	election_candidates = {
+		modifier = {
+			add = 100
+			leader_class = ruler
+		}
+		modifier = {
+			add = 10
+			leader_class = scientist
+		}
+	}
+
+	possible = {
+		has_authority = magiks_auth_magocracy
+	}
+
+	weight = {
+		base = 900
+	}
+}
+
+magiks_gov_harmonious_court = {
+	ruler_title = RT_COORDINATOR
+	ruler_title_female = RT_COORDINATOR_FEMALE
+
+	election_candidates = {
+		modifier = {
+			add = 100
+			leader_class = ruler
+		}
+		modifier = {
+			add = 10
+			OR = {
+				leader_class = scientist
+				leader_class = governor
+			}
+		}
+		modifier = {
+			factor = 0
+			leader_class = admiral
+			leader_class = general
+		}
+	}
+
+	possible = {
+		has_authority = magiks_auth_magocracy
+		OR = {
+			has_ethic = ethic_pacifist
+			has_ethic = ethic_fanatic_pacifist
+		}
+	}
+
+	weight = {
+		base = 5
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_agrarian_idyll
+		}
+	}
+}
+
+magiks_gov_harmonious_gathering = {
+	ruler_title = RT_CLAN_SPEAKER
+	ruler_title_female = RT_CLAN_SPEAKER_FEMALE
+
+	should_force_rename = yes
+
+	leader_class = admiral	# Initial ruler will become this if elected out of office
+
+	election_candidates = {
+		modifier = {
+			add = 100
+			leader_class = ruler
+		}
+		modifier = {
+			add = 10
+			OR = {
+				leader_class = admiral
+				leader_class = general
+			}
+		}
+	}
+
+	possible = {
+		has_authority = magiks_auth_magocracy
+	}
+
+	weight = {
+		base = 800
+	}
+}
+
+magiks_gov_harmonious_democracy = {
+	ruler_title = RT_PRIME_MINISTER
+	ruler_title_female = RT_PRIME_MINISTER_FEMALE
+
+	election_candidates = {
+		modifier = {
+			add = 100
+			leader_class = ruler
+		}
+		modifier = {
+			add = 10
+			OR = {
+				leader_class = scientist
+				leader_class = governor
+			}
+		}
+		modifier = {
+			factor = 0
+			leader_class = admiral
+			leader_class = general
+		}
+	}
+
+	possible = {
+		has_authority = magiks_auth_magocracy
+		OR = {
+			has_ethic = ethic_pacifist
+			has_ethic = ethic_fanatic_pacifist
+		}
+	}
+
+	weight = {
+		base = 5
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 1.5
+			has_valid_civic = civic_agrarian_idyll
+		}
+	}
+}
+
+magiks_gov_magical_monarchy = {
+	ruler_title = RT_CHANCELLOR
+	ruler_title_female = RT_CHANCELLOR_FEMALE
+
+	possible = {
+		has_authority = magiks_auth_magocracy
+		OR = {
+			has_ethic = ethic_materialist
+			has_ethic = ethic_fanatic_materialist
+		}
+	}
+
+	weight = {
+		base = 5
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_materialist
+		}
+		modifier = {
+			factor = 1.5
+			has_origin = origin_mechanists
+		}
+	}
+}
+
+magiks_gov_dark_dictatorship = {
+	ruler_title = RT_IMPERATOR
+	ruler_title_female = RT_IMPERATRIX
+
+	should_force_rename = yes
+
+	leader_class = admiral	# Initial ruler will become this if elected out of office
+
+	election_candidates = {
+		modifier = {
+			add = 100
+			leader_class = ruler
+		}
+		modifier = {
+			add = 10
+			OR = {
+				leader_class = admiral
+				leader_class = general
+			}
+		}
+	}
+
+	possible = {
+		has_authority = magiks_auth_magocracy
+	}
+
+	weight = {
+		base = 800
+	}
+}
+
+########################
+# Magocracy
+########################
+
+#Dragon Lords
+magiks_gov_dragon_magocracy = {
+	ruler_title = MK_RT_DRAGON_MAGUS
+	ruler_title_female = MK_RT_DRAGON_MAGUS_FEMALE
+
+	use_regnal_names = yes
+	dynastic_last_names = no
+	should_force_rename = yes
+
+	possible = {
+		has_authority = magiks_auth_magocracy
+		has_valid_civic = magiks_civic_duelistic_magics
+		has_valid_civic = magiks_civic_dragon_tamers
+	}
+	weight = {
+		base = 1000
+	}
+}
+
+# Generic Magocracy
+magiks_gov_magocracy = {
+	ruler_title = MK_RT_SUPREME_MAGE
+	ruler_title_female = MK_RT_SUPREME_MAGE_FEMALE
+
+	use_regnal_names = yes
+	dynastic_last_names = yes
+	should_force_rename = yes
+
+	possible = {
+		has_authority = magiks_auth_magocracy
+	}
+
+	weight = {
+		base = 1000
+	}
+}
+
+# Ministry of Magic
+magiks_gov_ministry_of_magic = {
+	ruler_title = MK_RT_MoM_M
+	ruler_title_female = MK_RT_MoM_F
+	
+	should_force_rename = yes
+
+	possible = {
+		has_authority = magiks_auth_magocracy
+		has_valid_civic = magiks_civic_elite_mages
+	}
+
+	weight = {
+		base = 6000
+	}
+}
+
+# Council of Sorcery
+magiks_gov_council_of_sorcery = {
+	ruler_title = MK_RT_CoS_M
+	ruler_title_female = MK_RT_CoS_F
+	
+	should_force_rename = yes
+
+	possible = {
+		has_authority = magiks_auth_magocracy
+		has_valid_civic = magiks_civic_magical_lineages
+	}
+
+	weight = {
+		base = 6000
+	}
+}
+
+# Harmonious State
+magiks_gov_harmonious_state = {
+	ruler_title = MK_RT_HS_M
+	ruler_title_female = MK_RT_HS_F
+	
+	should_force_rename = yes
+
+	possible = {
+		has_authority = magiks_auth_magocracy
+		has_valid_civic = magiks_civic_rhythmic_fanatics
+	}
+
+	weight = {
+		base = 6000
+	}
+}
+
+# Rockin' Regime
+magiks_gov_rockin_regime = {
+	ruler_title = MK_RT_ROCK_MASTER
+	ruler_title_female = MK_RT_ROCK_MISTRESS
+	
+	should_force_rename = yes
+
+	possible = {
+		has_authority = magiks_auth_magocracy
+		has_valid_civic = magiks_civic_idol_crazy
+	}
+
+	weight = {
+		base = 4000
+	}
+}
+
+########################
+# Cultural Controllers
+########################
+	
+# Cultural Controllers
+magiks_gov_cultural_controllers = {
+	ruler_title = MK_RT_CC_1
+	#ruler_title = MK_RT_CC_2
+	#ruler_title = MK_RT_CC_3
+	
+	should_force_rename = yes
+	
+	possible = {
+		has_valid_civic = magiks_machine_civic_waifu_bots
+	}
+	
+	weight = {
+		base = 12000
+	}
+}

@@ -1,0 +1,109 @@
+
+magiks_pm_dragons = {
+	spawn_chance = {
+		modifier = {
+			add = 10
+			OR = {
+				is_planet_class = "pc_desert"
+				is_planet_class = "pc_savannah"
+				is_planet_class = "pc_arid"
+				is_planet_class = "pc_tropical"
+				is_planet_class = "pc_continental"
+				is_planet_class = "pc_ocean"
+				is_planet_class = "pc_tundra"
+				is_planet_class = "pc_arctic"
+				is_planet_class = "pc_alpine"
+				is_planet_class = "pc_gaia"
+			}
+		}
+		modifier = {
+			add = 15
+			is_planet_class = pc_magikal
+		}
+		modifier = {
+			factor = 3
+			has_planet_modifier = "pm_lush"
+		}
+		modifier = {
+			factor = 8
+			has_planet_modifier = "pm_high_gravity"
+		}
+		modifier = {
+			factor = 0.5
+			has_planet_modifier = "pm_low_gravity"
+		}
+		modifier = {
+			factor = 0
+			has_planet_modifier = "pm_titanic_life"
+		}
+		modifier = {
+			factor = 0
+			has_planet_modifier = "pm_dangerous_wildlife"
+		}
+		modifier = {
+			factor = 0
+			has_planet_modifier = "magiks_pm_dragons"
+		}
+		modifier = {
+			factor = 0
+			has_planet_modifier = "magiks_pm_abyss"
+		}
+		
+		modifier = {
+			factor = 0
+			num_modifiers > 1
+		}
+	}
+	
+	modifier = "magiks_dragons"
+	
+}
+
+magiks_pm_dragons_tamed = {
+	spawn_chance = {
+		#None - from Event
+	}
+	
+	modifier = "magiks_dragons_tamed"
+	
+}
+
+magiks_pm_abyss = {
+	spawn_chance = {
+		modifier = {
+			add = 5
+			OR = {
+				is_planet_class = "pc_tropical"
+				is_planet_class = "pc_continental"
+			}
+		}
+		modifier = {
+			add = 10
+				is_planet_class = "pc_ocean"
+		}
+		modifier = {
+			factor = 0
+			has_planet_modifier = "pm_titanic_life"
+		}
+		modifier = {
+			factor = 0
+			has_planet_modifier = "pm_dangerous_wildlife"
+		}
+		modifier = {
+			factor = 0
+			has_planet_modifier = "magiks_pm_dragons"
+		}
+		modifier = {
+			factor = 0
+			has_planet_modifier = "magiks_pm_abyss"
+		}
+		
+		modifier = {
+			factor = 0
+			num_modifiers > 1
+		}
+	}
+	
+	modifier = "magiks_abyss"
+	
+}

@@ -1,0 +1,821 @@
+portraits = {
+
+	################
+	###	Tiefling ###
+	################
+
+	femtief0 = { texturefile = "gfx/models/portraits/magiks/FTBGo1.dds" }
+	femtief1 = { texturefile = "gfx/models/portraits/magiks/FTBGo2.dds" }
+	femtief2 = { texturefile = "gfx/models/portraits/magiks/FTBGo3.dds" }
+	femtief3 = { texturefile = "gfx/models/portraits/magiks/FTBGr1.dds" }
+	femtief4 = { texturefile = "gfx/models/portraits/magiks/FTBGr2.dds" }
+	femtief5 = { texturefile = "gfx/models/portraits/magiks/FTBGr3.dds" }
+	femtief6 = { texturefile = "gfx/models/portraits/magiks/FTBR1.dds" }
+	femtief7 = { texturefile = "gfx/models/portraits/magiks/FTBR2.dds" }
+	femtief8 = { texturefile = "gfx/models/portraits/magiks/FTBR3.dds" }
+	femtief9 = { texturefile = "gfx/models/portraits/magiks/FTGGo1.dds" }
+	femtief10 = { texturefile = "gfx/models/portraits/magiks/FTGGo2.dds" }
+	femtief11 = { texturefile = "gfx/models/portraits/magiks/FTGGo3.dds" }
+	femtief12 = { texturefile = "gfx/models/portraits/magiks/FTGGr1.dds" }
+	femtief13 = { texturefile = "gfx/models/portraits/magiks/FTGGr2.dds" }
+	femtief14 = { texturefile = "gfx/models/portraits/magiks/FTGGr3.dds" }
+	femtief15 = { texturefile = "gfx/models/portraits/magiks/FTGR1.dds" }
+	femtief16 = { texturefile = "gfx/models/portraits/magiks/FTGR2.dds" }
+	femtief17 = { texturefile = "gfx/models/portraits/magiks/FTGR3.dds" }
+	femtief18 = { texturefile = "gfx/models/portraits/magiks/FTRGo1.dds" }
+	femtief19 = { texturefile = "gfx/models/portraits/magiks/FTRGo2.dds" }
+	femtief20 = { texturefile = "gfx/models/portraits/magiks/FTRGo3.dds" }
+	femtief21 = { texturefile = "gfx/models/portraits/magiks/FTRGr1.dds" }
+	femtief22 = { texturefile = "gfx/models/portraits/magiks/FTRGr2.dds" }
+	femtief23 = { texturefile = "gfx/models/portraits/magiks/FTRGr3.dds" }
+	femtief24 = { texturefile = "gfx/models/portraits/magiks/FTRR1.dds" }
+	femtief25 = { texturefile = "gfx/models/portraits/magiks/FTRR2.dds" }
+	femtief26 = { texturefile = "gfx/models/portraits/magiks/FTRR3.dds" }
+	maletief0 = { texturefile = "gfx/models/portraits/magiks/MTBdG1.dds" }
+	maletief1 = { texturefile = "gfx/models/portraits/magiks/MTBdG2.dds" }
+	maletief2 = { texturefile = "gfx/models/portraits/magiks/MTBdG3.dds" }
+	maletief3 = { texturefile = "gfx/models/portraits/magiks/MTBGo1.dds" }
+	maletief4 = { texturefile = "gfx/models/portraits/magiks/MTBGo2.dds" }
+	maletief5 = { texturefile = "gfx/models/portraits/magiks/MTBGo3.dds" }
+	maletief6 = { texturefile = "gfx/models/portraits/magiks/MTBGr1.dds" }
+	maletief7 = { texturefile = "gfx/models/portraits/magiks/MTBGr2.dds" }
+	maletief8 = { texturefile = "gfx/models/portraits/magiks/MTBGr3.dds" }
+	maletief9 = { texturefile = "gfx/models/portraits/magiks/MTGdG1.dds" }
+	maletief10 = { texturefile = "gfx/models/portraits/magiks/MTGdG2.dds" }
+	maletief11 = { texturefile = "gfx/models/portraits/magiks/MTGdG3.dds" }
+	maletief12 = { texturefile = "gfx/models/portraits/magiks/MTGGo1.dds" }
+	maletief13 = { texturefile = "gfx/models/portraits/magiks/MTGGo2.dds" }
+	maletief14 = { texturefile = "gfx/models/portraits/magiks/MTGGo3.dds" }
+	maletief15 = { texturefile = "gfx/models/portraits/magiks/MTGGr1.dds" }
+	maletief16 = { texturefile = "gfx/models/portraits/magiks/MTGGr2.dds" }
+	maletief17 = { texturefile = "gfx/models/portraits/magiks/MTGGr3.dds" }
+	maletief18 = { texturefile = "gfx/models/portraits/magiks/MTRdG1.dds" }
+	maletief19 = { texturefile = "gfx/models/portraits/magiks/MTRdG2.dds" }
+	maletief20 = { texturefile = "gfx/models/portraits/magiks/MTRdG3.dds" }
+	maletief21 = { texturefile = "gfx/models/portraits/magiks/MTRGo1.dds" }
+	maletief22 = { texturefile = "gfx/models/portraits/magiks/MTRGo2.dds" }
+	maletief23 = { texturefile = "gfx/models/portraits/magiks/MTRGo3.dds" }
+	maletief24 = { texturefile = "gfx/models/portraits/magiks/MTRGr1.dds" }
+	maletief25 = { texturefile = "gfx/models/portraits/magiks/MTRGr2.dds" }
+	maletief26 = { texturefile = "gfx/models/portraits/magiks/MTRGr3.dds" }
+	
+	##################
+	###	Dragonborn ###
+	##################
+	
+	femdragon0 = { texturefile = "gfx/models/portraits/magiks/FBB1.dds" }
+	femdragon1 = { texturefile = "gfx/models/portraits/magiks/FBB2.dds" }
+	femdragon2 = { texturefile = "gfx/models/portraits/magiks/FBB3.dds" }
+	femdragon3 = { texturefile = "gfx/models/portraits/magiks/FBR1.dds" }
+	femdragon4 = { texturefile = "gfx/models/portraits/magiks/FBR2.dds" }
+	femdragon5 = { texturefile = "gfx/models/portraits/magiks/FBR3.dds" }
+	femdragon6 = { texturefile = "gfx/models/portraits/magiks/FBY1.dds" }
+	femdragon7 = { texturefile = "gfx/models/portraits/magiks/FBY2.dds" }
+	femdragon8 = { texturefile = "gfx/models/portraits/magiks/FBY3.dds" }
+	femdragon9 = { texturefile = "gfx/models/portraits/magiks/FUB1.dds" }
+	femdragon10 = { texturefile = "gfx/models/portraits/magiks/FUB2.dds" }
+	femdragon11 = { texturefile = "gfx/models/portraits/magiks/FUB3.dds" }
+	femdragon12 = { texturefile = "gfx/models/portraits/magiks/FUR1.dds" }
+	femdragon13 = { texturefile = "gfx/models/portraits/magiks/FUR2.dds" }
+	femdragon14 = { texturefile = "gfx/models/portraits/magiks/FUR3.dds" }
+	femdragon15 = { texturefile = "gfx/models/portraits/magiks/FUY1.dds" }
+	femdragon16 = { texturefile = "gfx/models/portraits/magiks/FUY2.dds" }
+	femdragon17 = { texturefile = "gfx/models/portraits/magiks/FUY3.dds" }
+	femdragon18 = { texturefile = "gfx/models/portraits/magiks/FYB1.dds" }
+	femdragon19 = { texturefile = "gfx/models/portraits/magiks/FYB2.dds" }
+	femdragon20 = { texturefile = "gfx/models/portraits/magiks/FYB3.dds" }
+	femdragon21 = { texturefile = "gfx/models/portraits/magiks/FYR1.dds" }
+	femdragon22 = { texturefile = "gfx/models/portraits/magiks/FYR2.dds" }
+	femdragon23 = { texturefile = "gfx/models/portraits/magiks/FYR3.dds" }
+	femdragon24 = { texturefile = "gfx/models/portraits/magiks/FYY1.dds" }
+	femdragon25 = { texturefile = "gfx/models/portraits/magiks/FYY2.dds" }
+	femdragon26 = { texturefile = "gfx/models/portraits/magiks/FYY3.dds" }
+	maledragon0 = { texturefile = "gfx/models/portraits/magiks/MBB1.dds" }
+	maledragon1 = { texturefile = "gfx/models/portraits/magiks/MBB2.dds" }
+	maledragon2 = { texturefile = "gfx/models/portraits/magiks/MBB3.dds" }
+	maledragon3 = { texturefile = "gfx/models/portraits/magiks/MBR1.dds" }
+	maledragon4 = { texturefile = "gfx/models/portraits/magiks/MBR2.dds" }
+	maledragon5 = { texturefile = "gfx/models/portraits/magiks/MBR3.dds" }
+	maledragon6 = { texturefile = "gfx/models/portraits/magiks/MBY1.dds" }
+	maledragon7 = { texturefile = "gfx/models/portraits/magiks/MBY2.dds" }
+	maledragon8 = { texturefile = "gfx/models/portraits/magiks/MBY3.dds" }
+	maledragon9 = { texturefile = "gfx/models/portraits/magiks/MGB1.dds" }
+	maledragon10 = { texturefile = "gfx/models/portraits/magiks/MGB2.dds" }
+	maledragon11 = { texturefile = "gfx/models/portraits/magiks/MGB3.dds" }
+	maledragon12 = { texturefile = "gfx/models/portraits/magiks/MGR1.dds" }
+	maledragon13 = { texturefile = "gfx/models/portraits/magiks/MGR2.dds" }
+	maledragon14 = { texturefile = "gfx/models/portraits/magiks/MGR3.dds" }
+	maledragon15 = { texturefile = "gfx/models/portraits/magiks/MGY1.dds" }
+	maledragon16 = { texturefile = "gfx/models/portraits/magiks/MGY2.dds" }
+	maledragon17 = { texturefile = "gfx/models/portraits/magiks/MGY3.dds" }
+	maledragon18 = { texturefile = "gfx/models/portraits/magiks/MSB1.dds" }
+	maledragon19 = { texturefile = "gfx/models/portraits/magiks/MSB2.dds" }
+	maledragon20 = { texturefile = "gfx/models/portraits/magiks/MSB3.dds" }
+	maledragon21 = { texturefile = "gfx/models/portraits/magiks/MSR1.dds" }
+	maledragon22 = { texturefile = "gfx/models/portraits/magiks/MSR2.dds" }
+	maledragon23 = { texturefile = "gfx/models/portraits/magiks/MSR3.dds" }
+	maledragon24 = { texturefile = "gfx/models/portraits/magiks/MSY1.dds" }
+	maledragon25 = { texturefile = "gfx/models/portraits/magiks/MSY2.dds" }
+	maledragon26 = { texturefile = "gfx/models/portraits/magiks/MSY3.dds" }
+}
+
+portrait_groups = {
+	
+	### Tiefling
+	tiefling = {
+		default = femtief0
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				trigger = {
+					ruler = { gender = male }
+				}
+				portraits = {
+					maletief0
+					maletief1
+					maletief2
+					maletief3
+					maletief4
+					maletief5
+					maletief6
+					maletief7
+					maletief8
+					maletief9
+					maletief10
+					maletief11
+					maletief12
+					maletief13
+					maletief14
+					maletief15
+					maletief16
+					maletief17
+					maletief18
+					maletief19
+					maletief20
+					maletief21
+					maletief22
+					maletief23
+					maletief24
+					maletief25
+					maletief26
+				}
+			}
+			add = {
+				trigger = {
+					ruler = { gender = female }
+				}
+				portraits = {
+					femtief0
+					femtief1
+					femtief2
+					femtief3
+					femtief4
+					femtief5
+					femtief6
+					femtief7
+					femtief8
+					femtief9
+					femtief10
+					femtief11
+					femtief12
+					femtief13
+					femtief14
+					femtief15
+					femtief16
+					femtief17
+					femtief18
+					femtief19
+					femtief20
+					femtief21
+					femtief22
+					femtief23
+					femtief24
+					femtief25
+					femtief26
+				}
+			}
+			#set = {
+			#	trigger = { ... }
+			#	portraits = { ... }
+			#	#using "set =" instead of "add" will first clear any portraits already added
+			#}
+		}		
+		
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				portraits = {
+					femtief0
+					femtief1
+					femtief2
+					femtief3
+					femtief4
+					femtief5
+					femtief6
+					femtief7
+					femtief8
+					femtief9
+					femtief10
+					femtief11
+					femtief12
+					femtief13
+					femtief14
+					femtief15
+					femtief16
+					femtief17
+					femtief18
+					femtief19
+					femtief20
+					femtief21
+					femtief22
+					femtief23
+					femtief24
+					femtief25
+					femtief26
+					maletief0
+					maletief1
+					maletief2
+					maletief3
+					maletief4
+					maletief5
+					maletief6
+					maletief7
+					maletief8
+					maletief9
+					maletief10
+					maletief11
+					maletief12
+					maletief13
+					maletief14
+					maletief15
+					maletief16
+					maletief17
+					maletief18
+					maletief19
+					maletief20
+					maletief21
+					maletief22
+					maletief23
+					maletief24
+					maletief25
+					maletief26
+				}
+			}
+		}		
+		
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				portraits = {
+					femtief0
+					femtief1
+					femtief2
+					femtief3
+					femtief4
+					femtief5
+					femtief6
+					femtief7
+					femtief8
+					femtief9
+					femtief10
+					femtief11
+					femtief12
+					femtief13
+					femtief14
+					femtief15
+					femtief16
+					femtief17
+					femtief18
+					femtief19
+					femtief20
+					femtief21
+					femtief22
+					femtief23
+					femtief24
+					femtief25
+					femtief26
+					maletief0
+					maletief1
+					maletief2
+					maletief3
+					maletief4
+					maletief5
+					maletief6
+					maletief7
+					maletief8
+					maletief9
+					maletief10
+					maletief11
+					maletief12
+					maletief13
+					maletief14
+					maletief15
+					maletief16
+					maletief17
+					maletief18
+					maletief19
+					maletief20
+					maletief21
+					maletief22
+					maletief23
+					maletief24
+					maletief25
+					maletief26
+				}
+			}
+		}
+		
+		#leader scope
+		leader = { #scientists, generals, admirals, governor
+			add = {
+				trigger = {
+					gender = female
+				}
+				portraits = {
+					femtief0
+					femtief1
+					femtief2
+					femtief3
+					femtief4
+					femtief5
+					femtief6
+					femtief7
+					femtief8
+					femtief9
+					femtief10
+					femtief11
+					femtief12
+					femtief13
+					femtief14
+					femtief15
+					femtief16
+					femtief17
+					femtief18
+					femtief19
+					femtief20
+					femtief21
+					femtief22
+					femtief23
+					femtief24
+					femtief25
+					femtief26
+				}
+			}
+			add = {
+				trigger = {
+					gender = male
+				}
+				portraits = {
+					maletief0
+					maletief1
+					maletief2
+					maletief3
+					maletief4
+					maletief5
+					maletief6
+					maletief7
+					maletief8
+					maletief9
+					maletief10
+					maletief11
+					maletief12
+					maletief13
+					maletief14
+					maletief15
+					maletief16
+					maletief17
+					maletief18
+					maletief19
+					maletief20
+					maletief21
+					maletief22
+					maletief23
+					maletief24
+					maletief25
+					maletief26
+				}
+			}
+		}
+
+			
+		#leader scope 
+		ruler = {
+			add = {
+				trigger = {
+					gender = female
+				}
+				portraits = {
+					femtief0
+					femtief1
+					femtief2
+					femtief3
+					femtief4
+					femtief5
+					femtief6
+					femtief7
+					femtief8
+					femtief9
+					femtief10
+					femtief11
+					femtief12
+					femtief13
+					femtief14
+					femtief15
+					femtief16
+					femtief17
+					femtief18
+					femtief19
+					femtief20
+					femtief21
+					femtief22
+					femtief23
+					femtief24
+					femtief25
+					femtief26
+				}
+			}
+			add = {
+				trigger = {
+					gender = male
+				}
+				portraits = {
+					maletief0
+					maletief1
+					maletief2
+					maletief3
+					maletief4
+					maletief5
+					maletief6
+					maletief7
+					maletief8
+					maletief9
+					maletief10
+					maletief11
+					maletief12
+					maletief13
+					maletief14
+					maletief15
+					maletief16
+					maletief17
+					maletief18
+					maletief19
+					maletief20
+					maletief21
+					maletief22
+					maletief23
+					maletief24
+					maletief25
+					maletief26
+				}
+			}
+		}
+	}
+	
+	### Dragonborn
+	dragonborn = {
+		default = femdragon0
+		game_setup = { #will run with a limited country scope. species and government is set but the country does not actually exist
+			add = {
+				trigger = {
+					ruler = { gender = male }
+				}
+				portraits = {
+					maledragon0
+					maledragon1
+					maledragon2
+					maledragon3
+					maledragon4
+					maledragon5
+					maledragon6
+					maledragon7
+					maledragon8
+					maledragon9
+					maledragon10
+					maledragon11
+					maledragon12
+					maledragon13
+					maledragon14
+					maledragon15
+					maledragon16
+					maledragon17
+					maledragon18
+					maledragon19
+					maledragon20
+					maledragon21
+					maledragon22
+					maledragon23
+					maledragon24
+					maledragon25
+					maledragon26
+				}
+			}
+			add = {
+				trigger = {
+					ruler = { gender = female }
+				}
+				portraits = {
+					femdragon0
+					femdragon1
+					femdragon2
+					femdragon3
+					femdragon4
+					femdragon5
+					femdragon6
+					femdragon7
+					femdragon8
+					femdragon9
+					femdragon10
+					femdragon11
+					femdragon12
+					femdragon13
+					femdragon14
+					femdragon15
+					femdragon16
+					femdragon17
+					femdragon18
+					femdragon19
+					femdragon20
+					femdragon21
+					femdragon22
+					femdragon23
+					femdragon24
+					femdragon25
+					femdragon26
+				}
+			}
+			#set = {
+			#	trigger = { ... }
+			#	portraits = { ... }
+			#	#using "set =" instead of "add" will first clear any portraits already added
+			#}
+		}		
+		
+		#species scope
+		species = { #generic portrait for a species
+			add = {
+				portraits = {
+					femdragon0
+					femdragon1
+					femdragon2
+					femdragon3
+					femdragon4
+					femdragon5
+					femdragon6
+					femdragon7
+					femdragon8
+					femdragon9
+					femdragon10
+					femdragon11
+					femdragon12
+					femdragon13
+					femdragon14
+					femdragon15
+					femdragon16
+					femdragon17
+					femdragon18
+					femdragon19
+					femdragon20
+					femdragon21
+					femdragon22
+					femdragon23
+					femdragon24
+					femdragon25
+					femdragon26
+					maledragon0
+					maledragon1
+					maledragon2
+					maledragon3
+					maledragon4
+					maledragon5
+					maledragon6
+					maledragon7
+					maledragon8
+					maledragon9
+					maledragon10
+					maledragon11
+					maledragon12
+					maledragon13
+					maledragon14
+					maledragon15
+					maledragon16
+					maledragon17
+					maledragon18
+					maledragon19
+					maledragon20
+					maledragon21
+					maledragon22
+					maledragon23
+					maledragon24
+					maledragon25
+					maledragon26
+				}
+			}
+		}		
+		
+		#pop scope
+		pop = { #for a specific pop
+			add = {
+				portraits = {
+					femdragon0
+					femdragon1
+					femdragon2
+					femdragon3
+					femdragon4
+					femdragon5
+					femdragon6
+					femdragon7
+					femdragon8
+					femdragon9
+					femdragon10
+					femdragon11
+					femdragon12
+					femdragon13
+					femdragon14
+					femdragon15
+					femdragon16
+					femdragon17
+					femdragon18
+					femdragon19
+					femdragon20
+					femdragon21
+					femdragon22
+					femdragon23
+					femdragon24
+					femdragon25
+					femdragon26
+					maledragon0
+					maledragon1
+					maledragon2
+					maledragon3
+					maledragon4
+					maledragon5
+					maledragon6
+					maledragon7
+					maledragon8
+					maledragon9
+					maledragon10
+					maledragon11
+					maledragon12
+					maledragon13
+					maledragon14
+					maledragon15
+					maledragon16
+					maledragon17
+					maledragon18
+					maledragon19
+					maledragon20
+					maledragon21
+					maledragon22
+					maledragon23
+					maledragon24
+					maledragon25
+					maledragon26
+				}
+			}
+		}
+		
+		#leader scope
+		leader = { #scientists, generals, admirals, governor
+			add = {
+				trigger = {
+					gender = female
+				}
+				portraits = {
+					femdragon0
+					femdragon1
+					femdragon2
+					femdragon3
+					femdragon4
+					femdragon5
+					femdragon6
+					femdragon7
+					femdragon8
+					femdragon9
+					femdragon10
+					femdragon11
+					femdragon12
+					femdragon13
+					femdragon14
+					femdragon15
+					femdragon16
+					femdragon17
+					femdragon18
+					femdragon19
+					femdragon20
+					femdragon21
+					femdragon22
+					femdragon23
+					femdragon24
+					femdragon25
+					femdragon26
+				}
+			}
+			add = {
+				trigger = {
+					gender = male
+				}
+				portraits = {
+					maledragon0
+					maledragon1
+					maledragon2
+					maledragon3
+					maledragon4
+					maledragon5
+					maledragon6
+					maledragon7
+					maledragon8
+					maledragon9
+					maledragon10
+					maledragon11
+					maledragon12
+					maledragon13
+					maledragon14
+					maledragon15
+					maledragon16
+					maledragon17
+					maledragon18
+					maledragon19
+					maledragon20
+					maledragon21
+					maledragon22
+					maledragon23
+					maledragon24
+					maledragon25
+					maledragon26
+				}
+			}
+		}
+
+			
+		#leader scope 
+		ruler = {
+			add = {
+				trigger = {
+					gender = female
+				}
+				portraits = {
+					femdragon0
+					femdragon1
+					femdragon2
+					femdragon3
+					femdragon4
+					femdragon5
+					femdragon6
+					femdragon7
+					femdragon8
+					femdragon9
+					femdragon10
+					femdragon11
+					femdragon12
+					femdragon13
+					femdragon14
+					femdragon15
+					femdragon16
+					femdragon17
+					femdragon18
+					femdragon19
+					femdragon20
+					femdragon21
+					femdragon22
+					femdragon23
+					femdragon24
+					femdragon25
+					femdragon26
+				}
+			}
+			add = {
+				trigger = {
+					gender = male
+				}
+				portraits = {
+					maledragon0
+					maledragon1
+					maledragon2
+					maledragon3
+					maledragon4
+					maledragon5
+					maledragon6
+					maledragon7
+					maledragon8
+					maledragon9
+					maledragon10
+					maledragon11
+					maledragon12
+					maledragon13
+					maledragon14
+					maledragon15
+					maledragon16
+					maledragon17
+					maledragon18
+					maledragon19
+					maledragon20
+					maledragon21
+					maledragon22
+					maledragon23
+					maledragon24
+					maledragon25
+					maledragon26
+				}
+			}
+		}
+	}
+}

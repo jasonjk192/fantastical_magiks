@@ -1,0 +1,213 @@
+###############
+# Original
+###############
+
+# planet_edict = {
+# 	name = "add_dragons"
+# 	cost = { influence = 40 manacite = 50 }
+# 	length = 0
+# 	modifier = {
+# 	}
+	
+# 	potential = {
+# 		AND = {
+# 			owner = {
+# 				has_civic = "magiks_civic_dragon_tamers"
+# 			}
+# 			NOR = {
+# 				has_modifier = "magiks_dragons"
+# 				has_modifier = "magiks_dragons_tamed"
+# 			}
+# 		}
+# 	}
+	
+# 	allow = {
+# 	}
+	
+# 	effect = {
+# 		add_modifier = { modifier = "magiks_dragons" days = -1 }
+# 		add_modifier = { modifier = "magiks_dragons_tamed" days = -1 }
+# 	}
+	
+# 	ai_weight = {
+# 		weight = 20
+# 		modifier = {
+# 			factor = 0
+# 			num_pops < 10
+# 		}
+# 	}
+# }
+
+# planet_edict = {
+# 	name = "tame_dragons"
+# 	cost = { influence = 60 energy = 600 }
+# 	length = 0
+# 	modifier = {
+# 	}
+	
+# 	potential = {
+# 		AND = {
+# 			owner = {
+# 				has_civic = "magiks_civic_dragon_tamers"
+# 			}
+# 			NOT = {
+# 				has_modifier = "magiks_dragons_tamed"
+# 			}
+# 			has_modifier = "magiks_dragons"
+# 		}
+# 	}
+	
+# 	allow = {
+# 	}
+	
+# 	effect = {
+# 		add_modifier = { modifier = "magiks_dragons_tamed" days = -1 }
+# 	}
+	
+# 	ai_weight = {
+# 		weight = 20
+# 		modifier = {
+# 			factor = 0
+# 			num_pops < 10
+# 		}
+# 	}
+# }
+
+# planet_edict = {
+# 	name = "kill_dragons"
+# 	cost = { energy = 1000 minerals = 600 }
+# 	length = 0
+# 	modifier = {
+# 	}
+	
+# 	potential = {
+# 		AND = {
+# 			owner = {
+# 				NOR = {
+# 					has_civic = "magiks_civic_dragon_tamers"
+# 					has_ethic = ethic_xenophile
+# 					has_ethic = ethic_fanatic_xenophile
+# 				}
+# 			}
+# 			has_modifier = "magiks_dragons"
+# 		}
+# 	}
+	
+# 	allow = {
+# 	}
+	
+# 	effect = {
+# 		remove_modifier = "magiks_dragons"
+# 	}
+	
+# 	ai_weight = {
+# 		weight = 20
+# 		modifier = {
+# 			factor = 0
+# 			num_pops < 10
+# 		}
+# 	}
+# }
+
+###############
+# Version 3.5.x 
+###############
+
+magiks_edict_add_dragons = {
+	icon = GFX_edict_type_time
+	length = 0
+	resources = {
+		category = edicts
+		cost = { influence = 40 manacite = 50 }
+	}
+
+	potential = {
+		owner = {
+			has_civic = "magiks_civic_dragon_tamers"
+		}
+		NOR = {
+			has_modifier = "magiks_dragons"
+			has_modifier = "magiks_dragons_tamed"
+		}
+	}
+
+	effect = {
+		add_modifier = { modifier = "magiks_dragons" days = -1 }
+		add_modifier = { modifier = "magiks_dragons_tamed" days = -1 }
+	}
+	
+	ai_weight = {
+		weight = 20
+		modifier = {
+			factor = 0
+			num_pops < 10
+		}
+	}
+}
+
+magiks_edict_tame_dragons = {
+	icon = GFX_edict_type_time
+	length = 0
+	resources = {
+		category = edicts
+		cost = { influence = 60 energy = 600 }
+	}
+
+	potential = {
+		AND = {
+			owner = {
+				has_civic = "magiks_civic_dragon_tamers"
+			}
+			NOT = {
+				has_modifier = "magiks_dragons_tamed"
+			}
+			has_modifier = "magiks_dragons"
+		}
+	}
+
+	effect = {
+		add_modifier = { modifier = "magiks_dragons_tamed" days = -1 }
+	}
+	
+	ai_weight = {
+		weight = 20
+		modifier = {
+			factor = 0
+			num_pops < 10
+		}
+	}
+}
+
+magiks_edict_kill_dragons = {
+	icon = GFX_edict_type_time
+	length = 0
+	resources = {
+		category = edicts
+		cost = { energy = 1000 minerals = 600 }
+	}
+
+	potential = {
+		AND = {
+			owner = {
+				NOR = {
+					has_civic = "magiks_civic_dragon_tamers"
+					has_ethic = ethic_xenophile
+					has_ethic = ethic_fanatic_xenophile
+				}
+			}
+			has_modifier = "magiks_dragons"
+		}
+	}
+
+	effect = {
+		remove_modifier = "magiks_dragons"
+	}
+	
+	ai_weight = {
+		weight = 20
+		modifier = {
+			factor = 0
+			num_pops < 10
+		}
+	}
+}

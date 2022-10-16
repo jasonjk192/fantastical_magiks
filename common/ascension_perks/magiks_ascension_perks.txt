@@ -1,0 +1,73 @@
+ap_magiks_terraform = {
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_technology_tech_climate_restoration"
+			has_technology = tech_climate_restoration
+		}	
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_2"
+			num_ascension_perks > 1
+		}
+	}
+	modifier = {
+		terraforming_cost_mult = -0.10
+	}
+	on_enabled = {
+		custom_tooltip = "allow_magikal"
+		custom_tooltip = "allow_sour"
+	}
+	potential = {
+		NOT = {
+			has_ascension_perk = ap_magiks_terraform
+		}
+		NOT = { has_authority = auth_machine_intelligence }
+	}
+	ai_weight = {
+		factor = 5
+	}
+}
+
+ap_magiks_genes = {
+	on_enabled = {
+		add_research_option = magiks_tech_magiks_gene
+	}
+	possible = {
+		custom_tooltip = {
+			fail_text = "synthetic_empire_magikal_ascension"
+			NOT = { has_trait = trait_mechanical }
+		}
+		custom_tooltip = {
+			fail_text = "requires_ap_engineered_evolution"
+			has_ascension_perk = ap_engineered_evolution
+		}
+	}
+	modifier = {
+		description = ap_magiks_genes_modifier_desc
+		description_parameters = {
+			POINTS = 2
+			COST_MULT = -0.10
+		}
+
+		BIOLOGICAL_species_trait_points_add = 2
+
+		modify_species_cost_mult = -0.10
+	}
+	
+	potential = {
+		host_has_dlc = "Utopia"
+		NOT = {
+			has_ascension_perk = ap_magiks_genes
+			has_authority = "auth_machine_intelligence"
+		}
+		is_mechanical_empire = no
+		is_cyborg_empire = no
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 0
+			num_owned_planets < 10
+		}
+	}
+}

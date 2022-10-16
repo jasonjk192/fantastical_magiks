@@ -1,0 +1,29 @@
+magiks_fey_wilds = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	icon = magiks_fey_wilds
+
+	planet_modifier = {
+		district_farming_max = 3
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+magiks_deep_grand_reef = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	icon = magiks_deep_grand_reef
+
+	planet_modifier = {
+		district_mining_max = 3
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}

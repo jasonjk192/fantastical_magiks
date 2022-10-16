@@ -1,0 +1,176 @@
+#############################
+# Note:
+# "trait_robotic_1" refers to Robot
+# "trait_robotic_2" refers to Droid
+# "trait_robotic_3" refers to Synthetic 
+# These no longer exist and have been split into multiple traits
+# ---------------------------
+# Which traits to be considered as replacements for "trait_robotic_1" and "trait_robotic_2" ?
+#############################
+
+magiks_trait_robot_artificial_souls = {
+	cost = 1
+
+	allowed_archetypes = { ROBOT }
+	
+	# opposites = { "trait_robotic_1" "trait_robotic_2" }
+	opposites = { "trait_robot_power_drills" "trait_robot_harvesters" "trait_robot_superconductive"}
+
+	modifier = {
+		# tile_resource_unity_mult = 0.1
+		planet_jobs_unity_produces_mult = 0.10
+		pop_ethic_materialist_attraction_mult = -1.5
+	}
+}
+
+magiks_trait_robot_reality_anchors = {
+	cost = -1
+
+	allowed_archetypes = { ROBOT }
+	
+	# opposites = { "trait_robotic_1" "trait_robotic_2" }
+	opposites = { "trait_robot_power_drills" "trait_robot_harvesters" "trait_robot_superconductive"}
+
+	modifier = {
+		#tile_resource_unity_mult = -0.10
+		planet_jobs_unity_upkeep_mult = 0.10
+		pop_ethic_materialist_attraction_mult = 1.5
+	}
+}
+
+magiks_trait_robot_brass_beasts = {
+	cost = 1
+	
+	allowed_archetypes = { ROBOT MACHINE }
+	
+	opposites = { "magiks_trait_robot_energy_connections" "magiks_trait_robot_golems" }
+	
+	modifier = {
+		# pop_consumer_goods_mult = 0.25
+		# pop_robot_upkeep_mult = -0.25
+		planet_pops_consumer_goods_upkeep_mult = 0.25
+		planet_pops_robotics_upkeep_mult = -0.25
+	}
+}
+
+magiks_trait_robot_energy_connections = {
+	cost = 1
+	
+	allowed_archetypes = { ROBOT MACHINE }
+	
+	opposites = { "magiks_trait_robot_brass_beasts" "magiks_trait_robot_golems" }
+	
+	modifier = {
+		# pop_consumer_goods_mult = -0.25
+		# pop_robot_upkeep_mult = 0.25
+		planet_pops_consumer_goods_upkeep_mult = -0.25
+		planet_pops_robotics_upkeep_mult = 0.25
+	}
+}
+
+magiks_trait_robot_brand_bots = {
+	cost = 2
+	
+	allowed_archetypes = { ROBOT }
+	
+	# opposites = { "trait_robotic_1" "magiks_trait_robot_warforged" "magiks_trait_robot_golems" }
+	opposites = { "trait_robot_power_drills" "trait_robot_harvesters" "trait_robot_superconductive" "magiks_trait_robot_warforged" "magiks_trait_robot_golems"}
+	
+	modifier = {
+		# tile_resource_unity_mult = 0.08
+		# pop_other_species_happiness = 0.05
+		planet_jobs_unity_produces_mult = 0.08
+		biological_pop_happiness = 0.05
+		pop_happiness = -0.05
+	}
+}
+
+magiks_trait_robot_warforged = {
+	cost = 3
+	
+	allowed_archetypes = { ROBOT MACHINE }
+	
+	opposites = { "magiks_trait_robot_brand_bots" }
+	
+	modifier = {
+		# tile_resource_minerals_mult = 0.10
+		# pop_other_species_happiness = -0.05
+		army_damage_mult = 0.10
+		planet_jobs_minerals_produces_mult = 0.10
+		biological_pop_happiness = -0.05
+	}
+}
+
+magiks_trait_robot_waifu_bots = {
+	cost = 1
+	allowed_archetypes = { MACHINE ROBOT }
+	
+	# opposites = { "trait_robotic_1" "trait_robot_uncanny" "trait_robot_emotion_emulators" "magiks_trait_robot_golems" "magiks_trait_robot_brand_bots" }
+	opposites = { "trait_robot_power_drills" "trait_robot_harvesters" "trait_robot_superconductive" "trait_robot_uncanny" "trait_robot_emotion_emulators" "magiks_trait_robot_golems" "magiks_trait_robot_brand_bots" }
+
+	modifier = {
+		# pop_other_species_happiness = 0.20
+		# tile_resource_minerals_mult = -0.08
+		# tile_resource_energy_mult = 0.05
+		# tile_resource_engineering_research_mult = -0.05
+		# tile_resource_physics_research_mult = -0.05
+		# tile_resource_society_research_mult = -0.05
+		# tile_resource_unity_mult = 0.20
+
+		biological_pop_happiness = 0.20
+		planet_jobs_minerals_produces_mult = -0.08
+		planet_jobs_energy_produces_mult = 0.05
+		planet_jobs_engineering_research_produces_mult = -0.05
+		planet_jobs_physics_research_produces_mult = -0.05
+		planet_jobs_society_research_produces_mult = -0.05
+		planet_jobs_unity_produces_mult = 0.20
+	}
+}
+
+magiks_trait_robot_golems = {
+	cost = 1
+	
+	opposites = { "magiks_trait_robot_brass_beasts" "magiks_trait_robot_energy_connections" "trait_robot_double_jointed" "trait_robot_bulky" "trait_robot_recycled"  "trait_robot_luxurious" }
+	
+	allowed_archetypes = { MACHINE ROBOT }
+	
+	modifier = {
+		army_health = 0.10
+		# pop_consumer_goods_mult = 1.80
+		# pop_robot_upkeep_mult = -0.90
+		# pop_robot_build_cost_multi = -0.20
+
+		pop_resettlement_cost_mult = 0.25
+		planet_pops_consumer_goods_upkeep_mult = 1.80
+		planet_pops_robotics_upkeep_mult = -0.90
+		planet_pop_assemblers_upkeep_mult = -0.20
+	}
+}
+
+magiks_trait_robot_exposed_processors = {
+	cost = -2
+	
+	opposites = { "magiks_trait_robot_core_processors" "trait_robot_durable" "trait_robot_high_maintenance" }
+	
+	allowed_archetypes = { MACHINE ROBOT }
+	
+	modifier = {
+		army_health = -0.25
+		# pop_consumer_goods_mult = 0.10
+		planet_pops_consumer_goods_upkeep_mult = 0.10
+	}
+}
+
+magiks_trait_robot_core_processors = {
+	cost = 1
+	
+	opposites = { "magiks_trait_robot_exposed_processors" "trait_robot_durable" "trait_robot_high_maintenance" }
+	
+	allowed_archetypes = { MACHINE ROBOT }
+	
+	modifier = {
+		army_health = 0.20
+		# pop_consumer_goods_mult = -0.05
+		planet_pops_consumer_goods_upkeep_mult = -0.05
+	}
+}

@@ -1,0 +1,96 @@
+# Add Dragons
+magiks_descisions_add_dragons = {
+	owned_planets_only = yes
+	
+	resources = {
+		category = decisions
+		cost = {
+			energy = 250
+			minerals = 500
+		}
+	}
+	
+	potential = {
+		NOR = { 
+			has_modifier = magiks_dragons 
+			has_modifier = magiks_dragons_tamed
+			}
+		owner = { 
+			is_regular_empire = yes
+			has_civic = magiks_civic_dragon_tamers
+		}
+	}
+	
+	effect = {
+		add_modifier = { modifier = "magiks_dragons" days = -1 }
+		add_modifier = { modifier = "magiks_dragons_tamed" days = -1 }
+	}
+	
+	ai_weight = {
+		weight = 200
+	}
+}
+
+# Tame Dragons
+magiks_descisions_tame_dragons = {
+	owned_planets_only = yes
+	
+	resources = {
+		category = decisions
+		cost = {
+			energy = 125
+			minerals = 250
+		}
+	}
+	
+	potential = {
+		has_modifier = magiks_dragons
+		NOT = {  
+			has_modifier = magiks_dragons_tamed
+			}
+		owner = { 
+			is_regular_empire = yes
+			has_civic = magiks_civic_dragon_tamers
+		}
+	}
+	
+	effect = {
+		add_modifier = { modifier = "magiks_dragons_tamed" days = -1 }
+	}
+	
+	ai_weight = {
+		weight = 200
+	}
+}
+
+# Remove Dragons
+magiks_descisions_exterminate_dragons = {
+	owned_planets_only = yes
+	
+	resources = {
+		category = decisions
+		cost = {
+			energy = 1000
+			minerals = 1000
+			alloys = 500
+		}
+	}
+	
+	potential = {
+		has_modifier = magiks_dragons
+		owner = {
+			is_regular_empire = yes
+			NOT = {
+				has_civic = magiks_civic_dragon_tamers
+			}
+		}
+	}
+	
+	effect = {
+		remove_modifier = magiks_dragons 
+	}
+	
+	ai_weight = {
+		weight = 200
+	}
+}

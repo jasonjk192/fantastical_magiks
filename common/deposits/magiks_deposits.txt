@@ -1,0 +1,749 @@
+# Possible Deposit Variables
+# modifier - weight, will replace the weight value
+# modifier - factor, will multiply the weight value
+# resources, resource and amount
+# station = station class in orbit to gather
+# if you mix resources that are not supposed to be collected by an orbital station remember to put is_orbital_slot = no
+
+##################################
+############ MINERALS ############
+##################################
+
+magiks_dmineral_deposit = {
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			minerals = 1
+		}
+	}
+	station = shipclass_mining_station
+	
+	#orbital_weight = {	weight = 0	} No idea what this is
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 15
+			planet = {
+				OR = {
+					is_planet_class = pc_magikal
+				}
+			}
+		}
+		modifier = {
+			weight = 10
+			planet = {
+				OR = {
+					is_planet_class = pc_sour
+				}
+			}
+		}
+	}
+}
+
+magiks_drich_mineral_deposit = {
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			minerals = 2
+		}
+	}
+	station = shipclass_mining_station
+	#orbital_weight = {	weight = 20	} No idea what this is
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 10
+			planet = {
+				OR = {
+					is_planet_class = pc_magikal
+				}
+			}
+		}		
+	}
+}
+
+magiks_dvast_mineral_deposit = {
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			minerals = 3
+		}
+	}
+	station = shipclass_mining_station
+	#orbital_weight = {	weight = 30	} No idea what this is
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 2
+			planet = {
+				OR = {
+					is_planet_class = pc_magikal
+				}
+			}
+		}	
+	}
+}
+
+magiks_dimmense_mineral_deposit = {
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			minerals = 4
+		}
+	}
+	station = shipclass_mining_station
+	#orbital_weight = {	weight = 50	} No idea what this is
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			planet = {
+				OR = {
+					is_planet_class = pc_magikal
+				}
+			}
+		}		
+	}
+}
+
+##################################
+######### MIXED DEPOSITS #########
+##################################
+
+magiks_dmineral_energy_deposit = {
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			energy = 1
+			minerals = 1
+		}
+	}
+	station = shipclass_mining_station
+	#orbital_weight = {weight = 20 }
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 5
+			planet = {
+				OR = {
+					is_planet_class = pc_magikal
+				}
+			}
+		}
+		modifier = {
+			weight = 3
+			planet = {
+				OR = {
+					is_planet_class = pc_sour
+				}
+			}
+		}
+	}
+}
+
+magiks_drich_mineral_energy_deposit = {
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			energy = 2
+			minerals = 2
+		}
+	}
+	station = shipclass_mining_station
+	# orbital_weight = { weight = 60 }
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 2
+			planet = {
+				OR = {
+					is_planet_class = pc_magikal
+				}
+			}
+		}
+	}
+}
+
+magiks_dmineral_food_deposit = {
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			food = 1
+			minerals = 1
+		}
+	}
+	# is_orbital_slot = no (Not Sure?)
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 5
+			planet = {
+				OR = {
+					is_planet_class = pc_magikal
+				}
+			}
+		}			
+	}
+}
+
+magiks_drich_food_mineral_deposit = {
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			food = 2
+			minerals = 2
+		}
+	}
+	#is_orbital_slot = no
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 2
+			planet = {
+				OR = {
+					is_planet_class = pc_magikal
+				}
+			}
+		}			
+	}
+}
+
+##################################
+######### ENERGY CREDITS #########
+##################################
+
+magiks_denergy_deposit = {
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			energy = 1
+		}
+	}
+	station = shipclass_mining_station
+	# orbital_weight = { 	weight = 0 }
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 15
+			planet = {
+				OR = {
+					is_planet_class = pc_magikal
+				}
+			}
+		}
+		modifier = {
+			weight = 10
+			planet = {
+				OR = {
+					is_planet_class = pc_sour
+				}
+			}
+		}		
+	}
+}
+
+magiks_drich_energy_deposit = {
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			energy = 2
+		}
+	}
+	station = shipclass_mining_station
+	# orbital_weight = { weight = 20 }
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 10
+			planet = {
+				OR = {
+					is_planet_class = pc_magikal
+				}
+			}
+		}		
+	}
+}
+
+magiks_dvast_energy_deposit = {
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			energy = 3
+		}
+	}
+	station = shipclass_mining_station
+	# orbital_weight = { weight = 30 }
+	
+	drop_weight = {
+		weight = 0		
+		modifier = {
+			weight = 1
+			planet = {
+				OR = {
+					is_planet_class = pc_magikal
+				}
+			}
+		}		
+	}
+}
+
+magiks_dimmense_energy_deposit = {
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			energy = 4
+		}
+	}
+	station = shipclass_mining_station
+	# orbital_weight = { weight = 50 }
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 0.5
+			planet = {
+				OR = {
+					is_planet_class = pc_magikal
+				}
+			}
+		}		
+	}
+}
+
+##################################
+######### 		FOOD 	 #########
+##################################
+
+magiks_dfarmland_deposit = {
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			food = 1
+		}
+	}
+	# is_orbital_slot = no
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 15
+			planet = {
+				OR = {
+					is_planet_class = pc_magikal
+				}
+			}
+		}			
+	}
+}
+
+magiks_drich_farmland_deposit = {
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			food = 2
+		}
+	}
+	# is_orbital_slot = no
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 10
+			planet = {
+				OR = {
+					is_planet_class = pc_magikal
+				}
+			}
+		}			
+	}
+}
+
+magiks_dvast_farmland_deposit = {
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			food = 3
+		}
+	}
+	# is_orbital_slot = no
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 2
+			planet = {
+				OR = {
+					is_planet_class = pc_magikal
+				}
+			}
+		}			
+	}
+}
+
+magiks_dimmense_farmland_deposit = {
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			food = 4
+		}
+	}
+	# is_orbital_slot = no
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			planet = {
+				OR = {
+					is_planet_class = pc_magikal
+				}
+			}
+		}			
+	}
+}
+
+##################################
+######### 	SOCIETY 	 #########
+##################################
+
+magiks_dsociety_deposit = {
+	resources = {
+		category = orbital_research_deposits
+		produces = {
+			society_research = 1
+		}
+	}
+	station = shipclass_research_station 
+	# orbital_weight = { weight = 0 }
+	
+	drop_weight = {
+		weight = 0	
+		modifier = {
+			weight = 7
+			planet = {
+				OR = {
+					is_planet_class = pc_magikal
+				}
+			}
+		}
+		modifier = {
+			weight = 3
+			planet = {
+				OR = {
+					is_planet_class = pc_sour
+				}
+			}
+		}
+	}
+}
+
+magiks_drich_society_deposit = {
+	resources = {
+		category = orbital_research_deposits
+		produces = {
+			society_research = 2
+		}
+	}
+	station = shipclass_research_station 
+	# orbital_weight = { weight = 20 }
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 3
+			planet = {
+				OR = {
+					is_planet_class = pc_magikal
+				}
+			}
+		}		
+	}
+}
+
+magiks_dvast_society_deposit = {
+	resources = {
+		category = orbital_research_deposits
+		produces = {
+			society_research = 3
+		}
+	}
+	station = shipclass_research_station 
+	# orbital_weight = { weight = 30 }
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			planet = {
+				is_planet_class = pc_magikal
+			}
+		}		
+	}
+}
+
+magiks_dimmense_society_deposit = {
+	resources = {
+		category = orbital_research_deposits
+		produces = {
+			society_research = 4
+		}
+	}
+	station = shipclass_research_station
+	# orbital_weight = { weight = 50 }
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 35
+			planet = {
+				is_planet_class = pc_magikal
+			}
+		}		
+	}
+}
+
+##################################
+######### 	 PHYSICS 	 #########
+##################################
+
+magiks_dphysics_deposit = {
+	resources = {
+		category = orbital_research_deposits
+		produces = {
+			physics_research = 1
+		}
+	}
+	station = shipclass_research_station 
+	# orbital_weight = { weight = 0 }
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 12
+			planet = {
+				OR = {
+					is_planet_class = pc_magikal			
+				}
+			}
+		}
+		modifier = {
+			weight = 6
+			planet = {
+				OR = {
+					is_planet_class = pc_sour
+				}
+			}
+		}			
+	}
+}
+
+magiks_drich_physics_deposit = {
+	resources = {
+		category = orbital_research_deposits
+		produces = {
+			physics_research = 2
+		}
+	}
+	station = shipclass_research_station 
+	#orbital_weight = { weight = 20 }
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 5
+			planet = {
+				OR = {
+					is_planet_class = pc_magikal
+				}
+			}
+		}		
+	}
+}
+
+magiks_dvast_physics_deposit = {
+	resources = {
+		category = orbital_research_deposits
+		produces = {
+			physics_research = 3
+		}
+	}
+	station = shipclass_research_station 
+	# orbital_weight = { weight = 30 }
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 2
+			planet = {
+				is_planet_class = pc_magikal
+			}
+		}		
+	}
+}
+
+magiks_dimmense_physics_deposit = {
+	resources = {
+		category = orbital_research_deposits
+		produces = {
+			physics_research = 4
+		}
+	}
+	station = shipclass_research_station
+	# orbital_weight = { weight = 50 }
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 40
+			planet = {
+				is_planet_class = pc_magikal
+			}
+		}		
+	}
+}
+
+
+##################################
+#########  ENGINEERING   #########
+##################################
+
+magiks_dengineering_deposit = {
+	resources = {
+		category = orbital_research_deposits
+		produces = {
+			engineering_research = 1
+		}
+	}
+	station = shipclass_research_station 
+	# orbital_weight = { weight = 0 }
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 7
+			planet = {
+				OR = {
+					is_planet_class = pc_magikal
+				}
+			}
+		}
+		modifier = {
+			weight = 3
+			planet = {
+				OR = {
+					is_planet_class = pc_sour
+				}
+			}
+		}		
+	}
+}
+
+magiks_drich_engineering_deposit = {
+	resources = {
+		category = orbital_research_deposits
+		produces = {
+			engineering_research = 2
+		}
+	}
+	station = shipclass_research_station 
+	# orbital_weight = { weight = 20 }
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 3
+			planet = {
+				OR = {
+					is_planet_class = pc_magikal
+				}
+			}
+		}		
+	}
+}
+
+magiks_dvast_engineering_deposit = {
+	resources = {
+		category = orbital_research_deposits
+		produces = {
+			engineering_research = 3
+		}
+	}
+	station = shipclass_research_station 
+	# orbital_weight = { weight = 30 }
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 2
+			planet = {
+				is_planet_class = pc_magikal
+			}
+		}		
+	}
+}
+
+magiks_dimmense_engineering_deposit = {
+	resources = {
+		category = orbital_research_deposits
+		produces = {
+			engineering_research = 4
+		}
+	}
+	station = shipclass_research_station
+	# orbital_weight = { weight = 50 }
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 35
+			planet = {
+				 is_planet_class = pc_magikal
+			}
+		}		
+	}
+}
+
+##################################
+#########  MANA ORBITAL  #########
+##################################
+
+# This is also defined in magiks_planetary_deposits.txt
+
+# d_magicite_1 = {
+# 	resources = {
+# 		category = orbital_mining_deposits
+# 		produces = {
+# 			manacite = 1
+# 			# magicite = 1
+# 		}
+# 	}
+# 	station = shipclass_mining_station
+# 	# prerequisites = { "tech_manacite_extraction" } (Don't need here?)
+	
+# 	potential = {
+# 		OR = {
+# 			is_planet_class = pc_asteroid
+# 			is_planet_class = pc_molten
+# 			is_planet_class = pc_toxic
+# 			is_planet_class = pc_frozen
+# 			is_planet_class = pc_barren
+# 			is_planet_class = pc_barren_cold
+# 			is_planet_class = pc_broken
+# 			is_planet_class = pc_shattered			
+# 		}	
+# 	}
+	
+# 	drop_weight = {
+# 		weight = 0		
+# 	}
+# }

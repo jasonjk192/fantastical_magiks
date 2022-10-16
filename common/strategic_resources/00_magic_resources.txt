@@ -1,0 +1,18 @@
+manacite = {
+	tradable = yes
+	market_amount = 10
+	market_price = 100
+	max = 10000
+
+	prerequisites = { "magiks_tech_manacite_extraction" }
+	visibility_prerequisite = { always = yes }
+	
+	deficit_modifier = manacite_deficit #found in static modifiers
+	
+	ai_weight = {
+		weight = 10
+	}
+	ai_wants = {
+		base = 5
+	}
+}

@@ -1,0 +1,228 @@
+﻿l_english: 
+### List of localization that were not available in the original (prevent error.log bloat)
+
+#####################
+# Buildings
+#####################
+
+magiks_building_mage_academy:0 "Mage Academy"
+magiks_building_mage_academy_desc:0 "REPLACE_ME"
+magiks_building_mage_college:0 "Mage College"
+magiks_building_mage_college_desc:0 "REPLACE_ME"
+magiks_building_mage_university:0 "Mage University"
+magiks_building_mage_university_desc:0 "REPLACE_ME"
+magiks_building_mage_arcanium:0 "Mage Arcanium"
+magiks_building_mage_arcanium_desc:0 "REPLACE_ME"
+requires_building_capital_1:0 "REPLACE_ME"
+
+#####################
+# Technology
+#####################
+
+magiks_tech_manacite_extraction:0 "Manacite Extraction"
+magiks_tech_manacite_extraction_desc:0 "REPLACE_ME"
+magiks_tech_rhythm4:0 "Baryonic Acoustic Oscillations"
+magiks_tech_rhythm4_desc:0 "REPLACE_ME"
+
+#####################
+# Decisions
+#####################
+
+magiks_descisions_add_dragons:0 "Add Dragons"
+magiks_descisions_add_dragons_desc:0 "REPLACE_ME"
+magiks_descisions_tame_dragons:0 "Tame Dragons"
+magiks_descisions_tame_dragons_desc:0 "REPLACE_ME"
+magiks_descisions_exterminate_dragons:0 "Exterminate Dragons"
+magiks_descisions_exterminate_dragons_desc:0 "REPLACE_ME"
+
+#####################
+# Edicts
+#####################
+
+edict_magiks_edict_add_dragons:0 "Add Dragons"
+edict_magiks_edict_add_dragons_desc:0 "REPLACE_ME"
+edict_magiks_edict_tame_dragons:0 "Tame Dragons"
+edict_magiks_edict_tame_dragons_desc:0 "REPLACE_ME"
+edict_magiks_edict_kill_dragons:0 "Kill Dragons"
+edict_magiks_edict_kill_dragons_desc:0 "REPLACE_ME"
+
+#####################
+# Species
+#####################
+
+FantasticalMagiks:0 "Magikal"
+FantasticalMagiks_desc:0 "REPLACE_ME"
+FantasticalMagiks_plural:0 "REPLACE_ME"
+FantasticalMagiks_insult_01:0 "REPLACE_ME"
+FantasticalMagiks_insult_plural_01:0 "REPLACE_ME"
+FantasticalMagiks_compliment_01:0 "REPLACE_ME"
+FantasticalMagiks_compliment_plural_01:0 "REPLACE_ME"
+FantasticalMagiks_spawn:0 "REPLACE_ME"
+FantasticalMagiks_spawn_plural:0 "REPLACE_ME"
+FantasticalMagiks_sound_01:0 "REPLACE_ME"
+FantasticalMagiks_sound_02:0 "REPLACE_ME"
+FantasticalMagiks_sound_03:0 "REPLACE_ME"
+FantasticalMagiks_sound_04:0 "REPLACE_ME"
+FantasticalMagiks_sound_05:0 "REPLACE_ME"
+FantasticalMagiks_organ:0 "REPLACE_ME"
+FantasticalMagiks_mouth:0 "REPLACE_ME"
+FantasticalMagiks_hand:0 "REPLACE_ME"
+FantasticalMagiks_ear:0 "REPLACE_ME"
+FantasticalMagiks_tooth:0 "REPLACE_ME"
+FantasticalMagiks_fossil:0 "REPLACE_ME"
+FantasticalMagiks_remnant:0 "REPLACE_ME"
+
+#####################
+# Governments
+#####################
+
+ magiks_gov_celebrated_monarchy:0 "Celebrated Monarchy"
+ magiks_gov_celebrated_monarchy_desc:0 "REPLACE_ME"
+ magiks_gov_band_bureaucracy:0 "Band Bureaucracy"
+ magiks_gov_band_bureaucracy_desc:0 "REPLACE_ME"
+ magiks_gov_instrumental_institution:0 "Instrumental Institution"
+ magiks_gov_instrumental_institution_desc:0 "REPLACE_ME"
+ magiks_gov_harmonious_court:0 "Harmonious Court"
+ magiks_gov_harmonious_court_desc:0 "REPLACE_ME"
+ magiks_gov_harmonious_gathering:0 "Harmonious Gathering"
+ magiks_gov_harmonious_gathering_desc:0 "REPLACE_ME"
+ magiks_gov_harmonious_democracy:0 "Harmonious Democracy"
+ magiks_gov_harmonious_democracy_desc:0 "REPLACE_ME"
+ magiks_gov_magical_monarchy:0 "Magical Monarchy"
+ magiks_gov_magical_monarchy_desc:0 "REPLACE_ME"
+ magiks_gov_dark_dictatorship:0 "Dark Dictatorship"
+ magiks_gov_dark_dictatorship_desc:0 "REPLACE_ME"
+
+#####################
+# 
+#####################
+
+pc_magikal_adj:0 "REPLACE_ME"
+mod_pc_magikal_habitability:0 "Magikal Habitability"
+pc_sour_adj:0 "REPLACE_ME"
+mod_pc_sour_habitability:0 "Sour Habitability"
+trait_pc_sour_preference:0 "REPLACE_ME"
+trait_pc_sour_preference_desc:0 "REPLACE_ME"
+magiks_d_the_underground:0 "REPLACE_ME"
+magiks_d_the_underground_desc:0 "REPLACE_ME"
+manacite_deficit:0 "$manacite$ Shortage"
+
+magiks_abyss:0 "Abyss"
+magiks_abyss_desc:0 "REPLACE_ME"
+
+Magocracy:0 "REPLACE_ME"
+Sectors:0 "REPLACE_ME"
+Sector:0 "REPLACE_ME"
+
+magiks_fey_wilds:0 "Feywild Forests"
+magiks_fey_wilds_desc:0 "This region is home to several large forests, all containing small rifts leading to a strange, nature-based realm of magic and fairies, eager to lure unsuspecting children into their realm."
+
+magiks_deep_grand_reef:0 "Deep Grand Reef"
+magiks_deep_grand_reef_desc:0 "These seas contain a large, cavernous void near their shallow bottom, home to all sorts of facinating (and sometimes dangerous) creatures."
+
+#####################
+# Empire Name Parts
+#####################
+
+Enchanted:0 "Enchanted"
+Magic:0 "Magic"
+Magical:0 "Magical"
+Illuminated:0 "Illuminated"
+Attuned:0 "Attuned"
+Infused:0 "Infused"
+Ministry:0 "Ministry"
+Parliament:0 "Parliament"
+Senate:0 "Senate"
+Gathering:0 "Gathering"
+Diet:0 "Diet"
+Radical:0 "Radical"
+Tubular:0 "Tubular"
+Players:0 "Players"
+Songwriters:0 "Songwriters"
+
+#####################
+# Species
+#####################
+
+Draconic:0 "Draconic"
+Dragonian:0 "Dragonian"
+Draconian:0 "Draconian"
+Tiefling:0 "Tiefling"
+Tieflings:0 "Tieflings"
+Fornica:0 "Fornica"
+Termiv:0 "Termiv"
+Fimdossian:0 "Fimdossian"
+Fimdossians:0 "Fimdossians"
+Fimdoss:0 "Fimdoss"
+Lairmia:0 "Lairmia"
+Jedbir:0 "Jedbir"
+Hoss:0 "Hoss"
+Tak:0 "Tak"
+Lovdiam:0 "Lovdiam"
+Lovdiams:0 "Lovdiams"
+Lovdia:0 "Lovdia"
+Decrates:0 "Decrates"
+Alari:0 "Alari"
+Alaria:0 "Alaria"
+Alar:0 "Alar"
+Mireesh:0 "Mireesh"
+Mireeshi:0 "Mireeshi"
+Mirati:0 "Mirati"
+Triech:0 "Triech"
+Triechs:0 "Triechs"
+Rechio:0 "Rechio"
+Vrinn:0 "Vrinn"
+Vrinnus:0 "Vrinnus"
+Cevanti:0 "Cevanti"
+Oros:0 "Oros"
+Cevant:0 "Cevant"
+Mishar:0 "Mishar"
+Mishars:0 "Mishars"
+Mishri:0 "Mishri"
+Shar:0 "Shar"
+Fareen:0 "Fareen"
+Fareens:0 "Fareens"
+Fara:0 "Fara"
+Enato:0 "Enato"
+Yldar:0 "Yldar"
+Yldars:0 "Yldars"
+Yliant:0 "Yliant"
+Korinth:0 "Korinth"
+Korinths:0 "Korinths"
+Koros:0 "Koros"
+Sildor:0 "Sildor"
+Sildors:0 "Sildors"
+Sildoria:0 "Sildoria"
+Sila:0 "Sila"
+Nagyari:0 "Nagyari"
+Nagyaria:0 "Nagyaria"
+Nagyar:0 "Nagyar"
+Kobarian:0 "Kobarian"
+Kobarians:0 "Kobarians"
+Kobaria:0 "Kobaria"
+Kobb:0 "Kobb"
+Hesukar:0 "Hesukar"
+Hesukari:0 "Hesukari"
+Hesuk:0 "Hesuk"
+Giroid:0 "Giroid"
+Giroids:0 "Giroids"
+Gir-Zana:0 "Gir-Zana"
+Gir:0 "Gir"
+Akkano:0 "Akkano"
+Akkanos:0 "Akkanos"
+Akkanar:0 "Akkanar"
+Akk:0 "Akk"
+Arzkan:0 "Arzkan"
+Arzkans:0 "Arzkans"
+Arkcanius:0 "Arkcanius"
+Kendraxia:0 "Kendraxia"
+Calaun:0 "Calaun"
+Calauns:0 "Calauns"
+Bectria:0 "Bectria"
+Obereus:0 "Obereus"
+Draconians:0 "Draconians"
+Draconia:0 "Draconia"
+Dol:0 "Dol"
+Drakiel:0 "Drakiel"
+Noadica:0 "Noadica"
+Ivirus:0 "Ivirus"

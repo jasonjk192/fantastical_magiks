@@ -1,0 +1,37 @@
+﻿l_english:
+
+    ### Species ###
+    
+ triggered_opinion_robot_waifu_bots:0 "Kawaii Ruler"
+ triggered_opinion_robot_waifu_bots_xenophile:0 "Best Girl Ruler"
+ triggered_opinion_robot_waifu_bots_xenophobe:0 "Filthy Weabs"
+ triggered_opinion_robot_waifu_bots_rivals:0 "Trash"
+ 
+ triggered_opinion_draconic_nobility:0 "Dignified Ruler"
+ triggered_opinion_draconic_nobility_xenophile:0 "Regal Ruler"
+ triggered_opinion_draconic_nobility_xenophobe:0 "Respected Ruler"
+ triggered_opinion_draconic_nobility_fellow_nobles:0 "Fellow Noblility"
+ 
+ triggered_opinion_draconic_pride:0 "Arrogant Ruler"
+ 
+ triggered_opinion_multidem_migrants:0 "Strange Foreigners"
+ triggered_opinion_multidem_migrants_xenophile:0 "Fascinating Foreigners"
+ triggered_opinion_multidem_migrants_fellow_refugees:0 "Fellow Refugees"
+ 
+ triggered_opinion_voidseepers:0 "Truely Alien"
+ triggered_opinion_voidseepers_xenophile:0 "Truely Alien"
+ triggered_opinion_fellow_voidseepers:0 "Fellow Escapees"
+ triggered_opinion_voidseepers_fellow_refugees:0 "Fellow Refugees"
+ triggered_opinion_voidseepers_true_evil:0 "The Ultimate Evil"
+ 
+ triggered_opinion_infernal_origin_fellow_refugees:0 "Fellow Refugees"
+ triggered_opinion_infernal_origin_spiritualist:0 "Demons by Proxy"
+ triggered_opinion_fellow_infernal_origin:0 "Fellow Escapees"
+ 
+ triggered_opinion_dark_cultists_bad:0 "Demon Worshippers"
+ triggered_opinion_dark_cultists_good:0 "Dark Siblings"
+ triggered_opinion_dark_cultists_demons:0 "Unholy Leader"
+ 
+ triggered_opinion_anti_demon_spiritualist:0 "Demonic Leader"
+ 
+ triggered_opinion_mulcubi_one_track_mind:0 "One-track Minded Leader"

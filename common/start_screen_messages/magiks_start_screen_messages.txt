@@ -1,0 +1,256 @@
+#########################
+# NOTE: Some of the governments do not exist
+#########################
+
+part = {
+	location = 1
+	localization = "MAGIKS_START_SCREEN_DRAGON_MAGOCRACY"
+	
+	trigger = {
+		OR = {
+			has_government = magiks_gov_dragon_magocracy
+		}
+		NOR = { 
+			has_country_flag = custom_start_screen
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
+		}
+	}
+}
+
+part = {
+	location = 1
+	localization = "MAGIKS_START_SCREEN_MAGOCRACY"
+	
+	trigger = {
+		OR = {
+			has_government = magiks_gov_magocracy
+		}
+		NOR = { 
+			has_country_flag = custom_start_screen 
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
+		}
+
+	}
+}
+
+part = {
+	location = 1
+	localization = "MAGIKS_START_SCREEN_CELEBRATED_MONARCHY"
+	
+	trigger = {
+		OR = {
+			has_government = magiks_gov_celebrated_monarchy
+		}
+		NOR = { 
+			has_country_flag = custom_start_screen 
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
+		}
+	}
+}
+
+part = {
+	location = 1
+	localization = "MAGIKS_START_SCREEN_ROCKIN_REGIME"
+	
+	trigger = {
+		OR = {
+			has_government = magiks_gov_rockin_regime
+		}
+		NOR = { 
+			has_country_flag = custom_start_screen 
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
+		}
+	}
+}
+
+part = {
+	location = 1
+	localization = "MAGIKS_START_SCREEN_BAND_BUREAUCRACY"
+	
+	trigger = {
+		OR = {
+			has_government = magiks_gov_band_bureaucracy
+		}
+		NOR = { 
+			has_country_flag = custom_start_screen 
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
+		}
+	}
+}
+
+part = {
+	location = 1
+	localization = "MAGIKS_START_SCREEN_INSTRUMENTAL_INSTITUTION"
+	
+	trigger = {
+		OR = {
+			has_government = magiks_gov_instrumental_institution
+		}
+		NOR = { 
+			has_country_flag = custom_start_screen 
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
+		}
+	}
+}
+
+part = {
+	location = 1
+	localization = "MAGIKS_START_SCREEN_HARMONIOUS_COURT"
+	
+	trigger = {
+		OR = {
+			has_government = magiks_gov_harmonious_court
+		}
+		NOR = { 
+			has_country_flag = custom_start_screen 
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
+		}
+	}
+}
+
+part = {
+	location = 1
+	localization = "MAGIKS_START_SCREEN_HARMONIOUS_STATE"
+	
+	trigger = {
+		OR = {
+			has_government = magiks_gov_harmonious_state
+		}
+		NOR = { 
+			has_country_flag = custom_start_screen 
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
+		}
+	}
+}
+
+part = {
+	location = 1
+	localization = "MAGIKS_START_SCREEN_HARMONIOUS_GATHERING"
+	
+	trigger = {
+		OR = {
+			has_government = magiks_gov_harmonious_gathering
+		}
+		NOR = { 
+			has_country_flag = custom_start_screen 
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
+		}
+	}
+}
+
+part = {
+	location = 1
+	localization = "MAGIKS_START_SCREEN_HARMONIOUS_DEMOCRACY"
+	
+	trigger = {
+		OR = {
+			has_government = magiks_gov_harmonious_democracy
+		}
+		NOR = { 
+			has_country_flag = custom_start_screen 
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
+		}
+	}
+}
+
+part = {
+	location = 1
+	localization = "MAGIKS_START_SCREEN_MAGICAL_MONARCHY"
+	
+	trigger = {
+		OR = {
+			has_government = magiks_gov_magical_monarchy
+		}
+		NOR = { 
+			has_country_flag = custom_start_screen 
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
+		}
+	}
+}
+
+part = {
+	location = 1
+	localization = "MAGIKS_START_SCREEN_DARK_DICTATORSHIP"
+	
+	trigger = {
+		OR = {
+			has_government = magiks_gov_dark_dictatorship
+		}
+		NOR = { 
+			has_country_flag = custom_start_screen 
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
+		}
+	}
+}
+
+part = {
+	location = 1
+	localization = "MAGIKS_START_SCREEN_MINISTRY_OF_MAGIC"
+	
+	trigger = {
+		OR = {
+			has_government = magiks_gov_ministry_of_magic
+		}
+		NOR = { 
+			has_country_flag = custom_start_screen 
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
+		}
+	}
+}
+
+part = {
+	location = 1
+	localization = "MAGIKS_START_SCREEN_COUNCIL_OF_SORCERY"
+	
+	trigger = {
+		OR = {
+			has_government = magiks_gov_council_of_sorcery
+		}
+		NOR = { 
+			has_country_flag = custom_start_screen 
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
+		}
+	}
+}
+
+part = {
+	location = 0
+	localization = "MAGIKS_START_SCREEN_MAGIKAL_ONE"
+	
+	trigger = {
+		ideal_planet_class = pc_magikal
+		NOR = { 
+			has_country_flag = custom_start_screen 
+			has_authority = auth_hive_mind
+			has_authority = auth_machine_intelligence
+		}
+	}
+}
+
+part = {
+	location = 1
+	localization = "MAGIKS_START_SCREEN_SOUR_TWO"
+	
+	trigger = {
+		has_civic = magiks_civic_drained_survivors
+		NOR = { 
+			has_country_flag = custom_start_screen 
+			has_authority = auth_hive_mind
+			has_authority = auth_machine_intelligence
+		}
+	}
+}

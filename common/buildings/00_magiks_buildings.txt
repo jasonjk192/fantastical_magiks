@@ -1,0 +1,727 @@
+#################
+# NOTES:
+# 	- planet_unique = yes is replaced with base_cap_amount = 1 (Assuming they mean the same; only 1 per planet)
+#	- is_listed = no is replaced with can_build = no (Assuming they mean the same; upgraded buildings cannot be shown/listed)
+#	- empire_unique = yes is replaced with empire_limit = 1 (Assuming only 1 can be built for the whole empire)
+#################
+
+#################
+# Necromancy Buildings
+#################
+
+magiks_building_mass_grave = {
+	allow = {
+		if = {
+			limit = {
+				owner = {
+					NOT = { has_authority = auth_machine_intelligence }
+				}
+			}
+			custom_tooltip = {
+				text = "requires_building_capital"
+				planet = {
+					OR = {
+						has_building = "building_capital"
+						has_building = "building_resort_capital"
+						has_building = "building_slave_capital"
+						has_building = "building_major_capital"
+						has_building = "building_slave_major_capital"
+						has_building = "building_resort_major_capital"
+						has_building = "building_system_capital"
+					}
+				}
+			}
+		}
+	}
+	prerequisites = { "magiks_tech_necro1" }
+	base_cap_amount = 1 #planet_unique = yes (original)
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 150
+			food = 50
+		}
+		upkeep = {
+			food = 5
+		}
+	}
+	base_buildtime = @b2_time
+	planet_modifier = {
+		job_undead_thrall_add = 2
+		pop_happiness = -0.05
+		pop_government_ethic_attraction = 0.10
+	}
+	upgrades = {
+		"magiks_building_tainted_factory"
+	}
+	ai_weight = {
+		factor = 5
+	}
+}
+
+magiks_building_tainted_factory = {
+	allow = {
+		if = {
+			limit = {
+				owner = {
+					NOT = { has_authority = auth_machine_intelligence }
+				}
+			}
+			custom_tooltip = {
+				text = "requires_building_capital"
+				planet = {
+					OR = {
+						has_building = "building_major_capital"
+						has_building = "building_slave_major_capital"
+						has_building = "building_resort_major_capital"
+						has_building = "building_system_capital"
+					}
+				}
+			}
+		}
+	}
+	prerequisites = { "magiks_tech_necro2" }
+	base_cap_amount = 1 #planet_unique = yes
+	can_build = no #is_listed = no
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 225
+			food = 100
+		}
+		upkeep = {
+			food = 8
+		}
+	}	
+	base_buildtime = @b3_time
+	planet_modifier = {
+		pop_happiness = -0.10
+		pop_government_ethic_attraction = 0.15
+		job_high_mage_add = 2
+		job_undead_thrall_add = 4
+	}
+	upgrades = {
+		"magiks_building_corrupted_sanctum"
+	}
+	ai_weight = {
+		factor = 5
+	}
+}
+
+magiks_building_corrupted_sanctum = {
+	allow = {
+		if = {
+			limit = {
+				owner = {
+					NOT = { has_authority = auth_machine_intelligence }
+				}
+			}
+			custom_tooltip = {
+				text = "requires_building_major_capital"
+				planet = {
+					OR = {
+						has_building = "building_system_capital"
+					}
+				}
+			}
+		}
+	}
+	prerequisites = { "magiks_tech_necro3" }
+	base_cap_amount = 1 #planet_unique = yes
+	can_build = no #is_listed = no
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 300
+			food = 250
+		}
+		upkeep = {
+			food = 15
+		}
+	}
+	base_buildtime = @b4_time
+	planet_modifier = {
+		pop_happiness = -0.15
+		pop_government_ethic_attraction = 0.20
+		job_high_mage_add = 4
+		job_undead_thrall_add = 6
+	}
+	ai_weight = {
+		factor = 5
+	}
+}
+
+#################
+# Theaters
+#################
+
+magiks_building_public_theater = {
+
+	# allow = {
+	# 	if = {
+	# 		limit = { owner = { NOT = { has_authority = auth_machine_intelligence } } }
+	# 	}
+	# }
+	
+	potential = {
+		exists = owner
+		owner = { NOT = { has_authority = auth_machine_intelligence } }
+	}
+
+	prerequisites = { "magiks_tech_rhythm1" }
+	base_cap_amount = 1 #planet_unique = yes
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 120
+		}
+		upkeep = {
+			energy = 1
+		}
+	}
+	base_buildtime = @b2_time
+	planet_modifier = {
+		pop_happiness = 0.02
+		job_high_mage_add = 2
+		}
+	upgrades = {
+		"magiks_building_grand_stadium"
+	}
+	ai_weight = {
+		factor = 5
+	}
+}
+
+magiks_building_grand_stadium = {
+	allow = {
+		if = {
+			limit = {
+				owner = {
+					NOT = { has_authority = auth_machine_intelligence }
+				}
+			}
+			custom_tooltip = {
+				text = "requires_building_capital_1"
+				planet = {
+					OR = {
+						# has_building = "building_capital_1"
+						# has_building = "building_capital_2"
+						# has_building = "building_capital_3"
+
+						has_building = "building_capital"
+						has_building = "building_major_capital"
+						has_building = "building_system_capital"
+					}
+				}
+			}
+		}
+	}
+	prerequisites = { "magiks_tech_rhythm2" }
+	base_cap_amount = 1 #planet_unique = yes
+	can_build = no #is_listed = no
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 200
+			manacite = 25
+		}
+		upkeep = {
+			manacite = 1
+		}
+	}
+	base_buildtime = @b3_time
+	planet_modifier = {
+		job_high_mage_add = 2
+		job_magical_researcher_add = 2
+		pop_happiness = 0.05
+	}
+	upgrades = {
+		"magiks_building_planetary_stage"
+	}
+	ai_weight = {
+		factor = 5
+	}
+}
+
+magiks_building_planetary_stage = {
+	allow = {
+		if = {
+			limit = {
+				owner = {
+					NOT = { has_authority = auth_machine_intelligence }
+				}
+			}
+			custom_tooltip = {
+				text = "requires_building_capital_1"
+				planet = {
+					OR = {
+						# has_building = "building_capital_2"
+						# has_building = "building_capital_3"
+
+						has_building = "building_major_capital"
+						has_building = "building_system_capital"
+					}
+				}
+			}
+		}
+	}
+	prerequisites = { "magiks_tech_rhythm3" }
+	base_cap_amount = 1 #planet_unique = yes
+	can_build = no #is_listed = no
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 300
+			manacite = 50
+		}
+		upkeep = {
+			manacite = 1
+		}
+	}
+	planet_modifier = {
+		job_high_mage_add = 4
+		job_magical_researcher_add = 2
+		pop_happiness = 0.10
+	}
+	base_buildtime = @b4_time
+	upgrades = {
+		"magiks_building_galactway"
+	}
+	ai_weight = {
+		factor = 5
+	}
+}
+
+magiks_building_galactway = {
+	base_buildtime = 360
+	can_build = no #is_listed = no
+	empire_limit = 1 #empire_unique = yes (Assuming only 1 can be built)
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 500
+			manacite = 150
+		}
+		upkeep = {
+			manacite = 1
+		}
+	}	
+	
+	planet_modifier = {
+		pop_happiness = 0.10
+		job_high_mage_add = 4
+	}
+	
+	show_tech_unlock_if = { NOT = { has_authority = auth_machine_intelligence } }
+
+	potential = {
+		NOT = {
+			owner = { has_authority = auth_machine_intelligence }
+		}
+		planet = {
+			is_capital = yes
+		}
+	}
+
+	destroy_trigger = {
+		OR = {
+			planet = { is_capital = no }
+			AND = {
+				exists = owner
+				owner = { has_authority = auth_machine_intelligence }
+			}
+		}
+	}	
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_3"
+			planet = {
+				# has_building = "building_capital_3"
+
+				has_building = "building_system_capital"
+			}
+		}
+	}
+	
+	country_modifier = {
+		#country_resource_unity_mult = 0.10
+		planet_jobs_unity_produces_mult = 0.10
+		pop_happiness = 0.10
+	}
+	prerequisites = {
+		"magiks_tech_rhythm3"
+	}
+	
+	ai_weight = {
+		weight = 20	
+	}
+}
+
+#################
+# Mana
+#################
+
+building_manacite_collector = {
+	base_buildtime = 360
+	icon = building_crystal_mines
+
+	is_capped_by_modifier = yes
+
+	category = resource
+	
+	potential = {
+		NOT = { has_modifier = resort_colony }
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_manacite_alchemist_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_manacite_drone_add = 1
+		}
+	}
+
+	prerequisites = {
+		"magiks_tech_manacite_extraction"
+	}
+	
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 200
+		}
+		upkeep = {
+			energy = 1
+		}
+	}	
+	
+	ai_weight = {
+		weight = 10	
+	}
+}
+
+#################
+# Missing buildings (Proper Implementation required; uses defaults from base game)
+#################
+
+magiks_building_mage_academy = {
+	base_buildtime = @b1_time
+	exempt_from_ai_planet_specialization = no
+	category = research
+
+	potential = {
+		NOT = { has_modifier = resort_colony }
+		NOT = { has_modifier = slave_colony }
+		exists = owner
+		owner = { NOT = { has_authority = auth_machine_intelligence } }
+	}
+
+	destroy_trigger = {
+		OR = {
+			has_modifier = slave_colony
+			has_modifier = resort_colony
+			exists = owner
+			owner = { has_authority = auth_machine_intelligence }
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_researcher_add = @b1_jobs
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_brain_drone_add = @b1_jobs
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = { minerals = @b1_minerals }
+		upkeep = { energy = @b1_upkeep }
+	}
+
+	upgrades = { "magiks_building_mage_college" }
+	prerequisites = { "magiks_tech_mage_academy" }
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = job_researcher_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		text = job_brain_drone_effect_desc
+	}
+}
+
+magiks_building_mage_college = {
+	base_buildtime = @b2_time
+	can_build = no
+	category = research
+	allow = { has_upgraded_capital = yes }
+
+	destroy_trigger = {
+		OR = {
+			has_modifier = slave_colony
+			has_modifier = resort_colony
+			exists = owner
+			owner = { has_authority = auth_machine_intelligence }
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_researcher_add = @b2_jobs
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_brain_drone_add = @b2_jobs
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+			exotic_gases = @b2_rare_cost
+		}
+		upkeep = {
+			energy = @b2_upkeep
+			exotic_gases = @b2_rare_upkeep
+		}
+	}
+
+	upgrades = { "magiks_building_mage_university" }
+
+	prerequisites = { "magiks_tech_mage_college" }
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = job_researcher_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		text = job_brain_drone_effect_desc
+	}
+}
+
+magiks_building_mage_university = {
+	base_buildtime = @b3_time
+	can_build = no
+	category = research
+	allow = { has_major_upgraded_capital = yes }
+
+	destroy_trigger = {
+		OR = {
+			has_modifier = slave_colony
+			has_modifier = resort_colony
+			owner = { has_authority = auth_machine_intelligence }
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_researcher_add = @b3_jobs
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_brain_drone_add = @b3_jobs
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_galactic_community_member = yes
+			}
+			is_active_resolution = "resolution_galacticstudies_extradimensional_experimentation"
+			has_modifier = pm_extradimensional_experimentation
+		}
+		modifier = {
+			job_dimensional_portal_researcher_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				is_galactic_community_member = yes
+			}
+			is_active_resolution = "resolution_galacticstudies_extradimensional_experimentation"
+			has_modifier = pm_extradimensional_experimentation
+		}
+		modifier = {
+			job_dimensional_portal_researcher_gestalt_add = 1
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+			exotic_gases = @b3_rare_cost
+		}
+		upkeep = {
+			energy = @b3_upkeep
+			exotic_gases = @b3_rare_upkeep
+		}
+		upkeep = {
+			trigger = {
+				owner = {
+					is_galactic_community_member = yes
+				}
+				is_active_resolution = "resolution_galacticstudies_extradimensional_experimentation"
+				planet = {
+					has_modifier = pm_extradimensional_experimentation
+				}
+			}
+			sr_zro = 1
+		}
+	}
+
+	prerequisites = { "magiks_tech_mage_university" }
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = job_researcher_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		text = job_brain_drone_effect_desc
+	}
+}
+
+magiks_building_mage_arcanium = {
+	base_buildtime = @b2_time
+	base_cap_amount = 1
+	category = research
+
+	potential = {
+		NOT = { has_modifier = resort_colony }
+		NOT = { has_modifier = slave_colony }
+		exists = owner
+		owner = { is_regular_empire = yes }
+		owner = { NOT = { has_authority = auth_machine_intelligence } }
+	}
+
+	destroy_trigger = {
+		exists = owner
+		OR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			owner = { is_regular_empire = no }
+			owner = { has_authority = auth_machine_intelligence }
+		}
+	}
+
+	allow = { has_major_upgraded_capital = yes }
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+			exotic_gases = @b2_rare_cost
+		}
+		upkeep = {
+			energy = @b2_upkeep
+			exotic_gases = @b2_rare_upkeep
+		}
+	}
+
+	planet_modifier = {
+		planet_researchers_produces_mult = 0.15
+		job_head_researcher_add = 1
+	}
+
+	prerequisites = {
+		"magiks_tech_mage_arcanium"
+	}
+
+	triggered_desc = {
+		text = job_head_researcher_effect_desc
+	}
+
+	show_tech_unlock_if = {
+		is_regular_empire = yes
+	}
+
+	ai_resource_production = {
+		trigger = {
+			planet_resource_compare = {
+				resource = physics_research
+				value >= 30
+			}
+		}
+		physics_research = 5
+		society_research = 5
+		engineering_research = 5
+	}
+}

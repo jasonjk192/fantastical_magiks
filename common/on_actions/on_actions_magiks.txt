@@ -1,0 +1,51 @@
+### Original ###
+# on_game_start = {
+# 	events = {
+# 		magiks_game_start.5
+# 		magiks_game_start.6
+# 		magiks_game_start.7
+# 	}
+# }
+################
+
+on_game_start_planet = {
+	events = {
+		magiks_game_start.5
+		magiks_game_start.6
+		magiks_game_start.7
+		magiks_game_start.10
+	}
+}
+
+empire_init_capital_planet = {
+	events = {
+		magiks_game_start.2
+	}
+}
+
+empire_init_add_technologies = {
+    events = {
+        magiks_game_start.1
+    }
+}
+
+on_game_start_country = {
+	events = {
+		magiks_game_start.3
+		magiks_game_start.4
+		magiks_game_start.8
+		magiks_game_start.9
+		# magiks_game_start.10
+	}
+}
+
+on_planet_transfer = {
+	events = {
+		magiks_event.1
+	}
+}
+
+on_monthly_pulse = {
+	events = {
+	}
+}

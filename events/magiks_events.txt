@@ -1,0 +1,29 @@
+namespace = magiks_event
+
+planet_event = {
+	id = magiks_event.1
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		has_modifier = "magiks_dragons_tamed"
+		owner = {
+			NOT = {
+				has_civic = "magiks_civic_dragon_tamers"
+			}
+		}
+	}
+	
+	immediate = {
+		remove_modifier = "magiks_dragons_tamed"
+	}
+}
+planet_event = {
+	id = magiks_event.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		magiks_generate_start_pops = yes
+	}
+}

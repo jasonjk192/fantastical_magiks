@@ -1,0 +1,551 @@
+#################
+# Necromancy
+#################
+
+magiks_tech_necro1 = {
+	cost = @tier1cost3
+	area = society
+	tier = 1
+	category = { biology }
+	weight = @tier1weight2
+	
+	potential = {
+		has_civic = "magiks_civic_state_necromancy"
+	}
+	
+	weight_modifier = {
+	
+		modifier = {
+			factor = 2
+			has_civic = "magiks_civic_state_necromancy"
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				has_civic = "magiks_civic_state_necromancy"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 2
+			has_civic = "magiks_civic_state_necromancy"
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				has_civic = "magiks_civic_state_necromancy"
+			}
+		}
+	}
+}
+
+magiks_tech_necro2 = {
+	cost = @tier2cost3
+	area = society
+	prerequisites = { "magiks_tech_necro1" }
+	tier = 2
+	category = { biology }
+	weight = @tier2weight2
+	
+	potential = {
+		has_civic = "magiks_civic_state_necromancy"
+	}
+	
+	weight_modifier = {
+	
+		modifier = {
+			factor = 2
+			has_civic = "magiks_civic_state_necromancy"
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				has_civic = "magiks_civic_state_necromancy"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 2
+			has_civic = "magiks_civic_state_necromancy"
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				has_civic = "magiks_civic_state_necromancy"
+			}
+		}
+	}
+}
+
+magiks_tech_necro3 = {
+	cost = @tier3cost3
+	area = society
+	prerequisites = { "magiks_tech_necro2" }
+	tier = 2
+	category = { biology }
+	weight = @tier3weight2
+	
+	potential = {
+		has_civic = "magiks_civic_state_necromancy"
+	}
+	
+	weight_modifier = {
+	
+		modifier = {
+			factor = 2
+			has_civic = "magiks_civic_state_necromancy"
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				has_civic = "magiks_civic_state_necromancy"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 2
+			has_civic = "magiks_civic_state_necromancy"
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				has_civic = "magiks_civic_state_necromancy"
+			}
+		}
+	}
+}
+
+magiks_tech_rhythm1 = {
+	cost = @tier1cost3
+	area = society
+	tier = 1
+	category = { statecraft }
+	weight = @tier1weight2
+	
+	potential = {
+		has_civic = "magiks_civic_rhythmic_fanatics"
+	}
+	
+	weight_modifier = {
+	
+		modifier = {
+			factor = 2
+			has_civic = "magiks_civic_rhythmic_fanatics"
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				has_civic = "magiks_civic_rhythmic_fanatics"
+			}
+		}
+	}
+	ai_weight = {
+		modifier = {
+			factor = 2
+			has_civic = "magiks_civic_rhythmic_fanatics"
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				has_civic = "magiks_civic_rhythmic_fanatics"
+			}
+		}
+	}
+}
+
+magiks_tech_rhythm2 = {
+	cost = @tier2cost3
+	area = society
+	prerequisites = { "magiks_tech_rhythm1" }
+	tier = 2
+	category = { statecraft }
+	weight = @tier2weight2
+	
+	potential = {
+		has_civic = "magiks_civic_rhythmic_fanatics"
+	}
+	
+	weight_modifier = {
+	
+		modifier = {
+			factor = 2
+			has_civic = "magiks_civic_rhythmic_fanatics"
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				has_civic = "magiks_civic_rhythmic_fanatics"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 2
+			has_civic = "magiks_civic_rhythmic_fanatics"
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				has_civic = "magiks_civic_rhythmic_fanatics"
+			}
+		}
+	}
+}
+
+magiks_tech_rhythm3 = {
+	cost = @tier3cost3
+	area = society
+	prerequisites = { "magiks_tech_rhythm2" }
+	tier = 2
+	category = { statecraft }
+	weight = @tier3weight2
+	
+	potential = {
+		has_civic = "magiks_civic_rhythmic_fanatics"
+	}
+	modifier = {
+		#tile_resource_unity_mult = 0.05
+		planet_jobs_unity_produces_mult = 0.05
+		# country_base_unity_produces_add = 0.05 # Alternate solution?
+	}
+	weight_modifier = {
+	
+		modifier = {
+			factor = 2
+			has_civic = "magiks_civic_rhythmic_fanatics"
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				has_civic = "magiks_civic_rhythmic_fanatics"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 2
+			has_civic = "magiks_civic_rhythmic_fanatics"
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				has_civic = "magiks_civic_rhythmic_fanatics"
+			}
+		}
+	}
+}
+
+magiks_tech_rhythm4 = {
+	cost = @tier4cost2
+	area = society
+	category = { statecraft }
+	tier = 4
+	prerequisites = { "magiks_tech_rhythm3" "tech_galactic_administration" }
+	weight = @tier4weight2
+	
+	potential = {
+		has_civic = "magiks_civic_state_necromancy"
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.50
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.50
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+
+magiks_tech_magiks_gene = {
+	cost = @tier3cost1
+	area = society
+	tier = 3
+	category = { biology }
+	weight = @tier3weight1
+	
+	potential = {
+		has_ascension_perk = "ap_magiks_genes"
+	}
+	
+	modifier = {
+		description = magiks_tech_magiks_gene_effects
+		modify_species_cost_mult = -0.0
+	}
+	
+	weight_modifier = {
+	
+		modifier = {
+			factor = 2
+			has_ascension_perk = "ap_magiks_genes"
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				has_ascension_perk = "ap_magiks_genes"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 2
+			has_ascension_perk = "ap_magiks_genes"
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				has_ascension_perk = "ap_magiks_genes"
+			}
+		}
+	}
+}
+
+#################
+# Magocracy
+#################
+
+magiks_tech_mage_academy = {
+	cost = 0
+	area = society
+	start_tech = yes
+	category = { statecraft }
+	tier = 0
+	
+	potential = {
+		has_authority = magiks_auth_magocracy
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+		modifier = {
+			factor = 2
+			has_civic = "magiks_civic_elite_mages"
+			has_civic = "magiks_civic_magical_lineages"
+			has_civic = "magiks_civic_alchemical_ministry"
+			has_civic = "magiks_civic_duelistic_magics"
+			has_civic = "magiks_civic_state_necromancy"
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+
+magiks_tech_mage_college = {
+	cost = @tier2cost2
+	area = society
+	category = { statecraft }
+	tier = 2
+	prerequisites = { "magiks_tech_mage_academy" }
+	weight = @tier2weight2
+	
+	potential = {
+		has_authority = magiks_auth_magocracy
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 10
+			OR = {
+				has_technology = magiks_tech_manacite_extraction
+				has_technology = magiks_tech_mage_academy
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+		modifier = {
+			factor = 2
+			has_civic = "magiks_civic_elite_mages"
+			has_civic = "magiks_civic_magical_lineages"
+			has_civic = "magiks_civic_alchemical_ministry"
+			has_civic = "magiks_civic_duelistic_magics"
+			has_civic = "magiks_civic_state_necromancy"
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+
+magiks_tech_mage_university = {
+	cost = @tier3cost2
+	area = society
+	category = { statecraft }
+	tier = 3
+	prerequisites = { "magiks_tech_mage_college" "tech_colonial_centralization" }
+	weight = @tier3weight2
+		
+	potential = {
+		has_authority = magiks_auth_magocracy
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+		modifier = {
+			factor = 2
+			has_civic = "magiks_civic_elite_mages"
+			has_civic = "magiks_civic_magical_lineages"
+			has_civic = "magiks_civic_alchemical_ministry"
+			has_civic = "magiks_civic_duelistic_magics"
+			has_civic = "magiks_civic_state_necromancy"
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+
+magiks_tech_mage_arcanium = {
+	cost = @tier4cost2
+	area = society
+	category = { statecraft }
+	tier = 4
+	prerequisites = { "magiks_tech_mage_university" "tech_galactic_administration"}
+	weight = @tier4weight2	
+	
+	potential = {
+		has_authority = magiks_auth_magocracy
+	}
+	
+	weight_modifier = {	
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+
+#################
+# Manacite Extraction
+#################
+
+magiks_tech_manacite_extraction = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 2
+	category = { materials }
+	prerequisites = { "tech_space_construction" }
+	weight = @tier2weight1
+
+	potential = {
+		has_authority = magiks_auth_magocracy
+	}	
+	weight_modifier = {
+		factor = 2
+		modifier = {
+			factor = 10
+			OR = {
+				has_technology = magiks_tech_mage_academy
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+		modifier = {
+			factor = 2
+			has_civic = "magiks_civic_elite_mages"
+			has_civic = "magiks_civic_magical_lineages"
+			has_civic = "magiks_civic_alchemical_ministry"
+			has_civic = "magiks_civic_duelistic_magics"
+			has_civic = "magiks_civic_state_necromancy"
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_owned_planet = {
+					OR = {
+						has_deposit = magiks_d_powerful_leyline
+						has_deposit = magiks_d_leyline_convergence
+						has_deposit = magiks_d_natural_manacite_caverns
+					}
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 5 #important resource
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}

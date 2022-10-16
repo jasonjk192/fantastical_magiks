@@ -1,0 +1,15 @@
+trait_pc_magikal_preference = {
+	icon = "gfx/interface/icons/traits/trait_pc_magikal_preference.dds"
+	# modification = no
+	species_potential_add = { always = no }
+	species_possible_remove = { always = no }
+	
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT }
+	sorting_priority = 30
+	modifier = {
+		pc_magikal_habitability = 1.0
+	}
+	ai_weight = {
+		weight = 1
+	}
+}

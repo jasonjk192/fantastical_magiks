@@ -1,0 +1,739 @@
+		##################
+		### Waifu Bots ###
+		##################
+
+triggered_opinion_robot_waifu_bots = {
+	trigger = {
+		FROM = {
+			exists = ruler
+			ruler = {
+				species = {
+					has_trait = "magiks_trait_robot_waifu_bots"
+				}
+			}			
+		}
+		NOT = {
+			OR = {
+				has_ethic = ethic_gestalt_consciousness
+				has_ethic = ethic_xenophile
+				has_ethic = ethic_fanatic_xenophile
+				has_ethic = ethic_xenophobe
+				has_ethic = ethic_fanatic_xenophobe
+				
+				AND = {
+					exists = ruler
+					ruler = {
+						species = {
+						has_trait = "magiks_trait_robot_waifu_bots"
+						}
+					}
+				}
+			}
+		}
+	}
+	opinion = {
+		base = 15
+	}
+}
+
+triggered_opinion_robot_waifu_bots_xenophile = {
+	trigger = {
+		FROM = {
+			exists = ruler
+			ruler = {
+				species = {
+					has_trait = "magiks_trait_robot_waifu_bots"
+				}
+			}			
+		}
+		NOT = {
+			OR = {
+					has_ethic = ethic_gestalt_consciousness
+				AND = {
+					exists = ruler
+					ruler = {
+						species = {
+						has_trait = "magiks_trait_robot_waifu_bots"
+						}
+					}
+				}
+			}
+		}
+		OR = {
+			has_ethic = ethic_xenophile
+			has_ethic = ethic_fanatic_xenophile
+		}
+	}
+	opinion = {
+		base = 25
+	}
+}
+
+triggered_opinion_robot_waifu_bots_xenophobe = {
+	trigger = {
+		FROM = {
+			exists = ruler
+			ruler = {
+				species = {
+					has_trait = "magiks_trait_robot_waifu_bots"
+				}
+			}			
+		}
+		NOT = {
+			OR = {
+					has_ethic = ethic_gestalt_consciousness
+				AND = {
+					exists = ruler
+					ruler = {
+						species = {
+						has_trait = "magiks_trait_robot_waifu_bots"
+						}
+					}
+				}
+			}
+		}
+		OR = {
+			has_ethic = ethic_xenophobe
+			has_ethic = ethic_fanatic_xenophobe
+		}
+	}
+	opinion = {
+		base = -25
+	}
+}
+
+triggered_opinion_robot_waifu_bots_rivals = {
+	trigger = {
+		FROM = {
+			exists = ruler
+			ruler = {
+				species = {
+					has_trait = "magiks_trait_robot_waifu_bots"
+				}
+			}			
+		}
+		AND = {
+			exists = ruler
+			ruler = {
+				species = {
+					has_trait = "magiks_trait_robot_waifu_bots"
+				}
+			}
+		}
+	}
+	opinion = {
+		base = -200
+	}
+}
+
+		#########################
+		### Draconic Nobility ###
+		#########################
+
+triggered_opinion_draconic_nobility = {
+	trigger = {
+		FROM = {
+			exists = ruler
+			ruler = {
+				species = {
+					has_trait = "magiks_trait_draconic_nobility"
+				}
+			}			
+		}
+		NOT = {
+			OR = {
+				OR = {
+					has_ethic = ethic_gestalt_consciousness
+					has_ethic = ethic_xenophile
+					has_ethic = ethic_fanatic_xenophile
+					has_ethic = ethic_xenophobe
+					has_ethic = ethic_fanatic_xenophobe
+				}
+				AND = {
+					exists = ruler
+					ruler = {
+						species = {
+						has_trait = "magiks_trait_draconic_nobility"
+						}
+					}
+				}
+			}
+		}
+	}
+	opinion = {
+		base = 25
+	}
+}
+
+triggered_opinion_draconic_nobility_xenophile = {
+	trigger = {
+		FROM = {
+			exists = ruler
+			ruler = {
+				species = {
+					has_trait = "magiks_trait_draconic_nobility"
+				}
+			}			
+		}
+		NOT = {
+			OR = {
+					has_ethic = ethic_gestalt_consciousness
+				AND = {
+					exists = ruler
+					ruler = {
+						species = {
+						has_trait = "magiks_trait_draconic_nobility"
+						}
+					}
+				}
+			}
+		}
+		OR = {
+			has_ethic = ethic_xenophile
+			has_ethic = ethic_fanatic_xenophile
+		}
+	}
+	opinion = {
+		base = 25
+	}
+}
+
+triggered_opinion_draconic_nobility_xenophobe = {
+	trigger = {
+		FROM = {
+			exists = ruler
+			ruler = {
+				species = {
+					has_trait = "magiks_trait_draconic_nobility"
+				}
+			}			
+		}
+		NOT = {
+			OR = {
+					has_ethic = ethic_gestalt_consciousness
+				AND = {
+					exists = ruler
+					ruler = {
+						species = {
+						has_trait = "magiks_trait_draconic_nobility"
+						}
+					}
+				}
+			}
+		}
+		OR = {
+			has_ethic = ethic_xenophobe
+			has_ethic = ethic_fanatic_xenophobe
+		}
+	}
+	opinion = {
+		base = 25
+	}
+}
+
+triggered_opinion_draconic_nobility_fellow_nobles = {
+	trigger = {
+		FROM = {
+			exists = ruler
+			ruler = {
+				species = {
+					has_trait = "magiks_trait_draconic_nobility"
+				}
+			}			
+		}
+		AND = {
+			exists = ruler
+			ruler = {
+				species = {
+					has_trait = "magiks_trait_draconic_nobility"
+				}
+			}
+		}
+	}
+	opinion = {
+		base = 50
+	}
+}
+
+		######################
+		### Draconic Pride ###
+		######################
+
+triggered_opinion_draconic_pride = {
+	trigger = {
+		FROM = {
+			exists = ruler
+			ruler = {
+				species = {
+					has_trait = "magiks_trait_draconic_pride"
+				}
+			}			
+		}
+		NOT = {
+			has_ethic = ethic_gestalt_consciousness
+		}
+	}
+	opinion = {
+		base = -20
+	}
+}
+
+		#################################
+		### Multidimensional Migrants ###
+		#################################
+
+triggered_opinion_multidem_migrants = {
+	trigger = {
+		FROM = {
+			exists = ruler
+			ruler = {
+				species = {
+					has_trait = "magiks_trait_multidimensional_migrants"
+				}
+			}
+		}
+		NOT = {
+			OR = {
+					has_ethic = ethic_gestalt_consciousness
+					has_ethic = ethic_xenophile
+					has_ethic = ethic_fanatic_xenophile
+				AND = {
+					exists = ruler
+					ruler = {
+						species = {
+						has_trait = "magiks_trait_multidimensional_migrants"
+						}
+					}
+				}
+			}
+		}
+	}
+	opinion = {
+		base = -10
+	}
+}
+
+triggered_opinion_multidem_migrants_xenophile = {
+	trigger = {
+		FROM = {
+			exists = ruler
+			ruler = {
+				species = {
+					has_trait = "magiks_trait_multidimensional_migrants"
+				}
+			}
+		}
+		NOT = {
+			OR = {
+					has_ethic = ethic_gestalt_consciousness
+				AND = {
+					exists = ruler
+					ruler = {
+						species = {
+						has_trait = "magiks_trait_multidimensional_migrants"
+						}
+					}
+				}
+			}
+		}
+		OR = {
+			has_ethic = ethic_fanatic_xenophile
+		}
+	}
+	opinion = {
+		base = 10
+	}
+}
+
+triggered_opinion_multidem_migrants_fellow_refugees = {
+	trigger = {
+		FROM = {
+			exists = ruler
+			ruler = {
+				species = {
+					has_trait = "magiks_trait_multidimensional_migrants"
+				}
+			}			
+		}
+		AND = {
+			exists = ruler
+			ruler = {
+				species = {
+					OR = {
+						has_trait = "magiks_trait_infernal_origin"
+						has_trait = "magiks_trait_voidseepers"
+					}
+				}
+			}
+		}
+	}
+	opinion = {
+		base = 25
+	}
+}
+
+		###################
+		### Voidseepers ###
+		###################
+
+triggered_opinion_voidseepers = {
+	trigger = {
+		FROM = {
+			exists = ruler
+			ruler = {
+				species = {
+					has_trait = "magiks_trait_voidseepers"
+				}
+			}
+		}
+		NOT = {
+			OR = {
+					has_ethic = ethic_gestalt_consciousness
+					has_ethic = ethic_xenophile
+					has_ethic = ethic_fanatic_xenophile
+				AND = {
+					exists = ruler
+					ruler = {
+						species = {
+							OR = {
+								has_trait = "magiks_trait_multidimensional_migrants"
+								has_trait =	"magiks_trait_voidseepers"
+								has_trait =	"magiks_trait_infernal_origin"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	opinion = {
+		base = -40
+	}
+}
+
+triggered_opinion_voidseepers_xenophile = {
+	trigger = {
+		FROM = {
+			exists = ruler
+			ruler = {
+				species = {
+					has_trait = "magiks_trait_voidseepers"
+				}
+			}
+		}
+		OR = {
+			has_ethic = "ethic_fanatic_xenophile"
+			has_ethic = "ethic_xenophile"
+		}
+		NOT = {
+			AND = {
+				exists = ruler
+				ruler = {
+					species = {
+						OR = {
+							has_trait = "magiks_trait_multidimensional_migrants"
+							has_trait =	"magiks_trait_voidseepers"
+							has_trait =	"magiks_trait_infernal_origin"
+						}
+					}
+				}
+			}
+		}
+	}
+	opinion = {
+		base = -20
+	}
+}
+
+triggered_opinion_fellow_voidseepers = {
+	trigger = {
+		FROM = {
+			exists = ruler
+			ruler = {
+				species = {
+					has_trait = "magiks_trait_voidseepers"
+				}
+			}			
+		}
+		AND = {
+			exists = ruler
+			ruler = {
+				species = {
+					has_trait = "magiks_trait_voidseepers"
+				}
+			}
+		}
+	}
+	opinion = {
+		base = 50
+	}
+}
+
+triggered_opinion_voidseepers_fellow_refugees = {
+	trigger = {
+		FROM = {
+			exists = ruler
+			ruler = {
+				species = {
+					has_trait = "magiks_trait_voidseepers"
+				}
+			}			
+		}
+		AND = {
+			exists = ruler
+			ruler = {
+				species = {
+					OR = {
+						has_trait = "magiks_trait_infernal_origin"
+						has_trait = "magiks_trait_multidimensional_migrants"
+					}
+				}
+			}
+		}
+	}
+	opinion = {
+		base = 25
+	}
+}
+
+triggered_opinion_voidseepers_true_evil = {
+	trigger = {
+		FROM = {
+			exists = ruler
+			ruler = {
+				species = {
+					has_trait = "magiks_trait_voidseepers"
+				}
+			}			
+		}
+		AND = {
+			exists = ruler
+			ruler = {
+				species = {
+					has_trait = "magiks_trait_abyss_gazers"
+				}
+			}
+		}
+	}
+	opinion = {
+		base = -200
+	}
+}
+
+		#######################
+		### Infernal Origin ###
+		#######################
+
+triggered_opinion_infernal_origin_fellow_refugees = {
+	trigger = {
+		FROM = {
+			exists = ruler
+			ruler = {
+				species = {
+					has_trait = "magiks_trait_infernal_origin"
+				}
+			}			
+		}
+		AND = {
+			exists = ruler
+			ruler = {
+				species = {
+					OR = {
+						has_trait = "magiks_trait_voidseepers"
+						has_trait = "magiks_trait_multidimensional_migrants"
+					}
+				}
+			}
+		}
+	}
+	opinion = {
+		base = 25
+	}
+}
+
+triggered_opinion_infernal_origin_spiritualist = {
+	trigger = {
+		FROM = {
+			exists = ruler
+			ruler = {
+				species = {
+					has_trait = "magiks_trait_infernal_origin"
+				}
+			}			
+		}
+		NOT = {
+			OR = {
+					has_ethic = ethic_gestalt_consciousness
+				AND = {
+					exists = ruler
+					ruler = {
+						species = {
+						has_trait = "magiks_trait_infernal_origin"
+						}
+					}
+				}
+			}
+		}
+		OR = {
+			has_ethic = ethic_spiritualist
+			has_ethic = ethic_fanatic_spiritualist
+		}
+	}
+	opinion = {
+		base = -25
+	}
+}
+
+triggered_opinion_fellow_infernal_origin = {
+	trigger = {
+		FROM = {
+			exists = ruler
+			ruler = {
+				species = {
+					has_trait = "magiks_trait_infernal_origin"
+				}
+			}			
+		}
+		AND = {
+			exists = ruler
+			ruler = {
+				species = {
+					has_trait = "magiks_trait_infernal_origin"
+				}
+			}
+		}
+	}
+	opinion = {
+		base = 50
+	}
+}
+
+		#####################
+		###	Dark Cultists ###
+		#####################
+
+triggered_opinion_dark_cultists_bad = {
+	trigger = {
+		FROM = {
+			has_civic = "magiks_civic_dark_cultists"			
+		}
+		OR = {
+			has_ethic = "ethic_spiritualist"
+			has_ethic = "ethic_fanatic_spiritualist"
+		}
+		NOT = {
+			has_civic = "magiks_civic_dark_cultists"
+		}
+	}
+	opinion = {
+		base = -50
+	}
+}
+
+triggered_opinion_dark_cultists_good = {
+	trigger = {
+		FROM = {
+			has_civic = "magiks_civic_dark_cultists"			
+		}
+		has_civic = "magiks_civic_dark_cultists"
+	}
+	opinion = {
+		base = 25
+	}
+}
+
+triggered_opinion_dark_cultists_demons = {
+	trigger = {
+		FROM = {
+			exists = ruler
+			ruler = {
+				species = {
+					OR = {
+						has_trait = "magiks_trait_infernal_origin"
+						has_trait = "magiks_trait_voidseepers"
+						has_trait = "magiks_trait_demonic_defaulters"
+						has_trait = "magiks_trait_mulcubi"
+					}
+				}
+			}
+		}
+		has_civic = "magiks_civic_dark_cultists"
+	}
+	opinion = {
+		base = 30
+	}
+}
+
+		##############################################
+		### Generic Spiritualists Being Anti-demon ###
+		##############################################
+
+triggered_opinion_anti_demon_spiritualist = {
+	trigger = {
+		FROM = {
+			exists = ruler
+			ruler = {
+				species = {
+					OR = {
+						has_trait = "magiks_trait_demonic_defaulters"
+						has_trait = "magiks_trait_mulcubi"
+					}
+				}
+			}			
+		}
+		NOT = {
+			OR = {
+				has_ethic = ethic_gestalt_consciousness
+				has_civic = "magiks_civic_dark_cultists"
+				AND = {
+					exists = ruler
+					ruler = {
+						species = {
+							OR = {
+								has_trait = "magiks_trait_demonic_defaulters"
+								has_trait = "magiks_trait_mulcubi"
+							}
+						}
+					}
+				}
+			}
+		}
+		OR = {
+			has_ethic = ethic_spiritualist
+			has_ethic = ethic_fanatic_spiritualist
+		}
+	}
+	opinion = {
+		base = -50
+	}
+}
+
+		################################
+		### Mulcubi Being Sex-crazed ###
+		################################
+
+triggered_opinion_mulcubi_one_track_mind = {
+	trigger = {
+		FROM = {
+			exists = ruler
+			ruler = {
+				species = {
+					has_trait = "magiks_trait_voidseepers"
+				}
+			}
+		}
+		NOT = {
+			AND = {
+				exists = ruler
+				ruler = {
+					species = {
+						has_trait =	"magiks_trait_mulcubi"
+					}
+				}
+			}
+		}
+	}
+	opinion = {
+		base = -15
+	}
+}

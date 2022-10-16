@@ -1,0 +1,218 @@
+namespace = magiks_game_start
+
+# ID 2
+planet_event = {
+	id = magiks_game_start.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		magiks_generate_start_pops = yes 
+	}
+}
+
+# ID 1
+country_event = {
+    id = magiks_game_start.1
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        if = { 
+			limit = { has_civic = magiks_civic_state_necromancy } 
+            give_technology = { message = no tech = magiks_tech_necro1 }
+        }
+		if = {
+			limit = { has_civic = magiks_civic_rhythmic_fanatics }
+			give_technology = { message = no tech = magiks_tech_rhythm1 }
+		}
+	}
+}
+
+# ID 3
+country_event = {
+	id = magiks_game_start.3
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_civic = magiks_civic_world_of_legend
+	}
+
+	immediate = {
+		every_owned_pop = {
+			modify_species = {
+				
+				species = this
+				ideal_planet_class = pc_magikal
+				base = none # makes this replace parent species
+			}
+		}
+		random_owned_planet = {
+			limit = { is_capital = yes }
+			change_pc = pc_magikal
+			set_planet_size = 25
+			reroll_deposits = yes
+			reset_planet = yes
+			generate_start_buildings_and_districts = yes
+			#reset_start_buildings_and_blockers_life_seeded = yes
+			add_modifier = {
+				modifier = "mana_infused"
+				days = -1
+			}
+		}
+		# Nuke other colonies gained from advanced empire, etc
+		every_owned_planet = {
+			limit = { is_capital = no }
+			every_owned_pop = {
+				kill_pop = yes 
+			}
+			remove_all_buildings = yes
+			# every_tile = { 
+			# 	kill_pop = yes 
+			# 	remove_building = yes
+			# }
+		}
+		change_dominant_species = { species = last_created_species change_all = yes }
+	}
+}
+
+# ID 4
+country_event = {
+	id = magiks_game_start.4
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = { 
+		OR = { 
+			has_civic = magiks_civic_drained_survivors
+		}
+	}
+
+	immediate = {
+		random_owned_planet = {
+			limit = { is_capital = yes }
+			change_pc = pc_sour
+			reroll_deposits = yes
+
+			reset_planet = yes
+			generate_start_buildings_and_districts = yes
+			# reset_start_buildings_and_blockers_post_apoc = yes
+			add_modifier = {
+				modifier = "mana_drained"
+				days = -1
+			}
+		}
+	}
+}
+
+# ID 5
+planet_event = {
+	id = magiks_game_start.5
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = { is_planet_class = pc_magikal }
+	
+	immediate = {
+		reroll_deposits = yes
+	}
+}
+
+# ID 6
+planet_event = {
+	id = magiks_game_start.6
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		AND = {
+			is_planet_class = pc_magikal
+			NOT = { has_modifier = "mana_infused" }
+		}
+	}
+	
+	immediate = {
+		add_modifier = { modifier = "mana_infused" days = -1 }
+	}
+}
+
+# ID 7
+planet_event = {
+	id = magiks_game_start.7
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		AND = {
+			is_planet_class = pc_sour
+			NOT = { has_modifier = "mana_drained" }
+		}
+	}
+	
+	immediate = {
+		add_modifier = { modifier = "mana_drained" days = -1 }
+	}
+}
+
+# ID 8
+country_event = {
+	id = magiks_game_start.8
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		OR = { 
+			has_civic = magiks_civic_dragon_tamers
+		}
+	}
+
+	immediate = {
+		random_owned_planet ={
+			limit = { is_capital = yes }
+			add_modifier = {
+				modifier = "magiks_dragons"
+				days = -1
+			}
+			add_modifier = {
+				modifier = "magiks_dragons_tamed"
+				days = -1
+			}
+		}
+	}
+}
+
+### Empire init - add tech
+
+# ID 9
+country_event = {
+	id = magiks_game_start.9
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = { has_civic = magiks_civic_alchemical_ministry }
+			give_technology = { message = no tech = magiks_tech_manacite_extraction } 	
+		}
+	}
+}
+
+# ID 10
+planet_event = {
+	id = magiks_game_start.10
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = { 
+				exists = planet
+				is_a_planet = yes
+				THIS = {
+					exists = owner
+					OWNER = { has_valid_civic = magiks_civic_reunited_siblings }
+				}
+			}
+			generate_start_the_underground = yes
+		}
+	}
+}

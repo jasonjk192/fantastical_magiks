@@ -1,0 +1,221 @@
+﻿### The Magocracy of Dagroth
+### Created by Nicholas A Kempin
+
+DRAKIEL = {
+	# randomized = yes # Default is yes anyways
+	alias = "Drakiel"
+
+	ship_names = {
+		
+		corvette = {
+			DRA_Agressor DRA_Adversary DRA_Admonishment DRA_Banished DRA_Bane DRA_Blackblade DRA_Blackwind DRA_Brokenblade DRA_Bravery DRA_Courage DRA_Corruptor DRA_Coldblade DRA_Coldrose DRA_Coldwind DRA_Destroyer DRA_Devistator DRA_Dominator DRA_Decimator DRA_Drunkencrow DRA_Endline DRA_Emptyshell DRA_Fallenhope DRA_Grevious DRA_Guiltysoul DRA_Heathen DRA_Hellbound DRA_Ignomious DRA_InfernalDragon
+		}
+		
+		destroyer = {
+			DRA_ThePoisonousHorror DRA_TheLastLightning DRA_TheSerpentofNevress DRA_TheDeceitofNight DRA_TheDragonsRambler DRA_TheNightTainted DRA_TheGoldenRaider DRA_TheDeceitofRevenge DRA_TheNewTreasure DRA_TheBurningScorn
+		}
+		
+		cruiser = {
+			DRA_TheBloodlessCoupe DRA_TheFirstCut DRA_TheBurningCorpse DRA_TheRevenant DRA_TheUndying DRA_TheFallen DRA_TheWindDrake DRA_TheFlameDrake DRA_TheSeaDrake DRA_TheDesertDrake DRA_TheForestDrake DRA_TheCanyonDrake
+		}
+		
+		battleship = {
+			DRA_TheRisingSerpent DRA_TheDeathofPlunderers DRA_TheBarbaricPillager DRA_TheHellishDisgrace DRA_TheRancidFall DRA_TheMurderousGhost DRA_TheBlackRose DRA_TheGoodKing DRA_TheDiscourteousPlague DRA_TheFearfulKnave
+		}
+
+		titan = {
+			DRA_TheBlackDragon DRA_TheWhiteDragon DRA_TheGreenDragon DRA_TheRedDragon DRA_TheBlueDragon DRA_TheBrassDragon DRA_TheGoldDragon DRA_TheSilverDragon DRA_TheBronzeDragon DRA_TheVioletDragon
+		}
+
+		colossus = {
+			DRA_TheFireDragon DRA_TheWaterDragon DRA_TheVoidDragon DRA_TheEarthDragon DRA_TheThunderDragon DRA_TheAirDragon DRA_TheCelestialDragon
+		}
+
+		constructor = {
+			DRA_Assistant DRA_Breakneck DRA_Breakeven DRA_BeautifulSea DRA_TheLoveless DRA_Freelance DRA_TheMagesExile DRA_Evident DRA_BlackCatsLuck DRA_TheDragonsHorde
+		}
+		
+		colonizer = {
+			DRA_AshenPeaks DRA_AmeriaLake DRA_BaldMountain DRA_TheBrokenRiver DRA_LastHearth DRA_NewDagroth DRA_NewAetheria DRA_DerendellReformed DRA_AncestorsReclaimed DRA_ANewStart DRA_HopefulValley DRA_TheUnitedTribes
+		}
+		
+		science = {
+			DRA_WanderingDrake DRA_HopefulDrake DRA_AdventurousDrake DRA_CuriousDrake DRA_InquisitiveDrake DRA_PeacefulDrake DRA_LostDrake DRA_ForlornDrake
+		}
+		
+		transport = {
+			DRA_LandForceTransport
+		}
+
+		military_station_small = {
+			DRA_SecurityStation
+		}
+
+		ion_cannon = {
+			DRA_DragonLance
+		}
+	}
+
+	fleet_names = {
+		sequential_name = DRA_xxWing_ORD
+	}
+	
+	army_names = {
+	
+		defense_army = {
+			sequential_name = DRA_xxDraconicGuard_ORD
+		}
+
+		assault_army = {
+			sequential_name = DRA_xxDraconicMarines_ORD
+		}
+		
+		slave_army = {
+			sequential_name = DRA_xxIndenturedDrakons_ORD
+		}
+		
+		clone_army = { 
+			sequential_name = DRA_xxCloneArmy_ORD
+		}
+		
+		robotic_army = {
+			sequential_name = DRA_xxHunterKillerGroup_ORD
+		}
+
+		robotic_defense_army = {
+			sequential_name = DRA_xxGroundDefenseMatrix_ORD
+		}
+		
+		psionic_army = { 
+			sequential_name = DRA_xxPsionicSpecialForces_ORD
+		}
+		
+		xenomorph_army = {
+			sequential_name = DRA_xxXenomorphicDivision_ORD
+		}
+		
+		gene_warrior_army = {
+			sequential_name = DRA_xxEnhancedSpecialForces_ORD
+		}
+
+		occupation_army = {
+			sequential_name = DRA_xxDraconicSecurityForces_ORD
+		}
+
+		magiks_draconic_division = {
+			sequential_name = DRA_xxDragonRiderCorps_ORD
+		}
+
+		magiks_evoker_army = {
+			sequential_name = DRA_xxMagusAssaultForce_ORD
+		}
+
+		magiks_dragon_lord_army = {
+			sequential_name = DRA_xxDragonLordHonorGuard_ORD
+		}
+
+		robotic_occupation_army = {
+			sequential_name = DRA_xxMechanizedGarrison_ORD
+		}
+
+		primitive_army = {
+			sequential_name = DRA_PrimitiveArmyxx_SEQ
+		}
+		industrial_army = {
+			sequential_name = DRA_IndustrialArmyxx_SEQ
+		}
+		postatomic_army = {
+			sequential_name = DRA_PostAtomicArmyxx_SEQ
+		}
+	}
+
+	planet_names = {
+
+		generic = {
+			names = {
+				DRA_Mournehold DRA_Craigstead DRA_Paritan DRA_Mordrane DRA_Atheria DRA_Derendal DRA_Restone DRA_Dagroth DRA_Banaro DRA_Novaris DRA_Korvain DRA_Tharria DRA_Neveress DRA_Ivarstrall DRA_Ithintal DRA_KiTal DRA_Narival DRA_Azin DRA_Naoris DRA_Gytia DRA_Uleirth DRA_Ammeis DRA_Kaoris DRA_Garuntu DRA_Nymoan DRA_Zavrygg DRA_Vythai DRA_Unnir DRA_Igunth DRA_MreZek DRA_Monyl DRA_Siopir DRA_Burves DRA_TriVe DRA_Giavru DRA_Ixin DRA_Zoinai DRA_TeRien DRA_Pytoa DRA_Orlo DRA_Irrae DRA_Tearu DRA_ZaRis DRA_Drazek DRA_Zykus DRA_Veilreid DRA_Tezurri DRA_Karzik DRA_Heizik DRA_Meinin
+			}
+		}
+		
+		pc_desert = {
+			names = {
+				DRA_PLANET_NewDerendal
+			}
+		}
+		
+		pc_arid = {
+			names = {
+				DRA_PLANET_NewAtheria
+			}
+		}
+		
+		pc_tropical = {
+			names = {
+				
+			}
+		}
+		
+		pc_continental = {
+			names = {
+			}
+		}
+		
+		pc_gaia = {
+			names = {
+			}
+		}
+		
+		pc_ocean = {
+			names = {
+			}
+		}
+		
+		pc_tundra = {
+			names = {
+			}
+		}
+		
+		pc_arctic = {
+			names = {
+			}
+		}
+
+		pc_savannah = {
+			names = {
+			}
+		}
+
+		pc_alpine = {
+			names = {
+			}
+		}
+	}
+
+	### CHARACTERS
+
+	character_names = {
+
+		names1 = {
+			weight = 100
+			first_names_male = {
+				DRA_DraXen DRA_IzarZev DRA_Kizei DRA_Xaal DRA_SzeVrak DRA_DreZsik DRA_IzEk DRA_ZeVax DRA_VaRell DRA_IrKresh DRA_TaZek DRA_AiXek DRA_MuZed DRA_RaZun DRA_ZaRed
+			}
+			first_names_female = {
+				DRA_ZyRuun DRA_ArYiss DRA_DriLiu DRA_ChaAri DRA_DaRiz DRA_HaRiss DRA_SriUk DRA_AkZekia DRA_DraZe DRA_NaeZret DRA_ReRek DRA_VeZen DRA_AmezIi DRA_NaaZia
+			}
+			second_names = {
+				DRA_Demezek DRA_Drazet DRA_Soved DRA_Volzerik DRA_Zetvin DRA_Kaylorn DRA_Enroth DRA_Kairn
+			}
+			regnal_first_names_male = {
+				DRA_Draven DRA_Izar DRA_Kizerik DRA_Ishek DRA_Zevash DRA_Vrell DRA_Talzhek DRA_Aizek DRA_Murezed DRA_Razu DRA_Zarek
+			}
+			regnal_first_names_female = {
+				DRA_Shylln DRA_Chari DRA_Dilesk DRA_Akrezia DRA_Drazea DRA_Nadezren DRA_Realek DRA_Vesren DRA_Amari DRA_Nadazia
+			}
+			regnal_second_names = {
+				DRA_Dariu DRA_Gazren DRA_Krovium DRA_Mazrek DRA_Mourne DRA_Nervress DRA_Veruzen DRA_Zerek
+			}
+		}
+		
+	}
+}

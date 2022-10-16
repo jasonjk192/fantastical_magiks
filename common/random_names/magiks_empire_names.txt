@@ -1,0 +1,500 @@
+##############
+# NAME PARTS #
+##############
+
+### GENERIC
+
+
+### MAGOCRACY GENERIC ###
+
+empire_name_parts_list = {
+	key = "magocracy_gen.1"
+	parts = {
+		"Magocracy" = 10
+		"Nation" = 10
+		"Union" = 10
+		"Council" = 10
+	}
+}
+
+empire_name_parts_list = {
+	key = "magocracy_gen.2"
+	parts = {
+		"Union" = 10
+		"Clans" = 10
+		"Tribes" = 10
+		"Sectors" = 10
+		"Sector" = 10
+		"Nation" = 10
+		"Worlds" = 10
+	}
+}
+
+empire_name_parts_list = {
+	key = "magocracy_gen.3"
+	parts = {
+		"Enchanted" = 10
+		"Magic" = 10
+		"Magical" = 10
+		"Illuminated" = 10
+		"Attuned" = 10
+		"Infused" = 10
+	}
+}
+
+###	MINISTRY OF MAGIC ###
+
+empire_name_parts_list = {
+	key = "magocracy_ministry.1"
+	parts = {
+		"Ministry" = 10
+		"Congress" = 10
+		"Parliament" = 10
+		"Council" = 10
+		"Senate" = 10
+	}
+}
+
+###	COUNCIL OF SORCERY ###
+
+empire_name_parts_list = {
+	key = "magocracy_council.1"
+	parts = {
+		"Council" = 10
+		"Sorcerer Council" = 10
+		"Gathering" = 10
+		"Diet" = 10
+	}
+}
+
+###	HARMONIOUS STATE ###
+
+empire_name_parts_list = {
+	key = "magocracy_harmonious.1"
+	parts = {
+		"Unified" = 10
+		"Sacred" = 10
+		"Enchanted" = 10
+	}
+}
+
+empire_name_parts_list = {
+	key = "magocracy_harmonious.2"
+	parts = {
+		"State" = 10
+		"Confederacy" = 10
+		"Clans" = 10
+	}
+}
+
+###	ROCKIN' REGIME ###
+
+empire_name_parts_list = {
+	key = "magocracy_rockin.1"
+	parts = {
+		"Radical" = 10
+		"Tubular" = 10
+	}
+}
+
+empire_name_parts_list = {
+	key = "magocracy_rockin.2"
+	parts = {
+		"Regime" = 10
+		"Players" = 10
+		"Songwriters" = 10
+	}
+}
+
+###	Dragon Lords ###
+empire_name_parts_list = {
+	key = "magocracy_dragon.1"
+	parts = {
+		"Draconic" = 10
+		"Dragonian" = 10
+		"Draconian" = 10
+		"Scaled Lords" = 10
+		"Dragon Lords" = 10
+	}
+}
+
+empire_name_parts_list = {
+	key = "magocracy_dragons.2"
+	parts = {
+		"Regime" = 10
+		"Empire" = 10
+		"Magocracy" = 10
+		"Unified State" = 10
+		"Horde" = 10
+	}
+}
+
+################
+# NAME FORMATS #
+################
+
+###	Generic Magocracy ###
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			OR = {
+				has_government = "magiks_gov_magocracy"
+			}
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	lookups = "<magocracy_gen.1> [This.GetSpeciesName]"
+	format = "format.magocracy_gen.1"
+	noun = "[This.GetSpeciesName]"
+	prefix_format = "[This.GetSpeciesName] <magocracy_gen.1>"
+}
+
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			OR = {
+				has_government = "magiks_gov_magocracy"
+			}
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	lookups = "<magocracy_gen.3> <magocracy_gen.2> [This.GetSpeciesName]"
+	format = "format.magocracy_gen.2"
+	noun = "[This.GetSpeciesName]"
+	prefix_format = "[This.GetSpeciesName] <magocracy_gen.3> <magocracy_gen.2>"
+}
+
+###	Dragon Lords ###
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			OR = {
+				has_government = "magiks_gov_dragon_magocracy"
+			}
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	lookups = "<magocracy_gen.3> <magocracy_dragon.1> [This.GetSpeciesName]"
+	format = "format.magocracy_dragon.1"
+	noun = "[This.GetSpeciesName]"
+	prefix_format = "<magocracy_gen.3> <magocracy_dragon.1> of [This.Capital.GetName]"
+}
+
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			OR = {
+				has_government = "magiks_gov_dragon_magocracy"
+			}
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	lookups = "<magocracy_dragon.1> of [This.Capital.GetName]"
+	format = "format.magocracy_dragon.2"
+	noun = "[This.GetSpeciesName]"
+	prefix_format = "<magocracy_dragon.1> of [This.Capital.GetName]"
+}
+
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			OR = {
+				has_government = "magiks_gov_dragon_magocracy"
+			}
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	lookups = "[This.GetSpeciesName] <magocracy_gen.3> <magocracy_dragon.1>"
+	format = "format.magocracy_dragon.3"
+	noun = "[This.GetSpeciesName]"
+	prefix_format = "[This.GetSpeciesName] <magocracy_gen.3> <magocracy_dragon.1>"
+}
+
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			OR = {
+				has_government = "magiks_gov_dragon_magocracy"
+			}
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	lookups = "[This.GetSpeciesName] <magocracy_dragon.1>"
+	format = "format.magocracy_dragon.4"
+	noun = "[This.GetSpeciesName]"
+	prefix_format = "[This.GetSpeciesName] <magocracy_dragon.1>"
+}
+
+###	Ministry of Magic ###
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			OR = {
+				has_government = "magiks_gov_ministry_of_magic"
+			}
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	lookups = "<magocracy_gen.3> <magocracy_ministry.1> of [This.Capital.GetName]"
+	format = "format.magocracy_ministry.1"
+	noun = "[This.GetSpeciesName]"
+	prefix_format = "<magocracy_gen.3> <magocracy_ministry.1> of [This.Capital.GetName]"
+}
+
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			OR = {
+				has_government = "magiks_gov_ministry_of_magic"
+			}
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	lookups = "<magocracy_ministry.1> of [This.Capital.GetName]"
+	format = "format.magocracy_ministry.2"
+	noun = "[This.GetSpeciesName]"
+	prefix_format = "<magocracy_ministry.1> of [This.Capital.GetName]"
+}
+
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			OR = {
+				has_government = "magiks_gov_ministry_of_magic"
+			}
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	lookups = "[This.GetSpeciesName] <magocracy_gen.3> <magocracy_ministry.1>"
+	format = "format.magocracy_ministry.3"
+	noun = "[This.GetSpeciesName]"
+	prefix_format = "[This.GetSpeciesName] <magocracy_gen.3> <magocracy_ministry.1>"
+}
+
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			OR = {
+				has_government = "magiks_gov_ministry_of_magic"
+			}
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	lookups = "[This.GetSpeciesName] <magocracy_ministry.1>"
+	format = "format.magocracy_ministry.4"
+	noun = "[This.GetSpeciesName]"
+	prefix_format = "[This.GetSpeciesName] <magocracy_ministry.1>"
+}
+
+###	Council of Sorcery ###
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			OR = {
+				has_government = "magiks_gov_council_of_sorcery"
+			}
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	lookups = "[This.GetSpeciesName] <magocracy_council.1>"
+	format = "format.magocracy_council.1"
+	noun = "[This.GetSpeciesName]"
+	prefix_format = "[This.GetSpeciesName] <magocracy_council.1>"
+}
+
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			OR = {
+				has_government = "magiks_gov_council_of_sorcery"
+			}
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	lookups = "<magocracy_council.1> of [This.Capital.GetName]"
+	format = "format.magocracy_council.2"
+	noun = "[This.GetSpeciesName]"
+	prefix_format = "<magocracy_council.1> of [This.Capital.GetName]"
+}
+
+###	Harmonious State ###
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			OR = {
+				has_government = "magiks_gov_harmonious_state"
+			}
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	lookups = "[This.GetSpeciesName] <magocracy_harmonious.1> <magocracy_harmonious.2>"
+	format = "format.magocracy_harmonious.1"
+	noun = "[This.GetSpeciesName]"
+	prefix_format = "[This.GetSpeciesName] <magocracy_harmonious.1> <magocracy_harmonious.2>"
+}
+
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			OR = {
+				has_government = "magiks_gov_harmonious_state"
+			}
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	lookups = "<magocracy_harmonious.1> <magocracy_harmonious.2> [This.Capital.GetName]"
+	format = "format.magocracy_harmonious.2"
+	noun = "[This.GetSpeciesName]"
+	prefix_format = "<magocracy_harmonious.1> <magocracy_harmonious.2> [This.Capital.GetName]"
+}
+
+###	Rockin' Regime ###
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			OR = {
+				has_government = "magiks_gov_rockin_regime"
+			}
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	lookups = "<magocracy_rockin.1> <magocracy_rockin.2> of [This.Capital.GetName]"
+	format = "format.magocracy_rockin.1"
+	noun = "[This.GetSpeciesName]"
+	prefix_format = "<magocracy_rockin.1> <magocracy_rockin.2> of [This.Capital.GetName]"
+}
+
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			OR = {
+				has_government = "magiks_gov_rockin_regime"
+			}
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	lookups = "<magocracy_rockin.2> of [This.Capital.GetName]"
+	format = "format.magocracy_rockin.2"
+	noun = "[This.GetSpeciesName]"
+	prefix_format = "<magocracy_rockin.2> of [This.Capital.GetName]"
+}
+
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			OR = {
+				has_government = "magiks_gov_rockin_regime"
+			}
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	lookups = "[This.GetSpeciesName] <magocracy_rockin.1> <magocracy_rockin.2>"
+	format = "format.magocracy_rockin.3"
+	noun = "[This.GetSpeciesName]"
+	prefix_format = "[This.GetSpeciesName] <magocracy_rockin.1> <magocracy_rockin.2>"
+}
+
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			OR = {
+				has_government = "magiks_gov_rockin_regime"
+			}
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	lookups = "[This.GetSpeciesName] <magocracy_rockin.2>"
+	format = "format.magocracy_rockin.4"
+	noun = "[This.GetSpeciesName]"
+	prefix_format = "[This.GetSpeciesName] <magocracy_rockin.2>"
+}

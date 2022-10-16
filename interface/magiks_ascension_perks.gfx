@@ -1,0 +1,38 @@
+###################
+# Ascension Perks
+###################
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ap_magiks_terraform"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_magiks_terraform.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_ap_magiks_genes"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_magiks_genes.dds"
+		alwaystransparent = yes
+	}
+}
+
+###################
+# Resources
+###################
+
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_resource_manacite"
+		textureFile = "gfx/interface/icons/resources/manacite.dds"
+	}
+
+	spriteType = {
+		name = "GFX_resource_manacite_grey"
+		textureFile = "gfx/interface/icons/resources/manacite_grey.dds"
+	}
+
+	spriteType = {
+		name = "GFX_resource_manacite_large"
+		textureFile = "gfx/interface/icons/resources/manacite.dds"
+	}
+}

@@ -1,0 +1,16 @@
+magiks_unique_planet_init = {
+	clear_planet_modifiers = yes
+	clear_blockers = yes
+	# every_tile = { 
+	# 	limit = { has_blocker = yes }
+	# 	remove_blocker = yes
+	# 	}
+	if = { 
+		limit = { is_planet_class = pc_magikal }
+		add_modifier = { modifier = mana_infused days = -1 }			
+	}
+	else_if = { 
+		limit = { is_planet_class = pc_sour }
+		add_modifier = { modifier = mana_drained days = -1 }			
+	}
+}
