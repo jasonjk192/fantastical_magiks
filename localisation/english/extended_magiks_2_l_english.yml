@@ -1,0 +1,117 @@
+﻿l_english:
+
+magic_weapon_fire:0 "Fire Magic"
+magic_weapon_fire_desc:0 "Burn thy enemies"
+magic_weapon_ice:0 "Ice Magic"
+magic_weapon_ice_desc:0 "It's cool"
+magic_weapon_water:0 "Water Magic"
+magic_weapon_water_desc:0 "Essential for life"
+magic_weapon_wind:0 "Wind Magic"
+magic_weapon_wind_desc:0 "Harnesses the power and force of the air"
+magic_weapon_earth:0 "Earth Magic"
+magic_weapon_earth_desc:0 "Magic of the ground"
+
+# ####################
+# Technologies
+# ####################
+
+  # --------------------
+  # Weapons
+  # --------------------
+
+tech_magic_fire_ball:0 "Fire Ball"
+tech_magic_fire_ball_desc:0 "Basic fire spells"
+tech_magic_fire_blast:0 "Fire Blast"
+tech_magic_fire_blast_desc:0 "More advanced fire spells"
+tech_magic_fire_storm:0 "Fire Storm"
+tech_magic_fire_storm_desc:0 "Heavy storms of fire"
+tech_magic_fire_dragon_breath:0 "Dragon's Breath"
+tech_magic_fire_dragon_breath_desc:0 "Engulfs enemies in flames"
+tech_magic_fire_dragon_wrath:0 "Dragon's Wrath"
+tech_magic_fire_dragon_wrath_desc:0 "Fire destruction to the max"
+
+tech_magic_ice_spike:0 "Ice Spike"
+tech_magic_ice_spike_desc:0 "Basic ice spells"
+tech_magic_ice_beam:0 "Ice Beam"
+tech_magic_ice_beam_desc:0 "Cold Beam of Ice"
+tech_magic_ice_blizzard:0 "Blizzard"
+tech_magic_ice_blizzard_desc:0 "Chilly storms of frost, snow and ice"
+tech_magic_ice_wendigo_strike:0 "Wendigo's Strike"
+tech_magic_ice_wendigo_strike_desc:0 "Strong, cold assault"
+tech_magic_ice_wendigo_bane:0 "Wendigo's Bane"
+tech_magic_ice_wendigo_bane_desc:0 "Wrath of a Wendigo"
+
+  # --------------------
+  # Shields
+  # --------------------
+
+tech_magic_ice_shields_1:0 "Basic Ice Armor"
+tech_magic_ice_shields_1_desc:0 "Simplest form of ice shields"
+tech_magic_ice_shields_2:0 "Advanced Ice Armor"
+tech_magic_ice_shields_2_desc:0 "Hardened and tough to break"
+tech_magic_ice_shields_3:0 "Wendigo's Strength"
+tech_magic_ice_shields_3_desc:0 "Armor imbued with a Wendigo's blessing"
+
+tech_magic_infused_farms:0 "Magic Infused Farms"
+tech_magic_infused_farms_desc:0 "Improves farms to reduce damage to crops"
+tech_magic_infused_crops:0 "Magic Infused Crops"
+tech_magic_infused_crops_desc:0 "Improves crop yield, resistance to disease and overall quality"
+
+# ####################
+# Weapons
+# ####################
+
+  # --------------------
+  # Fire
+  # --------------------
+
+WEAPON_FIRE_1:0 "Fire Ball"
+WEAPON_FIRE_1_DESC:0 "Basic fire spells"
+WEAPON_FIRE_2:0 "Fire Blast"
+WEAPON_FIRE_2_DESC:0 "More advanced fire spells"
+WEAPON_FIRE_3:0 "Fire Storm"
+WEAPON_FIRE_3_DESC:0 "Heavy storms of fire"
+WEAPON_FIRE_4:0 "Dragon's Breath"
+WEAPON_FIRE_4_DESC:0 "Engulfs enemies in flames"
+WEAPON_FIRE_5:0 "Dragon's Wrath"
+WEAPON_FIRE_5_DESC:0 "Fire destruction to the max"
+
+  # --------------------
+  # Ice
+  # --------------------
+
+WEAPON_ICE_1:0 "Ice Spike"
+WEAPON_ICE_1_DESC:0 "Basic ice spells"
+WEAPON_ICE_2:0 "Ice Beam"
+WEAPON_ICE_2_DESC:0 "Cold Beam of Ice"
+WEAPON_ICE_3:0 "Blizzard"
+WEAPON_ICE_3_DESC:0 "Chilly storms of frost, snow and ice"
+WEAPON_ICE_4:0 "Wendigo's Strike"
+WEAPON_ICE_4_DESC:0 "Strong, cold assault"
+WEAPON_ICE_5:0 "Wendigo's Bane"
+WEAPON_ICE_5_DESC:0 "Wrath of a Wendigo"
+
+# ####################
+# Utilities
+# ####################
+
+  # --------------------
+  # Shields
+  # --------------------
+
+MAGIC_ICE_SHIELD_1:0 "Basic Ice Armor"
+MAGIC_ICE_SHIELD_1_DESC:0 "Simplest form of ice shields"
+MAGIC_ICE_SHIELD_2:0 "Advanced Ice Armor"
+MAGIC_ICE_SHIELD_2_DESC:0 "Hardened and tough to break"
+MAGIC_ICE_SHIELD_3:0 "Wendigo's Strength"
+MAGIC_ICE_SHIELD_3_DESC:0 "Armor imbued with a Wendigo's blessing"
+
+MAGIC_ICE_SMALL_SHIELD_1:0 "Small Basic Ice Armor"
+MAGIC_ICE_MEDIUM_SHIELD_1:0 "Medium Basic Ice Armor"
+MAGIC_ICE_LARGE_SHIELD_1:0 "Large Basic Ice Armor"
+MAGIC_ICE_SMALL_SHIELD_2:0 "Small Advanced Ice Armor"
+MAGIC_ICE_MEDIUM_SHIELD_2:0 "Medium Advanced Ice Armor"
+MAGIC_ICE_LARGE_SHIELD_2:0 "Large Advanced Ice Armor"
+MAGIC_ICE_SMALL_SHIELD_3:0 "Small Wendigo's Strength"
+MAGIC_ICE_MEDIUM_SHIELD_3:0 "Medium Wendigo's Strength"
+MAGIC_ICE_LARGE_SHIELD_3:0 "Large Wendigo's Strength"

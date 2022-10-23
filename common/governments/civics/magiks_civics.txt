@@ -1,4 +1,3 @@
-
 ###MAGOCRACY CIVICS###
 
 magiks_civic_elite_mages = {
@@ -19,14 +18,14 @@ magiks_civic_elite_mages = {
 
 		civics = {
 			NOR = {
-					value = magiks_civic_magical_lineages
-					value = magiks_civic_alchemical_ministry
-					value = magiks_civic_state_necromancy
-					value = magiks_civic_duelistic_magics
-					value = magiks_civic_natures_listeners
-					value = magiks_civic_idol_crazy
-					value = magiks_civic_rhythmic_fanatics
-				}
+				value = magiks_civic_magical_lineages
+				value = magiks_civic_alchemical_ministry
+				value = magiks_civic_state_necromancy
+				value = magiks_civic_duelistic_magics
+				value = magiks_civic_natures_listeners
+				value = magiks_civic_idol_crazy
+				value = magiks_civic_rhythmic_fanatics
+			}
 		}
 	}
 	modification = no
@@ -162,14 +161,14 @@ magiks_civic_state_necromancy = {
 			}
 		civics = {
 			NOR = {
-					value = magiks_civic_elite_mages
-					value = magiks_civic_magical_lineages
-					value = magiks_civic_alchemical_ministry
-					value = magiks_civic_duelistic_magics
-					value = magiks_civic_natures_listeners
-					value = magiks_civic_idol_crazy
-					value = magiks_civic_rhythmic_fanatics
-				}
+				value = magiks_civic_elite_mages
+				value = magiks_civic_magical_lineages
+				value = magiks_civic_alchemical_ministry
+				value = magiks_civic_duelistic_magics
+				value = magiks_civic_natures_listeners
+				value = magiks_civic_idol_crazy
+				value = magiks_civic_rhythmic_fanatics
+			}
 		}
 	}
 	modification = no
@@ -303,9 +302,8 @@ magiks_civic_idol_crazy = {
 			NOR = {
 				value = ethic_fanatic_egalitarian
 				value = ethic_fanatic_authoritarian
-				}
 			}
-		
+		}
 		civics = {
 			NOR = {
 				value = origin_mechanists
@@ -597,14 +595,14 @@ magiks_machine_civic_waifu_bots = {
 			}
 		civics = {
 			NOR = {
-					value = magiks_civic_elite_mages
-					value = magiks_civic_alchemical_ministry
-					value = magiks_civic_state_necromancy
-					value = magiks_civic_duelistic_magics
-					value = magiks_civic_natures_listeners
-					value = magiks_civic_idol_crazy
-					value = magiks_civic_rhythmic_fanatics
-				}
+				value = magiks_civic_elite_mages
+				value = magiks_civic_alchemical_ministry
+				value = magiks_civic_state_necromancy
+				value = magiks_civic_duelistic_magics
+				value = magiks_civic_natures_listeners
+				value = magiks_civic_idol_crazy
+				value = magiks_civic_rhythmic_fanatics
+			}
 		}
 	}
 	modification = no

@@ -1,29 +1,53 @@
 magiks_fey_wilds = {
+	time = 100
 	is_for_colonizable = yes
-	category = deposit_cat_rare
+	category = deposit_cat_rare_blocker
 
 	icon = magiks_fey_wilds
 
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 200
+		}
+	}
+
 	planet_modifier = {
-		district_farming_max = 3
+		planet_max_districts_add = -1
 	}
 
 	drop_weight = {
 		weight = 0
+		modifier = {
+			add = 34
+			planet = { is_planet_class = pc_magikal }
+		}
 	}
 }
 
 magiks_deep_grand_reef = {
+	time = 100
 	is_for_colonizable = yes
-	category = deposit_cat_rare
+	category = deposit_cat_rare_blocker
 
 	icon = magiks_deep_grand_reef
 
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 200
+		}
+	}
+
 	planet_modifier = {
-		district_mining_max = 3
+		planet_max_districts_add = -1
 	}
 
 	drop_weight = {
 		weight = 0
+		modifier = {
+			add = 20
+			planet = { is_planet_class = pc_magikal }
+		}
 	}
 }

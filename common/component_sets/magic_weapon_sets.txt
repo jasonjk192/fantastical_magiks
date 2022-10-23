@@ -1,0 +1,67 @@
+# ####################
+# Fire
+# ####################
+
+component_set = {
+	key = "MAGIKS_WEAPON_FIRE_1"
+	icon = "GFX_ship_part_weapon_fire"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "MAGIKS_WEAPON_FIRE_2"
+	icon = "GFX_ship_part_weapon_fire"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "MAGIKS_WEAPON_FIRE_3"
+	icon = "GFX_ship_part_weapon_fire"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "MAGIKS_WEAPON_FIRE_4"
+	icon = "GFX_ship_part_weapon_fire"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "MAGIKS_WEAPON_FIRE_5"
+	icon = "GFX_ship_part_weapon_fire"
+	icon_frame = 1	
+}
+
+# ####################
+# Ice
+# ####################
+
+component_set = {
+	key = "MAGIKS_WEAPON_ICE_1"
+	icon = "GFX_ship_part_weapon_ice"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "MAGIKS_WEAPON_ICE_2"
+	icon = "GFX_ship_part_weapon_ice"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "MAGIKS_WEAPON_ICE_3"
+	icon = "GFX_ship_part_weapon_ice"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "MAGIKS_WEAPON_ICE_4"
+	icon = "GFX_ship_part_weapon_ice"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "MAGIKS_WEAPON_ICE_5"
+	icon = "GFX_ship_part_weapon_ice"
+	icon_frame = 1	
+}

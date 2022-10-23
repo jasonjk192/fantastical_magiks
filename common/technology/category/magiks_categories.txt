@@ -1,0 +1,19 @@
+magiks_fire = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_fire.dds"
+}
+
+magiks_ice = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_ice.dds"
+}
+
+magiks_water = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_fire.dds"
+}
+
+magiks_wind = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_fire.dds"
+}
+
+magiks_earth = {
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_expertise_earth.dds"
+}

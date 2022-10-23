@@ -1,0 +1,37 @@
+magiks_edict_scrying = {
+	icon = "GFX_edict_type_time"
+	length = -1
+	resources = {
+		category = campaigns
+		cost = {
+			energy = 1000
+			influence = 5
+		}
+		upkeep = { energy = 50 }
+	}
+
+	modifier = {
+		intel_decryption_add = 3
+		envoys_add = 1
+		add_base_country_intel = 15
+		spy_network_levels_add = 15
+	}
+
+	potential = {
+		has_authority = magiks_auth_magocracy
+		has_comms_with_alien_empire = yes
+		is_gestalt = no
+	}
+
+	prerequisites = {
+		magiks_tech_magiks_gene
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 2
+			has_authority = magiks_auth_magocracy
+		}
+	}
+}

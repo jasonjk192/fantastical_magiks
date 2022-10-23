@@ -1,0 +1,228 @@
+# ####################
+# Ice
+# ####################
+
+# Basic Ice Armor
+utility_component_template = {
+	key = "MAGIC_ICE_SMALL_SHIELD_1"
+	size = small
+	icon = "GFX_ship_part_shield_ice"
+	icon_frame = 1
+	power = @power_S1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_s_t1_cost
+		}
+		upkeep = {
+			energy = @shield_s_t1_upkeep_energy
+			alloys = @shield_s_t1_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_S1
+		ship_shield_regen_add_static = @regen_S1 #Regeneration per day
+	}
+	prerequisites = { "tech_shields_1" }
+	component_set = "MAGIC_ICE_SHIELD_1"
+	upgrades_to = "MAGIC_ICE_SMALL_SHIELD_2"
+}
+
+utility_component_template = {
+	key = "MAGIC_ICE_MEDIUM_SHIELD_1"
+	size = medium
+	icon = "GFX_ship_part_shield_ice"
+	icon_frame = 1
+	power = @power_M1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_m_t1_cost
+		}
+		upkeep = {
+			energy = @shield_m_t1_upkeep_energy
+			alloys = @shield_m_t1_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_M1
+		ship_shield_regen_add_static = @regen_M1 #Regeneration per day
+	}
+	prerequisites = { "tech_shields_1" }
+	component_set = "MAGIC_ICE_SHIELD_1"
+	upgrades_to = "MAGIC_ICE_MEDIUM_SHIELD_2"
+}
+
+utility_component_template = {
+	key = "MAGIC_ICE_LARGE_SHIELD_1"
+	size = large
+	icon = "GFX_ship_part_shield_ice"
+	icon_frame = 1
+	power = @power_L1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_l_t1_cost
+		}
+		upkeep = {
+			energy = @shield_l_t1_upkeep_energy
+			alloys = @shield_l_t1_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_L1
+		ship_shield_regen_add_static = @regen_L1 #Regeneration per day
+	}
+	prerequisites = { "tech_shields_1" }
+	component_set = "MAGIC_ICE_SHIELD_1"
+	upgrades_to = "MAGIC_ICE_LARGE_SHIELD_2"
+}
+
+# Advanced Ice Armor
+utility_component_template = {
+	key = "MAGIKS_ICE_SMALL_SHIELD_2"
+	size = small
+	icon = "GFX_ship_part_shield_ice"
+	icon_frame = 1
+	power = @power_S2
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_s_t2_cost
+		}
+		upkeep = {
+			energy = @shield_s_t2_upkeep_energy
+			alloys = @shield_s_t2_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_S2
+		ship_shield_regen_add_static = @regen_S2 #Regeneration per day
+	}
+	prerequisites = { "tech_shields_2" }
+	component_set = "MAGIKS_ICE_SHIELD_2"
+	upgrades_to = "MAGIKS_ICE_SMALL_SHIELD_3"
+}
+
+utility_component_template = {
+	key = "MAGIC_ICE_MEDIUM_SHIELD_2"
+	size = medium
+	icon = "GFX_ship_part_shield_ice"
+	icon_frame = 1
+	power = @power_M2
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_m_t2_cost
+		}
+		upkeep = {
+			energy = @shield_m_t2_upkeep_energy
+			alloys = @shield_m_t2_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_M2
+		ship_shield_regen_add_static = @regen_M2 #Regeneration per day
+	}
+	prerequisites = { "tech_shields_2" }
+	component_set = "MAGIC_ICE_SHIELD_2"
+	upgrades_to = "MAGIC_ICE_MEDIUM_SHIELD_3"
+}
+
+utility_component_template = {
+	key = "MAGIC_ICE_LARGE_SHIELD_2"
+	size = large
+	icon = "GFX_ship_part_shield_ice"
+	icon_frame = 1
+	power = @power_L2
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_l_t2_cost
+		}
+		upkeep = {
+			energy = @shield_l_t2_upkeep_energy
+			alloys = @shield_l_t2_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_L2
+		ship_shield_regen_add_static = @regen_L2 #Regeneration per day
+	}
+	prerequisites = { "tech_shields_2" }
+	component_set = "MAGIC_ICE_SHIELD_2"
+	upgrades_to = "MAGIC_ICE_LARGE_SHIELD_3"
+}
+
+# Wendigo's Strength
+utility_component_template = {
+	key = "MAGIC_ICE_SMALL_SHIELD_3"
+	size = small
+	icon = "GFX_ship_part_shield_ice"
+	icon_frame = 1
+	power = @power_S3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_s_t3_cost
+		}
+		upkeep = {
+			energy = @shield_s_t3_upkeep_energy
+			alloys = @shield_s_t3_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_S3
+		ship_shield_regen_add_static = @regen_S3 #Regeneration per day
+	}
+	prerequisites = { "tech_shields_3" }
+	component_set = "MAGIC_ICE_SHIELD_3"
+}
+
+utility_component_template = {
+	key = "MAGIC_ICE_MEDIUM_SHIELD_3"
+	size = medium
+	icon = "GFX_ship_part_shield_ice"
+	icon_frame = 1
+	power = @power_M3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_m_t3_cost
+		}
+		upkeep = {
+			energy = @shield_m_t3_upkeep_energy
+			alloys = @shield_m_t3_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_M3
+		ship_shield_regen_add_static = @regen_M3 #Regeneration per day
+	}
+	prerequisites = { "tech_shields_3" }
+	component_set = "MAGIC_ICE_SHIELD_3"
+}
+
+utility_component_template = {
+	key = "MAGIC_ICE_LARGE_SHIELD_3"
+	size = large
+	icon = "GFX_ship_part_shield_ice"
+	icon_frame = 1
+	power = @power_L3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_l_t3_cost
+		}
+		upkeep = {
+			energy = @shield_l_t3_upkeep_energy
+			alloys = @shield_l_t3_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_L3
+		ship_shield_regen_add_static = @regen_L3 #Regeneration per day
+	}
+	prerequisites = { "tech_shields_3" }
+	component_set = "MAGIC_ICE_SHIELD_3"
+}

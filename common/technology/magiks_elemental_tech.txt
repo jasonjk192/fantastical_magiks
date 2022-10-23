@@ -1,0 +1,816 @@
+# ##################
+# Weapons and related techs
+# ##################
+
+# ------------------
+# Fire
+# ------------------
+
+# Fire tier 0
+magiks_tech_fire_ball = {
+	area = engineering
+	cost = @tier1cost1
+	tier = 0
+	category = { magiks_fire }
+	ai_update_type = military
+	is_dangerous = yes
+	is_reverse_engineerable = no
+	weight = @tier1weight1
+	icon = "GFX_ship_part_weapon_fire"
+
+	potential = {
+		OR = {
+			has_trait = magiks_trait_firebender
+			has_trait = magiks_trait_multibender
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 5
+			has_ascension_perk = ap_magicka_higher_dimension
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_ascension_perk = ap_magicka_higher_dimension }
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 5
+			has_ascension_perk = ap_magicka_higher_dimension
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_ascension_perk = ap_magicka_higher_dimension }
+		}
+		modifier = {
+			factor = @favored_weapon_ai_tech_factor
+			is_preferred_weapons = weapon_type_energy
+		}
+		modifier = {
+			factor = @disfavored_weapon_ai_tech_factor
+			NOT = { is_preferred_weapons = weapon_type_energy }
+		}
+	}
+}
+
+# Fire tier 1
+magiks_tech_fire_blast = {
+	area = engineering
+	cost = @tier1cost1
+	tier = 1
+	category = { magiks_fire }
+	ai_update_type = military
+	is_dangerous = yes
+	is_reverse_engineerable = no
+	prerequisites = { "magiks_tech_fire_ball" }
+	weight = @tier1weight2
+	icon = "GFX_ship_part_weapon_fire"
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 5
+			has_ascension_perk = ap_magicka_higher_dimension
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 5
+			has_ascension_perk = ap_magicka_higher_dimension
+		}
+		modifier = {
+			factor = @favored_weapon_ai_tech_factor
+			is_preferred_weapons = weapon_type_energy
+		}
+		modifier = {
+			factor = @disfavored_weapon_ai_tech_factor
+			NOT = { is_preferred_weapons = weapon_type_energy }
+		}
+	}
+}
+
+# Fire tier 2
+magiks_tech_fire_storm = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { magiks_fire }
+	ai_update_type = military
+	is_dangerous = yes
+	is_reverse_engineerable = no
+	prerequisites = { "magiks_tech_fire_blast" }
+	weight = @tier2weight1
+	icon = "GFX_ship_part_weapon_fire"
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 5
+			has_ascension_perk = ap_magicka_higher_dimension
+		}
+		modifier = {
+			factor = @favored_weapon_ai_tech_factor
+			is_preferred_weapons = weapon_type_energy
+		}
+		modifier = {
+			factor = @disfavored_weapon_ai_tech_factor
+			NOT = { is_preferred_weapons = weapon_type_energy }
+		}
+	}
+}
+
+# Fire tier 3
+magiks_tech_fire_dragon_breath = {
+	area = engineering
+	cost = @tier3cost1
+	tier = 3
+	category = { magiks_fire }
+	ai_update_type = military
+	is_dangerous = yes
+	is_reverse_engineerable = no
+	prerequisites = { "magiks_tech_fire_storm" }
+	weight = @tier3weight1
+	icon = "GFX_ship_part_weapon_fire"
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 5
+			has_ascension_perk = ap_magicka_higher_dimension
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 5
+			has_ascension_perk = ap_magicka_higher_dimension
+		}
+		modifier = {
+			factor = @favored_weapon_ai_tech_factor
+			is_preferred_weapons = weapon_type_energy
+		}
+		modifier = {
+			factor = @disfavored_weapon_ai_tech_factor
+			NOT = { is_preferred_weapons = weapon_type_energy }
+		}
+	}
+}
+
+# Fire tier 4
+magiks_tech_fire_dragon_wrath = {
+	area = engineering
+	cost = @tier4cost1
+	tier = 4
+	category = { magiks_fire }
+	ai_update_type = military
+	is_dangerous = yes
+	is_reverse_engineerable = no
+	prerequisites = { "magiks_tech_fire_dragon_breath" }
+	weight = @tier4weight2
+	icon = "GFX_ship_part_weapon_fire"
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 5
+			has_ascension_perk = ap_magicka_higher_dimension
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 5
+			has_ascension_perk = ap_magicka_higher_dimension
+		}
+		modifier = {
+			factor = @favored_weapon_ai_tech_factor
+			is_preferred_weapons = weapon_type_energy
+		}
+		modifier = {
+			factor = @disfavored_weapon_ai_tech_factor
+			NOT = { is_preferred_weapons = weapon_type_energy }
+		}
+	}
+}
+
+# ------------------
+# Ice
+# ------------------
+
+# Ice tier 0
+magiks_tech_ice_spike = {
+	area = engineering
+	cost = @tier1cost1
+	tier = 0
+	category = { magiks_ice }
+	ai_update_type = military
+	is_dangerous = yes
+	is_reverse_engineerable = no
+	weight = @tier1weight1
+	icon = "GFX_ship_part_weapon_ice"
+
+	potential = {
+		OR = {
+			has_trait = magiks_trait_waterbender
+			has_trait = magiks_trait_multibender
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 5
+			has_ascension_perk = ap_magicka_higher_dimension
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_ascension_perk = ap_magicka_higher_dimension }
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 5
+			has_ascension_perk = ap_magicka_higher_dimension
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_ascension_perk = ap_magicka_higher_dimension }
+		}
+		modifier = {
+			factor = @favored_weapon_ai_tech_factor
+			is_preferred_weapons = weapon_type_energy
+		}
+		modifier = {
+			factor = @disfavored_weapon_ai_tech_factor
+			NOT = { is_preferred_weapons = weapon_type_energy }
+		}
+	}
+}
+
+# Ice tier 1
+magiks_tech_ice_beam = {
+	area = engineering
+	cost = @tier1cost1
+	tier = 1
+	category = { magiks_ice }
+	ai_update_type = military
+	is_dangerous = yes
+	is_reverse_engineerable = no
+	prerequisites = { "magiks_tech_ice_spike" }
+	weight = @tier1weight2
+	icon = "GFX_ship_part_weapon_ice"
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 5
+			has_ascension_perk = ap_magicka_higher_dimension
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 5
+			has_ascension_perk = ap_magicka_higher_dimension
+		}
+		modifier = {
+			factor = @favored_weapon_ai_tech_factor
+			is_preferred_weapons = weapon_type_energy
+		}
+		modifier = {
+			factor = @disfavored_weapon_ai_tech_factor
+			NOT = { is_preferred_weapons = weapon_type_energy }
+		}
+	}
+}
+
+# Ice tier 2
+magiks_tech_ice_blizzard = {
+	area = engineering
+	cost = @tier2cost1
+	tier = 2
+	category = { magiks_ice }
+	ai_update_type = military
+	is_dangerous = yes
+	is_reverse_engineerable = no
+	prerequisites = { "magiks_tech_ice_beam" }
+	weight = @tier2weight1
+	icon = "GFX_ship_part_weapon_ice"
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 5
+			has_ascension_perk = ap_magicka_higher_dimension
+		}
+		modifier = {
+			factor = @favored_weapon_ai_tech_factor
+			is_preferred_weapons = weapon_type_energy
+		}
+		modifier = {
+			factor = @disfavored_weapon_ai_tech_factor
+			NOT = { is_preferred_weapons = weapon_type_energy }
+		}
+	}
+}
+
+# Ice tier 3
+magiks_tech_ice_wendigo_strike = {
+	area = engineering
+	cost = @tier3cost1
+	tier = 3
+	category = { magiks_ice }
+	ai_update_type = military
+	is_dangerous = yes
+	is_reverse_engineerable = no
+	prerequisites = { "magiks_tech_ice_blizzard" }
+	weight = @tier3weight1
+	icon = "GFX_ship_part_weapon_ice"
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 5
+			has_ascension_perk = ap_magicka_higher_dimension
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 5
+			has_ascension_perk = ap_magicka_higher_dimension
+		}
+		modifier = {
+			factor = @favored_weapon_ai_tech_factor
+			is_preferred_weapons = weapon_type_energy
+		}
+		modifier = {
+			factor = @disfavored_weapon_ai_tech_factor
+			NOT = { is_preferred_weapons = weapon_type_energy }
+		}
+	}
+}
+
+# Ice tier 4
+magiks_tech_ice_wendigo_bane = {
+	area = engineering
+	cost = @tier4cost1
+	tier = 4
+	category = { magiks_ice }
+	ai_update_type = military
+	is_dangerous = yes
+	is_reverse_engineerable = no
+	prerequisites = { "magiks_tech_ice_wendigo_strike" }
+	weight = @tier4weight2
+	icon = "GFX_ship_part_weapon_ice"
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 5
+			has_ascension_perk = ap_magicka_higher_dimension
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 5
+			has_ascension_perk = ap_magicka_higher_dimension
+		}
+		modifier = {
+			factor = @favored_weapon_ai_tech_factor
+			is_preferred_weapons = weapon_type_energy
+		}
+		modifier = {
+			factor = @disfavored_weapon_ai_tech_factor
+			NOT = { is_preferred_weapons = weapon_type_energy }
+		}
+	}
+}
+
+# ##################
+# Shields and related techs
+# ##################
+
+# ------------------
+# Ice
+# ------------------
+
+magiks_tech_ice_shields_1 = {
+	area = physics
+	cost = @tier1cost1
+	tier = 0
+	is_rare = yes
+	is_reverse_engineerable = no
+	category = { magiks_ice }
+	ai_update_type = all
+	prerequisites = { "tech_shields_5" }
+
+	potential = {
+		OR = {
+			has_trait = magiks_trait_waterbender
+			has_trait = magiks_trait_multibender
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 5
+			AND = {
+				has_tradition = tr_magicka_1
+				has_tradition = tr_magicka_2
+			}
+		}
+		modifier = {
+			factor = 0
+			NAND = { 
+				has_tradition = tr_magicka_1
+				has_tradition = tr_magicka_2 
+			}
+		}
+	}
+}
+
+magiks_tech_ice_shields_2 = {
+	area = physics
+	cost = @tier1cost3
+	tier = 1
+	is_rare = yes
+	is_reverse_engineerable = no
+	category = { magiks_ice }
+	ai_update_type = all
+	prerequisites = { "magiks_tech_ice_shields_1" }
+	weight = @tier1weight3
+
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+		modifier = {
+			factor = 1.5
+			is_specialist_subject_type = { TYPE = bulwark }
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+}
+
+magiks_tech_ice_shields_3 = {
+	area = physics
+	cost = @tier2cost3
+	tier = 2
+	is_dangerous = yes
+	is_reverse_engineerable = no
+	category = { magiks_ice }
+	ai_update_type = all
+	prerequisites = { "magiks_tech_ice_shields_2" }
+	weight = @tier2weight3
+
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+		modifier = {
+			factor = 1.5
+			is_specialist_subject_type = { TYPE = bulwark }
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+}

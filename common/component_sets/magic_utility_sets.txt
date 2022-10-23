@@ -1,0 +1,21 @@
+# ####################
+# Ice
+# ####################
+
+component_set = {
+	key = "MAGIKS_ICE_SHIELD_1"
+	icon = "GFX_ship_part_weapon_ice"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "MAGIKS_ICE_SHIELD_2"
+	icon = "GFX_ship_part_weapon_ice"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "MAGIKS_ICE_SHIELD_3"
+	icon = "GFX_ship_part_weapon_ice"
+	icon_frame = 1	
+}

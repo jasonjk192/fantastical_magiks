@@ -1,0 +1,48 @@
+magiks_scientist_leader_trait_technomancer = {
+	cost = 1
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_meticulous.dds"
+	modifier = { 
+		category_magiks_fire_research_speed_mult = 0.05
+		category_magiks_water_research_speed_mult = 0.05
+		category_magiks_wind_research_speed_mult = 0.05
+		category_magiks_earth_research_speed_mult = 0.05
+ 	}
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	opposites = {
+	}
+	ai_categories = {
+		physics
+		society
+		engineering
+	}
+	ai_weight = {
+		weight = 200
+	}
+}
+
+magiks_leader_trait_mana_blood = {
+	cost = 1
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_resilient.dds"
+	self_modifier = {
+		leader_age = 50
+	}
+	leader_potential_add = {
+		NOT = { leader_class = ruler}
+		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
+	}
+	leader_trait = all
+	opposites = {}
+
+	ai_categories = {
+		engineering
+		physics
+		society
+		survey
+	}
+
+	ai_weight = {
+		weight = 50
+	}
+}
+

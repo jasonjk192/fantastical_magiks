@@ -1,7 +1,6 @@
-
-		####################
-		### Basic Traits ###
-		####################
+####################
+### Basic Traits ###
+####################
 
 magiks_trait_racial_minority = {
 	cost = -1
@@ -77,9 +76,9 @@ magiks_trait_abyss_gazers = {
 	}
 }
 
-		###################
-		### Magic Types ###
-		###################
+###################
+### Magic Types ###
+###################
 
 magiks_trait_firebender = {
 	cost = 2
@@ -88,6 +87,7 @@ magiks_trait_firebender = {
 	allowed_archetypes = { BIOLOGICAL }
 	modifier = {
 		planet_jobs_energy_produces_mult = 0.1
+		category_magiks_fire_research_speed_mult = 0.05
 		army_damage_mult = 0.20
 	}
 }
@@ -100,6 +100,7 @@ magiks_trait_waterbender = {
 	modifier = {
 		planet_jobs_energy_produces_mult = 0.1
 		planet_jobs_food_produces_mult = 0.1
+		category_magiks_water_research_speed_mult = 0.05
 	}
 }
 
@@ -123,6 +124,7 @@ magiks_trait_airbender = {
 		planet_jobs_unity_produces_mult = 0.1
 		pop_growth_from_immigration = 0.15
 		pop_resettlement_cost_mult = -0.25
+		category_magiks_wind_research_speed_mult = 0.10
 	}
 }
 
@@ -134,6 +136,7 @@ magiks_trait_earthbender = {
 	modifier = {
 		planet_jobs_minerals_produces_mult = 0.1
 		planet_jobs_energy_produces_mult = 0.1
+		category_magiks_earth_research_speed_mult = 0.05
 	}
 }
 
@@ -148,6 +151,10 @@ magiks_trait_multibender = {
 		planet_jobs_food_produces_mult = 0.08
 		planet_jobs_unity_produces_mult = 0.08
 		pop_government_ethic_attraction = -0.10
+		category_magiks_fire_research_speed_mult = 0.01
+		category_magiks_water_research_speed_mult = 0.01
+		category_magiks_wind_research_speed_mult = 0.01
+		category_magiks_earth_research_speed_mult = 0.01
 	}
 }
 
@@ -256,10 +263,9 @@ magiks_trait_undead_reliant = {
 	}
 }
 
-
-		###################
-		### Type Traits ###
-		###################
+###################
+### Type Traits ###
+###################
 
 magiks_trait_demi_folk = {
 	cost = 1
@@ -413,9 +419,9 @@ magiks_trait_mulcubi = {
 	}
 }
 
-		#############
-		### Other ###
-		#############
+#############
+### Other ###
+#############
 		
 magiks_trait_adapted_optimists = {
 	cost = 0

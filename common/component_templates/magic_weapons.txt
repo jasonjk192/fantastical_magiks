@@ -1,0 +1,385 @@
+# ####################
+# Fire
+# ####################
+
+### Fire Ball
+weapon_component_template = {
+	key = "MAGIKS_WEAPON_FIRE_1"
+	size = small
+
+	icon = "GFX_ship_part_weapon_fire"
+	icon_frame = 1
+	type = instant
+
+	power = -5
+	damage = { min = 300 max = 400 }
+	windup = { min = 16 max = 40 }
+	shield_damage = 1.75
+	armor_damage = 1.5
+	hull_damage = 1.25
+	range = 50.0
+	accuracy = 1
+	tracking = 1
+
+	prerequisites = { "magiks_tech_fire_ball" }
+	component_set = "MAGIKS_WEAPON_FIRE_1"
+	projectile_gfx = "magic_weapon_fire_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	upgrades_to = "MAGIKS_WEAPON_FIRE_2"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t1_cost
+		}
+		upkeep = {
+			energy = @m_t1_upkeep_energy
+			alloys = @m_t1_upkeep_alloys
+		}
+	}
+}
+
+### Fire Blast
+weapon_component_template = {
+	key = "MAGIKS_WEAPON_FIRE_2"
+	size = small
+
+	icon = "GFX_ship_part_weapon_fire"
+	icon_frame = 1
+	type = instant
+
+	power = -6
+	damage = { min = 400 max = 550 }
+	windup = { min = 15 max = 35 }
+	shield_damage = 1.75
+	armor_damage = 1.5
+	hull_damage = 1.25
+	range = 60.0
+	accuracy = 1
+	tracking = 1
+
+	prerequisites = { "magiks_tech_fire_blast" }
+	component_set = "MAGIKS_WEAPON_FIRE_2"
+	projectile_gfx = "magic_weapon_fire_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	upgrades_to = "MAGIKS_WEAPON_FIRE_3"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t1_cost
+		}
+		upkeep = {
+			energy = @m_t1_upkeep_energy
+			alloys = @m_t1_upkeep_alloys
+		}
+	}
+}
+
+### Fire Storm
+weapon_component_template = {
+	key = "MAGIKS_WEAPON_FIRE_3"
+	size = small
+
+	icon = "GFX_ship_part_weapon_fire"
+	icon_frame = 1
+	type = instant
+
+	power = -7
+	damage = { min = 500 max = 680 }
+	windup = { min = 12 max = 32 }
+	shield_damage = 1.75
+	armor_damage = 1.5
+	hull_damage = 1.25
+	range = 75.0
+	accuracy = 1
+	tracking = 1
+
+	prerequisites = { "magiks_tech_fire_storm" }
+	component_set = "MAGIKS_WEAPON_FIRE_3"
+	projectile_gfx = "magic_weapon_fire_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	upgrades_to = "MAGIKS_WEAPON_FIRE_4"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t1_cost
+		}
+		upkeep = {
+			energy = @m_t1_upkeep_energy
+			alloys = @m_t1_upkeep_alloys
+		}
+	}
+}
+
+### Dragon's Breath
+weapon_component_template = {
+	key = "MAGIKS_WEAPON_FIRE_4"
+	size = small
+
+	icon = "GFX_ship_part_weapon_fire"
+	icon_frame = 1
+	type = instant
+
+	power = -8
+	damage = { min = 650 max = 900 }
+	windup = { min = 10 max = 30 }
+	shield_damage = 1.75
+	armor_damage = 1.5
+	hull_damage = 1.25
+	range = 90.0
+	accuracy = 1
+	tracking = 1
+
+	prerequisites = { "magiks_tech_fire_dragon_breath" }
+	component_set = "MAGIKS_WEAPON_FIRE_4"
+	projectile_gfx = "magic_weapon_fire_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	upgrades_to = "MAGIKS_WEAPON_FIRE_5"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t1_cost
+		}
+		upkeep = {
+			energy = @m_t1_upkeep_energy
+			alloys = @m_t1_upkeep_alloys
+		}
+	}
+}
+
+### Dragon's Wrath
+weapon_component_template = {
+	key = "MAGIKS_WEAPON_FIRE_5"
+	size = small
+
+	icon = "GFX_ship_part_weapon_fire"
+	icon_frame = 1
+	type = instant
+
+	power = -10
+	damage = { min = 850 max = 1200 }
+	windup = { min = 5 max = 25 }
+	shield_damage = 1.75
+	armor_damage = 1.5
+	hull_damage = 1.25
+	range = 100.0
+	accuracy = 1
+	tracking = 1
+
+	prerequisites = { "magiks_tech_fire_dragon_wrath" }
+	component_set = "MAGIKS_WEAPON_FIRE_5"
+	projectile_gfx = "magic_weapon_fire_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t1_cost
+		}
+		upkeep = {
+			energy = @m_t1_upkeep_energy
+			alloys = @m_t1_upkeep_alloys
+		}
+	}
+}
+
+# ####################
+# Ice
+# ####################
+
+### Ice Spikes
+weapon_component_template = {
+	key = "MAGIKS_WEAPON_ICE_1"
+	size = small
+
+	icon = "GFX_ship_part_weapon_ice"
+	icon_frame = 1
+	type = instant
+
+	power = -5
+	damage = { min = 300 max = 400 }
+	windup = { min = 16 max = 40 }
+	shield_damage = 1.75
+	armor_damage = 1.5
+	hull_damage = 1.25
+	range = 50.0
+	accuracy = 1
+	tracking = 1
+
+	prerequisites = { "magiks_tech_ice_spike" }
+	component_set = "MAGIKS_WEAPON_ICE_1"
+	projectile_gfx = "magic_weapon_ice_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	upgrades_to = "MAGIKS_WEAPON_ICE_2"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t1_cost
+		}
+		upkeep = {
+			energy = @m_t1_upkeep_energy
+			alloys = @m_t1_upkeep_alloys
+		}
+	}
+}
+
+### Ice Beam
+weapon_component_template = {
+	key = "MAGIKS_WEAPON_ICE_2"
+	size = small
+
+	icon = "GFX_ship_part_weapon_ice"
+	icon_frame = 1
+	type = instant
+
+	power = -6
+	damage = { min = 400 max = 550 }
+	windup = { min = 15 max = 35 }
+	shield_damage = 1.75
+	armor_damage = 1.5
+	hull_damage = 1.25
+	range = 60.0
+	accuracy = 1
+	tracking = 1
+
+	prerequisites = { "magiks_tech_ice_beam" }
+	component_set = "MAGIKS_WEAPON_ICE_2"
+	projectile_gfx = "magic_weapon_ice_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	upgrades_to = "MAGIKS_WEAPON_ICE_3"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t1_cost
+		}
+		upkeep = {
+			energy = @m_t1_upkeep_energy
+			alloys = @m_t1_upkeep_alloys
+		}
+	}
+}
+
+### Blizzard
+weapon_component_template = {
+	key = "MAGIKS_WEAPON_ICE_3"
+	size = small
+
+	icon = "GFX_ship_part_weapon_fire"
+	icon_frame = 1
+	type = instant
+
+	power = -7
+	damage = { min = 500 max = 680 }
+	windup = { min = 12 max = 32 }
+	shield_damage = 1.75
+	armor_damage = 1.5
+	hull_damage = 1.25
+	range = 75.0
+	accuracy = 1
+	tracking = 1
+
+	prerequisites = { "magiks_tech_ice_blizzard" }
+	component_set = "MAGIKS_WEAPON_ICE_3"
+	projectile_gfx = "magic_weapon_ice_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	upgrades_to = "MAGIKS_WEAPON_ICE_4"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t1_cost
+		}
+		upkeep = {
+			energy = @m_t1_upkeep_energy
+			alloys = @m_t1_upkeep_alloys
+		}
+	}
+}
+
+### Wendigo's Strike
+weapon_component_template = {
+	key = "MAGIKS_WEAPON_ICE_4"
+	size = small
+
+	icon = "GFX_ship_part_weapon_ice"
+	icon_frame = 1
+	type = instant
+
+	power = -8
+	damage = { min = 650 max = 900 }
+	windup = { min = 10 max = 30 }
+	shield_damage = 1.75
+	armor_damage = 1.5
+	hull_damage = 1.25
+	range = 90.0
+	accuracy = 1
+	tracking = 1
+
+	prerequisites = { "magiks_tech_ice_wendigo_strike" }
+	component_set = "MAGIKS_WEAPON_ICE_4"
+	projectile_gfx = "magic_weapon_ice_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	upgrades_to = "MAGIKS_WEAPON_ICE_5"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t1_cost
+		}
+		upkeep = {
+			energy = @m_t1_upkeep_energy
+			alloys = @m_t1_upkeep_alloys
+		}
+	}
+}
+
+### Wendigo's Bane
+weapon_component_template = {
+	key = "MAGIKS_WEAPON_ICE_5"
+	size = small
+
+	icon = "GFX_ship_part_weapon_ice"
+	icon_frame = 1
+	type = instant
+
+	power = -10
+	damage = { min = 850 max = 1200 }
+	windup = { min = 5 max = 25 }
+	shield_damage = 1.75
+	armor_damage = 1.5
+	hull_damage = 1.25
+	range = 100.0
+	accuracy = 1
+	tracking = 1
+
+	prerequisites = { "magiks_tech_ice_wendigo_bane" }
+	component_set = "MAGIKS_WEAPON_ICE_5"
+	projectile_gfx = "magic_weapon_ice_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t1_cost
+		}
+		upkeep = {
+			energy = @m_t1_upkeep_energy
+			alloys = @m_t1_upkeep_alloys
+		}
+	}
+}

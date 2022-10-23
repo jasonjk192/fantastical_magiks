@@ -370,9 +370,15 @@
     job_high_mage_desc:0 "A High Mage is a magic user who has mastered their magical ability."
     mod_job_high_mage_add:0 "Adds High Mage Jobs"
 
+    job_arch_mage:0 "Arch Mage"
+    job_arch_mage_plural:0 "Arch Mages"
+    job_arch_mage_desc:0 "An Arch Mage is a specialist who coordinates and manages research and development of  the arcane arts."
+    mod_job_high_mage_add:0 "Adds Arch Mage Jobs"
+
     job_magical_researcher:0 "Magical Researcher"
     job_magical_researcher_plural:0 "Magical Researchers"
     job_magical_researcher_desc:0 "Mages who specialize in the development of new arcane abilities."
+    job_magical_researcher_effect_desc:1 "£job_magical_researcher£ $job_magical_researcher_plural$ turn £consumer_goods£ §Y$consumer_goods$§! into £physics£ £society£ £engineering£ §YResearch Points§!"
     mod_job_magical_researcher_add:0 "Adds Magical Researcher Jobs"
 
     job_manacite_alchemist:0 "Manacite Alchemist"
@@ -383,7 +389,7 @@
     job_undead_thrall:0 "Undead Thrall"
     job_undead_thrall_plural:0 "Undead Thralls"
     job_undead_thrall_desc:0 "Unintelligent Undead that are used for menial labor"
-    mod_job_undead_thrall_add: "Adds Undead Thrall Jobs"
+    mod_job_undead_thrall_add:0 "Adds Undead Thrall Jobs"
 
     job_manacite_drone:0 "Manacite Drone"
     job_manacite_drone_plural:0 "Manacite Drones"

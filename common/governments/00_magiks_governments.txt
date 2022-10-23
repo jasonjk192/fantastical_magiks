@@ -222,6 +222,7 @@ magiks_gov_magical_monarchy = {
 
 	weight = {
 		base = 5
+		modifier = { factor = 0 NOT = {host_has_dlc = "Utopia"} }
 		modifier = {
 			factor = 2
 			has_ethic = ethic_fanatic_materialist

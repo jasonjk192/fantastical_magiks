@@ -1,0 +1,127 @@
+tr_magicka_adopt = {
+	modifier = {
+		all_technology_research_speed = 0.2
+	}
+	
+	tradition_swap = {
+		name = tr_magicka_adopt_machine
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			OR = {
+				has_authority = auth_machine_intelligence
+				has_authority = auth_hive_mind
+			}
+		}
+	# Event
+		weight = {
+			factor = 1
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			has_ethic = ethic_spiritualist
+		}
+		modifier = {
+			factor = 3
+			has_ethic = ethic_fanatic_spiritualist
+		}			
+	}
+}
+
+tr_magicka_finish = {
+	modifier = {
+		ruler_skill_levels = 3
+		scientist_skill_levels = 3
+		ascension_perks_add = 1
+	}
+	
+	tradition_swap = {
+		name = tr_magicka_finish_machine
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			OR = {
+				has_authority = auth_machine_intelligence
+				has_authority = auth_hive_mind
+			}
+		}
+		
+		modifier = {
+			ruler_skill_levels = 3
+			scientist_skill_levels = 3
+			ascension_perks_add = 1
+		}
+		
+		weight = {
+			factor = 1
+		}
+	}
+}
+
+tr_magicka_1 = {
+	modifier = {
+		planet_sensor_range_add = 2
+		ship_sensor_range_add = 2
+	}
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_magicka_2 = {
+	modifier = {
+		num_tech_alternatives_add = 2
+		planet_researchers_upkeep_mult = -0.2
+	}
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_magicka_3 = {
+	possible = {
+		has_tradition = tr_magicka_1
+		has_tradition = tr_magicka_2
+	}
+	modifier = {
+		country_engineering_tech_research_speed = 0.1
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_magicka_4 = {
+	possible = {
+		has_tradition = tr_magicka_1
+		has_tradition = tr_magicka_2
+	}
+	modifier = {
+		country_society_tech_research_speed = 0.1
+	}
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_magicka_5 = {
+	possible = {
+		has_tradition = tr_magicka_1
+		has_tradition = tr_magicka_2
+	}
+	modifier = {
+		country_physics_tech_research_speed = 0.1
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+
