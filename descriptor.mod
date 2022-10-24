@@ -6,5 +6,6 @@ tags={
 	"Events"
 }
 picture="magiks.jpg"
-supported_version="3.5.*"
 version="1"
+supported_version="3.5.*"
+remote_file_id="2878323242"
