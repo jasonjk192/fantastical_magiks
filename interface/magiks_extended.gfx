@@ -10,4 +10,14 @@ spriteTypes = {
 		alwaystransparent = yes
 		textureFile = "gfx/interface/icons/planet_type_sour.dds"
 	}
+
+	spriteType = {
+		name = "GFX_planet_sour_bg"
+		texturefile = "gfx/interface/icons/planet_backgrounds/pc_sour.dds"
+	}
+
+	spriteType = {
+		name = "GFX_planet_magikal_bg"
+		texturefile = "gfx/interface/icons/planet_backgrounds/pc_magikal.dds"
+	}
 }

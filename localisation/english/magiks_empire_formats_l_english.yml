@@ -1,7 +1,9 @@
 ﻿l_english:
 
-format.magocracy_gen.1: "[This.GetSpeciesName] <magocracy_lone_gen>"
-format.magocracy_gen.2: "[This.GetSpeciesName] <magocracy_middle_gen> <magocracy_last_gen>"
+#format.magocracy_gen.1: "[This.GetSpeciesName] <magocracy_lone_gen>"
+#format.magocracy_gen.2: "[This.GetSpeciesName] <magocracy_middle_gen> <magocracy_last_gen>"
+format.magocracy_gen.1: "[This.GetSpeciesName] <magocracy_gen.1>"
+format.magocracy_gen.2: "[This.GetSpeciesName] <magocracy_gen.3> <magocracy_gen.2>"
 
 format.magocracy_ministry.1: "<magocracy_gen.3> <magocracy_ministry.1> of [This.Capital.GetName]"
 format.magocracy_ministry.2: "<magocracy_ministry.1> of [This.Capital.GetName]"
