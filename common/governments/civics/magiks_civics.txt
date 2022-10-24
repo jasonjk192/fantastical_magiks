@@ -1,12 +1,9 @@
-
 ###MAGOCRACY CIVICS###
 
 magiks_civic_elite_mages = {
 	potential = {
 		authority = { value = magiks_auth_magocracy }
-		ethics = { 
-			NOT = { value = ethic_gestalt_consciousness } 
-		}
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
 	}
 	possible = {
 		ethics = {
@@ -14,205 +11,14 @@ magiks_civic_elite_mages = {
 				text = civic_tooltip_not_authoritarian
 				value = ethic_fanatic_authoritarian
 				value = ethic_authoritarian
-				}
 			}
-
+		}
 		civics = {
 			NOR = {
-					value = magiks_civic_magical_lineages
-					value = magiks_civic_alchemical_ministry
-					value = magiks_civic_state_necromancy
-					value = magiks_civic_duelistic_magics
-					value = magiks_civic_natures_listeners
-					value = magiks_civic_idol_crazy
-					value = magiks_civic_rhythmic_fanatics
-				}
-		}
-	}
-	modification = no
-	random_weight = {
-		base = 5
-		modifier = {
-			# civic has no effect after galaxy generation, disable for random generation
-			factor = 0
-			has_global_flag = game_started
-		}
-	}
-	modifier = {
-		leader_skill_levels = 2
-		leaders_cost_mult = 0.5
-		# Leader_cost = 0.5
-		}
-	traits = {
-		trait = "magiks_trait_hard_magicians"
-	}
-}
-
-magiks_civic_magical_lineages = {
-	potential = { 
-		authority = { value = magiks_auth_magocracy }
-		ethics = { 
-			NOT = { value = ethic_gestalt_consciousness } 
-		} 
-	}
-	possible = {
-		ethics = {
-			NOR = {
-				text = civic_tooltip_not_egalitarian
-				value = ethic_fanatic_egalitarian
-				value = ethic_egalitarian
-				}
-			}
-		civics = {
-			NOR = {
-					value = magiks_civic_elite_mages
-					value = magiks_civic_alchemical_ministry
-					value = magiks_civic_state_necromancy
-					value = magiks_civic_duelistic_magics
-					value = magiks_civic_natures_listeners
-					value = magiks_civic_idol_crazy
-					value = magiks_civic_rhythmic_fanatics
-				}
-		}
-	}
-	modification = no
-	random_weight = {
-		base = 5
-		modifier = {
-			# civic has no effect after galaxy generation, disable for random generation
-			factor = 0
-			has_global_flag = game_started
-		}
-	}
-	modifier = {
-		army_damage_mult = 0.2
-		armies_upkeep_mult = -0.2
-		#army_upkeep_mult = -0.2
-		}
-	traits = {
-		trait = "magiks_trait_soft_magicians"
-	}
-}
-
-magiks_civic_alchemical_ministry = {
-	potential = { 
-		authority = { value = magiks_auth_magocracy }
-		ethics = { 
-			NOT = { value = ethic_gestalt_consciousness } 
-		} 
-	}
-	possible = {
-		ethics = {
-			NOR = {
-				text = civic_tooltip_not_spiritualist
-				value = ethic_fanatic_spiritualist
-				value = ethic_spiritualist
-				}
-			}
-		civics = {
-			NOR = {
-					value = magiks_civic_elite_mages
-					value = magiks_civic_magical_lineages
-					value = magiks_civic_state_necromancy
-					value = magiks_civic_duelistic_magics
-					value = magiks_civic_natures_listeners
-					value = magiks_civic_idol_crazy
-					value = magiks_civic_rhythmic_fanatics
-				}
-		}
-	}
-	modification = no
-	random_weight = {
-		base = 5
-		modifier = {
-			# civic has no effect after galaxy generation, disable for random generation
-			factor = 0
-			has_global_flag = game_started
-		}
-	}
-	modifier = {
-		planet_miners_minerals_produces_add = 1
-		}
-	traits = {
-		trait = "magiks_trait_alchemy"
-	}
-	description = "civic_tooltip_alchemist_effects"
-	#used when starting a new game to give a tech (see magiks_game_start.9)
-}
-
-magiks_civic_state_necromancy = {
-	potential = { 
-		authority = { value = magiks_auth_magocracy }
-		ethics = { 
-			NOT = { value = ethic_gestalt_consciousness } 
-		} 
-	}
-	possible = {
-		ethics = {
-			OR = {
-				text = civic_tooltip_authoritarian
-				value = ethic_authoritarian
-				value = ethic_fanatic_authoritarian
-				}
-			NOR = {
-				text = civic_tooltip_not_pacifist
-				value = ethic_pacifist
-				value = ethic_fanatic_pacifist
-				}
-			}
-		civics = {
-			NOR = {
-					value = magiks_civic_elite_mages
-					value = magiks_civic_magical_lineages
-					value = magiks_civic_alchemical_ministry
-					value = magiks_civic_duelistic_magics
-					value = magiks_civic_natures_listeners
-					value = magiks_civic_idol_crazy
-					value = magiks_civic_rhythmic_fanatics
-				}
-		}
-	}
-	modification = no
-	random_weight = {
-		base = 5
-		modifier = {
-			# civic has no effect after galaxy generation, disable for random generation
-			factor = 0
-			has_global_flag = game_started
-		}
-	}
-	modifier = {
-		leader_age = 20
-		pop_growth_speed = 0.10
-		}
-	traits = {
-		trait = "magiks_trait_undead_reliant"
-	}
-}
-
-magiks_civic_duelistic_magics = {
-	modification = no
-	playable = { host_has_dlc = "Utopia" }
-	potential = { 
-		authority = { value = magiks_auth_magocracy }
-		ethics = { 
-			NOT = { value = ethic_gestalt_consciousness } 
-		} 
-	}
-	possible = {
-		civics = {
-			NOR = {
-				value = civic_fanatic_purifiers
-				value = civic_agrarian_idyll
-				value = civic_inwards_perfection
-				value = origin_mechanists
-				value = origin_syncretic_evolution
-				value = origin_post_apocalyptic
-				value = origin_life_seeded
-				value = magiks_civic_elite_mages
 				value = magiks_civic_magical_lineages
 				value = magiks_civic_alchemical_ministry
 				value = magiks_civic_state_necromancy
+				value = magiks_civic_duelistic_magics
 				value = magiks_civic_natures_listeners
 				value = magiks_civic_idol_crazy
 				value = magiks_civic_rhythmic_fanatics
@@ -222,46 +28,194 @@ magiks_civic_duelistic_magics = {
 	modification = no
 	random_weight = {
 		base = 5
-		modifier = {
-			# civic has no effect after galaxy generation, disable for random generation
-			factor = 0
-			has_global_flag = game_started
+		modifier = { factor = 0 has_global_flag = game_started }
+	}
+	modifier = {
+		leader_skill_levels = 2
+		leaders_cost_mult = 0.5
+	}
+	traits = { trait = "magiks_trait_hard_magicians" }
+}
+
+magiks_civic_magical_lineages = {
+	potential = { 
+		authority = { value = magiks_auth_magocracy }
+		ethics = { NOT = { value = ethic_gestalt_consciousness } } 
+	}
+	possible = {
+		ethics = {
+			NOR = {
+				text = civic_tooltip_not_egalitarian
+				value = ethic_fanatic_egalitarian
+				value = ethic_egalitarian
+			}
+		}
+		civics = {
+			NOR = {
+				value = magiks_civic_elite_mages
+				value = magiks_civic_alchemical_ministry
+				value = magiks_civic_state_necromancy
+				value = magiks_civic_duelistic_magics
+				value = magiks_civic_natures_listeners
+				value = magiks_civic_idol_crazy
+				value = magiks_civic_rhythmic_fanatics
+			}
 		}
 	}
-	traits = {
-			trait = magiks_trait_hard_magicians
+	modification = no
+	random_weight = {
+		base = 5
+		modifier = { factor = 0 has_global_flag = game_started }
+	}
+	modifier = {
+		army_damage_mult = 0.2
+		armies_upkeep_mult = -0.2
+	}
+	traits = { trait = "magiks_trait_soft_magicians" }
+}
+
+magiks_civic_alchemical_ministry = {
+	potential = { 
+		authority = { value = magiks_auth_magocracy }
+		ethics = { NOT = { value = ethic_gestalt_consciousness } } 
+	}
+	possible = {
+		ethics = {
+			NOR = {
+				text = civic_tooltip_not_spiritualist
+				value = ethic_fanatic_spiritualist
+				value = ethic_spiritualist
 			}
+		}
+		civics = {
+			NOR = {
+				value = magiks_civic_elite_mages
+				value = magiks_civic_magical_lineages
+				value = magiks_civic_state_necromancy
+				value = magiks_civic_duelistic_magics
+				value = magiks_civic_natures_listeners
+				value = magiks_civic_idol_crazy
+				value = magiks_civic_rhythmic_fanatics
+			}
+		}
+	}
+	modification = no
+	random_weight = {
+		base = 5
+		modifier = { factor = 0 has_global_flag = game_started }
+	}
+	modifier = {
+		planet_miners_minerals_produces_add = 1
+	}
+	traits = { trait = "magiks_trait_alchemy" }
+	description = "civic_tooltip_alchemist_effects"
+	#used when starting a new game to give a tech (see magiks_game_start.9)
+}
+
+magiks_civic_state_necromancy = {
+	potential = { 
+		authority = { value = magiks_auth_magocracy }
+		ethics = { NOT = { value = ethic_gestalt_consciousness } } 
+	}
+	possible = {
+		ethics = {
+			OR = {
+				text = civic_tooltip_authoritarian
+				value = ethic_authoritarian
+				value = ethic_fanatic_authoritarian
+			}
+			NOR = {
+				text = civic_tooltip_not_pacifist
+				value = ethic_pacifist
+				value = ethic_fanatic_pacifist
+			}
+		}
+		civics = {
+			NOR = {
+				value = magiks_civic_elite_mages
+				value = magiks_civic_magical_lineages
+				value = magiks_civic_alchemical_ministry
+				value = magiks_civic_duelistic_magics
+				value = magiks_civic_natures_listeners
+				value = magiks_civic_idol_crazy
+				value = magiks_civic_rhythmic_fanatics
+			}
+		}
+	}
+	modification = no
+	random_weight = {
+		base = 5
+		modifier = { factor = 0 has_global_flag = game_started }
+	}
+	modifier = {
+		leader_age = 20
+		pop_growth_speed = 0.10
+	}
+	traits = { trait = "magiks_trait_undead_reliant" }
+}
+
+magiks_civic_duelistic_magics = {
+	modification = no
+	playable = { host_has_dlc = "Utopia" host_has_dlc = "Apocalypse" }
+	potential = { 
+		authority = { value = magiks_auth_magocracy }
+		ethics = { NOT = { value = ethic_gestalt_consciousness } } 
+	}
+	possible = {
+		civics = {
+			NOR = {
+				value = civic_fanatic_purifiers
+				value = civic_agrarian_idyll
+				value = civic_inwards_perfection
+				value = magiks_civic_elite_mages
+				value = magiks_civic_magical_lineages
+				value = magiks_civic_alchemical_ministry
+				value = magiks_civic_state_necromancy
+				value = magiks_civic_natures_listeners
+				value = magiks_civic_idol_crazy
+				value = magiks_civic_rhythmic_fanatics
+			}
+		}
+		origin = {
+			NOR = {
+				value = origin_mechanists
+				value = origin_syncretic_evolution
+				value = origin_post_apocalyptic
+				value = origin_life_seeded
+			}
+		}
+	}
+	random_weight = {
+		base = 5
+		modifier = { factor = 0 has_global_flag = game_started }
+	}
+	traits = { trait = magiks_trait_hard_magicians }
 	description = magiks_civic_duelistic_magics_effects
 	has_secondary_species = {	# see magiks_start_of_game_events.txt
 		title = magiks_civic_duelistic_magics_secondary_species
-		traits = {
-			trait = magiks_trait_soft_magicians
-		}
+		traits = { trait = magiks_trait_soft_magicians }
 	}
 }
 
 magiks_civic_natures_listeners = {
 	potential = { 
 		authority = { value = magiks_auth_magocracy }
-		ethics = { 
-			NOT = { value = ethic_gestalt_consciousness } 
-		} 
+		ethics = { NOT = { value = ethic_gestalt_consciousness } } 
 	}
+	playable = { host_has_dlc = "Utopia" }
 	possible = {
 		ethics = {
 			NOR = {
 				text = civic_tooltip_not_materialist
 				value = ethic_materialist
 				value = ethic_fanatic_materialist
-				}
 			}
+		}
 		civics = {
 			NOR = {
 				value = civic_fanatic_purifiers
 				value = civic_agrarian_idyll
 				value = civic_inwards_perfection
-				value = origin_mechanists
-				value = origin_syncretic_evolution
 				value = magiks_civic_elite_mages
 				value = magiks_civic_magical_lineages
 				value = magiks_civic_alchemical_ministry
@@ -271,33 +225,32 @@ magiks_civic_natures_listeners = {
 				value = magiks_civic_rhythmic_fanatics
 			}
 		}
+		origin = {
+			NOR = {
+				value = origin_mechanists
+				value = origin_syncretic_evolution
+			}
+		}
 	}
 	modification = no
 	random_weight = {
 		base = 5
-		modifier = {
-			# civic has no effect after galaxy generation, disable for random generation
-			factor = 0
-			has_global_flag = game_started
-		}
+		modifier = { factor = 0 has_global_flag = game_started }
 	}
 	modifier = {
 		pop_growth_speed = 0.10
 		pop_happiness = 0.05
 		pop_environment_tolerance = 0.05
 		}
-	traits = {
-		trait = "magiks_trait_enchanting_musicians"
-	}
+	traits = { trait = "magiks_trait_enchanting_musicians" }
 }
 
 magiks_civic_idol_crazy = {
 	potential = { 
 		authority = { value = magiks_auth_magocracy }
-		ethics = { 
-			NOT = { value = ethic_gestalt_consciousness } 
-		} 
+		ethics = { NOT = { value = ethic_gestalt_consciousness } } 
 	}
+	playable = { host_has_dlc = "Utopia" }
 	possible = {
 		ethics = {
 			NOR = {
@@ -308,10 +261,8 @@ magiks_civic_idol_crazy = {
 		
 		civics = {
 			NOR = {
-				value = origin_mechanists
 				value = civic_fanatic_purifiers
 				value = civic_agrarian_idyll
-				value = origin_syncretic_evolution
 				value = civic_inwards_perfection
 				value = magiks_civic_elite_mages
 				value = magiks_civic_magical_lineages
@@ -321,35 +272,32 @@ magiks_civic_idol_crazy = {
 				value = magiks_civic_natures_listeners
 			}
 		}
+		origin = {
+			NOR = {
+				value = origin_mechanists
+				value = origin_syncretic_evolution
+			}
+		}
 	}
 	modification = no
 	random_weight = {
 		base = 5
-		modifier = {
-			# civic has no effect after galaxy generation, disable for random generation
-			factor = 0
-			has_global_flag = game_started
-		}
+		modifier = { factor = 0 has_global_flag = game_started }
 	}
 	modifier = {
 		pop_happiness = 0.05
 		pop_government_ethic_attraction = 0.10
 		leader_skill_levels = -1
 		species_leader_exp_gain = -0.05
-		}
-	traits = {
-		trait = "magiks_trait_enchanting_musicians"
 	}
+	traits = { trait = "magiks_trait_enchanting_musicians" }
 }
 
 magiks_civic_rhythmic_fanatics = {
 	modification = no
-	playable = { host_has_dlc = "Utopia" }
 	potential = { 
 		authority = { value = magiks_auth_magocracy }
-		ethics = { 
-			NOT = { value = ethic_gestalt_consciousness } 
-		} 
+		ethics = { NOT = { value = ethic_gestalt_consciousness } } 
 	}
 	possible = {
 		civics = {
@@ -362,24 +310,6 @@ magiks_civic_rhythmic_fanatics = {
 				value = magiks_civic_natures_listeners
 				value = magiks_civic_idol_crazy
 			}
-			
-			# Nested conditions don't work for civics it seems (https://stellaris.paradoxwikis.com/Government_modding#Special_Requirement_Syntax)
-			# AND = {
-			# 	NOR = {
-			# 		value = magiks_civic_elite_mages
-			# 		value = magiks_civic_magical_lineages
-			# 		value = magiks_civic_alchemical_ministry
-			# 		value = magiks_civic_state_necromancy
-			# 		value = magiks_civic_duelistic_magics
-			# 		value = magiks_civic_natures_listeners
-			# 		value = magiks_civic_idol_crazy
-			# 	}
-			# 	NOR = {
-			# 		text = civic_tooltip_not_materialist
-			# 		value = ethic_fanatic_materialist
-			# 		value = ethic_materialist
-			# 	}
-			# }
 		}
 		ethics = {
 			NOR = {
@@ -392,25 +322,20 @@ magiks_civic_rhythmic_fanatics = {
 	modification = no
 	random_weight = {
 		base = 5
-		modifier = {
-			# civic has no effect after galaxy generation, disable for random generation
-			factor = 0
-			has_global_flag = game_started
-		}
+		modifier = { factor = 0 has_global_flag = game_started }
 	}
 	traits = {
-			trait = magiks_trait_enchanting_musicians
-			trait = magiks_trait_persuading_song
+		trait = magiks_trait_enchanting_musicians
+		trait = magiks_trait_persuading_song
 	}
 }
 
 ###MAGICAL CIVICS###
 	
 magiks_civic_dark_cultists = {
-	potential = {
-		ethics = { 
-			NOT = { value = ethic_gestalt_consciousness } 
-		} 
+	potential = { 
+		authority = { value = magiks_auth_magocracy }
+		ethics = { NOT = { value = ethic_gestalt_consciousness } } 
 	}
 	possible = {
 		authority = {
@@ -429,9 +354,7 @@ magiks_civic_dark_cultists = {
 	}
 	random_weight = {
 		base = 1.5
-		modifier = {
-			factor = 0
-		}
+		#modifier = { factor = 0 has_global_flag = game_started }
 	}
 
 	modifier = {
@@ -441,50 +364,54 @@ magiks_civic_dark_cultists = {
 }
 
 magiks_civic_world_of_legend = {
-	potential = {
-		ethics = { 
-			NOT = { value = ethic_gestalt_consciousness } 
-		} 
+	potential = { 
+		authority = { value = magiks_auth_magocracy }
+		ethics = { NOT = { value = ethic_gestalt_consciousness } } 
 	}
+	playable = { host_has_dlc = "Utopia" host_has_dlc = "Apocalypse" }
 	possible = {
 		civics = {
+			NOR = {
+				value = magiks_civic_reunited_siblings
+				value = magiks_civic_duelistic_magics
+			}
+		}
+		origin = {
 			NOR = {
 				value = origin_mechanists
 				value = origin_syncretic_evolution
 				value = origin_post_apocalyptic
 				value = origin_life_seeded
-				value = magiks_civic_reunited_siblings
-				value = magiks_civic_duelistic_magics
 			}
 		}
 	}
 	modification = no
 	random_weight = {
-		base = 1 # Should be fairly rare
-		modifier = {
-			factor = 0
-		}
-		modifier = {
-			# civic has no effect after galaxy generation, disable for random generation
-			factor = 0
-			has_global_flag = game_started
-		}
+		base = 1
+		modifier = { factor = 0 has_global_flag = game_started }
 	}
 	description = "civic_tooltip_world_of_legend_effects"
 }
 
 magiks_civic_reunited_siblings = {
 	modification = no
-	playable = { host_has_dlc = "Utopia" }
-	potential = { ethics = { NOT = { value = ethic_gestalt_consciousness } } }
+	playable = { host_has_dlc = "Utopia" host_has_dlc = "Apocalypse" }
+	potential = { 
+		authority = { value = magiks_auth_magocracy }
+		ethics = { NOT = { value = ethic_gestalt_consciousness } } 
+	}
 	possible = {
 		civics = {
 			NOR = {
-				value = origin_mechanists
 				value = civic_fanatic_purifiers
 				value = civic_agrarian_idyll
-				value = origin_syncretic_evolution
 				value = civic_inwards_perfection
+			}
+		}
+		origin = {
+			NOR = {
+				value = origin_mechanists
+				value = origin_syncretic_evolution
 				value = origin_post_apocalyptic
 				value = origin_life_seeded
 			}
@@ -493,84 +420,77 @@ magiks_civic_reunited_siblings = {
 	modification = no
 	random_weight = {
 		base = 5
-		modifier = {
-			# civic has no effect after galaxy generation, disable for random generation
-			factor = 0
-			has_global_flag = game_started
-		}
+		modifier = { factor = 0 has_global_flag = game_started }
 	}
-	traits = {
-			trait = magiks_trait_strong_souls
-			}
+	traits = { trait = magiks_trait_strong_souls }
 	description = magiks_civic_reunited_siblings_effects
 	has_secondary_species = {	# see game_start.11
 		title = magiks_civic_reunited_siblings_secondary_species
-		traits = {
-			trait = magiks_trait_weak_souls
-		}
+		traits = { trait = magiks_trait_weak_souls }
 	}
 }
 
 magiks_civic_drained_survivors = {
 	potential = { 
+		authority = { value = magiks_auth_magocracy }
 		ethics = { NOT = { value = ethic_gestalt_consciousness } } 	
 	}
+	playable = { host_has_dlc = "Utopia" host_has_dlc = "Apocalypse" }
 	possible = {
 		civics = {
 			NOR = {
 				value = civic_agrarian_idyll
+				value = magiks_civic_reunited_siblings
+				value = magiks_civic_world_of_legend
+			}
+		}
+		origin = {
+			NOR = {
 				value = origin_mechanists
 				value = origin_syncretic_evolution
 				value = origin_post_apocalyptic
 				value = origin_life_seeded
-				value = magiks_civic_reunited_siblings
-				value = magiks_civic_world_of_legend
 			}
 		}
 	}
 	modification = no
 	random_weight = {
-		base = 1 # Should be fairly rare
-		modifier = {
-			factor = 0
-		}
-		modifier = {
-			# civic has no effect after galaxy generation, disable for random generation
-			factor = 0
-			has_global_flag = game_started
-		}
+		base = 1
+		modifier = { factor = 0 has_global_flag = game_started }
 	}
 	description = "magiks_civic_tooltip_drained_survivors_effects"
 
-	traits = {
-		trait = magiks_trait_adapted_optimists
-	}
+	traits = { trait = magiks_trait_adapted_optimists }
 }
 
 magiks_civic_dragon_tamers = {
-	potential = { ethics = { NOT = { value = ethic_gestalt_consciousness } } }
+	potential = { 
+		authority = { value = magiks_auth_magocracy }
+		ethics = { NOT = { value = ethic_gestalt_consciousness } } 
+	}
+	playable = { host_has_dlc = "Utopia" host_has_dlc = "Apocalypse" }
 	possible = {
 		civics = {
 			NOR = {
 				value = civic_agrarian_idyll
+				value = magiks_civic_reunited_siblings
+				value = magiks_civic_world_of_legend
+				value = magiks_civic_drained_survivors
+			}
+		}
+		origin = {
+			NOR = {
 				value = origin_mechanists
 				value = origin_syncretic_evolution
 				value = origin_post_apocalyptic
 				value = origin_life_seeded
-				value = magiks_civic_reunited_siblings
-				value = magiks_civic_world_of_legend
-				value = magiks_civic_drained_survivors
 			}
 		}
 	}
 	modification = no
 	random_weight = {
 		base = 5
-		modifier = {
-			# civic has no effect after galaxy generation, disable for random generation
-			factor = 0
-			has_global_flag = game_started
-		}
+		modifier = { factor = 0 has_global_flag = game_started }
 	}
 	
 	description = "civic_tooltip_dragon_tamers_effects"
@@ -583,9 +503,7 @@ magiks_civic_dragon_tamers = {
 magiks_machine_civic_waifu_bots = {
 	potential = { 
 		authority = { value = magiks_auth_magocracy }
-		ethics = { 
-			NOT = { value = ethic_gestalt_consciousness } 
-		} 
+		ethics = { NOT = { value = ethic_gestalt_consciousness } } 
 	}
 	possible = {
 		ethics = {
@@ -597,14 +515,14 @@ magiks_machine_civic_waifu_bots = {
 			}
 		civics = {
 			NOR = {
-					value = magiks_civic_elite_mages
-					value = magiks_civic_alchemical_ministry
-					value = magiks_civic_state_necromancy
-					value = magiks_civic_duelistic_magics
-					value = magiks_civic_natures_listeners
-					value = magiks_civic_idol_crazy
-					value = magiks_civic_rhythmic_fanatics
-				}
+				value = magiks_civic_elite_mages
+				value = magiks_civic_alchemical_ministry
+				value = magiks_civic_state_necromancy
+				value = magiks_civic_duelistic_magics
+				value = magiks_civic_natures_listeners
+				value = magiks_civic_idol_crazy
+				value = magiks_civic_rhythmic_fanatics
+			}
 		}
 	}
 	modification = no
@@ -615,17 +533,52 @@ magiks_machine_civic_waifu_bots = {
 			has_global_flag = game_started
 		}
 	}
-	modifier = {
-		# Got these from magiks_trait_robot_waifu_bots
-		biological_pop_happiness = 0.20
-		planet_jobs_minerals_produces_mult = -0.08
-		planet_jobs_energy_produces_mult = 0.05
-		planet_jobs_engineering_research_produces_mult = -0.05
-		planet_jobs_physics_research_produces_mult = -0.05
-		planet_jobs_society_research_produces_mult = -0.05
-		planet_jobs_unity_produces_mult = 0.20
-	}
 	traits = {
 		trait = "magiks_trait_robot_waifu_bots"
 	}
 }
+
+### Hive mind related civics ###
+
+magiks_civic_hive_mind_hunger = {
+	potential = { 
+		ethics = {  value = ethic_gestalt_consciousness } 
+	}
+	possible = {
+		origin = {
+			NOR = {
+				value = origin_common_ground
+				value = origin_hegemon
+				value = origin_tree_of_life
+			}
+		}
+	}
+	modification = no
+	random_weight = {
+		base = 5
+		modifier = { factor = 0 has_global_flag = game_started }
+	}
+	modifier = {
+		country_starbase_influence_cost_mult = -0.5
+		ship_hull_mult = 0.25
+		ship_hull_regen_add_perc = 0.25
+		ship_armor_regen_add_perc = 0.25
+		army_damage_mult = 0.40
+		category_biology_research_speed_mult = 0.20
+		starbase_shipyard_build_cost_mult = -0.25
+		country_naval_cap_mult = 0.33
+	}
+}
+
+# magiks_civic_hive_mind = {
+# 	potential = { 
+# 		authority = { value = magiks_auth_magocracy }
+# 		ethics = {  value = ethic_gestalt_consciousness } 
+# 	}
+# 	modification = no
+# 	random_weight = {
+# 		base = 5
+# 		modifier = { factor = 0 has_global_flag = game_started }
+# 	}
+# 	traits = { trait = "" }
+# }
