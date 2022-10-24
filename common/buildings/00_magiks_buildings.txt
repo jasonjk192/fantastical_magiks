@@ -201,16 +201,16 @@ magiks_building_grand_stadium = {
 				}
 			}
 			custom_tooltip = {
-				text = "requires_building_capital_1"
+				text = "requires_building_major_capital"
 				planet = {
 					OR = {
 						# has_building = "building_capital_1"
 						# has_building = "building_capital_2"
 						# has_building = "building_capital_3"
 
-						has_building = "building_capital"
-						has_building = "building_major_capital"
-						has_building = "building_system_capital"
+						has_building = building_capital
+						has_building = building_major_capital
+						has_building = building_system_capital
 					}
 				}
 			}
@@ -252,14 +252,14 @@ magiks_building_planetary_stage = {
 				}
 			}
 			custom_tooltip = {
-				text = "requires_building_capital_1"
+				text = "requires_building_major_capital"
 				planet = {
 					OR = {
 						# has_building = "building_capital_2"
 						# has_building = "building_capital_3"
 
-						has_building = "building_major_capital"
-						has_building = "building_system_capital"
+						has_building = building_major_capital
+						has_building = building_system_capital
 					}
 				}
 			}
