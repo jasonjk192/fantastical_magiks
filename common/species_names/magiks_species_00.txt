@@ -1,5 +1,5 @@
 FantasticalMagiks = {
-	magiks = {
+	tiefling = {
 		name = Tiefling
 		plural = Tieflings
 		home_planet = Fornica
@@ -7,7 +7,7 @@ FantasticalMagiks = {
 		name_list = "HUM4"
 	}	
 
-	magiks = {
+	fimdossian = {
 		name = Fimdossian
 		plural = Fimdossians
 		home_planet = Fimdoss
@@ -15,7 +15,7 @@ FantasticalMagiks = {
 		name_list = "HUM4"
 	}	
 
-	magiks = {
+	jedbir = {
 		name = Jedbir
 		plural = Jedbir
 		home_planet = Hoss
@@ -23,7 +23,7 @@ FantasticalMagiks = {
 		name_list = "HUM4"
 	}	
 
-	magiks = {
+	lovdiam = {
 		name = Lovdiam
 		plural = Lovdiams
 		home_planet = Lovdia
@@ -151,7 +151,7 @@ FantasticalMagiks = {
 		name_list = "HUM3"
 	}
 	
-	magiks = {
+	arzkan = {
 		name = Arzkan
 		plural = Arzkans
 		home_planet = Arkcanius
@@ -159,7 +159,7 @@ FantasticalMagiks = {
 		name_list = "HUM4"
 	}
 	
-	magiks = {
+	calaun = {
 		name = Calaun
 		plural = Calauns
 		home_planet = Bectria
@@ -167,19 +167,19 @@ FantasticalMagiks = {
 		name_list = "HUM3"
 	}
 	
-	magiks = {
+	draconian = {
 		name = Draconian
 		plural = Draconians
 		home_planet = Draconia
 		home_system = Dol
-		name_list = "HUM4"
+		name_list = "DRAKIEL"
 	}
 
-	magiks = {
+	drakiel = {
 		name = Drakiel
 		plural = Drakiel
 		home_planet = Noadica
 		home_system = Ivirus
-		name_list = "HUM4"
+		name_list = "DRAKIEL"
 	}	
 }

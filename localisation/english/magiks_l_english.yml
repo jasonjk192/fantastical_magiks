@@ -270,7 +270,7 @@ magiks_building_mage_arcanium_desc:0 "The Arcanium represents the pinnacle of ma
 
 magiks_building_manacite_collector:0 "Manacite Collector"
 magiks_building_manacite_collector_desc:0 "The facility is manned by Alchemical Specialists who, through the use of arcane ritual, can successfully harvest and purify manacite for magical use."
-mod_building_manacite_collector_max:0 "Max Manacite Collectors"
+mod_magiks_building_manacite_collector_max:0 "Max Manacite Collectors"
 
 ### Armies ###
 
@@ -482,18 +482,22 @@ magiks_d_stinking_bog_desc:0 "Bubbling swamps of tar cover this area of the plan
 magiks_d_fettered_marsh:0 "Fettered Marsh"
 magiks_d_fettered_marsh_desc:0 "Twisted roots of ancient deceased trees and other plants cover this region's landscape, waiting to be processed into what little nutrients can be provided by their shriveled husks."
 
+magiks_d_the_underground:0 "The Underground"
+magiks_d_the_underground_desc:0 "While the mountain it rests under does have a name, the most notable thing about this region is 'The Underground'. A massive network of tunnels and large, open caves, it served as the living space for the second species of this world, back when they were locked away. Now it is fully open, allowing access to its unique culture and large geothermal energy output."
+
 ### Resources ###
      
 manacite:0 "Manacite"
 manacite_desc:0 "A gemstone infused with large amounts of mana, it is typically used in arcane rituals and constructions."
+manacite_deficit:0 "$manacite$ Shortage"
 
-### Tile Blockers ###
-             
-magiks_tb_fey_wilds:0 "Feywild Forests"
-magiks_tb_fey_wilds_desc:0 "This region is home to several large forests, all containing small rifts leading to a strange, nature-based realm of magic and fairies, eager to lure unsuspecting children into their realm."
+### Blockers ###
 
-magiks_tb_deep_grand_reef:0 "Deep Grand Reef"
-magiks_tb_deep_grand_reef_desc:0 "These seas contain a large, cavernous void near their shallow bottom, home to all sorts of facinating (and sometimes dangerous) creatures."
+magiks_fey_wilds:0 "Feywild Forests"
+magiks_fey_wilds_desc:0 "This region is home to several large forests, all containing small rifts leading to a strange, nature-based realm of magic and fairies, eager to lure unsuspecting children into their realm."
+
+magiks_deep_grand_reef:0 "Deep Grand Reef"
+magiks_deep_grand_reef_desc:0 "These seas contain a large, cavernous void near their shallow bottom, home to all sorts of facinating (and sometimes dangerous) creatures."
 
  ### Start Screen Messages ###
 
@@ -543,7 +547,10 @@ magiks_dragons_desc:0 "Many large and powerful reptilian creatures fly through t
 magiks_dragons_tamed:0 "Tamed Dragons"
 magiks_dragons_tamed_desc:0 "Through careful use of negotiations and training, the draconic beasts of this world have been pacified."
 
- ### Planet Modifiers ###
+magiks_abyss:0 "Abyss"
+magiks_abyss_desc:0 "Cracks and voids mar the landscape of this planet allowing deeper access to minerals within it."
+
+### Planet Modifiers ###
               
 magiks_pm_dragons:0 "Dragons"
 magiks_pm_dragons_desc:0 "Many large, reptilian creatures fly through the air of this world."

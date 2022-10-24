@@ -13,7 +13,8 @@ magiks_gov_celebrated_monarchy = {
 	}
 
 	weight = {
-		base = 10000
+		base = 500
+		modifier = { factor = 2 has_valid_civic = magiks_civic_rhythmic_fanatics }
 	}
 }
 

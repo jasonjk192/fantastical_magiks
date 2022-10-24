@@ -77,23 +77,6 @@ FantasticalMagiks_remnant:0 "skeleton"
  magiks_gov_dark_dictatorship_desc:0 "After centuries of war between the various empires of our world, one monarch, who possesed immense and powerful dark magics, came to dominate over all. Never having children themselves, it became tradition for the title of ruler to be decided at the death of the previous ruler, as apointed by popular vote."
 
 #####################
-# 
-#####################
-
-magiks_d_the_underground:0 "REPLACE_ME"
-magiks_d_the_underground_desc:0 "REPLACE_ME"
-manacite_deficit:0 "$manacite$ Shortage"
-
-magiks_abyss:0 "Abyss"
-magiks_abyss_desc:0 "Cracks and voids mar the landscape of this planet allowing deeper access to minerals within it."
-
-magiks_fey_wilds:0 "Feywild Forests"
-magiks_fey_wilds_desc:0 "This region is home to several large forests, all containing small rifts leading to a strange, nature-based realm of magic and fairies, eager to lure unsuspecting children into their realm."
-
-magiks_deep_grand_reef:0 "Deep Grand Reef"
-magiks_deep_grand_reef_desc:0 "These seas contain a large, cavernous void near their shallow bottom, home to all sorts of facinating (and sometimes dangerous) creatures."
-
-#####################
 # Empire Name Parts
 #####################
 
@@ -113,6 +96,8 @@ Tubular:0 "Tubular"
 Players:0 "Players"
 Songwriters:0 "Songwriters"
 Magocracy:0 "Magocracy"
+Sector:0 "Sector"
+Sectors:0 "Sectors"
 
 #####################
 # Species
