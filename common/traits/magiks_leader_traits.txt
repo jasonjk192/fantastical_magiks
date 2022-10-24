@@ -9,8 +9,7 @@ magiks_scientist_leader_trait_technomancer = {
  	}
 	leader_trait = { scientist }
 	leader_class = { scientist }
-	opposites = {
-	}
+	#opposites = { }
 	ai_categories = {
 		physics
 		society
@@ -32,7 +31,7 @@ magiks_leader_trait_mana_blood = {
 		NOT = { from = { has_ethic = "ethic_gestalt_consciousness" } }
 	}
 	leader_trait = all
-	opposites = {}
+	#opposites = {}
 
 	ai_categories = {
 		engineering

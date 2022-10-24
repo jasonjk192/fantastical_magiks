@@ -11,14 +11,16 @@ tradition_magicka = {
 	}
 	
 	ai_weight = {
-		factor = 10
+		factor = 0
 		modifier = {
-			factor = 2
+			add = 40
 			has_ethic = ethic_spiritualist
+			has_authority = magiks_auth_magocracy
 		}
 		modifier = {
-			factor = 3
+			add = 50
 			has_ethic = ethic_fanatic_spiritualist
+			has_authority = magiks_auth_magocracy
 		}			
 	}
 }

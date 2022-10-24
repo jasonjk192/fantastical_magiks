@@ -41,14 +41,6 @@ magiks_tech_fire_ball = {
 				has_trait = "leader_trait_expertise_propulsion"
 			}
 		}
-		modifier = {
-			factor = 5
-			has_ascension_perk = ap_magicka_higher_dimension
-		}
-		modifier = {
-			factor = 0
-			NOT = { has_ascension_perk = ap_magicka_higher_dimension }
-		}
 	}
 
 	ai_weight = {
@@ -66,14 +58,6 @@ magiks_tech_fire_ball = {
 				area = engineering
 				has_trait = "leader_trait_expertise_propulsion"
 			}
-		}
-		modifier = {
-			factor = 5
-			has_ascension_perk = ap_magicka_higher_dimension
-		}
-		modifier = {
-			factor = 0
-			NOT = { has_ascension_perk = ap_magicka_higher_dimension }
 		}
 		modifier = {
 			factor = @favored_weapon_ai_tech_factor
@@ -115,10 +99,6 @@ magiks_tech_fire_blast = {
 				has_trait = "leader_trait_expertise_propulsion"
 			}
 		}
-		modifier = {
-			factor = 5
-			has_ascension_perk = ap_magicka_higher_dimension
-		}
 	}
 
 	ai_weight = {
@@ -136,10 +116,6 @@ magiks_tech_fire_blast = {
 				area = engineering
 				has_trait = "leader_trait_expertise_propulsion"
 			}
-		}
-		modifier = {
-			factor = 5
-			has_ascension_perk = ap_magicka_higher_dimension
 		}
 		modifier = {
 			factor = @favored_weapon_ai_tech_factor
@@ -204,10 +180,6 @@ magiks_tech_fire_storm = {
 			}
 		}
 		modifier = {
-			factor = 5
-			has_ascension_perk = ap_magicka_higher_dimension
-		}
-		modifier = {
 			factor = @favored_weapon_ai_tech_factor
 			is_preferred_weapons = weapon_type_energy
 		}
@@ -247,10 +219,6 @@ magiks_tech_fire_dragon_breath = {
 				has_trait = "leader_trait_expertise_propulsion"
 			}
 		}
-		modifier = {
-			factor = 5
-			has_ascension_perk = ap_magicka_higher_dimension
-		}
 	}
 
 	ai_weight = {
@@ -268,10 +236,6 @@ magiks_tech_fire_dragon_breath = {
 				area = engineering
 				has_trait = "leader_trait_expertise_propulsion"
 			}
-		}
-		modifier = {
-			factor = 5
-			has_ascension_perk = ap_magicka_higher_dimension
 		}
 		modifier = {
 			factor = @favored_weapon_ai_tech_factor
@@ -313,10 +277,6 @@ magiks_tech_fire_dragon_wrath = {
 				has_trait = "leader_trait_expertise_propulsion"
 			}
 		}
-		modifier = {
-			factor = 5
-			has_ascension_perk = ap_magicka_higher_dimension
-		}
 	}
 
 	ai_weight = {
@@ -334,10 +294,6 @@ magiks_tech_fire_dragon_wrath = {
 				area = engineering
 				has_trait = "leader_trait_expertise_propulsion"
 			}
-		}
-		modifier = {
-			factor = 5
-			has_ascension_perk = ap_magicka_higher_dimension
 		}
 		modifier = {
 			factor = @favored_weapon_ai_tech_factor
@@ -389,14 +345,6 @@ magiks_tech_ice_spike = {
 				has_trait = "leader_trait_expertise_propulsion"
 			}
 		}
-		modifier = {
-			factor = 5
-			has_ascension_perk = ap_magicka_higher_dimension
-		}
-		modifier = {
-			factor = 0
-			NOT = { has_ascension_perk = ap_magicka_higher_dimension }
-		}
 	}
 
 	ai_weight = {
@@ -414,14 +362,6 @@ magiks_tech_ice_spike = {
 				area = engineering
 				has_trait = "leader_trait_expertise_propulsion"
 			}
-		}
-		modifier = {
-			factor = 5
-			has_ascension_perk = ap_magicka_higher_dimension
-		}
-		modifier = {
-			factor = 0
-			NOT = { has_ascension_perk = ap_magicka_higher_dimension }
 		}
 		modifier = {
 			factor = @favored_weapon_ai_tech_factor
@@ -463,10 +403,6 @@ magiks_tech_ice_beam = {
 				has_trait = "leader_trait_expertise_propulsion"
 			}
 		}
-		modifier = {
-			factor = 5
-			has_ascension_perk = ap_magicka_higher_dimension
-		}
 	}
 
 	ai_weight = {
@@ -484,10 +420,6 @@ magiks_tech_ice_beam = {
 				area = engineering
 				has_trait = "leader_trait_expertise_propulsion"
 			}
-		}
-		modifier = {
-			factor = 5
-			has_ascension_perk = ap_magicka_higher_dimension
 		}
 		modifier = {
 			factor = @favored_weapon_ai_tech_factor
@@ -552,10 +484,6 @@ magiks_tech_ice_blizzard = {
 			}
 		}
 		modifier = {
-			factor = 5
-			has_ascension_perk = ap_magicka_higher_dimension
-		}
-		modifier = {
 			factor = @favored_weapon_ai_tech_factor
 			is_preferred_weapons = weapon_type_energy
 		}
@@ -595,10 +523,6 @@ magiks_tech_ice_wendigo_strike = {
 				has_trait = "leader_trait_expertise_propulsion"
 			}
 		}
-		modifier = {
-			factor = 5
-			has_ascension_perk = ap_magicka_higher_dimension
-		}
 	}
 
 	ai_weight = {
@@ -616,10 +540,6 @@ magiks_tech_ice_wendigo_strike = {
 				area = engineering
 				has_trait = "leader_trait_expertise_propulsion"
 			}
-		}
-		modifier = {
-			factor = 5
-			has_ascension_perk = ap_magicka_higher_dimension
 		}
 		modifier = {
 			factor = @favored_weapon_ai_tech_factor
@@ -661,10 +581,6 @@ magiks_tech_ice_wendigo_bane = {
 				has_trait = "leader_trait_expertise_propulsion"
 			}
 		}
-		modifier = {
-			factor = 5
-			has_ascension_perk = ap_magicka_higher_dimension
-		}
 	}
 
 	ai_weight = {
@@ -682,10 +598,6 @@ magiks_tech_ice_wendigo_bane = {
 				area = engineering
 				has_trait = "leader_trait_expertise_propulsion"
 			}
-		}
-		modifier = {
-			factor = 5
-			has_ascension_perk = ap_magicka_higher_dimension
 		}
 		modifier = {
 			factor = @favored_weapon_ai_tech_factor
@@ -811,6 +723,66 @@ magiks_tech_ice_shields_3 = {
 				area = physics
 				has_trait = "leader_trait_expertise_field_manipulation"
 			}
+		}
+	}
+}
+
+# ##################
+# 
+# ##################
+
+# ------------------
+# Water
+# ------------------
+
+magiks_tech_irrigation = {
+	cost = @tier4cost3
+	area = society
+	tier = 1
+	is_rare = yes
+	category = { magiks_water }
+	weight = @tier4weight3
+
+	modifier = {
+		planet_jobs_food_produces_mult = 0.15
+		starbase_constructions_food_produces_mult = 0.10
+	}
+
+	potential = {
+		NOT = { has_authority = auth_machine_intelligence }
+		OR = {
+			has_trait = magiks_trait_waterbender
+			has_trait = magiks_trait_multibender
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			OR = {
+				is_machine_empire = yes
+				is_lithoid_empire = yes
+			}
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_pacifist
+		}
+	}
+
+	ai_weight = {
+		factor = @farming_ai_weight_factor
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_pacifist
 		}
 	}
 }

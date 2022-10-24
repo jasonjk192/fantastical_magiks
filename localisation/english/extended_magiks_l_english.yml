@@ -2,117 +2,90 @@
 ### List of localization that were not available in the original (prevent error.log bloat)
 
 #####################
-# Buildings
-#####################
-
-magiks_building_mage_academy:0 "Mage Academy"
-magiks_building_mage_academy_desc:0 "REPLACE_ME"
-magiks_building_mage_college:0 "Mage College"
-magiks_building_mage_college_desc:0 "REPLACE_ME"
-magiks_building_mage_university:0 "Mage University"
-magiks_building_mage_university_desc:0 "REPLACE_ME"
-magiks_building_mage_arcanium:0 "Mage Arcanium"
-magiks_building_mage_arcanium_desc:0 "REPLACE_ME"
-requires_building_capital_1:0 "REPLACE_ME"
-
-#####################
 # Technology
 #####################
 
 magiks_tech_manacite_extraction:0 "Manacite Extraction"
-magiks_tech_manacite_extraction_desc:0 "REPLACE_ME"
+magiks_tech_manacite_extraction_desc:0 "Gain arcane knowledge to safely and usefully extract manacite crystals for magical purposes."
+
 magiks_tech_rhythm4:0 "Baryonic Acoustic Oscillations"
-magiks_tech_rhythm4_desc:0 "REPLACE_ME"
+magiks_tech_rhythm4_desc:0 "With the access of sound manipulation at the most fundamental level, the boundaries of musical abilities have been achievend."
 
 #####################
 # Decisions
 #####################
 
 magiks_descisions_add_dragons:0 "Add Dragons"
-magiks_descisions_add_dragons_desc:0 "REPLACE_ME"
+magiks_descisions_add_dragons_desc:0 "By setting up recruitment centers specifically meant for dragons, we many bring them to this world, where we can use them for our gain."
 magiks_descisions_tame_dragons:0 "Tame Dragons"
-magiks_descisions_tame_dragons_desc:0 "REPLACE_ME"
+magiks_descisions_tame_dragons_desc:0 "Since this world already has dragons present, colonization is not required. However, these dragons are wild and dangerous, and require training before they can be useful to our cause."
 magiks_descisions_exterminate_dragons:0 "Exterminate Dragons"
-magiks_descisions_exterminate_dragons_desc:0 "REPLACE_ME"
-
-#####################
-# Edicts
-#####################
-
-edict_magiks_edict_add_dragons:0 "Add Dragons"
-edict_magiks_edict_add_dragons_desc:0 "REPLACE_ME"
-edict_magiks_edict_tame_dragons:0 "Tame Dragons"
-edict_magiks_edict_tame_dragons_desc:0 "REPLACE_ME"
-edict_magiks_edict_kill_dragons:0 "Kill Dragons"
-edict_magiks_edict_kill_dragons_desc:0 "REPLACE_ME"
+magiks_descisions_exterminate_dragons_desc:0 "The monsters covering this planet are a collosal nussance, and we should exterminate them when we have the chance."
 
 #####################
 # Species
 #####################
 
 FantasticalMagiks:0 "Magikal"
-FantasticalMagiks_desc:0 "REPLACE_ME"
-FantasticalMagiks_plural:0 "REPLACE_ME"
-FantasticalMagiks_insult_01:0 "REPLACE_ME"
-FantasticalMagiks_insult_plural_01:0 "REPLACE_ME"
-FantasticalMagiks_compliment_01:0 "REPLACE_ME"
-FantasticalMagiks_compliment_plural_01:0 "REPLACE_ME"
-FantasticalMagiks_spawn:0 "REPLACE_ME"
-FantasticalMagiks_spawn_plural:0 "REPLACE_ME"
-FantasticalMagiks_sound_01:0 "REPLACE_ME"
-FantasticalMagiks_sound_02:0 "REPLACE_ME"
-FantasticalMagiks_sound_03:0 "REPLACE_ME"
-FantasticalMagiks_sound_04:0 "REPLACE_ME"
-FantasticalMagiks_sound_05:0 "REPLACE_ME"
-FantasticalMagiks_organ:0 "REPLACE_ME"
-FantasticalMagiks_mouth:0 "REPLACE_ME"
-FantasticalMagiks_hand:0 "REPLACE_ME"
-FantasticalMagiks_ear:0 "REPLACE_ME"
-FantasticalMagiks_tooth:0 "REPLACE_ME"
-FantasticalMagiks_fossil:0 "REPLACE_ME"
-FantasticalMagiks_remnant:0 "REPLACE_ME"
+FantasticalMagiks_desc:0 "Species blessed with magical abilities."
+FantasticalMagiks_plural:0 "Magikals"
+FantasticalMagiks_insult_01:0 "commoner"
+FantasticalMagiks_insult_plural_01:0 "commoners"
+FantasticalMagiks_compliment_01:0 "magical one"
+FantasticalMagiks_compliment_plural_01:0 "magical ones"
+FantasticalMagiks_spawn:0 "cub"
+FantasticalMagiks_spawn_plural:0 "cubs"
+FantasticalMagiks_sound_01:0 "growling"
+FantasticalMagiks_sound_02:0 "coughing"
+FantasticalMagiks_sound_03:0 "whizzing"
+FantasticalMagiks_sound_04:0 "whishing"
+FantasticalMagiks_sound_05:0 "wheezing"
+FantasticalMagiks_organ:0 "stomach"
+FantasticalMagiks_mouth:0 "mouth"
+FantasticalMagiks_hand:0 "claws"
+FantasticalMagiks_ear:0 "ear"
+FantasticalMagiks_tooth:0 "tooth"
+FantasticalMagiks_fossil:0 "fossil"
+FantasticalMagiks_remnant:0 "skeleton"
 
 #####################
 # Governments
 #####################
 
  magiks_gov_celebrated_monarchy:0 "Celebrated Monarchy"
- magiks_gov_celebrated_monarchy_desc:0 "REPLACE_ME"
+ magiks_gov_celebrated_monarchy_desc:0 "As popular media spread across the globe, celebrities were slowly worshiped more and more, gradually wining in state elections, until eventually all positions of governance were held by a single family, now ruling as monarical head."
+
  magiks_gov_band_bureaucracy:0 "Band Bureaucracy"
- magiks_gov_band_bureaucracy_desc:0 "REPLACE_ME"
+ magiks_gov_band_bureaucracy_desc:0 "A great war had broken out, not of blood and bullets, but of culture and music. It wouldn't be till several decades later that it would finally end, giving rise to the current establishment, dedicated to never letting another war if culture break out, ever again."
+
  magiks_gov_instrumental_institution:0 "Instrumental Institution"
- magiks_gov_instrumental_institution_desc:0 "REPLACE_ME"
+ magiks_gov_instrumental_institution_desc:0 "After a fierce debate on the position of music and celebrities in politics, it was decided by popular vote that those in power must wield great musical talent."
+
  magiks_gov_harmonious_court:0 "Harmonious Court"
- magiks_gov_harmonious_court_desc:0 "REPLACE_ME"
+ magiks_gov_harmonious_court_desc:0 "After rampant pollution of our world both chemically and culturally, one family stepped up with a plan to live in harmony with the world, in every way imaginable."
+
  magiks_gov_harmonious_gathering:0 "Harmonious Gathering"
- magiks_gov_harmonious_gathering_desc:0 "REPLACE_ME"
+ magiks_gov_harmonious_gathering_desc:0 "After rampant pollution of our world both chemically and culturally, a council was formed to ensure the survival of our world and species. Through their guidance we restored our planet, and our culture, coming to peace with ourselves"
+
  magiks_gov_harmonious_democracy:0 "Harmonious Democracy"
- magiks_gov_harmonious_democracy_desc:0 "REPLACE_ME"
+ magiks_gov_harmonious_democracy_desc:0 "After rampant pollution of our world both chemically and culturally, our people came together to form a new type of government, based on the public's common desire for a more harmonious relationship with nature."
+
  magiks_gov_magical_monarchy:0 "Magical Monarchy"
- magiks_gov_magical_monarchy_desc:0 "REPLACE_ME"
+ magiks_gov_magical_monarchy_desc:0 "After centuries of war between the various empires of our world, one monarch, who possesed immense and powerful magics, came to dominate over all, and their genetic line continues to rule to this day, and into the future."
+
  magiks_gov_dark_dictatorship:0 "Dark Dictatorship"
- magiks_gov_dark_dictatorship_desc:0 "REPLACE_ME"
+ magiks_gov_dark_dictatorship_desc:0 "After centuries of war between the various empires of our world, one monarch, who possesed immense and powerful dark magics, came to dominate over all. Never having children themselves, it became tradition for the title of ruler to be decided at the death of the previous ruler, as apointed by popular vote."
 
 #####################
 # 
 #####################
 
-pc_magikal_adj:0 "REPLACE_ME"
-mod_pc_magikal_habitability:0 "Magikal Habitability"
-pc_sour_adj:0 "REPLACE_ME"
-mod_pc_sour_habitability:0 "Sour Habitability"
-trait_pc_sour_preference:0 "REPLACE_ME"
-trait_pc_sour_preference_desc:0 "REPLACE_ME"
 magiks_d_the_underground:0 "REPLACE_ME"
 magiks_d_the_underground_desc:0 "REPLACE_ME"
 manacite_deficit:0 "$manacite$ Shortage"
 
 magiks_abyss:0 "Abyss"
-magiks_abyss_desc:0 "REPLACE_ME"
-
-Magocracy:0 "REPLACE_ME"
-Sectors:0 "REPLACE_ME"
-Sector:0 "REPLACE_ME"
+magiks_abyss_desc:0 "Cracks and voids mar the landscape of this planet allowing deeper access to minerals within it."
 
 magiks_fey_wilds:0 "Feywild Forests"
 magiks_fey_wilds_desc:0 "This region is home to several large forests, all containing small rifts leading to a strange, nature-based realm of magic and fairies, eager to lure unsuspecting children into their realm."
@@ -139,6 +112,7 @@ Radical:0 "Radical"
 Tubular:0 "Tubular"
 Players:0 "Players"
 Songwriters:0 "Songwriters"
+Magocracy:0 "Magocracy"
 
 #####################
 # Species

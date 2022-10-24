@@ -4,16 +4,11 @@ tr_magicka_adopt = {
 	}
 	
 	tradition_swap = {
-		name = tr_magicka_adopt_machine
+		name = tr_magicka_adopt_hive_mind
 		inherit_effects = no
 		inherit_icon = yes
 		inherit_name = no
-		trigger = {
-			OR = {
-				has_authority = auth_machine_intelligence
-				has_authority = auth_hive_mind
-			}
-		}
+		trigger = { has_authority = auth_hive_mind }
 	# Event
 		weight = {
 			factor = 1
@@ -21,14 +16,16 @@ tr_magicka_adopt = {
 	}
 	
 	ai_weight = {
-		factor = 10
+		factor = 0
 		modifier = {
-			factor = 2
+			add = 40
 			has_ethic = ethic_spiritualist
+			has_authority = magiks_auth_magocracy
 		}
 		modifier = {
-			factor = 3
+			add = 50
 			has_ethic = ethic_fanatic_spiritualist
+			has_authority = magiks_auth_magocracy
 		}			
 	}
 }
@@ -41,16 +38,11 @@ tr_magicka_finish = {
 	}
 	
 	tradition_swap = {
-		name = tr_magicka_finish_machine
+		name = tr_magicka_finish_hive_mind
 		inherit_effects = no
 		inherit_icon = yes
 		inherit_name = no
-		trigger = {
-			OR = {
-				has_authority = auth_machine_intelligence
-				has_authority = auth_hive_mind
-			}
-		}
+		trigger = { has_authority = auth_hive_mind }
 		
 		modifier = {
 			ruler_skill_levels = 3
