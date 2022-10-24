@@ -1,610 +1,600 @@
 ﻿l_english:
-            #### Species Traits ####
-    
-    
-    magiks_trait_firebender:0 "Natural Fire-Magi"
-    magiks_trait_firebender_desc:0 "This species has a natural affinity for the fire element, and uses it frequently to improve its energy production and military."
-    
-    magiks_trait_waterbender:0 "Natural Water-Magi"
-    magiks_trait_waterbender_desc:0 "This species has a natural affinity for the water element, and uses it frequently to improve energy and food production"
-    
-    magiks_trait_lifebender:0 "Natural Life-Magi"
-    magiks_trait_lifebender_desc:0 "This species has a natural affinity for the life element, and uses it frequently to improve food and mineral production."
-    
-    magiks_trait_airbender:0 "Natural Air-Magi"
-    magiks_trait_airbender_desc:0 "This species has a natural affinity for the air element, and has produced an extremely sports-oriented and nomadic society as a result."
-    
-    magiks_trait_earthbender:0 "Natural Earth-Magi"
-    magiks_trait_earthbender_desc:0 "This species has a natural affinity for the earth element, and uses it frequently to improve energy production and excavation methods."
-    
-    magiks_trait_multibender:0 "Naturaly Balanced Magi"
-    magiks_trait_multibender_desc:0 "This species has a natural affinity for all of the natural elements, and benefits extremely from it. However due to most member's inablility to use more than one element, tribalistic divides in society frequently occur."
-    
-    magiks_trait_soft_magicians:0 "Sorcery"
-    magiks_trait_soft_magicians_desc:0 "This species is capable of large amounts of magical talent, often from birth or a very young age. This abundance of free power causes loftiness and a lack of ambition, however."
-    
-    magiks_trait_hard_magicians:0 "Wizardry"
-    magiks_trait_hard_magicians_desc:0 "This species has an innate link to the arcane, and with only a few years of training, great power can be attained. These years of training are taken by most highly-educated persons, and leads to a passion for learning and practice."
-    
-    magiks_trait_alchemy:0 "Alchemy"
-    magiks_trait_alchemy_desc:0 "This species' biology favors a semi-magical ability to transform elements in a strict and controlled fashion, requiring many years of strict training and a unique style of thinking."
-    
-    magiks_trait_racial_minority:0 "Racial Minority"
-    magiks_trait_racial_minority_desc:0 "Despite globalization and repeated attemps (secret or otherwise), there remains a small minority of the population with signifigantly enchanced abilities, causing jealously and mistrust amoung the majority."
-    
-    magiks_trait_strong_souls:0 "Determined Souls"
-    magiks_trait_strong_souls_desc:0 "The souls of this species are rediculously powerful, but hard to utilize. As a consequence, their souls can survive after death for a brief period of time before acending, allowing for much easier harvest, if nessesary."
-    
-    magiks_trait_weak_souls:0 "Infused Souls"
-    magiks_trait_weak_souls_desc:0 "The souls of this species are infused with their bodies, leading to much easier magic use. The added instability reduces their overall magical ability however, and their bodies and souls turn to dust after death."
-    
-    magiks_trait_enchanting_musicians:0 "Enchanting Musicians"
-    magiks_trait_enchanting_musicians_desc:0 "The music made by this people causes seemingly magical changes to both the listeners and enviornment around it, though most of the effects are emotional."
-    
-    magiks_trait_persuading_song:0 "Persuading Song"
-    magiks_trait_persuading_song_desc:0 "The singing of this race is very alluring, so much so that even organisms normally unaffected by music seem to lighten up."
-    
-    magiks_trait_demi_folk:0 "Animalic Polymorphism"
-    magiks_trait_demi_folk_desc:0 "This species shows a great amount of polymorphism, with most changes resembling features of various animal species native to their homeworld. This can include ears, tails, teeth, etc."
-    
-    magiks_trait_adapted_optimists:0 "Adapted Optimists"
-    magiks_trait_adapted_optimists_desc:0 "This species always looks on the bright side, as no matter how bad the situation may seem, they know firsthand that someone else probably has it worse."
-    
-    magiks_trait_demi_folk_plants:0 "Plantaeic Polymorphism"
-    magiks_trait_demi_folk_plants_desc:0 "This species shows a great amount of polymorphism, with most changes resembling features of various plant species native to their homeworld. This can include sprouts and leaves, usually appearing at joints or instead of hair."
-    
-    magiks_trait_demi_folk_dnd:0 "Specialized Polymorphism"
-    magiks_trait_demi_folk_dnd_desc:0 "This species shows a great amount of polymorphism, with most changes being geared towards highly-specialized roles, such as mining, intellectual persuits, etc."
-    
-    magiks_trait_robot_artificial_souls:0 "Artificial Souls"
-    magiks_trait_robot_artificial_souls_desc:0 "Despite not being made of flesh and blood, each of these machines carry a unique soul, making it much easier for them to believe in the supernatural, as they are seemingly products of it."
-    
-    magiks_trait_robot_reality_anchors:0 "Reality Anchors"
-    magiks_trait_robot_reality_anchors_desc:0 "Through some strange property barely understood by even their creators, these machines cause the fabric of space surrounding them to become 'hyper-stablized', weakening magical and psionic abilities greatly."
-    
-    magiks_trait_robot_brass_beasts:0 "Brass Beasts"
-    magiks_trait_robot_brass_beasts_desc:0 "These machines are the product of some strange and unique engineering, somehow being made entirely of gears and cogs, fueled by steam and magic crystals instead of electricity."
-    
-    magiks_trait_robot_energy_connections:0 "Energetic Limbs"
-    magiks_trait_robot_energy_connections_desc:0 "The limbs and other apperatus of these machines are connected only by tethers of magical energy, and are otherwise comepletely detached from the main body."
-    
-    magiks_trait_robot_brand_bots:0 "Brand Bots"
-    magiks_trait_robot_brand_bots_desc:0 "These creations were modeled after popular  fictional characters, and are programmed to act similar to said characters as well. The constant attention can be a little emotionally taxing, however."
-    
-    magiks_trait_robot_warforged:0 "Warforged"
-    magiks_trait_robot_warforged_desc:0 "A unique mix of magic and technology, these fearsome machinations are the product of truely mad individuals, long since slain by their own creations."
-    
-    magiks_trait_robot_waifu_bots:0 "Moe Mechanisms"
-    magiks_trait_robot_waifu_bots_desc:0 "These machines have been specifical designed to replicate popular fictional characters, with a focus on characters containing traits that could be labeled as 'cute', and are meant to elicit feelings of affection or admiration. Such a constant preformance takes a toll on most other tasks, however, as being cute doesn't nessesary mean being efficient."
-    
-    TRAIT_WAIFUS_EFFECT:0 "Normal Ruler Opinion Impact: §G+10§!     Xenophile Ruler Opinion Impact: §G+25§!     Xenophobe Ruler Opinion Impact: §R-25§!     Other Species Happiness: §G+5%§!        Mineral Output: §R-5%§!     Energy Output: §G+5%§!      Research Output: §R-5%§!"
-    
-    magiks_trait_robot_golems:0 "Sedimentary Golems"
-    magiks_trait_robot_golems_desc:0 "Made of stone an mana, these beasts of artificial origin defy commonly understood engineering methods, and puzzle foreign engineers to this day."
-    
-    magiks_trait_robot_exposed_processors:0 "Exposed Processors"
-    magiks_trait_robot_exposed_processors_desc:0 "The computational apperatus of these drones run off of the natural energies present in the fabric of the universe, requiring said apperatus to be located outside the main hull of a drone. This obviously presents a major weakness in combat."
-    
-    magiks_trait_robot_core_processors:0 "Core Processors"
-    magiks_trait_robot_core_processors_desc:0 "The central computers of these drones are located as deeply as possible in their bodies, allowing for units to remain technically functional with up to 62% of their frames damaged or destroyed."
-    
-    magiks_trait_dragon_blooded:0 "Dragon Blooded"
-    magiks_trait_dragon_blooded_desc:0 "This race was imbued long ago with the essence of a fallen ether drake, and as such have signifigantly hightened abilities in certain fields. This comes at the price of breaking physics, however, and causes a minor but constant state of discomfort."
-    
-    magiks_trait_draconic_nobility:0 "Draconic Nobility"
-    magiks_trait_draconic_nobility_desc:0 "These creatures have an aura of dignity surrounding them, and demand respect wherever they stand."
-    
-    magiks_trait_draconic_pride:0 "Draconic Pride"
-    magiks_trait_draconic_pride_desc:0 "This species always seems exceedingly prideful, and comes across as arrogant to most individuals, including members of the same race."
-    
-    magiks_trait_infernal_origin:0 "Infernal Origin"
-    magiks_trait_infernal_origin_desc:0 "This species was long ago banished to a dimension with more than a little resemblance to hell, and have only recently escaped, bringing back with them knowledge and power gained from the flames and madness."
-    
-    magiks_trait_deal_with_devil:0 "Demon Dealers"
-    magiks_trait_deal_with_devil_desc:0 "This species once made a deal with a demonic entity for power and wealth, and have been paying the price ever since."
-    
-    magiks_trait_abyss_gazers:0 "Abyss Gazers"
-    magiks_trait_abyss_gazers_desc:0 "This race has stared into the abyss, and while their outlook seems bleak, they are more determined than ever to change that. For when the abyss stares back, they will be ready."
-    
-    magiks_trait_multidimensional_migrants:0 "Multidimensional Migrants"
-    magiks_trait_multidimensional_migrants_desc:0 "Whether because of war, famine or curiosity, this entire species fled from their home dimension, and have somehow lost the ability to travel back. While not necesarily unpleasant to be around, they can seem a bit, foreign, at times, as if they don't belong; This can be either facinating, or terrifying."
-    
-    magiks_trait_voidseepers:0 "Voidseepers"
-    magiks_trait_voidseepers_desc:0 "Born in the true darkness of the void inbetween realities, these beings have been trying to escape for aeons, and finally have. No matter what other races think of them, no matter how bad their situation may be, they must remain strong, as it could always be worse."
-    
-    magiks_trait_demonic_defaulters:0 "Demonic Defaulters"
-    magiks_trait_demonic_defaulters_desc:0 "Once a proud and greedy race, tricking countless mortals out of their wealth and souls, these demons eventually went bankrupt, and are now having to pay their debt through mortal existence. Don't worry though, it'll only take them a few million years to pay everything off..."
-    
-    magiks_trait_mulcubi:0 "Mulcubi"
-    magiks_trait_mulcubi_desc:0 "Made up entirely by Incubi and Succubi, these beings were so obsessed with how mortals reproduce that they left their firey homes in search of more satisfying 'prey' to play with. Their obsession with mating can become more than a small distraction in everyday life, however, and can make any attempts at normal conversation tedious."
-    
-    magiks_trait_undead_reliant:0 "Undead Majority"
-    magiks_trait_undead_reliant_desc:0 "This populations of this species are made of mostly undead servants, with a relatively small portion being made of acutal living individuals."
-    
-    magiks_trait_exothermic_enchanters:0 "Exothermic Enchanters"
-    magiks_trait_exothermic_enchanters_desc:0 "Able to force large amounts of heat out of objects, the members of this race are expert miners, able to freeze ores and harvest the broken shards, as well as sling waves of frozen air at their enemies. Their hearts are just as cold, however."
-    
-    magiks_trait_endothermic_enchanters:0 "Endothermic Enchanters"
-    magiks_trait_endothermic_enchanters_desc:0 "Able to force large amounts of heat into matter, and then manipulate said matter, these hot-headed and 'passionate' beings are always up for a fight, usually melting the battlefield in the process. They mostly use their powers for industrial perposes, however."
-    
-            ### Empire Civics ###
-    
-    
-    magiks_civic_elite_mages:0 "Elite Mages"
-    magiks_civic_elite_mages_desc:0 "Who runs this society is determined by magical ability. The more powerful one is the art of the supernatural and extraordinary, the higher their role in said society."
-    
-    magiks_civic_magical_lineages:0 "Magical Lineages"
-    magiks_civic_magical_lineages_desc:0 "Powerful sorcerer bloodlines have long taken positions of power over their less magically gifted kin. This has led to great houses based on magical blood to hold great power and sway in this nation."
-    
-    magiks_civic_alchemical_ministry:0 "Alchemical Ministry"
-    magiks_civic_alchemical_ministry_desc:0 "Alchemists and their unique form of magic have created a vast and powerful ministry that allows them to easily control the production and supply lines of the nation."
-    civic_tooltip_alchemist_effects:0 "Alchemists gain the Manacite Extraction technology at game start, as well as a bonus +10% to mining jobs."
 
-    magiks_civic_duelistic_magics:0 "Duelistic Magics"
-    magiks_civic_duelistic_magics_desc:0 "The world has evolved two seperate but equally magical species, who, even though they united long ago, share a deep and somewhat friendly rivalry between eachother."
-    magiks_civic_duelistic_magics_secondary_species:0 "Magical Rivals"
-    magiks_civic_duelistic_magics_effects:0 "Start the game with 4 Pops being of another codominant species."
-    
-    
-    magiks_civic_reunited_siblings:0 "Reunited Siblings"
-    magiks_civic_reunited_siblings_desc:0 "Long ago, the primary species of this world, worried about their souls being harvested, banished the other species into a large cavern, isolating them from the outside world. Only recently have the two reunited, having to now share their futures together."
-    magiks_civic_reunited_siblings_secondary_species:0 "Cave Dwellers"
-    magiks_civic_reunited_siblings_effects:0 "Start the game with 2 Pops being of another codominant species."
-    
-    magiks_civic_state_necromancy:0 "State Necromancy"
-    magiks_civic_state_necromancy_desc:0 "This nation partakes in frequent and legal use of necromancy and the undead."
-    
-    magiks_civic_natures_listeners:0 "Nature's Listeners"
-    magiks_civic_natures_listeners_desc:0 "This society holds the sounds of nature to be of the upmost importance in not just music and magic, but life as a whole."
-    
-    magiks_civic_idol_crazy:0 "Idol Crazy"
-    magiks_civic_idol_crazy_desc:0 "Due to musical talent equalling magical talent, this society worships its stars and idols like living gods, and that the ultimate thing you can aspire to be in your life is one of them."
-    
-    magiks_civic_rhythmic_fanatics:0 "Rhythmic Fanatics"
-    magiks_civic_rhythmic_fanatics_desc:0 "Music and rhythm is an integeral part of this society, and because of this they have produce some of the most asthetically pleasing music in the galaxy, and possibly the universe. It's never enough however, and there is a deep-rooted urge in its citizens to make something better."
-    
-    magiks_civic_world_of_legend:0 "World of Legend"
-    magiks_civic_world_of_legend_desc:0 "One of myth and legend, the homeworld of this species is a magic-filled paradise, whether they have the talent to apreciate it or not."
-    
-    civic_tooltip_world_of_legend_effects:0 "Homeworld and planet preference is set to a 'Magical World' (Size: 25), giving bonuses to food and energy but a severe penalty to research."
-    
-    magiks_civic_drained_survivors:0 "Drained Surviviors"
-    magiks_civic_drained_survivors_desc:0 "After years of draining the energy from our world, it finally gave out, leading to a miserable poverty-filled and disunited existance. After finally breaking free from the iron grip of our latest tyrants, we united under one flag, and are now more dedicated than ever before to travel to the stars, hoping to one day fix the world we came from."
-    
-    magiks_civic_tooltip_drained_survivors_effects:0 "Homeworld is set to a 'sour world', giving our species the 'drained survivors' trait, enabling enhanced habitability on sour worlds."
-    
-    magiks_machine_civic_waifu_bots:0 "Waifu Bots"
-    magiks_machine_civic_waifu_bots_desc:0 "Through extensive species-wide reconditioning, these machines have manged to convert their creators into one single culture, designed specially for pleasure and compliance. Strangely enough, due to it's 'perfect design', said machines have become a bit obsessed with it themselves."
-    
-    magiks_civic_dark_cultists:0 "Dark Cultists"
-    magiks_civic_dark_cultists_desc:0 "Originally created from a belief that the forces of darkness would bring great fortune, this society commited mass-atrocities and genocide at the request of their dark religion. However, that was long ago, and while more modern reforms have greatly reduced the unethical treatment caused by the people's beliefs, the roots are still present, and cause great distrust among other spiritualists."
-    
-    magiks_civic_dragon_tamers:0 "Dragon Tamers"
-    magiks_civic_dragon_tamers_desc:0 "This species has formed a friendly relationship with the draconic beasts native to their homeworld, using them as mounts and companions."
-    civic_tooltip_dragon_tamers_effects:0 "Homeworld starts with tamed dragons, and you have the ability to bring them to your other planets."
-    
+#### Species Traits ####
 
-           ### Authority ###
+magiks_trait_firebender:0 "Natural Fire-Magi"
+magiks_trait_firebender_desc:0 "This species has a natural affinity for the fire element, and uses it frequently to improve its energy production and military."
 
-    magiks_auth_magocracy:0 "Magocracy"
-    magiks_auth_magocracy_desc:0 "Powerful magic users are the ones tasked with ruling this nation, their political power directly proportional to their magical talent."
-    
-    
-            ### Technology ###
-    
-    
-    magiks_tech_necro1:0 "Necromantic Mass-Production"
-    magiks_tech_necro1_desc:0 "By updated ancient methods with modern technology and more recent magical findings, an army of undead can be made in weeks instead of months, and at a much higher quality as well."
-    
-    magiks_tech_necro2:0 "Enchanced Undead Processing"
-    magiks_tech_necro2_desc:0 "By further optimizing the reanimation process, larger armies of undead can be created, with further advances in both intelligence and loyalty also increasing individual preformance."
-    
-    magiks_tech_necro3:0 "Large-Scale Phylactery Manufacturing"
-    magiks_tech_necro3_desc:0 "While still extremely expensive, new combinations in science and necromancy has allowed for consistent creation of Liches. Near-immortal undead with the intelligence of 15 men or more, Liches possess the ability to create their own private armies of undead, actively using the enemy's fallen to replenish said army, with minimal additional maintenance"
-    
-    magiks_tech_rhythm1:0 "Harmonic Resonance"
-    magiks_tech_rhythm1_desc:0 "By studying the baseline mental processes of sapient beings, certain frequencies maybe prove to be universally pleasant to listen to, regardless of taste or species."
-    
-    magiks_tech_rhythm2:0 "Enhanced Pattern Recognition"
-    magiks_tech_rhythm2_desc:0 "As a skill, pattern recognition is a requirement for tool-use and technological progression. This can be exploited however, expecially for use in creating near-universally loved musical classics."
-    
-    magiks_tech_rhythm3:0 "Permeating Chord Progressions"
-    magiks_tech_rhythm3_desc:0 "As a universal truth, music is the one thing that ties us together. With the ultimate combination of all of music theory, an emotional response is almost guaranteed."
-    
-    magiks_tech_magiks_gene:0 "The Alchemic Method"
-    magiks_tech_magiks_gene_desc:0 "The scientific method has existed for centuries, and has advanced us immensely in that field. Perhaps it is time for something similar in other fields..."
-    magiks_tech_magiks_gene_effects:0 "Allows for basic manipulation of a species' magical capabilities, through gene modding."
-    
-    magiks_tech_magiks_gene_two:0 "Unifying Magical Theory"
-    magiks_tech_magiks_gene_two_desc:0 "After many decades of research, it is finally time to conjure together a unifying theory of sourcery and magic in general, in the hope that we may master this cryptic and ancient art."
-    magiks_tech_magiks_gene_two_effects:0 "Allows for advanced manipulation of a species' magical capabilities, through gene modding."
-    
-    magiks_tech_mage_academy:0 "Mage's Academy"
-    magiks_tech_mage_academy_desc:0 "The Mage's Academy is overseen by several powerful High Mages who will oversee the development of the magical capabilites of those entrusted to their care."
-    magiks_tech_mage_academy_effects:0 "The mage's Academy tech allows you to build a Mage's Academy on your plantes as well as allows for the creation of Evoker Armies."
+magiks_trait_waterbender:0 "Natural Water-Magi"
+magiks_trait_waterbender_desc:0 "This species has a natural affinity for the water element, and uses it frequently to improve energy and food production"
 
-    magiks_tech_mage_college:0 "Mage's College"
-    magiks_tech_mage_college_desc:0 "The Mage's College is a larger complex for the research of magic and how it can be used in a day to day basis."
-    magiks_tech_mage_college_effects:0 "The Mage's College tech allows you to upgrade your Mage's Academy into a MAge's college."
+magiks_trait_lifebender:0 "Natural Life-Magi"
+magiks_trait_lifebender_desc:0 "This species has a natural affinity for the life element, and uses it frequently to improve food and mineral production."
 
-    magiks_tech_mage_university:0 "Mage's University"
-    magiks_tech_mage_university_desc:0 "The Mage's University is not just a place of learning, but of experimentation and otherworldy research."
-    magiks_tech_mage_university_effects:0 "The Mage's University tech allows you to upgrade your Mage's College into a Mage's University, as well as construct Golum armies to fight for you."
+magiks_trait_airbender:0 "Natural Air-Magi"
+magiks_trait_airbender_desc:0 "This species has a natural affinity for the air element, and has produced an extremely sports-oriented and nomadic society as a result."
 
-    magiks_tech_mage_arcanium:0 "Arcanium"
-    magiks_tech_mage_arcanium_desc:0 "The Arcanium is the center of magical learning and development, a place where the impossible is made possible."
-    magiks_tech_mage_arcanium_effect:0 "The Arcanium technology allows you to upgrade your Mage's University to an Arcanium."
+magiks_trait_earthbender:0 "Natural Earth-Magi"
+magiks_trait_earthbender_desc:0 "This species has a natural affinity for the earth element, and uses it frequently to improve energy production and excavation methods."
 
+magiks_trait_multibender:0 "Naturaly Balanced Magi"
+magiks_trait_multibender_desc:0 "This species has a natural affinity for all of the natural elements, and benefits extremely from it. However due to most member's inablility to use more than one element, tribalistic divides in society frequently occur."
 
-            ### Buildings ###
-    
-    
-    magiks_building_mass_grave:0 "Planetary Gravesite"
-    magiks_building_mass_grave_desc:0 "A massive graveyard, hosting all of the planet's dead before their eventual reanimation."
-    
-    magiks_building_tainted_factory:0 "Tainted Factories"
-    magiks_building_tainted_factory_desc:0 "While appearing to be nothing more than some factories with bad weather, in reality this place churns out highly-processed undead, stripping corpses of flesh before being sent through washing, chemical treating, and finally, reanimation."
-    
-    magiks_building_corrupted_sanctum:0 "Corrupted Sanctum"
-    magiks_building_corrupted_sanctum_desc:0 "Off-limits to 99% of the population, this large mansion-like complex is build specifically as the creation and living area for all on-planet higher-level undead. Not only that, but it has also been outfitted with luxury like never seen before, as to keep the ghastly residents loyal and content."
-    
-    magiks_building_underground:0 "The Underground"
-    magiks_building_underground_desc:0 "While the mountain it rests under does have a name, the most notable thing about this region is 'The Underground'. A massive network of tunnels and large, open caves, it served as the living space for the second species of this world, back when they were locked away. Now it is fully open, allowing access to its unique culture and large geothermal energy output."
-    
-    magiks_building_public_theater:0 "Public Theater"
-    magiks_building_public_theater_desc:0 "A popular place of gathering, this theater provides a large source of entertainment for the people of this world, both having live shows, and distibuting copies for private use."
-    
-    magiks_building_grand_stadium:0 "Grand Stadium"
-    magiks_building_grand_stadium_desc:0 "A theater of grand proportions, this stadium can show up to 3 live shows at once, allowing for large amounts of media to be procured on a daily basis."
-    
-    magiks_building_planetary_stage:0 "Planetary Stage"
-    magiks_building_planetary_stage_desc:0 "A true wonder of this world, this 52 floor masterpeice of architecture is solely dedicated to the production, presentation and distribution of music, and has some of the most advanced audio-making equipment in the galaxy, All of which is freely available to those who wish to partake in the near-trancendant act of making or preforming musical works."
-    
-    magiks_building_galactway:0 "Galactway"
-    magiks_building_galactway_desc:0 "A true hub of creative musical talent, Galactway is the absolute home of music and song in the galaxy, unrivaled in quanitity and quality of art."
-    
-    building_mage_academy:0 "Mage's Academy"
-    building_mage_academy_desc:0 "The Mage's Academy is a place where all fledgling mages go to hone their skill and craft no matter their source of magical ability."
+magiks_trait_soft_magicians:0 "Sorcery"
+magiks_trait_soft_magicians_desc:0 "This species is capable of large amounts of magical talent, often from birth or a very young age. This abundance of free power causes loftiness and a lack of ambition, however."
 
-    building_mage_college:0 "Mage's College"
-    building_mage_college_desc:0 "The Mage's College allows for those who have the aptitude to further delve into the arcane arts, furthering not only their knowledge but societies as well."
+magiks_trait_hard_magicians:0 "Wizardry"
+magiks_trait_hard_magicians_desc:0 "This species has an innate link to the arcane, and with only a few years of training, great power can be attained. These years of training are taken by most highly-educated persons, and leads to a passion for learning and practice."
 
-    building_mage_university:0 "Mage's University"
-    building_mage_university_desc:0 "The Mage's University has many arcane laboratories and specialized sections for more experimental magical development all of which are available to any mage who attends."
+magiks_trait_alchemy:0 "Alchemy"
+magiks_trait_alchemy_desc:0 "This species' biology favors a semi-magical ability to transform elements in a strict and controlled fashion, requiring many years of strict training and a unique style of thinking."
 
-    building_mage_arcanium:0 "The Arcanium"
-    building_mage_arcanium_desc:0 "The Arcanium represents the pinnacle of magical educational development. There are both a surplus of magical laboratories, as well as storied Mages who can guide new adepts in their studies."
+magiks_trait_racial_minority:0 "Racial Minority"
+magiks_trait_racial_minority_desc:0 "Despite globalization and repeated attemps (secret or otherwise), there remains a small minority of the population with signifigantly enchanced abilities, causing jealously and mistrust amoung the majority."
 
-    building_manacite_collector:0 "Manacite Collector"
-    building_manacite_collector_desc:0 "The facility is manned by Alchemical Specialists who, through the use of arcane ritual, can successfully harvest and purify manacite for magical use."
-    mod_building_manacite_collector_max:0 "Max Manacite Collectors"
-    
-            ### Armies ###
-    
-    
-    magiks_zombie_army:0 "Shambling Undead"
-    magiks_zombie_army_desc:0 "Raised by our finest sorcerers and mages, this army consists of little more than a shambling mob of undead, consuming and destroying all in their path."
-    
-    magiks_skeleton_army:0 "Skeletal Infantry"
-    magiks_skeleton_army_desc:0 "Much more advanced then their shambling counterparts, these undead are intelligent enough to use tactics and strategy, as well as survive slightly longer than previously possible. The removing of rotting flesh has substantially decreased the smell as well."
-    
-    magiks_lich_army:0 "Lich Army"
-    magiks_lich_army_desc:0 "By keeping one's soul trapped in a device known as a "phylactery", maintaining higher-brain-functions while undead is possible, allowing for an individual to both remain undead and magical. If one were to form an army of these monstrosities, they would become, at least on some level, death itself."
-    
-    magiks_blood_ops:0 "Blood Ops"
-    magiks_blood_ops_desc:0 "These highly-trained and vampiric undead are specialized in infiltration, utilization of single-strike tactics, and even sporting limited but powerful 'Enhanced Suggestion' capabilities."
-    
-    magiks_draconic_division:0 "Draconic Division"
-    magiks_draconic_division_desc:0 "An army made up of only the bravest of pilots, with each pilot given their own personal dragon-mount, whom they are expected to form a strong bond with."
+magiks_trait_strong_souls:0 "Determined Souls"
+magiks_trait_strong_souls_desc:0 "The souls of this species are rediculously powerful, but hard to utilize. As a consequence, their souls can survive after death for a brief period of time before acending, allowing for much easier harvest, if nessesary."
 
-    magiks_evoker_army:0 "Evoker Army"
-    magiks_evoker_army_desc:0 "These mages specialize in evocation magic, allowing them to shoout forth bouts of magical energy to destroy those who would oppose them. With this flashy power they can quickly demoralize their opponents."
+magiks_trait_weak_souls:0 "Infused Souls"
+magiks_trait_weak_souls_desc:0 "The souls of this species are infused with their bodies, leading to much easier magic use. The added instability reduces their overall magical ability however, and their bodies and souls turn to dust after death."
 
-    magiks_golum_army:0 "Golum Army"
-    magiks_golum_army_desc:0 "Powered by manacite, and guided by powerful mages far behind the frontlines, these golums feel no fear and are hard to take down."
-    
-    magiks_dragon_lord_army:0 "Dragon Lord Army"
-    magiks_dragon_lord_army_desc:0 "The Dragon Lords who rule over the nation also take to battle, their powerful arcane powers along with the strength of their dragons should make all fear them in combat."
+magiks_trait_enchanting_musicians:0 "Enchanting Musicians"
+magiks_trait_enchanting_musicians_desc:0 "The music made by this people causes seemingly magical changes to both the listeners and enviornment around it, though most of the effects are emotional."
 
-    abjuration_mages_army:0 "Abjuration Mage Army"
-    abjuration_mages_army_desc:0 "Abjuration Mages specialize in protective and defensice spells. They exist to assist and strengthen planetary defenders."
-    
-            ### Governments ###
-    
-    
-    magiks_gov_magocracy:0 "Magocracy"
-    magiks_gov_magocracy_desc:0 "The power of magic is fully entwined into all aspects of this nation and culture. Only those with magical ability can hold true positions of power and authority."    
+magiks_trait_persuading_song:0 "Persuading Song"
+magiks_trait_persuading_song_desc:0 "The singing of this race is very alluring, so much so that even organisms normally unaffected by music seem to lighten up."
 
-    magiks_gov_rockin_regime:0 "Rockin' Regime"
-    magiks_gov_rockin_regime_desc:0 "While originally a democratic society, it now let's its elected ruler stay in office for life, lest the public protest the outting of their favorite star."
-    
-    magiks_gov_harmonious_state:0 "Harmonious State"
-    magiks_gov_harmonious_state_desc:0 "This society is ruled by a single individual for life, who has sworn to the discovery and propogation of new and facinated music to all of their citizens."
-    
-    magiks_gov_ministry_of_magic:0 "Ministry of Magic"
-    magiks_gov_ministry_of_magic_desc:0 "The society is run by a council of wizards and witches, all cooperating to form laws and make decisions that will ultimately help the populace."
-    
-    magiks_gov_council_of_sorcery:0 "Counsel of Sorcery"
-    magiks_gov_council_of_sorcery_desc:0 "This society is run by a court of royal families, chosen by their family-blood's ability to produce magically-dominant offspring."
-    
-    magiks_gov_cultural_controllers:0 "Cultural Controllers"
-    magiks_gov_cultural_controllers_desc:0 "These strange machines have 'perfected' a unified culture, forcing it on their organic population, and allowing for much greater control over the populace. The drawbacks of this is that the design and production of media and merchandise causes many inefficiencies, all of which are ignored for the sake of maintaining said control."
-    
-    magiks_gov_dragon_magocracy:0 "Dragon Lords"
-    magiks_gov_dragon_magocracy_desc:0 "Various forms of magic has long dominated this world, be it innate or learned through hard work and study. This disharmony in the way magic presents itself to the different races of the world has long caused conflict and drama. The people though were unified by a powerful Dragon Lord, a rider of Dragons!"    
+magiks_trait_demi_folk:0 "Animalic Polymorphism"
+magiks_trait_demi_folk_desc:0 "This species shows a great amount of polymorphism, with most changes resembling features of various animal species native to their homeworld. This can include ears, tails, teeth, etc."
 
-            ### Ruler Titles ###
+magiks_trait_adapted_optimists:0 "Adapted Optimists"
+magiks_trait_adapted_optimists_desc:0 "This species always looks on the bright side, as no matter how bad the situation may seem, they know firsthand that someone else probably has it worse."
 
-    MK_RT_DRAGON_MAGUS:0 "Dragon Magus"
-    MK_RT_DRAGON_MAGUS_FEMALE:0 "Dragon Magus"
+magiks_trait_demi_folk_plants:0 "Plantaeic Polymorphism"
+magiks_trait_demi_folk_plants_desc:0 "This species shows a great amount of polymorphism, with most changes resembling features of various plant species native to their homeworld. This can include sprouts and leaves, usually appearing at joints or instead of hair."
 
-    MK_RT_SUPREME_MAGE:0 "Supreme Mage"
-    MK_RT_SUPREME_MAGE_FEMALE:0 "Supreme Mage"
-    
-    MK_RT_ROCK_MASTER:0 "Master of Rock"
-    MK_RT_ROCK_MISTRESS:0 "Mistress of Rock"
-    
-    MK_RT_HS_M:0 "Rhythmic Dictator"
-    MK_RT_HS_F:0 "Rhythmic Dictator"
-    
-    MK_RT_MoM_M:0 "Minister of Magic"
-    MK_RT_MoM_F:0 "Minister of Magic"
-    
-    MK_RT_CoS_M:0 "Prime Blooded"
-    MK_RT_CoS_F:0 "Prime Blooded"
-    
-    MK_RT_CC_1:0 "Direction Core"
-    MK_RT_CC_2:0 "Head Producer"
-    MK_RT_CC_3:0 "Best Bot"
-    
-            ### Economic Categories ###
+magiks_trait_demi_folk_dnd:0 "Specialized Polymorphism"
+magiks_trait_demi_folk_dnd_desc:0 "This species shows a great amount of polymorphism, with most changes being geared towards highly-specialized roles, such as mining, intellectual persuits, etc."
 
-    planet_mages:0 "Mages"
+magiks_trait_robot_artificial_souls:0 "Artificial Souls"
+magiks_trait_robot_artificial_souls_desc:0 "Despite not being made of flesh and blood, each of these machines carry a unique soul, making it much easier for them to believe in the supernatural, as they are seemingly products of it."
 
-    planet_undead:0 "Undead"
+magiks_trait_robot_reality_anchors:0 "Reality Anchors"
+magiks_trait_robot_reality_anchors_desc:0 "Through some strange property barely understood by even their creators, these machines cause the fabric of space surrounding them to become 'hyper-stablized', weakening magical and psionic abilities greatly."
 
-            ### Jobs ###
+magiks_trait_robot_brass_beasts:0 "Brass Beasts"
+magiks_trait_robot_brass_beasts_desc:0 "These machines are the product of some strange and unique engineering, somehow being made entirely of gears and cogs, fueled by steam and magic crystals instead of electricity."
 
-    job_high_mage:0 "High Mage"
-    job_high_mage_plural:0 "High Mages"
-    job_high_mage_desc:0 "A High Mage is a magic user who has mastered their magical ability."
-    mod_job_high_mage_add:0 "Adds High Mage Jobs"
+magiks_trait_robot_energy_connections:0 "Energetic Limbs"
+magiks_trait_robot_energy_connections_desc:0 "The limbs and other apperatus of these machines are connected only by tethers of magical energy, and are otherwise comepletely detached from the main body."
 
-    job_magical_researcher:0 "Magical Researcher"
-    job_magical_researcher_plural:0 "Magical Researchers"
-    job_magical_researcher_desc:0 "Mages who specialize in the development of new arcane abilities."
-    mod_job_magical_researcher_add:0 "Adds Magical Researcher Jobs"
+magiks_trait_robot_brand_bots:0 "Brand Bots"
+magiks_trait_robot_brand_bots_desc:0 "These creations were modeled after popular  fictional characters, and are programmed to act similar to said characters as well. The constant attention can be a little emotionally taxing, however."
 
-    job_manacite_alchemist:0 "Manacite Alchemist"
-    job_manacite_alchemist_plural:0 "Manacite Alchemists"
-    job_manacite_alchemist_desc:0 "Manacite Alchemists are Mages who specialize in the creation and purification of Manacite."
-    mod_job_manacite_alchemist_add:0 "Adds Manacite Alchemist Jobs"
+magiks_trait_robot_warforged:0 "Warforged"
+magiks_trait_robot_warforged_desc:0 "A unique mix of magic and technology, these fearsome machinations are the product of truely mad individuals, long since slain by their own creations."
 
-    job_undead_thrall:0 "Undead Thrall"
-    job_undead_thrall_plural:0 "Undead Thralls"
-    job_undead_thrall_desc:0 "Unintelligent Undead that are used for menial labor"
-    mod_job_undead_thrall_add: "Adds Undead Thrall Jobs"
+magiks_trait_robot_waifu_bots:0 "Moe Mechanisms"
+magiks_trait_robot_waifu_bots_desc:0 "These machines have been specifical designed to replicate popular fictional characters, with a focus on characters containing traits that could be labeled as 'cute', and are meant to elicit feelings of affection or admiration. Such a constant preformance takes a toll on most other tasks, however, as being cute doesn't nessesary mean being efficient."
 
-    job_manacite_drone:0 "Manacite Drone"
-    job_manacite_drone_plural:0 "Manacite Drones"
-    job_manacite_drone_desc:0 "Drone's that are custom created to gather and purify Manacite."
-    mod_job_manacite_drone_add:0 "Adds Manacite Drone Jobs"
+TRAIT_WAIFUS_EFFECT:0 "Normal Ruler Opinion Impact: §G+10§!     Xenophile Ruler Opinion Impact: §G+25§!     Xenophobe Ruler Opinion Impact: §R-25§!     Other Species Happiness: §G+5%§!        Mineral Output: §R-5%§!     Energy Output: §G+5%§!      Research Output: §R-5%§!"
 
-    job_abjurist_mage:0 "Abjurist Mage"
-    job_abjurist_mage_plural:0 "Abjurist Mages"
-    job_abjurist_mage_desc:0 "Abjurist Mages specialize in defensive and protective spells, ensuring the safety of the planet."
-    mod_job_abjurist_mage_add:0 "Adds Abjurist Mage Jobs"
-    
-            ### Planets ###
-    
-    
-    pc_magikal:0 "Magical World"
-    pc_magikal_desc:0 "A beautiful world with a nitrogen-oxygen atmosphere. While mostly consisting of temprate biomes, the magical energy inscribed into this world makes is almost perfectly livable for all life, no matter its preference."
-    pc_magikal_tile:0 "Magically Infused Terrain"
-    pc_magikal_tile_desc:0 "While previously just a normal habitable planet, some event has infused large amounts of magical energy into this world, causing many strange and facinating phenomina."
-    
-    trait_pc_magikal_preference:0 "Magical World Preference"
-    trait_pc_magikal_preference_desc:0 "$trait_pc_arctic_preference_desc$"
-    
-    pc_magikal_habitability:0 "Magical Habitability"
-    
-    pc_sour:0 "Sour World"
-    pc_sour_desc:0 "A barren world with a nitrogen-oxygen atmophere. Empty oceans, bare plains, and nutrient-poor soil, this world seems to have no life on its surface, despite being perfectly habitable in most other aspects."
-    pc_sour_tile:0 "Sour Terrain"
-    pc_sour_tile_desc:0 "A barren landscape filled with dust, dirt, and little else."
-    
-    pc_sour_habitability:0 "Sour Habitability"
-    
-    
-            ### Systems ###
+magiks_trait_robot_golems:0 "Sedimentary Golems"
+magiks_trait_robot_golems_desc:0 "Made of stone an mana, these beasts of artificial origin defy commonly understood engineering methods, and puzzle foreign engineers to this day."
 
-            
-    custom_starting_init_09_NAME:0 "Mana Infused"
-    custom_starting_init_09_DESC:0 "This system is infused with mana."
+magiks_trait_robot_exposed_processors:0 "Exposed Processors"
+magiks_trait_robot_exposed_processors_desc:0 "The computational apperatus of these drones run off of the natural energies present in the fabric of the universe, requiring said apperatus to be located outside the main hull of a drone. This obviously presents a major weakness in combat."
 
-	   ### Name Lists ###
+magiks_trait_robot_core_processors:0 "Core Processors"
+magiks_trait_robot_core_processors_desc:0 "The central computers of these drones are located as deeply as possible in their bodies, allowing for units to remain technically functional with up to 62% of their frames damaged or destroyed."
 
-    name_list_DRAKIEL:0 "Drakiel"
-    name_list_DRAKIEL_desc:0 "A list of Drakiel Names"
+magiks_trait_dragon_blooded:0 "Dragon Blooded"
+magiks_trait_dragon_blooded_desc:0 "This race was imbued long ago with the essence of a fallen ether drake, and as such have signifigantly hightened abilities in certain fields. This comes at the price of breaking physics, however, and causes a minor but constant state of discomfort."
 
-    
-            ### Deposits ###
+magiks_trait_draconic_nobility:0 "Draconic Nobility"
+magiks_trait_draconic_nobility_desc:0 "These creatures have an aura of dignity surrounding them, and demand respect wherever they stand."
 
-            
-    magiks_d_powerful_leyline:0 "Powerful Leyline"
-    magiks_d_powerful_leyline_desc:0 "The Leyline that crosses this part of the planet is more powerful then usual, and it allows for us to take base minerals and infuse them with Mana creating manacite."
+magiks_trait_draconic_pride:0 "Draconic Pride"
+magiks_trait_draconic_pride_desc:0 "This species always seems exceedingly prideful, and comes across as arrogant to most individuals, including members of the same race."
 
-    magiks_d_leyline_convergence:0 "Leyline Convergence"
-    magiks_d_leyline_convergence_desc:0 "Several powerful laylines intersect here, allowing us to infuse many base minerals with Mana, creating a large swath of manacite."
+magiks_trait_infernal_origin:0 "Infernal Origin"
+magiks_trait_infernal_origin_desc:0 "This species was long ago banished to a dimension with more than a little resemblance to hell, and have only recently escaped, bringing back with them knowledge and power gained from the flames and madness."
 
-    magiks_d_natural_manacite_caverns:0 "Natural Manacite Caverns"
-    magiks_d_natural_manacite_caverns_desc:0 "The caverns here are filled with gemstones infused with vaste amounts of mana. These naturally forming manacite crystals can be harvested and put to use."
-    
-    magiks_d_cloudforest:0 "Cloud Forest"
-    magiks_d_cloudforest_desc:0 "The trees in this forest seem to grow clouds instead of leaves, and the rapid pressure changes create lots of usable wind."
-    
-    magiks_d_deepgrandreef:0 "Deep Grand Reef"
-    magiks_d_deepgrandreef_desc:0 "A large, underwater, cavernous abyss exists in this region, and produces large and stable currents ready for exploitation."
-    
-    magiks_d_electrifruitforest:0 "Electri-root Forest"
-    magiks_d_electrifruitforest_desc:0 "The plants covering this forest produce a large network of interconnected roots, using conjured electricity as a defense system for the entire forest."
-    
-    magiks_d_shimmeringfields:0 "Shimmering Fields"
-    magiks_d_shimmeringfields_desc:0 "These fields are covered in beautiful, gleaming outcroppings of ore, all purified by long exposure to the magical energies of the planet."
-    
-    magiks_d_forgottenhoard:0 "Forgotten Hoard"
-    magiks_d_forgottenhoard_desc:0 "A large cave in this area contains a treasure stash of massive proportions, able to be mined for numerous generations."
-    
-    magiks_d_deepdark:0 "Deepdark Entrance"
-    magiks_d_deepdark_desc:0 "This region contains an entrance to the mysterious dimension known as the 'Deepdark', and while too dangerous to explore completely, brings many valuble riches towards the entrance."
-    
-    magiks_d_blessedfields:0 "Blessed Fields"
-    magiks_d_blessedfields_desc:0 "These fields are being protected by mysterious forces, and as such are extremely well protected from predators and pests."
-    
-    magiks_d_enchantedforest:0 "Enchanted Forest"
-    magiks_d_enchantedforest_desc:0 "This forest is thick and rich from prolonged exposure to the forces of the archane, and are extremely viable for farming and agriculture."
-    
-    magiks_d_allignedhills:0 "Alligned Hills"
-    magiks_d_allignedhills_desc:0 "The ridges of these hills are perfectly alligned with several of the planet's leylines, and the magical forces within have greatly increased the soil's potential for supporting growth."
-    
-    magiks_d_magmatic_upheaval:0 "Magmatic Upheaval"
-    magiks_d_magmatic_upheaval_desc:0 "Due to the destablization of this world's natural energies, large volcanic eruptions cover this region, not useful for mining because of a lack of mineral diversity."
-    
-    magiks_d_eternal_thunderstorm:0 "Eternal Thunderstorm"
-    magiks_d_eternal_thunderstorm_desc:0 "This planet's climate has been drained of it's controlling energies, and the weather runs rampant with chaotic outbursts of thunder and lightning."
-    
-    magiks_d_archane_machinery:0 "Archane Machinery"
-    magiks_d_archane_machinery_desc:0 "Long ago, when this world was drained of it's natural enemies, large monstrous hybrids of technology and sorcery were built here, and while far beyond repair, contain several rare minerals that can be exploited."
-    
-    magiks_d_mineral_desert:0 "Mineral Desert"
-    magiks_d_mineral_desert_desc:0 "Once grand deposits and vast settlements, the harsh chaos of this drained planet have grinded the valuable materials down into dust, making a desert mostly void of normal sand."
-    
-    magiks_d_stinking_bog:0 "Stinking Bog"
-    magiks_d_stinking_bog_desc:0 "Bubbling swamps of tar cover this area of the planet, and is one of the few places fertile enough for even a semblance of life to grow."
-    
-    magiks_d_fettered_marsh:0 "Fettered Marsh"
-    magiks_d_fettered_marsh_desc:0 "Twisted roots of ancient deceased trees and other plants cover this region's landscape, waiting to be processed into what little nutrients can be provided by their shriveled husks."
-    
-    
-            ### Resources ###
+magiks_trait_deal_with_devil:0 "Demon Dealers"
+magiks_trait_deal_with_devil_desc:0 "This species once made a deal with a demonic entity for power and wealth, and have been paying the price ever since."
 
-            
-    manacite:0 "Manacite"
-    manacite_desc:0 "A gemstone infused with large amounts of mana,it is typically used in arcane rituals and constructions."
+magiks_trait_abyss_gazers:0 "Abyss Gazers"
+magiks_trait_abyss_gazers_desc:0 "This race has stared into the abyss, and while their outlook seems bleak, they are more determined than ever to change that. For when the abyss stares back, they will be ready."
 
-    
-            ### Tile Blockers ###
-            
-            
-    magiks_tb_fey_wilds:0 "Feywild Forests"
-    magiks_tb_fey_wilds_desc:0 "This region is home to several large forests, all containing small rifts leading to a strange, nature-based realm of magic and fairies, eager to lure unsuspecting children into their realm."
-    
-    magiks_tb_deep_grand_reef:0 "Deep Grand Reef"
-    magiks_tb_deep_grand_reef_desc:0 "These seas contain a large, cavernous void near their shallow bottom, home to all sorts of facinating (and sometimes dangerous) creatures."
-    
-    
-            ### Start Screen Messages ###
-    
-    MAGIKS_START_SCREEN_DRAGON_MAGOCRACY:0 "The planet has long been divided between two magically inclined races; one which could use magic as an inate part of their being, and another that could master it through years of training and practice. For millenia these two cultures and races fought for dominance until they were united by a powerful magic user who exists now in legend. The peoples now are united and ruled by those who managed to tame the dragons of the world, the Dragon Lords."    
+magiks_trait_multidimensional_migrants:0 "Multidimensional Migrants"
+magiks_trait_multidimensional_migrants_desc:0 "Whether because of war, famine or curiosity, this entire species fled from their home dimension, and have somehow lost the ability to travel back. While not necesarily unpleasant to be around, they can seem a bit, foreign, at times, as if they don't belong; This can be either facinating, or terrifying."
 
-    MAGIKS_START_SCREEN_MAGOCRACY:0 "The magic users of the world slowly grew to dominate many aspects of the various governments of the world. Even with conflicts spawning due to disagreements between various nations the Mages of the world worked to unify it under their rule. Several centuries ago they succeeded."
+magiks_trait_voidseepers:0 "Voidseepers"
+magiks_trait_voidseepers_desc:0 "Born in the true darkness of the void inbetween realities, these beings have been trying to escape for aeons, and finally have. No matter what other races think of them, no matter how bad their situation may be, they must remain strong, as it could always be worse."
 
-    MAGIKS_START_SCREEN_CELEBRATED_MONARCHY:0 "As popular media spread across the globe, celebrities were slowly worshiped more and more, gradually wining in state elections, until eventually all positions of governance were held by a single family, now ruling as monarical head."
-    
-    MAGIKS_START_SCREEN_ROCKIN_REGIME:0 "The populace eventually grew tired and bored, lacking in motivation and drive to move forward. It was at our lowest moment that the messiah apeared, leading us into a golden age of culture and progress."
-    
-    MAGIKS_START_SCREEN_BAND_BUREAUCRACY:0 "A great war had broken out, not of blood and bullets, but of culture and music. It wouldn't be till several decades later that it would finally end, giving rise to the current establishment, dedicated to never letting another war if culture break out, ever again."
-    
-    MAGIKS_START_SCREEN_INSTRUMENTAL_INSTITUTION:0 "After a fierce debate on the position of music and celebrities in politics, it was decided by popular vote that those in power must wield great musical talent."
-    
-    MAGIKS_START_SCREEN_HARMONIOUS_COURT:0 "After rampant pollution of our world both chemically and culturally, one family stepped up with a plan to live in harmony with the world, in every way imaginable."
-    
-    MAGIKS_START_SCREEN_HARMONIOUS_STATE:0 "After rampant pollution of our world both chemically and culturally, a single dictator took power, vowing to use their immense power to bring balance to all who are willing, and force it on those who are not."
-    
-    MAGIKS_START_SCREEN_HARMONIOUS_GATHERING:0 "After rampant pollution of our world both chemically and culturally, a council was formed to ensure the survival of our world and species. Through their guidance we restored our planet, and our culture, coming to peace with ourselves"
-    
-    MAGIKS_START_SCREEN_HARMONIOUS_DEMOCRACY:0 "After rampant pollution of our world both chemically and culturally, our people came together to form a new type of government, based on the public's common desire for a more harmonious relationship with nature."
-    
-    MAGIKS_START_SCREEN_MAGICAL_MONARCHY:0 "After centuries of war between the various empires of our world, one monarch, who possesed immense and powerful magics, came to dominate over all, and their genetic line continues to rule to this day, and into the future."
-    
-    MAGIKS_START_SCREEN_DARK_DICTATORSHIP:0 "After centuries of war between the various empires of our world, one monarch, who possesed immense and powerful dark magics, came to dominate over all. Never having children themselves, it became tradition for the title of ruler to be decided at the death of the previous ruler, as apointed by popular vote."
-    
-    MAGIKS_START_SCREEN_MINISTRY_OF_MAGIC:0 "After centuries of rampant and chaotic magic use, a council of powerful mages and sorcerers was assembled, unifed in their goal of the regulation and advancement of magic."
-    
-    MAGIKS_START_SCREEN_COUNCIL_OF_SORCERY:0 "After centuries of war between multiple great magic users, it was eventually decided that the best way to rule was throught public vote, leading to an end to the cyclic wars for power that held sway over our world for so long. We have prospered ever since."
-    
-    MAGIKS_START_SCREEN_MAGIKAL_ONE:0 "In the eons since the first primitive [GetSpeciesName] communities took shape around the shimmering waterfalls and beautiful fields of [GetHomeWorldName], our civilization has spread and prospered."
-    
-    MAGIKS_START_SCREEN_SOUR_TWO:0 "As our society advanced, research began into unlocking the raw potential of our world, using as a power source for our species. Unfortunately we suceeded, and over the centuries that followed we slowly drained our world of all it had, until eventually there was nothing left. Crops died, our reactors went cold, and a sense of dread filled our every waking moment, only leaving us when we finally overthrew the dictators that had been controling us all this time. With our new unified government in place, we looked to the future, and to the potential resoration of our world."
-    
-    
-            ### Static Modifiers ###
-    
-    
-    mana_infused:0 "Mana Infused"
-    mana_infused_desc:0 "This world is infused with magical energy, giving boosts to food and energy but causing poor research oppertunities, as consistency is frequently inconsistent."
-    
-    mana_drained:0 "Mana Drained"
-    mana_drained_desc:0 "This world is devoid of its natural energies, and as such is very poor when it comes to life in general. The soil has turned sour, and as such will provide very little in terms of nutrients when it comes to farming, meaning synthesized soil is required."
-    
-    magiks_dragons:0 "Dragons"
-    magiks_dragons_desc:0 "Many large and powerful reptilian creatures fly through the air of this world, terrorizing all who live below"
-    
-    magiks_dragons_tamed:0 "Tamed Dragons"
-    magiks_dragons_tamed_desc:0 "Through careful use of negotiations and training, the draconic beasts of this world have been pacified."
-    
-            ### Planet Modifiers ###
-            
-            
-    magiks_pm_dragons:0 "Dragons"
-    magiks_pm_dragons_desc:0 "Many large, reptilian creatures fly through the air of this world."
-    
-    magiks_pm_dragons_tamed:0 "Tamed Dragons"
-    magiks_pm_dragons_tamed_desc:0 "Through careful use of negotiations and training, the draconic beasts of this world have been pacified."
-    
-    
-            ### Ascension Perks ###
-    
-    
-    ap_magiks_terraform:0 "Mana Transfering"
-    ap_magiks_terraform_desc:0 "By integrating advanced magics and technologies together on a planetary scale, it is possible to transform entire worlds with nothing but our hearts and minds."
-    
-    synthetic_empire_magikal_ascension:0 "$TRIGGER_FAIL$Synthetic empires are incapable of starting down the path to Magical Ascension."
-    
-    ap_magiks_genes:0 "Mana Tinkering"
-    ap_magiks_genes_desc:0 "Legend going back from before writing itself of people able to manipulate magical ability itself, limited only by their own imaginations."
-    
-    ap_magiks_genes_modifier_desc:0 "$species_trait_points_add$: $POINTS|0=+$\n$MOD_COUNTRY_MODIFY_SPECIES_COST_MULT$: $COST_MULT|%0=-$"
-    
-    ap_magiks_genes_adv:0 "Mana Molding"
-    ap_magiks_genes_adv_desc:0 "After only a short period of time, our greatest mages and scientists have become so flutent in reality bending that they could read the universe itself like a second language."
-    
-    ap_magiks_genes_adv_modifier_desc:0 "$species_trait_points_add$: $POINTS|0=+$\n$MOD_COUNTRY_MODIFY_SPECIES_COST_MULT$: $COST_MULT|%0=-$"
-    requires_ap_magiks_genes:0 "Requires the 'Mana Tinkering' ascension perk."
-    requires_magiks_tech_magiks_gene:0 "Requires the 'The Alchemic Method' technology."
-    
-    
-            ### Edicts ###
-            
-            
-    edict_add_dragons:0 "Draconic Colonization"
-    edict_add_dragons_desc:0 "By setting up recruitment centers specifically meant for dragons, we many bring them to this world, where we can use them for our gain."
-    
-    edict_tame_dragons:0 "Draconic Pacification"
-    edict_tame_dragons_desc:0 "Since this world already has dragons present, colonization is not required. However, these dragons are wild and dangerous, and require training before they can be useful to our cause."
-    
-    edict_kill_dragons:0 "Draconic Extermination"
-    edict_kill_dragons_desc:0 "The monsters covering this planet are a collosal nussance, and we should exterminate them when we have the chance."
-    
-    
-            ### Miscellaneous ###
-    
-    
-    allow_magikal:0 "Allows for the terraformation of Magical worlds from Gaia worlds."
-    allow_sour:0 "Allows for the restoration of Sour worlds into normal habitable planets."
-    
-    feature_basic_magiks_traits:0 "Basic Magic Modification"
-    feature_basic_magiks_traits_desc:0 "Allows us to add basic magical abilities to Species when genetically modifying them."
-    
-    feature_advanced_magiks_traits:0 "Advanced Magic Modification"
-    feature_advanced_magiks_traits_desc:0 "Allows us to add more advanced and generalized magical abilities to Species when genetically modifying them."
+magiks_trait_demonic_defaulters:0 "Demonic Defaulters"
+magiks_trait_demonic_defaulters_desc:0 "Once a proud and greedy race, tricking countless mortals out of their wealth and souls, these demons eventually went bankrupt, and are now having to pay their debt through mortal existence. Don't worry though, it'll only take them a few million years to pay everything off..."
+
+magiks_trait_mulcubi:0 "Mulcubi"
+magiks_trait_mulcubi_desc:0 "Made up entirely by Incubi and Succubi, these beings were so obsessed with how mortals reproduce that they left their firey homes in search of more satisfying 'prey' to play with. Their obsession with mating can become more than a small distraction in everyday life, however, and can make any attempts at normal conversation tedious."
+
+magiks_trait_undead_reliant:0 "Undead Majority"
+magiks_trait_undead_reliant_desc:0 "This populations of this species are made of mostly undead servants, with a relatively small portion being made of acutal living individuals."
+
+magiks_trait_exothermic_enchanters:0 "Exothermic Enchanters"
+magiks_trait_exothermic_enchanters_desc:0 "Able to force large amounts of heat out of objects, the members of this race are expert miners, able to freeze ores and harvest the broken shards, as well as sling waves of frozen air at their enemies. Their hearts are just as cold, however."
+
+magiks_trait_endothermic_enchanters:0 "Endothermic Enchanters"
+magiks_trait_endothermic_enchanters_desc:0 "Able to force large amounts of heat into matter, and then manipulate said matter, these hot-headed and 'passionate' beings are always up for a fight, usually melting the battlefield in the process. They mostly use their powers for industrial perposes, however."
+
+### Empire Civics ###
+
+magiks_civic_elite_mages:0 "Elite Mages"
+magiks_civic_elite_mages_desc:0 "Who runs this society is determined by magical ability. The more powerful one is the art of the supernatural and extraordinary, the higher their role in said society."
+
+magiks_civic_magical_lineages:0 "Magical Lineages"
+magiks_civic_magical_lineages_desc:0 "Powerful sorcerer bloodlines have long taken positions of power over their less magically gifted kin. This has led to great houses based on magical blood to hold great power and sway in this nation."
+
+magiks_civic_alchemical_ministry:0 "Alchemical Ministry"
+magiks_civic_alchemical_ministry_desc:0 "Alchemists and their unique form of magic have created a vast and powerful ministry that allows them to easily control the production and supply lines of the nation."
+civic_tooltip_alchemist_effects:0 "Alchemists gain the Manacite Extraction technology at game start, as well as a bonus +10% to mining jobs."
+
+magiks_civic_duelistic_magics:0 "Duelistic Magics"
+magiks_civic_duelistic_magics_desc:0 "The world has evolved two seperate but equally magical species, who, even though they united long ago, share a deep and somewhat friendly rivalry between eachother."
+magiks_civic_duelistic_magics_secondary_species:0 "Magical Rivals"
+magiks_civic_duelistic_magics_effects:0 "Start the game with 4 Pops being of another codominant species."
+
+magiks_civic_reunited_siblings:0 "Reunited Siblings"
+magiks_civic_reunited_siblings_desc:0 "Long ago, the primary species of this world, worried about their souls being harvested, banished the other species into a large cavern, isolating them from the outside world. Only recently have the two reunited, having to now share their futures together."
+magiks_civic_reunited_siblings_secondary_species:0 "Cave Dwellers"
+magiks_civic_reunited_siblings_effects:0 "Start the game with 2 Pops being of another codominant species."
+
+magiks_civic_state_necromancy:0 "State Necromancy"
+magiks_civic_state_necromancy_desc:0 "This nation partakes in frequent and legal use of necromancy and the undead."
+
+magiks_civic_natures_listeners:0 "Nature's Listeners"
+magiks_civic_natures_listeners_desc:0 "This society holds the sounds of nature to be of the upmost importance in not just music and magic, but life as a whole."
+
+magiks_civic_idol_crazy:0 "Idol Crazy"
+magiks_civic_idol_crazy_desc:0 "Due to musical talent equalling magical talent, this society worships its stars and idols like living gods, and that the ultimate thing you can aspire to be in your life is one of them."
+
+magiks_civic_rhythmic_fanatics:0 "Rhythmic Fanatics"
+magiks_civic_rhythmic_fanatics_desc:0 "Music and rhythm is an integeral part of this society, and because of this they have produce some of the most asthetically pleasing music in the galaxy, and possibly the universe. It's never enough however, and there is a deep-rooted urge in its citizens to make something better."
+
+magiks_civic_world_of_legend:0 "World of Legend"
+magiks_civic_world_of_legend_desc:0 "One of myth and legend, the homeworld of this species is a magic-filled paradise, whether they have the talent to apreciate it or not."
+
+civic_tooltip_world_of_legend_effects:0 "Homeworld and planet preference is set to a 'Magical World' (Size: 25), giving bonuses to food and energy but a severe penalty to research."
+
+magiks_civic_drained_survivors:0 "Drained Surviviors"
+magiks_civic_drained_survivors_desc:0 "After years of draining the energy from our world, it finally gave out, leading to a miserable poverty-filled and disunited existance. After finally breaking free from the iron grip of our latest tyrants, we united under one flag, and are now more dedicated than ever before to travel to the stars, hoping to one day fix the world we came from."
+
+magiks_civic_tooltip_drained_survivors_effects:0 "Homeworld is set to a 'sour world', giving our species the 'drained survivors' trait, enabling enhanced habitability on sour worlds."
+
+magiks_machine_civic_waifu_bots:0 "Waifu Bots"
+magiks_machine_civic_waifu_bots_desc:0 "Through extensive species-wide reconditioning, these machines have manged to convert their creators into one single culture, designed specially for pleasure and compliance. Strangely enough, due to it's 'perfect design', said machines have become a bit obsessed with it themselves."
+
+magiks_civic_dark_cultists:0 "Dark Cultists"
+magiks_civic_dark_cultists_desc:0 "Originally created from a belief that the forces of darkness would bring great fortune, this society commited mass-atrocities and genocide at the request of their dark religion. However, that was long ago, and while more modern reforms have greatly reduced the unethical treatment caused by the people's beliefs, the roots are still present, and cause great distrust among other spiritualists."
+
+magiks_civic_dragon_tamers:0 "Dragon Tamers"
+magiks_civic_dragon_tamers_desc:0 "This species has formed a friendly relationship with the draconic beasts native to their homeworld, using them as mounts and companions."
+civic_tooltip_dragon_tamers_effects:0 "Homeworld starts with tamed dragons, and you have the ability to bring them to your other planets."
+
+### Authority ###
+
+magiks_auth_magocracy:0 "Magocracy"
+magiks_auth_magocracy_desc:0 "Powerful magic users are the ones tasked with ruling this nation, their political power directly proportional to their magical talent."
+
+### Technology ###
+
+magiks_tech_necro1:0 "Necromantic Mass-Production"
+magiks_tech_necro1_desc:0 "By updated ancient methods with modern technology and more recent magical findings, an army of undead can be made in weeks instead of months, and at a much higher quality as well."
+
+magiks_tech_necro2:0 "Enchanced Undead Processing"
+magiks_tech_necro2_desc:0 "By further optimizing the reanimation process, larger armies of undead can be created, with further advances in both intelligence and loyalty also increasing individual preformance."
+
+magiks_tech_necro3:0 "Large-Scale Phylactery Manufacturing"
+magiks_tech_necro3_desc:0 "While still extremely expensive, new combinations in science and necromancy has allowed for consistent creation of Liches. Near-immortal undead with the intelligence of 15 men or more, Liches possess the ability to create their own private armies of undead, actively using the enemy's fallen to replenish said army, with minimal additional maintenance"
+
+magiks_tech_rhythm1:0 "Harmonic Resonance"
+magiks_tech_rhythm1_desc:0 "By studying the baseline mental processes of sapient beings, certain frequencies maybe prove to be universally pleasant to listen to, regardless of taste or species."
+
+magiks_tech_rhythm2:0 "Enhanced Pattern Recognition"
+magiks_tech_rhythm2_desc:0 "As a skill, pattern recognition is a requirement for tool-use and technological progression. This can be exploited however, expecially for use in creating near-universally loved musical classics."
+
+magiks_tech_rhythm3:0 "Permeating Chord Progressions"
+magiks_tech_rhythm3_desc:0 "As a universal truth, music is the one thing that ties us together. With the ultimate combination of all of music theory, an emotional response is almost guaranteed."
+
+magiks_tech_magiks_gene:0 "The Alchemic Method"
+magiks_tech_magiks_gene_desc:0 "The scientific method has existed for centuries, and has advanced us immensely in that field. Perhaps it is time for something similar in other fields..."
+magiks_tech_magiks_gene_effects:0 "Allows for basic manipulation of a species' magical capabilities, through gene modding."
+
+magiks_tech_magiks_gene_two:0 "Unifying Magical Theory"
+magiks_tech_magiks_gene_two_desc:0 "After many decades of research, it is finally time to conjure together a unifying theory of sourcery and magic in general, in the hope that we may master this cryptic and ancient art."
+magiks_tech_magiks_gene_two_effects:0 "Allows for advanced manipulation of a species' magical capabilities, through gene modding."
+
+magiks_tech_mage_academy:0 "Mage's Academy"
+magiks_tech_mage_academy_desc:0 "The Mage's Academy is overseen by several powerful High Mages who will oversee the development of the magical capabilites of those entrusted to their care."
+magiks_tech_mage_academy_effects:0 "The mage's Academy tech allows you to build a Mage's Academy on your plantes as well as allows for the creation of Evoker Armies."
+
+magiks_tech_mage_college:0 "Mage's College"
+magiks_tech_mage_college_desc:0 "The Mage's College is a larger complex for the research of magic and how it can be used in a day to day basis."
+magiks_tech_mage_college_effects:0 "The Mage's College tech allows you to upgrade your Mage's Academy into a MAge's college."
+
+magiks_tech_mage_university:0 "Mage's University"
+magiks_tech_mage_university_desc:0 "The Mage's University is not just a place of learning, but of experimentation and otherworldy research."
+magiks_tech_mage_university_effects:0 "The Mage's University tech allows you to upgrade your Mage's College into a Mage's University, as well as construct Golum armies to fight for you."
+
+magiks_tech_mage_arcanium:0 "Arcanium"
+magiks_tech_mage_arcanium_desc:0 "The Arcanium is the center of magical learning and development, a place where the impossible is made possible."
+magiks_tech_mage_arcanium_effect:0 "The Arcanium technology allows you to upgrade your Mage's University to an Arcanium."
+
+### Buildings ###
+
+magiks_building_mass_grave:0 "Planetary Gravesite"
+magiks_building_mass_grave_desc:0 "A massive graveyard, hosting all of the planet's dead before their eventual reanimation."
+
+magiks_building_tainted_factory:0 "Tainted Factories"
+magiks_building_tainted_factory_desc:0 "While appearing to be nothing more than some factories with bad weather, in reality this place churns out highly-processed undead, stripping corpses of flesh before being sent through washing, chemical treating, and finally, reanimation."
+
+magiks_building_corrupted_sanctum:0 "Corrupted Sanctum"
+magiks_building_corrupted_sanctum_desc:0 "Off-limits to 99% of the population, this large mansion-like complex is build specifically as the creation and living area for all on-planet higher-level undead. Not only that, but it has also been outfitted with luxury like never seen before, as to keep the ghastly residents loyal and content."
+
+magiks_building_underground:0 "The Underground"
+magiks_building_underground_desc:0 "While the mountain it rests under does have a name, the most notable thing about this region is 'The Underground'. A massive network of tunnels and large, open caves, it served as the living space for the second species of this world, back when they were locked away. Now it is fully open, allowing access to its unique culture and large geothermal energy output."
+
+magiks_building_public_theater:0 "Public Theater"
+magiks_building_public_theater_desc:0 "A popular place of gathering, this theater provides a large source of entertainment for the people of this world, both having live shows, and distibuting copies for private use."
+
+magiks_building_grand_stadium:0 "Grand Stadium"
+magiks_building_grand_stadium_desc:0 "A theater of grand proportions, this stadium can show up to 3 live shows at once, allowing for large amounts of media to be procured on a daily basis."
+
+magiks_building_planetary_stage:0 "Planetary Stage"
+magiks_building_planetary_stage_desc:0 "A true wonder of this world, this 52 floor masterpeice of architecture is solely dedicated to the production, presentation and distribution of music, and has some of the most advanced audio-making equipment in the galaxy, All of which is freely available to those who wish to partake in the near-trancendant act of making or preforming musical works."
+
+magiks_building_galactway:0 "Galactway"
+magiks_building_galactway_desc:0 "A true hub of creative musical talent, Galactway is the absolute home of music and song in the galaxy, unrivaled in quanitity and quality of art."
+
+magiks_building_mage_academy:0 "Mage's Academy"
+magiks_building_mage_academy_desc:0 "The Mage's Academy is a place where all fledgling mages go to hone their skill and craft no matter their source of magical ability."
+
+magiks_building_mage_college:0 "Mage's College"
+magiks_building_mage_college_desc:0 "The Mage's College allows for those who have the aptitude to further delve into the arcane arts, furthering not only their knowledge but societies as well."
+
+magiks_building_mage_university:0 "Mage's University"
+magiks_building_mage_university_desc:0 "The Mage's University has many arcane laboratories and specialized sections for more experimental magical development all of which are available to any mage who attends."
+
+magiks_building_mage_arcanium:0 "The Arcanium"
+magiks_building_mage_arcanium_desc:0 "The Arcanium represents the pinnacle of magical educational development. There are both a surplus of magical laboratories, as well as storied Mages who can guide new adepts in their studies."
+
+magiks_building_manacite_collector:0 "Manacite Collector"
+magiks_building_manacite_collector_desc:0 "The facility is manned by Alchemical Specialists who, through the use of arcane ritual, can successfully harvest and purify manacite for magical use."
+mod_magiks_building_manacite_collector_max:0 "Max Manacite Collectors"
+
+### Armies ###
+
+magiks_zombie_army:0 "Shambling Undead"
+magiks_zombie_army_desc:0 "Raised by our finest sorcerers and mages, this army consists of little more than a shambling mob of undead, consuming and destroying all in their path."
+
+magiks_skeleton_army:0 "Skeletal Infantry"
+magiks_skeleton_army_desc:0 "Much more advanced then their shambling counterparts, these undead are intelligent enough to use tactics and strategy, as well as survive slightly longer than previously possible. The removing of rotting flesh has substantially decreased the smell as well."
+
+magiks_lich_army:0 "Lich Army"
+magiks_lich_army_desc:0 "By keeping one's soul trapped in a device known as a "phylactery", maintaining higher-brain-functions while undead is possible, allowing for an individual to both remain undead and magical. If one were to form an army of these monstrosities, they would become, at least on some level, death itself."
+
+magiks_blood_ops:0 "Blood Ops"
+magiks_blood_ops_desc:0 "These highly-trained and vampiric undead are specialized in infiltration, utilization of single-strike tactics, and even sporting limited but powerful 'Enhanced Suggestion' capabilities."
+
+magiks_draconic_division:0 "Draconic Division"
+magiks_draconic_division_desc:0 "An army made up of only the bravest of pilots, with each pilot given their own personal dragon-mount, whom they are expected to form a strong bond with."
+
+magiks_evoker_army:0 "Evoker Army"
+magiks_evoker_army_desc:0 "These mages specialize in evocation magic, allowing them to shoout forth bouts of magical energy to destroy those who would oppose them. With this flashy power they can quickly demoralize their opponents."
+
+magiks_golum_army:0 "Golum Army"
+magiks_golum_army_desc:0 "Powered by manacite, and guided by powerful mages far behind the frontlines, these golums feel no fear and are hard to take down."
+
+magiks_dragon_lord_army:0 "Dragon Lord Army"
+magiks_dragon_lord_army_desc:0 "The Dragon Lords who rule over the nation also take to battle, their powerful arcane powers along with the strength of their dragons should make all fear them in combat."
+
+abjuration_mages_army:0 "Abjuration Mage Army"
+abjuration_mages_army_desc:0 "Abjuration Mages specialize in protective and defensice spells. They exist to assist and strengthen planetary defenders."
+
+### Governments ###
+
+magiks_gov_magocracy:0 "Magocracy"
+magiks_gov_magocracy_desc:0 "The power of magic is fully entwined into all aspects of this nation and culture. Only those with magical ability can hold true positions of power and authority."    
+
+magiks_gov_rockin_regime:0 "Rockin' Regime"
+magiks_gov_rockin_regime_desc:0 "While originally a democratic society, it now let's its elected ruler stay in office for life, lest the public protest the outting of their favorite star."
+
+magiks_gov_harmonious_state:0 "Harmonious State"
+magiks_gov_harmonious_state_desc:0 "This society is ruled by a single individual for life, who has sworn to the discovery and propogation of new and facinated music to all of their citizens."
+
+magiks_gov_ministry_of_magic:0 "Ministry of Magic"
+magiks_gov_ministry_of_magic_desc:0 "The society is run by a council of wizards and witches, all cooperating to form laws and make decisions that will ultimately help the populace."
+
+magiks_gov_council_of_sorcery:0 "Counsel of Sorcery"
+magiks_gov_council_of_sorcery_desc:0 "This society is run by a court of royal families, chosen by their family-blood's ability to produce magically-dominant offspring."
+
+magiks_gov_cultural_controllers:0 "Cultural Controllers"
+magiks_gov_cultural_controllers_desc:0 "These strange machines have 'perfected' a unified culture, forcing it on their organic population, and allowing for much greater control over the populace. The drawbacks of this is that the design and production of media and merchandise causes many inefficiencies, all of which are ignored for the sake of maintaining said control."
+
+magiks_gov_dragon_magocracy:0 "Dragon Lords"
+magiks_gov_dragon_magocracy_desc:0 "Various forms of magic has long dominated this world, be it innate or learned through hard work and study. This disharmony in the way magic presents itself to the different races of the world has long caused conflict and drama. The people though were unified by a powerful Dragon Lord, a rider of Dragons!"    
+
+### Ruler Titles ###
+
+MK_RT_DRAGON_MAGUS:0 "Dragon Magus"
+MK_RT_DRAGON_MAGUS_FEMALE:0 "Dragon Magus"
+
+MK_RT_SUPREME_MAGE:0 "Supreme Mage"
+MK_RT_SUPREME_MAGE_FEMALE:0 "Supreme Mage"
+
+MK_RT_ROCK_MASTER:0 "Master of Rock"
+MK_RT_ROCK_MISTRESS:0 "Mistress of Rock"
+
+MK_RT_HS_M:0 "Rhythmic Dictator"
+MK_RT_HS_F:0 "Rhythmic Dictator"
+
+MK_RT_MoM_M:0 "Minister of Magic"
+MK_RT_MoM_F:0 "Minister of Magic"
+
+MK_RT_CoS_M:0 "Prime Blooded"
+MK_RT_CoS_F:0 "Prime Blooded"
+
+MK_RT_CC_1:0 "Direction Core"
+MK_RT_CC_2:0 "Head Producer"
+MK_RT_CC_3:0 "Best Bot"
+
+### Economic Categories ###
+
+planet_mages:0 "Mages"
+
+planet_undead:0 "Undead"
+
+### Jobs ###
+
+job_high_mage:0 "High Mage"
+job_high_mage_plural:0 "High Mages"
+job_high_mage_desc:0 "A High Mage is a magic user who has mastered their magical ability."
+mod_job_high_mage_add:0 "Adds High Mage Jobs"
+
+job_arch_mage:0 "Arch Mage"
+job_arch_mage_plural:0 "Arch Mages"
+job_arch_mage_desc:0 "An Arch Mage is a specialist who coordinates and manages research and development of  the arcane arts."
+mod_job_arch_mage_add:0 "Adds Arch Mage Jobs"
+
+job_magical_researcher:0 "Magical Researcher"
+job_magical_researcher_plural:0 "Magical Researchers"
+job_magical_researcher_desc:0 "Mages who specialize in the development of new arcane abilities."
+job_magical_researcher_effect_desc:1 "£job_magical_researcher£ $job_magical_researcher_plural$ turn £consumer_goods£ §Y$consumer_goods$§! into £physics£ £society£ £engineering£ §YResearch Points§!"
+mod_job_magical_researcher_add:0 "Adds Magical Researcher Jobs"
+
+job_manacite_alchemist:0 "Manacite Alchemist"
+job_manacite_alchemist_plural:0 "Manacite Alchemists"
+job_manacite_alchemist_desc:0 "Manacite Alchemists are Mages who specialize in the creation and purification of Manacite."
+mod_job_manacite_alchemist_add:0 "Adds Manacite Alchemist Jobs"
+
+job_undead_thrall:0 "Undead Thrall"
+job_undead_thrall_plural:0 "Undead Thralls"
+job_undead_thrall_desc:0 "Unintelligent Undead that are used for menial labor"
+mod_job_undead_thrall_add:0 "Adds Undead Thrall Jobs"
+
+job_manacite_drone:0 "Manacite Drone"
+job_manacite_drone_plural:0 "Manacite Drones"
+job_manacite_drone_desc:0 "Drone's that are custom created to gather and purify Manacite."
+mod_job_manacite_drone_add:0 "Adds Manacite Drone Jobs"
+
+job_abjurist_mage:0 "Abjurist Mage"
+job_abjurist_mage_plural:0 "Abjurist Mages"
+job_abjurist_mage_desc:0 "Abjurist Mages specialize in defensive and protective spells, ensuring the safety of the planet."
+mod_job_abjurist_mage_add:0 "Adds Abjurist Mage Jobs"
+
+### Planets ###
+
+pc_magikal:0 "Magical World"
+pc_magikal_adj:0 "Magikal World"
+pc_magikal_desc:0 "A beautiful world with a nitrogen-oxygen atmosphere. While mostly consisting of temprate biomes, the magical energy inscribed into this world makes is almost perfectly livable for all life, no matter its preference."
+pc_magikal_tile:0 "Magically Infused Terrain"
+pc_magikal_tile_desc:0 "While previously just a normal habitable planet, some event has infused large amounts of magical energy into this world, causing many strange and facinating phenomina."
+
+trait_pc_magikal_preference:0 "Magical World Preference"
+trait_pc_magikal_preference_desc:0 "$trait_pc_arctic_preference_desc$"
+mod_pc_magikal_habitability:0 "Magikal Habitability"
+pc_magikal_habitability:0 "Magical Habitability"
+
+pc_sour:0 "Sour World"
+pc_sour_adj:0 "Sour World"
+pc_sour_desc:0 "A barren world with a nitrogen-oxygen atmophere. Empty oceans, bare plains, and nutrient-poor soil, this world seems to have no life on its surface, despite being perfectly habitable in most other aspects."
+pc_sour_tile:0 "Sour Terrain"
+pc_sour_tile_desc:0 "A barren landscape filled with dust, dirt, and little else."
+
+pc_sour_habitability:0 "Sour Habitability"
+mod_pc_sour_habitability:0 "Sour Habitability"
+trait_pc_sour_preference:0 "Sour Preference"
+trait_pc_sour_preference_desc:0 "§LClimate preference is determined at the genetic level, and in this case, by magical intervention.§!"
+
+### Systems ###
+   
+custom_starting_init_09_NAME:0 "Mana Infused"
+custom_starting_init_09_DESC:0 "This system is infused with mana."
+
+### Name Lists ###
+
+name_list_DRAKIEL:0 "Drakiel"
+name_list_DRAKIEL_desc:0 "A list of Drakiel Names"
+
+### Deposits ###
+        
+magiks_d_powerful_leyline:0 "Powerful Leyline"
+magiks_d_powerful_leyline_desc:0 "The Leyline that crosses this part of the planet is more powerful then usual, and it allows for us to take base minerals and infuse them with Mana creating manacite."
+
+magiks_d_leyline_convergence:0 "Leyline Convergence"
+magiks_d_leyline_convergence_desc:0 "Several powerful laylines intersect here, allowing us to infuse many base minerals with Mana, creating a large swath of manacite."
+
+magiks_d_natural_manacite_caverns:0 "Natural Manacite Caverns"
+magiks_d_natural_manacite_caverns_desc:0 "The caverns here are filled with gemstones infused with vaste amounts of mana. These naturally forming manacite crystals can be harvested and put to use."
+
+magiks_d_cloudforest:0 "Cloud Forest"
+magiks_d_cloudforest_desc:0 "The trees in this forest seem to grow clouds instead of leaves, and the rapid pressure changes create lots of usable wind."
+
+magiks_d_deepgrandreef:0 "Deep Grand Reef"
+magiks_d_deepgrandreef_desc:0 "A large, underwater, cavernous abyss exists in this region, and produces large and stable currents ready for exploitation."
+
+magiks_d_electrifruitforest:0 "Electri-root Forest"
+magiks_d_electrifruitforest_desc:0 "The plants covering this forest produce a large network of interconnected roots, using conjured electricity as a defense system for the entire forest."
+
+magiks_d_shimmeringfields:0 "Shimmering Fields"
+magiks_d_shimmeringfields_desc:0 "These fields are covered in beautiful, gleaming outcroppings of ore, all purified by long exposure to the magical energies of the planet."
+
+magiks_d_forgottenhoard:0 "Forgotten Hoard"
+magiks_d_forgottenhoard_desc:0 "A large cave in this area contains a treasure stash of massive proportions, able to be mined for numerous generations."
+
+magiks_d_deepdark:0 "Deepdark Entrance"
+magiks_d_deepdark_desc:0 "This region contains an entrance to the mysterious dimension known as the 'Deepdark', and while too dangerous to explore completely, brings many valuble riches towards the entrance."
+
+magiks_d_blessedfields:0 "Blessed Fields"
+magiks_d_blessedfields_desc:0 "These fields are being protected by mysterious forces, and as such are extremely well protected from predators and pests."
+
+magiks_d_enchantedforest:0 "Enchanted Forest"
+magiks_d_enchantedforest_desc:0 "This forest is thick and rich from prolonged exposure to the forces of the archane, and are extremely viable for farming and agriculture."
+
+magiks_d_allignedhills:0 "Alligned Hills"
+magiks_d_allignedhills_desc:0 "The ridges of these hills are perfectly alligned with several of the planet's leylines, and the magical forces within have greatly increased the soil's potential for supporting growth."
+
+magiks_d_magmatic_upheaval:0 "Magmatic Upheaval"
+magiks_d_magmatic_upheaval_desc:0 "Due to the destablization of this world's natural energies, large volcanic eruptions cover this region, not useful for mining because of a lack of mineral diversity."
+
+magiks_d_eternal_thunderstorm:0 "Eternal Thunderstorm"
+magiks_d_eternal_thunderstorm_desc:0 "This planet's climate has been drained of it's controlling energies, and the weather runs rampant with chaotic outbursts of thunder and lightning."
+
+magiks_d_archane_machinery:0 "Archane Machinery"
+magiks_d_archane_machinery_desc:0 "Long ago, when this world was drained of it's natural enemies, large monstrous hybrids of technology and sorcery were built here, and while far beyond repair, contain several rare minerals that can be exploited."
+
+magiks_d_mineral_desert:0 "Mineral Desert"
+magiks_d_mineral_desert_desc:0 "Once grand deposits and vast settlements, the harsh chaos of this drained planet have grinded the valuable materials down into dust, making a desert mostly void of normal sand."
+
+magiks_d_stinking_bog:0 "Stinking Bog"
+magiks_d_stinking_bog_desc:0 "Bubbling swamps of tar cover this area of the planet, and is one of the few places fertile enough for even a semblance of life to grow."
+
+magiks_d_fettered_marsh:0 "Fettered Marsh"
+magiks_d_fettered_marsh_desc:0 "Twisted roots of ancient deceased trees and other plants cover this region's landscape, waiting to be processed into what little nutrients can be provided by their shriveled husks."
+
+magiks_d_the_underground:0 "The Underground"
+magiks_d_the_underground_desc:0 "While the mountain it rests under does have a name, the most notable thing about this region is 'The Underground'. A massive network of tunnels and large, open caves, it served as the living space for the second species of this world, back when they were locked away. Now it is fully open, allowing access to its unique culture and large geothermal energy output."
+
+### Resources ###
+     
+manacite:0 "Manacite"
+manacite_desc:0 "A gemstone infused with large amounts of mana, it is typically used in arcane rituals and constructions."
+manacite_deficit:0 "$manacite$ Shortage"
+
+### Blockers ###
+
+magiks_fey_wilds:0 "Feywild Forests"
+magiks_fey_wilds_desc:0 "This region is home to several large forests, all containing small rifts leading to a strange, nature-based realm of magic and fairies, eager to lure unsuspecting children into their realm."
+
+magiks_deep_grand_reef:0 "Deep Grand Reef"
+magiks_deep_grand_reef_desc:0 "These seas contain a large, cavernous void near their shallow bottom, home to all sorts of facinating (and sometimes dangerous) creatures."
+
+ ### Start Screen Messages ###
+
+MAGIKS_START_SCREEN_DRAGON_MAGOCRACY:0 "The planet has long been divided between two magically inclined races; one which could use magic as an inate part of their being, and another that could master it through years of training and practice. For millenia these two cultures and races fought for dominance until they were united by a powerful magic user who exists now in legend. The peoples now are united and ruled by those who managed to tame the dragons of the world, the Dragon Lords."    
+
+MAGIKS_START_SCREEN_MAGOCRACY:0 "The magic users of the world slowly grew to dominate many aspects of the various governments of the world. Even with conflicts spawning due to disagreements between various nations the Mages of the world worked to unify it under their rule. Several centuries ago they succeeded."
+
+MAGIKS_START_SCREEN_CELEBRATED_MONARCHY:0 "As popular media spread across the globe, celebrities were slowly worshiped more and more, gradually wining in state elections, until eventually all positions of governance were held by a single family, now ruling as monarical head."
+
+MAGIKS_START_SCREEN_ROCKIN_REGIME:0 "The populace eventually grew tired and bored, lacking in motivation and drive to move forward. It was at our lowest moment that the messiah apeared, leading us into a golden age of culture and progress."
+
+MAGIKS_START_SCREEN_BAND_BUREAUCRACY:0 "A great war had broken out, not of blood and bullets, but of culture and music. It wouldn't be till several decades later that it would finally end, giving rise to the current establishment, dedicated to never letting another war if culture break out, ever again."
+
+MAGIKS_START_SCREEN_INSTRUMENTAL_INSTITUTION:0 "After a fierce debate on the position of music and celebrities in politics, it was decided by popular vote that those in power must wield great musical talent."
+
+MAGIKS_START_SCREEN_HARMONIOUS_COURT:0 "After rampant pollution of our world both chemically and culturally, one family stepped up with a plan to live in harmony with the world, in every way imaginable."
+
+MAGIKS_START_SCREEN_HARMONIOUS_STATE:0 "After rampant pollution of our world both chemically and culturally, a single dictator took power, vowing to use their immense power to bring balance to all who are willing, and force it on those who are not."
+
+MAGIKS_START_SCREEN_HARMONIOUS_GATHERING:0 "After rampant pollution of our world both chemically and culturally, a council was formed to ensure the survival of our world and species. Through their guidance we restored our planet, and our culture, coming to peace with ourselves"
+
+MAGIKS_START_SCREEN_HARMONIOUS_DEMOCRACY:0 "After rampant pollution of our world both chemically and culturally, our people came together to form a new type of government, based on the public's common desire for a more harmonious relationship with nature."
+
+MAGIKS_START_SCREEN_MAGICAL_MONARCHY:0 "After centuries of war between the various empires of our world, one monarch, who possesed immense and powerful magics, came to dominate over all, and their genetic line continues to rule to this day, and into the future."
+
+MAGIKS_START_SCREEN_DARK_DICTATORSHIP:0 "After centuries of war between the various empires of our world, one monarch, who possesed immense and powerful dark magics, came to dominate over all. Never having children themselves, it became tradition for the title of ruler to be decided at the death of the previous ruler, as apointed by popular vote."
+
+MAGIKS_START_SCREEN_MINISTRY_OF_MAGIC:0 "After centuries of rampant and chaotic magic use, a council of powerful mages and sorcerers was assembled, unifed in their goal of the regulation and advancement of magic."
+
+MAGIKS_START_SCREEN_COUNCIL_OF_SORCERY:0 "After centuries of war between multiple great magic users, it was eventually decided that the best way to rule was throught public vote, leading to an end to the cyclic wars for power that held sway over our world for so long. We have prospered ever since."
+
+MAGIKS_START_SCREEN_MAGIKAL_ONE:0 "In the eons since the first primitive [GetSpeciesName] communities took shape around the shimmering waterfalls and beautiful fields of [GetHomeWorldName], our civilization has spread and prospered."
+
+MAGIKS_START_SCREEN_SOUR_TWO:0 "As our society advanced, research began into unlocking the raw potential of our world, using as a power source for our species. Unfortunately we suceeded, and over the centuries that followed we slowly drained our world of all it had, until eventually there was nothing left. Crops died, our reactors went cold, and a sense of dread filled our every waking moment, only leaving us when we finally overthrew the dictators that had been controling us all this time. With our new unified government in place, we looked to the future, and to the potential resoration of our world."
+
+### Static Modifiers ###
+
+mana_infused:0 "Mana Infused"
+mana_infused_desc:0 "This world is infused with magical energy, giving boosts to food and energy but causing poor research oppertunities, as consistency is frequently inconsistent."
+
+mana_drained:0 "Mana Drained"
+mana_drained_desc:0 "This world is devoid of its natural energies, and as such is very poor when it comes to life in general. The soil has turned sour, and as such will provide very little in terms of nutrients when it comes to farming, meaning synthesized soil is required."
+
+magiks_dragons:0 "Dragons"
+magiks_dragons_desc:0 "Many large and powerful reptilian creatures fly through the air of this world, terrorizing all who live below"
+
+magiks_dragons_tamed:0 "Tamed Dragons"
+magiks_dragons_tamed_desc:0 "Through careful use of negotiations and training, the draconic beasts of this world have been pacified."
+
+magiks_abyss:0 "Abyss"
+magiks_abyss_desc:0 "Cracks and voids mar the landscape of this planet allowing deeper access to minerals within it."
+
+### Planet Modifiers ###
+              
+magiks_pm_dragons:0 "Dragons"
+magiks_pm_dragons_desc:0 "Many large, reptilian creatures fly through the air of this world."
+
+magiks_pm_dragons_tamed:0 "Tamed Dragons"
+magiks_pm_dragons_tamed_desc:0 "Through careful use of negotiations and training, the draconic beasts of this world have been pacified."
+
+### Ascension Perks ###
+
+ap_magiks_terraform:0 "Mana Transfering"
+ap_magiks_terraform_desc:0 "By integrating advanced magics and technologies together on a planetary scale, it is possible to transform entire worlds with nothing but our hearts and minds."
+
+synthetic_empire_magikal_ascension:0 "$TRIGGER_FAIL$Synthetic empires are incapable of starting down the path to Magical Ascension."
+
+ap_magiks_genes:0 "Mana Tinkering"
+ap_magiks_genes_desc:0 "Legend going back from before writing itself of people able to manipulate magical ability itself, limited only by their own imaginations."
+
+ap_magiks_genes_modifier_desc:0 "$species_trait_points_add$: $POINTS|0=+$\n$MOD_COUNTRY_MODIFY_SPECIES_COST_MULT$: $COST_MULT|%0=-$"
+
+ap_magiks_genes_adv:0 "Mana Molding"
+ap_magiks_genes_adv_desc:0 "After only a short period of time, our greatest mages and scientists have become so flutent in reality bending that they could read the universe itself like a second language."
+
+ap_magiks_genes_adv_modifier_desc:0 "$species_trait_points_add$: $POINTS|0=+$\n$MOD_COUNTRY_MODIFY_SPECIES_COST_MULT$: $COST_MULT|%0=-$"
+requires_ap_magiks_genes:0 "Requires the 'Mana Tinkering' ascension perk."
+requires_magiks_tech_magiks_gene:0 "Requires the 'The Alchemic Method' technology."
+
+### Edicts ###      
+        
+edict_magiks_edict_add_dragons:0 "Draconic Colonization"
+edict_magiks_edict_add_dragons_desc:0 "By setting up recruitment centers specifically meant for dragons, we many bring them to this world, where we can use them for our gain."
+
+edict_magiks_edict_tame_dragons:0 "Draconic Pacification"
+edict_magiks_edict_tame_dragons_desc:0 "Since this world already has dragons present, colonization is not required. However, these dragons are wild and dangerous, and require training before they can be useful to our cause."
+
+edict_magiks_edict_kill_dragons:0 "Draconic Extermination"
+edict_magiks_edict_kill_dragons_desc:0 "The monsters covering this planet are a collosal nussance, and we should exterminate them when we have the chance."
+
+### Miscellaneous ###
+
+allow_magikal:0 "Allows for the terraformation of Magical worlds from Gaia worlds."
+allow_sour:0 "Allows for the restoration of Sour worlds into normal habitable planets."
+
+feature_basic_magiks_traits:0 "Basic Magic Modification"
+feature_basic_magiks_traits_desc:0 "Allows us to add basic magical abilities to Species when genetically modifying them."
+
+feature_advanced_magiks_traits:0 "Advanced Magic Modification"
+feature_advanced_magiks_traits_desc:0 "Allows us to add more advanced and generalized magical abilities to Species when genetically modifying them."

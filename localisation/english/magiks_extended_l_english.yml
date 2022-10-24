@@ -1,0 +1,187 @@
+﻿l_english: 
+### List of localization that were not available in the original (prevent error.log bloat)
+
+#####################
+# Technology
+#####################
+
+magiks_tech_manacite_extraction:0 "Manacite Extraction"
+magiks_tech_manacite_extraction_desc:0 "Gain arcane knowledge to safely and usefully extract manacite crystals for magical purposes."
+
+magiks_tech_rhythm4:0 "Baryonic Acoustic Oscillations"
+magiks_tech_rhythm4_desc:0 "With the access of sound manipulation at the most fundamental level, the boundaries of musical abilities have been achievend."
+
+#####################
+# Decisions
+#####################
+
+magiks_descisions_add_dragons:0 "Add Dragons"
+magiks_descisions_add_dragons_desc:0 "By setting up recruitment centers specifically meant for dragons, we many bring them to this world, where we can use them for our gain."
+magiks_descisions_tame_dragons:0 "Tame Dragons"
+magiks_descisions_tame_dragons_desc:0 "Since this world already has dragons present, colonization is not required. However, these dragons are wild and dangerous, and require training before they can be useful to our cause."
+magiks_descisions_exterminate_dragons:0 "Exterminate Dragons"
+magiks_descisions_exterminate_dragons_desc:0 "The monsters covering this planet are a collosal nussance, and we should exterminate them when we have the chance."
+
+#####################
+# Species
+#####################
+
+FantasticalMagiks:0 "Magikal"
+FantasticalMagiks_desc:0 "Species blessed with magical abilities."
+FantasticalMagiks_plural:0 "Magikals"
+FantasticalMagiks_insult_01:0 "commoner"
+FantasticalMagiks_insult_plural_01:0 "commoners"
+FantasticalMagiks_compliment_01:0 "magical one"
+FantasticalMagiks_compliment_plural_01:0 "magical ones"
+FantasticalMagiks_spawn:0 "cub"
+FantasticalMagiks_spawn_plural:0 "cubs"
+FantasticalMagiks_sound_01:0 "growling"
+FantasticalMagiks_sound_02:0 "coughing"
+FantasticalMagiks_sound_03:0 "whizzing"
+FantasticalMagiks_sound_04:0 "whishing"
+FantasticalMagiks_sound_05:0 "wheezing"
+FantasticalMagiks_organ:0 "stomach"
+FantasticalMagiks_mouth:0 "mouth"
+FantasticalMagiks_hand:0 "claws"
+FantasticalMagiks_ear:0 "ear"
+FantasticalMagiks_tooth:0 "tooth"
+FantasticalMagiks_fossil:0 "fossil"
+FantasticalMagiks_remnant:0 "skeleton"
+
+#####################
+# Governments
+#####################
+
+ magiks_gov_celebrated_monarchy:0 "Celebrated Monarchy"
+ magiks_gov_celebrated_monarchy_desc:0 "As popular media spread across the globe, celebrities were slowly worshiped more and more, gradually wining in state elections, until eventually all positions of governance were held by a single family, now ruling as monarical head."
+
+ magiks_gov_band_bureaucracy:0 "Band Bureaucracy"
+ magiks_gov_band_bureaucracy_desc:0 "A great war had broken out, not of blood and bullets, but of culture and music. It wouldn't be till several decades later that it would finally end, giving rise to the current establishment, dedicated to never letting another war if culture break out, ever again."
+
+ magiks_gov_instrumental_institution:0 "Instrumental Institution"
+ magiks_gov_instrumental_institution_desc:0 "After a fierce debate on the position of music and celebrities in politics, it was decided by popular vote that those in power must wield great musical talent."
+
+ magiks_gov_harmonious_court:0 "Harmonious Court"
+ magiks_gov_harmonious_court_desc:0 "After rampant pollution of our world both chemically and culturally, one family stepped up with a plan to live in harmony with the world, in every way imaginable."
+
+ magiks_gov_harmonious_gathering:0 "Harmonious Gathering"
+ magiks_gov_harmonious_gathering_desc:0 "After rampant pollution of our world both chemically and culturally, a council was formed to ensure the survival of our world and species. Through their guidance we restored our planet, and our culture, coming to peace with ourselves"
+
+ magiks_gov_harmonious_democracy:0 "Harmonious Democracy"
+ magiks_gov_harmonious_democracy_desc:0 "After rampant pollution of our world both chemically and culturally, our people came together to form a new type of government, based on the public's common desire for a more harmonious relationship with nature."
+
+ magiks_gov_magical_monarchy:0 "Magical Monarchy"
+ magiks_gov_magical_monarchy_desc:0 "After centuries of war between the various empires of our world, one monarch, who possesed immense and powerful magics, came to dominate over all, and their genetic line continues to rule to this day, and into the future."
+
+ magiks_gov_dark_dictatorship:0 "Dark Dictatorship"
+ magiks_gov_dark_dictatorship_desc:0 "After centuries of war between the various empires of our world, one monarch, who possesed immense and powerful dark magics, came to dominate over all. Never having children themselves, it became tradition for the title of ruler to be decided at the death of the previous ruler, as apointed by popular vote."
+
+#####################
+# Empire Name Parts
+#####################
+
+Enchanted:0 "Enchanted"
+Magic:0 "Magic"
+Magical:0 "Magical"
+Illuminated:0 "Illuminated"
+Attuned:0 "Attuned"
+Infused:0 "Infused"
+Ministry:0 "Ministry"
+Parliament:0 "Parliament"
+Senate:0 "Senate"
+Gathering:0 "Gathering"
+Diet:0 "Diet"
+Radical:0 "Radical"
+Tubular:0 "Tubular"
+Players:0 "Players"
+Songwriters:0 "Songwriters"
+Magocracy:0 "Magocracy"
+Sector:0 "Sector"
+Sectors:0 "Sectors"
+
+#####################
+# Species
+#####################
+
+Draconic:0 "Draconic"
+Dragonian:0 "Dragonian"
+Draconian:0 "Draconian"
+Tiefling:0 "Tiefling"
+Tieflings:0 "Tieflings"
+Fornica:0 "Fornica"
+Termiv:0 "Termiv"
+Fimdossian:0 "Fimdossian"
+Fimdossians:0 "Fimdossians"
+Fimdoss:0 "Fimdoss"
+Lairmia:0 "Lairmia"
+Jedbir:0 "Jedbir"
+Hoss:0 "Hoss"
+Tak:0 "Tak"
+Lovdiam:0 "Lovdiam"
+Lovdiams:0 "Lovdiams"
+Lovdia:0 "Lovdia"
+Decrates:0 "Decrates"
+Alari:0 "Alari"
+Alaria:0 "Alaria"
+Alar:0 "Alar"
+Mireesh:0 "Mireesh"
+Mireeshi:0 "Mireeshi"
+Mirati:0 "Mirati"
+Triech:0 "Triech"
+Triechs:0 "Triechs"
+Rechio:0 "Rechio"
+Vrinn:0 "Vrinn"
+Vrinnus:0 "Vrinnus"
+Cevanti:0 "Cevanti"
+Oros:0 "Oros"
+Cevant:0 "Cevant"
+Mishar:0 "Mishar"
+Mishars:0 "Mishars"
+Mishri:0 "Mishri"
+Shar:0 "Shar"
+Fareen:0 "Fareen"
+Fareens:0 "Fareens"
+Fara:0 "Fara"
+Enato:0 "Enato"
+Yldar:0 "Yldar"
+Yldars:0 "Yldars"
+Yliant:0 "Yliant"
+Korinth:0 "Korinth"
+Korinths:0 "Korinths"
+Koros:0 "Koros"
+Sildor:0 "Sildor"
+Sildors:0 "Sildors"
+Sildoria:0 "Sildoria"
+Sila:0 "Sila"
+Nagyari:0 "Nagyari"
+Nagyaria:0 "Nagyaria"
+Nagyar:0 "Nagyar"
+Kobarian:0 "Kobarian"
+Kobarians:0 "Kobarians"
+Kobaria:0 "Kobaria"
+Kobb:0 "Kobb"
+Hesukar:0 "Hesukar"
+Hesukari:0 "Hesukari"
+Hesuk:0 "Hesuk"
+Giroid:0 "Giroid"
+Giroids:0 "Giroids"
+Gir-Zana:0 "Gir-Zana"
+Gir:0 "Gir"
+Akkano:0 "Akkano"
+Akkanos:0 "Akkanos"
+Akkanar:0 "Akkanar"
+Akk:0 "Akk"
+Arzkan:0 "Arzkan"
+Arzkans:0 "Arzkans"
+Arkcanius:0 "Arkcanius"
+Kendraxia:0 "Kendraxia"
+Calaun:0 "Calaun"
+Calauns:0 "Calauns"
+Bectria:0 "Bectria"
+Obereus:0 "Obereus"
+Draconians:0 "Draconians"
+Draconia:0 "Draconia"
+Dol:0 "Dol"
+Drakiel:0 "Drakiel"
+Noadica:0 "Noadica"
+Ivirus:0 "Ivirus"

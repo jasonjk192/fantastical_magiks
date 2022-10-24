@@ -201,16 +201,16 @@ magiks_building_grand_stadium = {
 				}
 			}
 			custom_tooltip = {
-				text = "requires_building_capital_1"
+				text = "requires_building_major_capital"
 				planet = {
 					OR = {
 						# has_building = "building_capital_1"
 						# has_building = "building_capital_2"
 						# has_building = "building_capital_3"
 
-						has_building = "building_capital"
-						has_building = "building_major_capital"
-						has_building = "building_system_capital"
+						has_building = building_capital
+						has_building = building_major_capital
+						has_building = building_system_capital
 					}
 				}
 			}
@@ -252,14 +252,14 @@ magiks_building_planetary_stage = {
 				}
 			}
 			custom_tooltip = {
-				text = "requires_building_capital_1"
+				text = "requires_building_major_capital"
 				planet = {
 					OR = {
 						# has_building = "building_capital_2"
 						# has_building = "building_capital_3"
 
-						has_building = "building_major_capital"
-						has_building = "building_system_capital"
+						has_building = building_major_capital
+						has_building = building_system_capital
 					}
 				}
 			}
@@ -362,7 +362,7 @@ magiks_building_galactway = {
 # Mana
 #################
 
-building_manacite_collector = {
+magiks_building_manacite_collector = {
 	base_buildtime = 360
 	icon = building_crystal_mines
 
@@ -444,7 +444,7 @@ magiks_building_mage_academy = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_researcher_add = @b1_jobs
+			job_magical_researcher_add = @b1_jobs
 		}
 	}
 
@@ -472,7 +472,7 @@ magiks_building_mage_academy = {
 			exists = owner
 			owner = { is_regular_empire = yes }
 		}
-		text = job_researcher_effect_desc
+		text = job_magical_researcher_effect_desc
 	}
 
 	triggered_desc = {
@@ -505,7 +505,7 @@ magiks_building_mage_college = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_researcher_add = @b2_jobs
+			job_magical_researcher_add = @b2_jobs
 		}
 	}
 
@@ -540,7 +540,7 @@ magiks_building_mage_college = {
 			exists = owner
 			owner = { is_regular_empire = yes }
 		}
-		text = job_researcher_effect_desc
+		text = job_magical_researcher_effect_desc
 	}
 
 	triggered_desc = {
@@ -572,7 +572,7 @@ magiks_building_mage_university = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_researcher_add = @b3_jobs
+			job_magical_researcher_add = @b3_jobs
 		}
 	}
 
@@ -647,7 +647,7 @@ magiks_building_mage_university = {
 			exists = owner
 			owner = { is_regular_empire = yes }
 		}
-		text = job_researcher_effect_desc
+		text = job_magical_researcher_effect_desc
 	}
 
 	triggered_desc = {
@@ -698,15 +698,11 @@ magiks_building_mage_arcanium = {
 
 	planet_modifier = {
 		planet_researchers_produces_mult = 0.15
-		job_head_researcher_add = 1
+		job_arch_mage_add = 1
 	}
 
 	prerequisites = {
 		"magiks_tech_mage_arcanium"
-	}
-
-	triggered_desc = {
-		text = job_head_researcher_effect_desc
 	}
 
 	show_tech_unlock_if = {
