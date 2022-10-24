@@ -7,10 +7,9 @@ high_mage = {
 	condition_string = RULER_JOB_TRIGGER
 	building_icon = building_research_lab_1
 	clothes_texture_index = 1
+	icon = high_mage
 	
-	possible = {
-		#ruler_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_ruler_job
 
 	resources = {
 		category = planet_mages
@@ -83,6 +82,119 @@ high_mage = {
 	}
 }
 
+arch_mage = {
+	category = ruler
+	condition_string = RULER_JOB_TRIGGER
+	building_icon = building_institute
+	clothes_texture_index = 1
+	icon = researcher
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_ruler_job
+
+	resources = {
+		category = planet_researchers
+		produces = {
+			unity = 3
+			physics_research = 6
+			engineering_research = 6
+			society_research = 6
+		}
+		upkeep = {
+			consumer_goods = 2
+		}
+		upkeep = {
+			trigger = {
+				planet = {
+					has_planet_flag = has_science_ministry
+				}
+			}
+			consumer_goods = 1
+		}
+	}
+
+	overlord_resources = {
+		category = planet_requisitioned_research
+		produces = {
+			trigger = {
+				planet = {
+					has_planet_flag = has_science_ministry
+				}
+			}
+			physics_research = 3
+			engineering_research = 3
+			society_research = 3
+		}
+	}
+
+	# This needs to be triggered planet modifier to get the correct scope.
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		planet_amenities_add = 3
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			OR = {
+				has_trait = magiks_trait_soft_magicians
+				has_trait = magiks_trait_hard_magicians
+			}
+		}
+		modifier = {
+			planet_amenities_add = 2
+		}
+	}
+
+	weight = {
+		weight = @ruler_job_weight
+		modifier = {
+			factor = 0.1
+			has_citizenship_rights = no	
+			NOT = { has_trait = trait_mechanical }	
+		}		
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_trait = magiks_trait_soft_magicians
+				has_trait = magiks_trait_hard_magicians
+				has_trait = magiks_trait_undead_reliant
+			}
+		}
+		modifier = {
+			factor = 0.5
+			has_trait = trait_repugnant
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_trait = magiks_trait_alchemy
+				has_trait = magiks_trait_enchanting_musicians
+				has_trait = magiks_trait_persuading_song
+				has_trait = magiks_trait_exothermic_enchanters
+				has_trait = magiks_trait_endothermic_enchanters
+			}		
+		}
+		modifier = {
+			factor = 0.75
+			has_trait = trait_quarrelsome
+		}	
+		modifier = {
+			factor = 5
+			has_job = arch_mage
+		}
+	}
+}
+
 ###################
 # Specialist
 ###################
@@ -92,6 +204,7 @@ magical_researcher = {
 	condition_string = SPECIALIST_JOB_TRIGGER
 	building_icon = building_research_lab_1
 	clothes_texture_index = 3
+	icon = magical_researcher
 
 	possible = {
 		complex_specialist_job_check_trigger = yes
@@ -164,10 +277,9 @@ manacite_alchemist = {
 	condition_string = SPECIALIST_JOB_TRIGGER
 	building_icon = building_crystal_plant
 	clothes_texture_index = 3
-	
-	possible = {
-		#specialist_job_check_trigger = yes
-	}
+	icon = manacite_alchemist
+
+	possible_precalc = can_fill_specialist_job
 	
 	resources = {
 		category = planet_mages
@@ -217,6 +329,7 @@ abjurist_mage = {
 	condition_string = SPECIALIST_JOB_TRIGGER	
 	building_icon = building_stronghold
 	clothes_texture_index = 4
+	icon = abjurist_mage
 	
 	resources = {
 		category = planet_mages
@@ -289,10 +402,9 @@ undead_thrall = {
 	condition_string = WORKER_JOB_TRIGGER
 	building_icon = magiks_building_mass_grave
 	clothes_texture_index = 2
+	icon = undead_thrall
 
-	possible = {
-		#worker_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_worker_job
 
 	resources = {
 		category = planet_undead
@@ -328,10 +440,9 @@ manacite_drone = {
 	condition_string = SPECIALIST_JOB_TRIGGER
 	building_icon = building_crystal_plant
 	clothes_texture_index = 3
+	icon = manacite_drone
 	
-	possible = {
-		#specialist_job_check_trigger = yes
-	}
+	possible_precalc = can_fill_specialist_job
 	
 	resources = {
 		category = planet_translucers

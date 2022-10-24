@@ -270,7 +270,7 @@ magiks_building_mage_arcanium_desc:0 "The Arcanium represents the pinnacle of ma
 
 magiks_building_manacite_collector:0 "Manacite Collector"
 magiks_building_manacite_collector_desc:0 "The facility is manned by Alchemical Specialists who, through the use of arcane ritual, can successfully harvest and purify manacite for magical use."
-mod_building_manacite_collector_max:0 "Max Manacite Collectors"
+mod_magiks_building_manacite_collector_max:0 "Max Manacite Collectors"
 
 ### Armies ###
 

@@ -21,7 +21,7 @@ magiks_d_powerful_leyline = {
 	}
 	
 	planet_modifier = {
-		building_manacite_collector_max_add = 1
+		magiks_building_manacite_collector_max = 1
 	}
 	
 	drop_weight = {
@@ -58,7 +58,7 @@ magiks_d_leyline_convergence = {
 	}
 	
 	planet_modifier = {
-		building_manacite_collector_max_add = 1
+		magiks_building_manacite_collector_max = 1
 	}
 	
 	drop_weight = {
@@ -88,7 +88,7 @@ magiks_d_natural_manacite_caverns = {
 	}
 	
 	planet_modifier = {
-		building_manacite_collector_max_add = 3
+		magiks_building_manacite_collector_max = 3
 	}
 	
 	drop_weight = {

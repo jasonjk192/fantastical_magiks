@@ -540,35 +540,35 @@ magiks_machine_civic_waifu_bots = {
 
 ### Hive mind related civics ###
 
-magiks_civic_hive_mind_hunger = {
-	potential = { 
-		ethics = {  value = ethic_gestalt_consciousness } 
-	}
-	possible = {
-		origin = {
-			NOR = {
-				value = origin_common_ground
-				value = origin_hegemon
-				value = origin_tree_of_life
-			}
-		}
-	}
-	modification = no
-	random_weight = {
-		base = 5
-		modifier = { factor = 0 has_global_flag = game_started }
-	}
-	modifier = {
-		country_starbase_influence_cost_mult = -0.5
-		ship_hull_mult = 0.25
-		ship_hull_regen_add_perc = 0.25
-		ship_armor_regen_add_perc = 0.25
-		army_damage_mult = 0.40
-		category_biology_research_speed_mult = 0.20
-		starbase_shipyard_build_cost_mult = -0.25
-		country_naval_cap_mult = 0.33
-	}
-}
+# magiks_civic_hive_mind_hunger = {
+# 	potential = { 
+# 		ethics = {  value = ethic_gestalt_consciousness } 
+# 	}
+# 	possible = {
+# 		origin = {
+# 			NOR = {
+# 				value = origin_common_ground
+# 				value = origin_hegemon
+# 				value = origin_tree_of_life
+# 			}
+# 		}
+# 	}
+# 	modification = no
+# 	random_weight = {
+# 		base = 5
+# 		modifier = { factor = 0 has_global_flag = game_started }
+# 	}
+# 	modifier = {
+# 		country_starbase_influence_cost_mult = -0.5
+# 		ship_hull_mult = 0.25
+# 		ship_hull_regen_add_perc = 0.25
+# 		ship_armor_regen_add_perc = 0.25
+# 		army_damage_mult = 0.40
+# 		category_biology_research_speed_mult = 0.20
+# 		starbase_shipyard_build_cost_mult = -0.25
+# 		country_naval_cap_mult = 0.33
+# 	}
+# }
 
 # magiks_civic_hive_mind = {
 # 	potential = { 
