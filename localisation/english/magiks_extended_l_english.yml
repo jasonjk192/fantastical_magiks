@@ -185,3 +185,22 @@ Dol:0 "Dol"
 Drakiel:0 "Drakiel"
 Noadica:0 "Noadica"
 Ivirus:0 "Ivirus"
+
+# ####################
+# Traditions
+# ####################
+
+tradition_magicka:0 "Magicka"
+tradition_magicka_desc:0 "Study of magic"
+tr_magicka_adopt:0 "You learnt about magic"
+tr_magicka_finish:0 "You mastered the theory of magic"
+tr_magicka_1:0 "Learning magic 1"
+tr_magicka_2:0 "Learning magic 2"
+tr_magicka_3:0 "Learning magic 3"
+tr_magicka_4:0 "Learning magic 4"
+tr_magicka_5:0 "Learning magic 5"
+tr_magicka_adopt_magocracy:0 "You already know it! What doink here"
+tr_magicka_finish_magocracy:0 "Wow! Congrats, you double learned it"
+
+magiks_civic_ascended_mages:0 "Ascended Mages"
+magiks_civic_ascended_mages_desc:0 "Magical abilities are bestowed through study and research of the arcane arts and over time, have learnt to master this powerful gift."
