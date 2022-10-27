@@ -202,6 +202,7 @@ tr_magicka_adopt:0 "Magicka Tradition"
 tr_magicka_finish:0 "Magicka Traditions Finished"
 tr_magicka_adopt_magocracy:0 "Magicka Tradition"
 tr_magicka_finish_magocracy:0 "Magicka Traditions Finished"
+tr_magicka_finish_hive_mind:0 "Magicka Traditions Finished"
 
 tr_magicka_finish_desc:0 "Unlock leader potential: Raises leader skill levels by §G+3§!.\nThe government changes to §H$magiks_gov_magocracy$§! authority and gains random civics in place of the current ones, as well as the §H$magiks_civic_ascended_mages$§! civic.\nAscension Perks Unlocked: §G+1§!"
 tr_magicka_finish_magocracy_desc:0 "Unlock leader potential: Raises leader skill levels by §G+4§!.\nAscension Perks Unlocked: §G+1§!"

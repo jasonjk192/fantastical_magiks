@@ -12,9 +12,7 @@ tr_magicka_adopt = {
 			has_authority = magiks_auth_magocracy 
 			NOT = { has_civic = magiks_civic_ascended_mages }
 		}
-		weight = {
-			factor = 1
-		}
+		weight = { factor = 1 }
 		modifier = {
 			all_technology_research_speed = 0.25
 		}
@@ -50,7 +48,25 @@ tr_magicka_finish = {
 			cooldown = no
 		}
 		force_add_civic = magiks_civic_ascended_mages
-		# country_government_civic_points_add = 1 (Not allowed here)
+	}
+
+	tradition_swap = {
+		name = tr_magicka_finish_hive_mind
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = yes
+		trigger = {
+			has_ethic = ethic_gestalt_consciousness
+			OR = {
+				has_authority = auth_hive_mind
+				has_authority = auth_machine_intelligence
+			}
+		}
+		modifier = {
+			leader_skill_levels = 3
+			ascension_perks_add = 1
+		}
+		weight = { factor = 1 }
 	}
 	
 	tradition_swap = {
@@ -62,15 +78,11 @@ tr_magicka_finish = {
 			has_authority = magiks_auth_magocracy
 			NOT = { has_civic = magiks_civic_ascended_mages }
 		}
-		
 		modifier = {
 			leader_skill_levels = 4
 			ascension_perks_add = 1
 		}
-		
-		weight = {
-			factor = 1
-		}
+		weight = { factor = 1 }
 	}
 }
 
