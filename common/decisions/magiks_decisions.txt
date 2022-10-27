@@ -94,3 +94,89 @@ magiks_descisions_exterminate_dragons = {
 		weight = 200
 	}
 }
+
+magiks_descisions_create_hyperlane = {
+	owned_planets_only = no
+	resources = {
+		category = decisions
+		cost = { energy = 1 }
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			is_regular_empire = yes
+		}
+	}
+	
+	effect = {	
+		owner = { set_country_flag = magiks_create_hyperlane }
+		planet.solar_system = {
+			log = "Current system : [This.GetName]"
+			set_star_flag = magiks_core_system_for_hyperlane
+			every_neighbor_system_euclidean = {
+				limit = {
+					distance = {
+						source = PREV
+						max_distance <= 250
+						type = euclidean
+						same_solar_system = no
+					}
+					NOT = { has_hyperlane_to = PREV }
+				}
+				log = "This scope: [This.GetName], Prev scope: [Prev.GetName]"
+				add_hyperlane = {
+					from = THIS
+					to = PREV
+				}
+				set_star_flag = magiks_add_system_to_hyperlane_list
+			}
+		}
+
+	}
+	
+	ai_weight = {
+		weight = 200
+	}
+}
+
+magiks_descisions_delete_hyperlane = {
+	owned_planets_only = no
+	resources = {
+		category = decisions
+		cost = { energy = 1 }
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			is_regular_empire = yes
+		}
+	}
+	
+	effect = {	
+		planet.solar_system = {
+			log = "Current system : [This.GetName]"
+			every_neighbor_system_euclidean = {
+				limit = {
+					distance = {
+						source = PREV
+						max_distance <= 250
+						type = euclidean
+						same_solar_system = no
+					}
+					has_hyperlane_to = PREV
+				}
+				log = "This scope: [This.GetName], Prev scope: [Prev.GetName]"
+				remove_hyperlane = {
+					from = THIS
+					to = PREV
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 200
+	}
+}

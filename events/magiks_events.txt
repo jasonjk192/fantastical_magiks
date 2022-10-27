@@ -1,5 +1,19 @@
 namespace = magiks_event
 
+### Mod Flag ###
+
+country_event = {
+	id = magiks_event.0
+	hide_window = yes
+	fire_only_once = yes
+	trigger = {
+		NOT = { has_global_flag = mod_fantastical_magiks_installed }
+	}
+	immediate = { set_global_flag = mod_fantastical_magiks_installed  }
+}
+
+### Magiks Event ###
+
 planet_event = {
 	id = magiks_event.1
 	hide_window = yes
@@ -25,5 +39,29 @@ planet_event = {
 
 	immediate = {
 		magiks_generate_start_pops = yes
+	}
+}
+
+### Hyperlane events ###
+
+country_event = {
+	id = magiks_event.3
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = { has_country_flag = magiks_create_hyperlane }
+	immediate = {
+		log = "Triggered Create HL"
+		remove_country_flag = magiks_create_hyperlane
+	}
+}
+
+system_event = {
+	id = magiks_event.4
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = { has_star_flag = magiks_core_system_for_hyperlane }
+	immediate = {
+		log = "Core Planet for HL: [This.GetName]"
+		remove_star_flag = magiks_core_system_for_hyperlane
 	}
 }

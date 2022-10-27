@@ -36,6 +36,15 @@ on_game_start_country = {
 		magiks_game_start.8
 		magiks_game_start.9
 		# magiks_game_start.10
+
+		magiks_event.0
+		magiks_event.3
+	}
+}
+
+on_game_start_system = {
+	events = {
+		magiks_event.4
 	}
 }
 
