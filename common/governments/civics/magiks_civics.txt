@@ -336,13 +336,6 @@ magiks_civic_ascended_mages = {
 		ethics = { NOT = { value = ethic_gestalt_consciousness } } 
 	}
 	possible = {
-		ethics = {
-			NOR = {
-				text = civic_tooltip_not_egalitarian
-				value = ethic_fanatic_egalitarian
-				value = ethic_egalitarian
-			}
-		}
 		civics = {
 			NOR = {
 				value = magiks_civic_elite_mages
@@ -358,7 +351,9 @@ magiks_civic_ascended_mages = {
 	modification = no
 	random_weight = { base = 0 }
 	modifier = {
-		species_leader_exp_gain = 0.1
+		planet_jobs_physics_research_produces_mult = 0.1
+		planet_jobs_engineering_research_produces_mult = 0.1
+		planet_jobs_society_research_produces_mult = 0.1
 	}
 	traits = { trait = "magiks_trait_hard_magicians" }
 }

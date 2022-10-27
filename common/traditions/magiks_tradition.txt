@@ -8,12 +8,15 @@ tr_magicka_adopt = {
 		inherit_effects = no
 		inherit_icon = yes
 		inherit_name = yes
-		trigger = { has_authority = magiks_auth_magocracy }
+		trigger = {
+			has_authority = magiks_auth_magocracy 
+			NOT = { has_civic = magiks_civic_ascended_mages }
+		}
 		weight = {
 			factor = 1
 		}
 		modifier = {
-			all_technology_research_speed = 0.2
+			all_technology_research_speed = 0.25
 		}
 	}
 	
@@ -36,16 +39,18 @@ tr_magicka_adopt = {
 
 tr_magicka_finish = {
 	modifier = {
-		ruler_skill_levels = 3
-		scientist_skill_levels = 3
+		leader_skill_levels = 3
 		ascension_perks_add = 1
+		country_government_civic_points_add = 1
 	}
 	on_enabled = {
 		change_government = {
 			authority = magiks_auth_magocracy
-			civics = { civic = magiks_civic_ascended_mages }
+			civics = random
 			cooldown = no
 		}
+		force_add_civic = magiks_civic_ascended_mages
+		# country_government_civic_points_add = 1 (Not allowed here)
 	}
 	
 	tradition_swap = {
@@ -53,11 +58,13 @@ tr_magicka_finish = {
 		inherit_effects = no
 		inherit_icon = yes
 		inherit_name = yes
-		trigger = { has_authority = magiks_auth_magocracy }
+		trigger = {
+			has_authority = magiks_auth_magocracy
+			NOT = { has_civic = magiks_civic_ascended_mages }
+		}
 		
 		modifier = {
-			ruler_skill_levels = 3
-			scientist_skill_levels = 3
+			leader_skill_levels = 4
 			ascension_perks_add = 1
 		}
 		
@@ -69,8 +76,8 @@ tr_magicka_finish = {
 
 tr_magicka_1 = {
 	modifier = {
-		planet_sensor_range_add = 2
-		ship_sensor_range_add = 2
+		num_tech_alternatives_add = 1
+		planet_researchers_upkeep_mult = -0.2
 	}
 	ai_weight = {
 		factor = 1000
@@ -79,8 +86,9 @@ tr_magicka_1 = {
 
 tr_magicka_2 = {
 	modifier = {
-		num_tech_alternatives_add = 2
-		planet_researchers_upkeep_mult = -0.2
+		ship_anomaly_generation_chance_mult = 0.33
+		ship_anomaly_research_speed_mult = 0.33
+		ship_archaeological_site_excavation_speed_mult = 0.33
 	}
 	ai_weight = {
 		factor = 1000
@@ -93,7 +101,8 @@ tr_magicka_3 = {
 		has_tradition = tr_magicka_2
 	}
 	modifier = {
-		country_engineering_tech_research_speed = 0.1
+		trade_value_add = 3
+		country_trade_attractiveness = 0.25
 	}
 	
 	ai_weight = {
@@ -107,7 +116,8 @@ tr_magicka_4 = {
 		has_tradition = tr_magicka_2
 	}
 	modifier = {
-		country_society_tech_research_speed = 0.1
+		pop_growth_speed = 0.2
+		pop_happiness = 0.1
 	}
 	ai_weight = {
 		factor = 1000
@@ -120,7 +130,8 @@ tr_magicka_5 = {
 		has_tradition = tr_magicka_2
 	}
 	modifier = {
-		country_physics_tech_research_speed = 0.1
+		species_empire_size_mult = -0.1
+		empire_size_penalty_mult = -0.1
 	}
 	
 	ai_weight = {

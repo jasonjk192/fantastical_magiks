@@ -1,4 +1,15 @@
 tradition_magicka = {
+	desc = {
+		trigger = {
+			is_regular_empire = yes
+			NOT = { has_authority = magiks_auth_magocracy }
+		}
+		text =  tradition_magicka_desc
+	}
+	desc = {
+		trigger = { has_authority = magiks_auth_magocracy }
+		text =  tradition_magicka_magocracy_desc
+	}
 	tree_template = "tree_21_11"
 	adoption_bonus = "tr_magicka_adopt"
 	finish_bonus = "tr_magicka_finish"
@@ -19,6 +30,10 @@ tradition_magicka = {
 		modifier = {
 			factor = 3
 			has_ethic = ethic_fanatic_spiritualist
-		}			
+		}		
+		modifier = {
+			factor = 10
+			has_authority = magiks_auth_magocracy
+		}	
 	}
 }
