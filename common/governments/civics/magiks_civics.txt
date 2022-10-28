@@ -335,19 +335,6 @@ magiks_civic_ascended_mages = {
 		authority = { value = magiks_auth_magocracy }
 		ethics = { NOT = { value = ethic_gestalt_consciousness } } 
 	}
-	possible = {
-		civics = {
-			NOR = {
-				value = magiks_civic_elite_mages
-				value = magiks_civic_alchemical_ministry
-				value = magiks_civic_state_necromancy
-				value = magiks_civic_duelistic_magics
-				value = magiks_civic_natures_listeners
-				value = magiks_civic_idol_crazy
-				value = magiks_civic_rhythmic_fanatics
-			}
-		}
-	}
 	modification = no
 	random_weight = { base = 0 }
 	modifier = {
@@ -582,8 +569,8 @@ magiks_hive_mind_civic_shared_mana = {
 	modification = no
 	random_weight = { base = 0 }
 	modifier = {
-		planet_jobs_worker_produces_mult = 0.15
-		planet_jobs_specialist_produces_mult = 0.15
+		planet_jobs_worker_produces_mult = 0.1
+		planet_jobs_specialist_produces_mult = 0.1
 	}
 	traits = { trait = "magiks_trait_hard_magicians" }
 }
