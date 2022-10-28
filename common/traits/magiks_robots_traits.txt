@@ -33,7 +33,7 @@ magiks_trait_robot_reality_anchors = {
 
 	modifier = {
 		#tile_resource_unity_mult = -0.10
-		planet_jobs_unity_upkeep_mult = 0.10
+		planet_jobs_unity_produces_mult = 0.10
 		pop_ethic_materialist_attraction_mult = 1.5
 	}
 }
