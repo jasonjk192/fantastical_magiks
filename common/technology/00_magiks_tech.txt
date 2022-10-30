@@ -549,3 +549,45 @@ magiks_tech_manacite_extraction = {
 		}
 	}
 }
+
+#################
+# Gene Modification (Vanilla)
+#################
+
+magiks_tech_magiks_engineered_evolution = {
+	cost = 0
+	area = society
+	tier = 0
+	category = { biology }
+	weight = 100
+	
+	potential = {
+		has_ascension_perk = ap_engineered_evolution
+	    exists = species
+	    species = { is_archetype = MAGIKAL }
+    }
+	
+	modifier = {
+		description = magiks_tech_magiks_engineered_evolution_desc
+		MAGIKAL_species_trait_points_add = 3
+	}
+}
+
+magiks_tech_magiks_evolutionary_mastery = {
+	cost = 0
+	area = society
+	tier = 0
+	category = { biology }
+	weight = 100
+	
+	potential = {
+		has_ascension_perk = ap_evolutionary_mastery
+	    exists = species
+	    species = { is_archetype = MAGIKAL }
+    }
+	
+	modifier = {
+		description = magiks_tech_magiks_evolutionary_mastery_desc
+		MAGIKAL_species_trait_points_add = 3
+	}
+}
