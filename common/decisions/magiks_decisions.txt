@@ -1,3 +1,7 @@
+#################
+# Dragons
+#################
+
 # Add Dragons
 magiks_descisions_add_dragons = {
 	owned_planets_only = yes
@@ -95,88 +99,105 @@ magiks_descisions_exterminate_dragons = {
 	}
 }
 
+#################
+# Hyperlane
+#################
+
 magiks_descisions_create_hyperlane = {
-	owned_planets_only = no
-	resources = {
-		category = decisions
-		cost = { energy = 1 }
-	}
-	
+	owned_planets_only = yes
 	potential = {
 		exists = owner
 		owner = {
-			is_regular_empire = yes
+			is_regular_empire = yes 
+			has_technology = magiks_tech_hyperlane_manipulation			
 		}
 	}
 	
-	effect = {	
-		owner = { set_country_flag = magiks_create_hyperlane }
+	effect = {
 		planet.solar_system = {
-			log = "Current system : [This.GetName]"
-			set_star_flag = magiks_core_system_for_hyperlane
-			every_neighbor_system_euclidean = {
-				limit = {
-					distance = {
-						source = PREV
-						max_distance <= 250
-						type = euclidean
-						same_solar_system = no
-					}
-					NOT = { has_hyperlane_to = PREV }
+			magiks_find_neighbours_for_hyperlane_creation = yes
+			if = {
+				limit = { exists = event_target:magiks_hyperlane_system }
+				system_event = {
+					id = magiks_event.4 days = 1
+					scopes = { from = event_target:magiks_hyperlane_system }
 				}
-				log = "This scope: [This.GetName], Prev scope: [Prev.GetName]"
-				add_hyperlane = {
-					from = THIS
-					to = PREV
+			}
+			else = {
+				system_event = {
+					id = magiks_event.5 days = 1
 				}
-				set_star_flag = magiks_add_system_to_hyperlane_list
 			}
 		}
-
 	}
 	
 	ai_weight = {
-		weight = 200
+		weight = 10
 	}
 }
 
 magiks_descisions_delete_hyperlane = {
-	owned_planets_only = no
-	resources = {
-		category = decisions
-		cost = { energy = 1 }
-	}
-	
+	owned_planets_only = yes
 	potential = {
 		exists = owner
 		owner = {
-			is_regular_empire = yes
+			is_regular_empire = yes 
+			has_technology = magiks_tech_hyperlane_manipulation			
 		}
 	}
 	
-	effect = {	
+	effect = {
 		planet.solar_system = {
-			log = "Current system : [This.GetName]"
-			every_neighbor_system_euclidean = {
-				limit = {
-					distance = {
-						source = PREV
-						max_distance <= 250
-						type = euclidean
-						same_solar_system = no
-					}
-					has_hyperlane_to = PREV
+			magiks_find_neighbours_for_hyperlane_removal = yes
+			if = {
+				limit = { exists = event_target:magiks_hyperlane_system }
+				system_event = {
+					id = magiks_event.6 days = 1
+					scopes = { from = event_target:magiks_hyperlane_system }
 				}
-				log = "This scope: [This.GetName], Prev scope: [Prev.GetName]"
-				remove_hyperlane = {
-					from = THIS
-					to = PREV
+			}
+			else = {
+				system_event = {
+					id = magiks_event.7 days = 1
 				}
 			}
 		}
 	}
 	
 	ai_weight = {
-		weight = 200
+		weight = 10
+	}
+}
+
+magiks_descisions_create_hyperlane_into_unowned_space = {
+	owned_planets_only = yes
+	potential = {
+		exists = owner
+		owner = {
+			is_regular_empire = yes 
+			#has_technology = magiks_tech_hyperlane_manipulation			
+		}
+	}
+	
+	effect = {
+		planet.solar_system = {
+			magiks_find_neighbours_for_hyperlane_creation_into_unowned_space = yes
+			if = {
+				limit = { exists = event_target:magiks_hyperlane_system }
+				system_event = {
+					id = magiks_event.8 days = 1
+					scopes = { from = event_target:magiks_hyperlane_system }
+				}
+			}
+			else = {
+				system_event = {
+					id = magiks_event.5 days = 1
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
 	}
 }

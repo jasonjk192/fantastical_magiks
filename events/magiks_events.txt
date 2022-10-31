@@ -1,17 +1,5 @@
 namespace = magiks_event
 
-### Mod Flag ###
-
-country_event = {
-	id = magiks_event.0
-	hide_window = yes
-	fire_only_once = yes
-	trigger = {
-		NOT = { has_global_flag = mod_fantastical_magiks_installed }
-	}
-	immediate = { set_global_flag = mod_fantastical_magiks_installed  }
-}
-
 ### Magiks Event ###
 
 planet_event = {
@@ -44,24 +32,163 @@ planet_event = {
 
 ### Hyperlane events ###
 
-country_event = {
-	id = magiks_event.3
-	hide_window = yes
+system_event = {
+	id = magiks_event.4
+	title = "Hello new World! I haz connet"
+	desc = magiks_decision_hyperlane_found_desc
 	is_triggered_only = yes
-	trigger = { has_country_flag = magiks_create_hyperlane }
-	immediate = {
-		log = "Triggered Create HL"
-		remove_country_flag = magiks_create_hyperlane
+	option = {
+		name = "Let's start"
+		custom_tooltip = "Requires 1000 energy, 1 influence and 50 manacite"
+		allow = {
+			space_owner = {
+				has_resource = {
+					type = energy
+					amount >= 1000
+				}
+				has_resource = {
+					type = manacite
+					amount >= 50
+				}
+				has_resource = {
+					type = influence
+					amount >= 1
+				}
+			}
+		}
+		hidden_effect = {
+			log = "Core Planet: [From.GetName] Other System: [This.GetName]"
+			add_hyperlane = {
+				from = From.solar_system
+				to = This
+			}
+			space_owner = {
+				add_resource = {
+					energy = -1000
+					manacite = -50
+					influence = -1
+				}
+			}
+		} 
+	}
+	option = {
+		name = "Nevermind"
 	}
 }
 
 system_event = {
-	id = magiks_event.4
-	hide_window = yes
+	id = magiks_event.5
+	desc = "No valid neighbour was found for [This.GetName]"
 	is_triggered_only = yes
-	trigger = { has_star_flag = magiks_core_system_for_hyperlane }
-	immediate = {
-		log = "Core Planet for HL: [This.GetName]"
-		remove_star_flag = magiks_core_system_for_hyperlane
+	option = {
+		name = "Unfortunate"
+	}
+}
+
+system_event = {
+	id = magiks_event.6
+	title = "Hello darkness, ye olde fren"
+	desc = "Found a hyperlane from [From.GetName] to [This.GetName]!"
+	is_triggered_only = yes
+	option = {
+		name = "Commence removal"
+		custom_tooltip = "Requires 1000 energy, 1 influence and 50 manacite"
+		allow = {
+			space_owner = {
+				has_resource = {
+					type = energy
+					amount >= 1000
+				}
+				has_resource = {
+					type = manacite
+					amount >= 50
+				}
+				has_resource = {
+					type = influence
+					amount >= 1
+				}
+			}
+		}
+		hidden_effect = {
+			log = "Core Planet: [From.GetName] Other System: [This.GetName]"
+			remove_hyperlane = {
+				from = From.solar_system
+				to = This
+			}
+			space_owner = {
+				add_resource = {
+					energy = -1000
+					manacite = -50
+					influence = -1
+				}
+			}
+		} 
+	}
+	option = {
+		name = "Nevermind"
+	}
+}
+
+system_event = {
+	id = magiks_event.7
+	desc = "No valid neighbour was found for [This.GetName]"
+	is_triggered_only = yes
+	option = {
+		name = "Alone in the void"
+	}
+}
+
+system_event = {
+	id = magiks_event.8
+	title = "Hello new World! Are u alone?"
+	desc = magiks_decision_hyperlane_found_desc
+	is_triggered_only = yes
+	option = {
+		name = "Let's start"
+		custom_tooltip = "Requires 1000 energy, 1 influence and 50 manacite"
+		allow = {
+			space_owner = {
+				has_resource = {
+					type = energy
+					amount >= 1000
+				}
+				has_resource = {
+					type = manacite
+					amount >= 50
+				}
+				has_resource = {
+					type = influence
+					amount >= 1
+				}
+			}
+		}
+		hidden_effect = {
+			add_hyperlane = {
+				from = From.solar_system
+				to = This
+			}
+			space_owner = {
+				add_resource = {
+					energy = -1000
+					manacite = -50
+					influence = -1
+				}
+			}
+			From = {
+				if = {
+					limit = { exists = space_owner }
+					space_owner = {
+						#log = "Space Owner: [This.GetName] PrevPrev: [PrevPrev.GetName] PrevPrevspace_owner: [PrevPrev.space_owner.GetName]"
+						add_opinion_modifier = {
+							who = PrevPrev.space_owner
+							modifier = triggered_opinion_disapprove_of_hyperlane_manipulation
+						}
+					}
+				}
+			}
+		} 
+	}
+	option = {
+		name = "Nevermind"
 	}
 }

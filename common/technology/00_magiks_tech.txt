@@ -591,3 +591,20 @@ magiks_tech_magiks_evolutionary_mastery = {
 		MAGIKAL_species_trait_points_add = 3
 	}
 }
+
+#################
+# Hyperlane
+#################
+
+magiks_tech_hyperlane_manipulation = {
+	cost = @tier4cost2
+	area = physics
+	tier = 0
+	category = { particles }
+	weight = 5
+	
+	potential = {
+		has_technology = tech_jump_drive_1
+	    has_authority = magiks_auth_magocracy
+    }
+}

@@ -737,3 +737,14 @@ triggered_opinion_mulcubi_one_track_mind = {
 		base = -15
 	}
 }
+
+		##############################£##
+		### Hyperlane into neighbours ###
+		#############################£###
+
+triggered_opinion_disapprove_of_hyperlane_manipulation = {
+	opinion = {
+		base = -15	
+	}
+	accumulative = yes
+}		

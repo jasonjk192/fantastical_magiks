@@ -11,10 +11,13 @@ magiks_tech_manacite_extraction_desc:0 "Gain arcane knowledge to safely and usef
 magiks_tech_rhythm4:0 "Baryonic Acoustic Oscillations"
 magiks_tech_rhythm4_desc:0 "With the access of sound manipulation at the most fundamental level, the boundaries of musical abilities have been achievend."
 
- magiks_tech_magiks_engineered_evolution:0 "Magikal Engineered Evolution"
- magiks_tech_magiks_engineered_evolution_desc:0 "Magikal species forgot to pick up these sweet points."
- magiks_tech_magiks_evolutionary_mastery:0 "Magikal Evolutionary Mastery"
- magiks_tech_magiks_evolutionary_mastery_desc:0 "Magikal species forgot to pick up these sweet points."
+magiks_tech_magiks_engineered_evolution:0 "Magikal Engineered Evolution"
+magiks_tech_magiks_engineered_evolution_desc:0 "Magikal species forgot to pick up these sweet points."
+magiks_tech_magiks_evolutionary_mastery:0 "Magikal Evolutionary Mastery"
+magiks_tech_magiks_evolutionary_mastery_desc:0 "Magikal species forgot to pick up these sweet points."
+
+magiks_tech_hyperlane_manipulation:0 "Hyperlane Manipulation"
+magiks_tech_hyperlane_manipulation_desc:0 "Unlock the power of the manacites to channel our abilities and manipulate hyperlanes to our advantage."
 
 #####################
 # Decisions
@@ -26,6 +29,16 @@ magiks_descisions_tame_dragons:0 "Tame Dragons"
 magiks_descisions_tame_dragons_desc:0 "Since this world already has dragons present, colonization is not required. However, these dragons are wild and dangerous, and require training before they can be useful to our cause."
 magiks_descisions_exterminate_dragons:0 "Exterminate Dragons"
 magiks_descisions_exterminate_dragons_desc:0 "The monsters covering this planet are a collosal nussance, and we should exterminate them when we have the chance."
+
+magiks_descisions_create_hyperlane:0 "Create Hyperlane"
+magiks_descisions_create_hyperlane_desc:0 "Channel our resources and mana to generate a new hyperlane randomly to a new star system"
+magiks_descisions_delete_hyperlane:0 "Delete Hyperlane"
+magiks_descisions_delete_hyperlane_desc:0 "Yeet that"
+
+magiks_descisions_create_hyperlane_into_unowned_space:0 "Create Hyperlane (Not Empire Space)"
+magiks_descisions_create_hyperlane_into_unowned_space_desc:0 "Channeling our mana beyond our borders in search of unconnected systems."
+
+triggered_opinion_disapprove_of_hyperlane_manipulation:0 "Hyperlane Connection Disapproved"
 
 #####################
 # Species
@@ -224,3 +237,9 @@ tr_magicka_5_delayed:0 "Blessed by the stars, our empire will flourish."
 
 magiks_civic_ascended_mages:0 "Ascended Mages"
 magiks_civic_ascended_mages_desc:0 "Magical abilities are bestowed through study and research of the arcane arts and over time, have learnt to master this powerful gift."
+
+# ####################
+# Misc
+# ####################
+
+magiks_decision_hyperlane_found_desc:0 "Found suitable Hyperlane connection from [From.GetName] to [This.GetName]!"
