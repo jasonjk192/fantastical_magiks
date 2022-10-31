@@ -14,6 +14,10 @@ magiks_auth_magocracy = {
 			NOT = { value = ethic_gestalt_consciousness }
 		}
 	}
+
+	country_modifier = {
+		country_base_influence_produces_add = 1
+	}
 	
 	tags = {
 		AUTHORITY_ELECTION_ON_RULER_DEATH
