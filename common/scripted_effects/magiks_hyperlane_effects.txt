@@ -93,3 +93,19 @@ magiks_find_neighbours_for_hyperlane_removal_ordered_by_distance = {
 		save_event_target_as = magiks_hyperlane_system
 	}
 }
+
+magiks_find_neighbours_for_hyperlane_removal_into_unowned_space = {
+	random_neighbor_system_euclidean = {
+		limit = {
+			distance = {
+				source = PREV
+				max_distance <= 800
+				type = euclidean
+				same_solar_system = no
+			}
+			NOT = { is_inside_border = PREV.owner }
+			has_hyperlane_to = PREV
+		}
+		save_event_target_as = magiks_hyperlane_system
+	}
+}

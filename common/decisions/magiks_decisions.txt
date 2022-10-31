@@ -175,7 +175,7 @@ magiks_descisions_create_hyperlane_into_unowned_space = {
 		exists = owner
 		owner = {
 			is_regular_empire = yes 
-			#has_technology = magiks_tech_hyperlane_manipulation			
+			has_technology = magiks_tech_hyperlane_manipulation			
 		}
 	}
 	
@@ -192,6 +192,39 @@ magiks_descisions_create_hyperlane_into_unowned_space = {
 			else = {
 				system_event = {
 					id = magiks_event.5 days = 1
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+magiks_descisions_delete_hyperlane_into_unowned_space = {
+	owned_planets_only = yes
+	potential = {
+		exists = owner
+		owner = {
+			is_regular_empire = yes 
+			has_technology = magiks_tech_hyperlane_manipulation			
+		}
+	}
+	
+	effect = {
+		planet.solar_system = {
+			magiks_find_neighbours_for_hyperlane_removal_into_unowned_space = yes
+			if = {
+				limit = { exists = event_target:magiks_hyperlane_system }
+				system_event = {
+					id = magiks_event.9 days = 1
+					scopes = { from = event_target:magiks_hyperlane_system }
+				}
+			}
+			else = {
+				system_event = {
+					id = magiks_event.7 days = 1
 				}
 			}
 		}

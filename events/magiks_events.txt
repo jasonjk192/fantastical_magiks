@@ -32,9 +32,9 @@ planet_event = {
 
 ### Hyperlane events ###
 
+#-- Creates within own border
 system_event = {
 	id = magiks_event.4
-	title = "Hello new World! I haz connet"
 	desc = magiks_decision_hyperlane_found_desc
 	is_triggered_only = yes
 	option = {
@@ -76,6 +76,7 @@ system_event = {
 	}
 }
 
+#-- Creation (Not Found Event)
 system_event = {
 	id = magiks_event.5
 	desc = "No valid neighbour was found for [This.GetName]"
@@ -85,9 +86,9 @@ system_event = {
 	}
 }
 
+#-- Deletes within own border
 system_event = {
 	id = magiks_event.6
-	title = "Hello darkness, ye olde fren"
 	desc = "Found a hyperlane from [From.GetName] to [This.GetName]!"
 	is_triggered_only = yes
 	option = {
@@ -129,6 +130,7 @@ system_event = {
 	}
 }
 
+#-- Deletion (Not Found Event)
 system_event = {
 	id = magiks_event.7
 	desc = "No valid neighbour was found for [This.GetName]"
@@ -138,32 +140,87 @@ system_event = {
 	}
 }
 
+#-- Creates out of border
 system_event = {
 	id = magiks_event.8
-	title = "Hello new World! Are u alone?"
 	desc = magiks_decision_hyperlane_found_desc
 	is_triggered_only = yes
 	option = {
 		name = "Let's start"
-		custom_tooltip = "Requires 1000 energy, 1 influence and 50 manacite"
+		custom_tooltip = "Requires 2500 energy, 4 influence and 150 manacite"
 		allow = {
 			space_owner = {
 				has_resource = {
 					type = energy
-					amount >= 1000
+					amount >= 2500
 				}
 				has_resource = {
 					type = manacite
-					amount >= 50
+					amount >= 150
 				}
 				has_resource = {
 					type = influence
-					amount >= 1
+					amount >= 4
 				}
 			}
 		}
 		hidden_effect = {
 			add_hyperlane = {
+				from = From.solar_system
+				to = This
+			}
+			space_owner = {
+				add_resource = {
+					energy = -1000
+					manacite = -50
+					influence = -1
+				}
+			}
+			From = {
+				if = {
+					limit = { exists = space_owner }
+					space_owner = {
+						#log = "Space Owner: [This.GetName] PrevPrev: [PrevPrev.GetName] PrevPrevspace_owner: [PrevPrev.space_owner.GetName]"
+						add_opinion_modifier = {
+							who = PrevPrev.space_owner
+							modifier = triggered_opinion_disapprove_of_hyperlane_manipulation
+						}
+					}
+				}
+			}
+		} 
+	}
+	option = {
+		name = "Nevermind"
+	}
+}
+
+#-- Deletes out of border
+system_event = {
+	id = magiks_event.9
+	desc = magiks_decision_hyperlane_found_desc
+	is_triggered_only = yes
+	option = {
+		name = "Let's start"
+		custom_tooltip = "Requires 2500 energy, 4 influence and 150 manacite"
+		allow = {
+			space_owner = {
+				has_resource = {
+					type = energy
+					amount >= 2500
+				}
+				has_resource = {
+					type = manacite
+					amount >= 150
+				}
+				has_resource = {
+					type = influence
+					amount >= 4
+				}
+			}
+		}
+		hidden_effect = {
+			remove_hyperlane = {
 				from = From.solar_system
 				to = This
 			}
