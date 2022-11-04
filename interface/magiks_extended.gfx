@@ -83,3 +83,15 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/traditions/tr_magicka_5.dds"
 	}
 }
+
+# ####################
+# Events
+# ####################
+spriteTypes = {
+	spriteType = {
+		name = "GFX_evt_hyperlane"
+		texturefile = "gfx/event_pictures/event_hyperlane.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+}

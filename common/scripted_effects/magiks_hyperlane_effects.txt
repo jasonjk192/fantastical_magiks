@@ -1,3 +1,16 @@
+######################################################################################################
+# NOTE: ordered_neighbor_system_euclidean is used instead of every_neighbor_system_euclidean
+#		since we do not have a way to save the systems to a list.
+#
+#		It may be possible since variables can be named arbitrarily too but then again
+#		options for events are static (I don't really know if it's possible to generate dynamically).
+#
+#		ordered_neighbor_system_euclidean allows to hard pick 'x' amount of systems
+#		and also create 'x' number of options (and disable them accordingly if the systems aren't found)
+######################################################################################################
+
+### Creation ###
+
 magiks_find_neighbours_for_hyperlane_creation = {
 	random_neighbor_system_euclidean = {
 		limit = {
@@ -16,10 +29,6 @@ magiks_find_neighbours_for_hyperlane_creation = {
 
 magiks_find_neighbours_for_hyperlane_creation_ordered_by_distance = {
 	ordered_neighbor_system_euclidean = {
-		set_variable = {
-			which = distance_to_neighbour
-			value = 999
-		}
 		limit = {
 			distance = {
 				source = PREV
@@ -31,9 +40,9 @@ magiks_find_neighbours_for_hyperlane_creation_ordered_by_distance = {
 			NOT = { has_hyperlane_to = PREV }
 		}
 		position = $POSITION$
-		order_by = distance_to_neighbour
+		order_by = trigger:distance_to_core_percent
 		inverse = yes
-		save_event_target_as = magiks_hyperlane_system
+		save_event_target_as = $TARGET$
 	}
 }
 
@@ -54,6 +63,29 @@ magiks_find_neighbours_for_hyperlane_creation_into_unowned_space = {
 		save_event_target_as = magiks_hyperlane_system
 	}
 }
+
+magiks_find_neighbours_for_hyperlane_creation_into_unowned_space_ordered_by_distance = {
+	ordered_neighbor_system_euclidean = {
+		limit = {
+			distance = {
+				source = PREV
+				max_distance <= 800
+				type = euclidean
+				same_solar_system = no
+			}
+			NOR = {
+				has_hyperlane_to = PREV
+				is_inside_border = PREV.owner
+			}
+		}
+		position = $POSITION$
+		order_by = trigger:distance_to_core_percent
+		inverse = yes
+		save_event_target_as = $TARGET$
+	}
+}
+
+### Removal ###
 
 magiks_find_neighbours_for_hyperlane_removal = {
 	random_neighbor_system_euclidean = {
@@ -90,7 +122,7 @@ magiks_find_neighbours_for_hyperlane_removal_ordered_by_distance = {
 		position = $POSITION$
 		order_by = distance_to_neighbour
 		inverse = yes
-		save_event_target_as = magiks_hyperlane_system
+		save_event_target_as = $TARGET$
 	}
 }
 
@@ -107,5 +139,94 @@ magiks_find_neighbours_for_hyperlane_removal_into_unowned_space = {
 			has_hyperlane_to = PREV
 		}
 		save_event_target_as = magiks_hyperlane_system
+	}
+}
+
+magiks_find_neighbours_for_hyperlane_removal_into_unowned_space_ordered_by_distance = {
+	ordered_neighbor_system_euclidean = {
+		limit = {
+			distance = {
+				source = PREV
+				max_distance <= 800
+				type = euclidean
+				same_solar_system = no
+			}
+			NOT = { is_inside_border = PREV.owner }
+			has_hyperlane_to = PREV
+		}
+		position = $POSITION$
+		order_by = trigger:distance_to_core_percent
+		inverse = yes
+		save_event_target_as = $TARGET$
+	}
+}
+
+### Event related effects ###
+
+#-- Created for the purpose of reusability (and reducing redundant Lines of Code in events)
+
+magiks_events_hyperlane_create_hidden_effect_in_border = {
+	add_hyperlane = { from = $FROM_SYS$ to = $THIS_SYS$ }
+	space_owner = {
+		add_resource = {
+			energy = -1000
+			manacite = -50
+			influence = -1
+		}
+	}
+}
+
+magiks_events_hyperlane_create_hidden_effect_out_border = {
+	add_hyperlane = { from = $FROM_SYS$ to = $THIS_SYS$ }
+	space_owner = {
+		add_resource = {
+			energy = -2500
+			manacite = -150
+			influence = -4
+		}
+	}
+	$FROM_SYS$ = {
+		if = {
+			limit = { exists = space_owner }
+			space_owner = {
+				add_opinion_modifier = {
+					who = PrevPrev.space_owner
+					modifier = triggered_opinion_disapprove_of_hyperlane_manipulation
+				}
+			}
+		}
+	}
+}
+
+magiks_events_hyperlane_remove_hidden_effect_in_border = {
+	remove_hyperlane = { from = $FROM_SYS$ to = $THIS_SYS$ }
+	space_owner = {
+		add_resource = {
+			energy = -1000
+			manacite = -50
+			influence = -1
+		}
+	}
+}
+
+magiks_events_hyperlane_remove_hidden_effect_out_border = {
+	remove_hyperlane = { from = $FROM_SYS$ to = $THIS_SYS$ }
+	space_owner = {
+		add_resource = {
+			energy = -2500
+			manacite = -150
+			influence = -4
+		}
+	}
+	$FROM_SYS$ = {
+		if = {
+			limit = { exists = space_owner }
+			space_owner = {
+				add_opinion_modifier = {
+					who = PrevPrev.space_owner
+					modifier = triggered_opinion_disapprove_of_hyperlane_manipulation
+				}
+			}
+		}
 	}
 }

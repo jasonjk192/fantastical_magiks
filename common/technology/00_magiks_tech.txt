@@ -602,9 +602,11 @@ magiks_tech_hyperlane_manipulation = {
 	tier = 0
 	category = { particles }
 	weight = 5
+	is_dangerous = yes
 	
 	potential = {
 		has_technology = tech_jump_drive_1
 	    has_authority = magiks_auth_magocracy
+		has_technology = magiks_tech_manacite_extraction
     }
 }

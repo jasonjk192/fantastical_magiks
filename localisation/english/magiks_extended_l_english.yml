@@ -258,3 +258,23 @@ magiks_machine_civic_gifted_souls_desc:0 "Mana permeates these mechanical beings
 # ####################
 
 magiks_decision_hyperlane_found_desc:0 "Found suitable Hyperlane connection from [From.GetName] to [This.GetName]!"
+
+magiks_event_hyperlane_no_system_found_desc:0 "No valid neighbour was found for [This.GetName]"
+magiks_event_hyperlane_create_found_desc:0 "Found suitable systems for new hyperlane connections"
+magiks_event_hyperlane_remove_found_desc:0 "Found suitable hyperlane connections for removal"
+magiks_event_hyperlane_in_border_resource_fail:0 "Requires 1000 energy, 1 influence and 50 manacite"
+magiks_event_hyperlane_out_border_resource_fail:0 "Requires 2500 energy, 4 influence and 150 manacite"
+
+NEVERMIND:0 "Nevermind."
+
+# magiks_event_hyperlane_system_0_unclaimed:0 "§HUnclaimed:§! [magiks_hyperlane_system_0.GetName]"
+# magiks_event_hyperlane_system_1_unclaimed:0 "§HUnclaimed:§! [magiks_hyperlane_system_1.GetName]"
+# magiks_event_hyperlane_system_2_unclaimed:0 "§HUnclaimed:§! [magiks_hyperlane_system_2.GetName]"
+# magiks_event_hyperlane_system_3_unclaimed:0 "§HUnclaimed:§! [magiks_hyperlane_system_3.GetName]"
+# magiks_event_hyperlane_system_4_unclaimed:0 "§HUnclaimed:§! [magiks_hyperlane_system_4.GetName]"
+
+# magiks_event_hyperlane_system_0_claimed:0 "§H[magiks_hyperlane_system_0.space_owner.GetName]:§! [magiks_hyperlane_system_0.GetName]"
+# magiks_event_hyperlane_system_1_claimed:0 "§H[magiks_hyperlane_system_1.space_owner.GetName]:§! [magiks_hyperlane_system_0.GetName]"
+# magiks_event_hyperlane_system_2_claimed:0 "§H[magiks_hyperlane_system_2.space_owner.GetName]:§! [magiks_hyperlane_system_0.GetName]"
+# magiks_event_hyperlane_system_3_claimed:0 "§H[magiks_hyperlane_system_3.space_owner.GetName]:§! [magiks_hyperlane_system_0.GetName]"
+# magiks_event_hyperlane_system_4_claimed:0 "§H[magiks_hyperlane_system_4.space_owner.GetName]:§! [magiks_hyperlane_system_0.GetName]"
