@@ -113,6 +113,8 @@ magiks_descisions_exterminate_dragons = {
 
 magiks_descisions_create_hyperlane = {
 	owned_planets_only = yes
+	enactment_time = 180
+	icon = decision_engineering_research
 	potential = {
 		exists = owner
 		owner = {
@@ -179,6 +181,8 @@ magiks_descisions_create_hyperlane = {
 
 magiks_descisions_delete_hyperlane = {
 	owned_planets_only = yes
+	enactment_time = 180
+	icon = decision_engineering_research
 	potential = {
 		exists = owner
 		owner = {
@@ -227,6 +231,8 @@ magiks_descisions_delete_hyperlane = {
 
 magiks_descisions_create_hyperlane_into_unowned_space = {
 	owned_planets_only = yes
+	enactment_time = 180
+	icon = decision_engineering_research
 	potential = {
 		exists = owner
 		owner = {
@@ -271,6 +277,8 @@ magiks_descisions_create_hyperlane_into_unowned_space = {
 
 magiks_descisions_delete_hyperlane_into_unowned_space = {
 	owned_planets_only = yes
+	enactment_time = 180
+	icon = decision_engineering_research
 	potential = {
 		exists = owner
 		owner = {

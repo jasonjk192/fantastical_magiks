@@ -5,9 +5,8 @@ country_event = {
 	id = magiks_game_start.0
 	hide_window = yes
 	fire_only_once = yes
-	trigger = {
-		NOT = { has_global_flag = mod_fantastical_magiks_installed }
-	}
+	is_triggered_only = yes
+	trigger = { NOT = { has_global_flag = mod_fantastical_magiks_installed } }
 	immediate = { set_global_flag = mod_fantastical_magiks_installed  }
 }
 

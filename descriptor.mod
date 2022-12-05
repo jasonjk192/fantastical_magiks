@@ -1,4 +1,4 @@
-name="Fantastical Magiks (Updated 3.5.*)"
+name="Fantastical Magiks (Updated 3.6.*)"
 tags={
 	"Gameplay"
 	"Buildings"
@@ -7,5 +7,5 @@ tags={
 }
 picture="thumbnail.png"
 version="1"
-supported_version="3.5.*"
+supported_version="3.6.*"
 remote_file_id="2878323242"

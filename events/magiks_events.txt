@@ -65,7 +65,7 @@ system_event = {
 	desc = magiks_decision_hyperlane_found_desc
 	is_triggered_only = yes
 	option = {
-		name = "Let's start"
+		name = LETS_START
 		custom_tooltip = magiks_event_hyperlane_in_border_resource_fail
 		allow = {
 			space_owner = {
@@ -107,10 +107,10 @@ system_event = {
 	id = magiks_event.6
 	title = BLANK_STRING
 	picture = GFX_evt_hyperlane
-	desc = "Found a hyperlane from [From.GetName] to [This.GetName]!"
+	desc = magiks_decision_hyperlane_found_desc
 	is_triggered_only = yes
 	option = {
-		name = "Commence removal"
+		name = COMMENCE_REMOVAL
 		custom_tooltip = magiks_event_hyperlane_in_border_resource_fail
 		allow = {
 			space_owner = {
@@ -155,7 +155,7 @@ system_event = {
 	desc = magiks_decision_hyperlane_found_desc
 	is_triggered_only = yes
 	option = {
-		name = "Let's start"
+		name = LETS_START
 		custom_tooltip = magiks_event_hyperlane_out_border_resource_fail
 		allow = {
 			space_owner = {
@@ -211,7 +211,7 @@ system_event = {
 	desc = magiks_decision_hyperlane_found_desc
 	is_triggered_only = yes
 	option = {
-		name = "Let's start"
+		name = LETS_START
 		custom_tooltip = magiks_event_hyperlane_out_border_resource_fail
 		allow = {
 			space_owner = {
@@ -269,7 +269,7 @@ system_event = {
 	desc = magiks_event_hyperlane_create_found_desc
 	is_triggered_only = yes
 	option = {
-		name = "[magiks_hyperlane_system_0.GetName]"
+		name = magiks_event_hyperlane_system_0_owner_system
 		trigger = { exists = event_target:magiks_hyperlane_system_0 }
 		custom_tooltip = magiks_event_hyperlane_in_border_resource_fail
 		allow = {
@@ -287,7 +287,7 @@ system_event = {
 		}
 	}
 	option = {
-		name = "[magiks_hyperlane_system_1.GetName]"
+		name = magiks_event_hyperlane_system_1_owner_system
 		trigger = { exists = event_target:magiks_hyperlane_system_1 }
 		custom_tooltip = magiks_event_hyperlane_in_border_resource_fail
 		allow = {
@@ -305,7 +305,7 @@ system_event = {
 		}
 	}
 	option = {
-		name = "[magiks_hyperlane_system_2.GetName]"
+		name = magiks_event_hyperlane_system_2_owner_system
 		trigger = { exists = event_target:magiks_hyperlane_system_2 }
 		custom_tooltip = magiks_event_hyperlane_in_border_resource_fail
 		allow = {
@@ -323,7 +323,7 @@ system_event = {
 		}
 	}
 	option = {
-		name = "[magiks_hyperlane_system_3.GetName]"
+		name = magiks_event_hyperlane_system_3_owner_system
 		trigger = { exists = event_target:magiks_hyperlane_system_3 }
 		custom_tooltip = magiks_event_hyperlane_in_border_resource_fail
 		allow = {
@@ -341,7 +341,7 @@ system_event = {
 		}
 	}
 	option = {
-		name = "[magiks_hyperlane_system_4.GetName]"
+		name = magiks_event_hyperlane_system_4_owner_system
 		trigger = { exists = event_target:magiks_hyperlane_system_4 }
 		custom_tooltip = magiks_event_hyperlane_in_border_resource_fail
 		allow = {
@@ -371,7 +371,7 @@ system_event = {
 	desc = magiks_event_hyperlane_remove_found_desc
 	is_triggered_only = yes
 	option = {
-		name = "[magiks_hyperlane_system_0.GetName]"
+		name = magiks_event_hyperlane_system_0_owner_system
 		trigger = { exists = event_target:magiks_hyperlane_system_0 }
 		custom_tooltip = magiks_event_hyperlane_in_border_resource_fail
 		allow = {
@@ -389,7 +389,7 @@ system_event = {
 		}
 	}
 	option = {
-		name = "[magiks_hyperlane_system_1.GetName]"
+		name = magiks_event_hyperlane_system_1_owner_system
 		trigger = { exists = event_target:magiks_hyperlane_system_1 }
 		custom_tooltip = magiks_event_hyperlane_in_border_resource_fail
 		allow = {
@@ -407,7 +407,7 @@ system_event = {
 		}
 	}
 	option = {
-		name = "[magiks_hyperlane_system_2.GetName]"
+		name = magiks_event_hyperlane_system_2_owner_system
 		trigger = { exists = event_target:magiks_hyperlane_system_2 }
 		custom_tooltip = magiks_event_hyperlane_in_border_resource_fail
 		allow = {
@@ -425,7 +425,7 @@ system_event = {
 		}
 	}
 	option = {
-		name = "[magiks_hyperlane_system_3.GetName]"
+		name = magiks_event_hyperlane_system_3_owner_system
 		trigger = { exists = event_target:magiks_hyperlane_system_3 }
 		custom_tooltip = magiks_event_hyperlane_in_border_resource_fail
 		allow = {
@@ -443,7 +443,7 @@ system_event = {
 		}
 	}
 	option = {
-		name = "[magiks_hyperlane_system_4.GetName]"
+		name = magiks_event_hyperlane_system_4_owner_system
 		trigger = { exists = event_target:magiks_hyperlane_system_4 }
 		custom_tooltip = magiks_event_hyperlane_in_border_resource_fail
 		allow = {
@@ -475,11 +475,11 @@ system_event = {
 	option = {
 		name = {
 			trigger = { exists = event_target:magiks_hyperlane_system_0.space_owner }
-			text = "§H[magiks_hyperlane_system_0.space_owner.GetName]:§! [magiks_hyperlane_system_0.GetName]"
+			text = magiks_event_hyperlane_system_0_claimed
 		}
 		name = {
 			trigger = { NOT = { exists = event_target:magiks_hyperlane_system_0.space_owner } }
-			text = "§HUnclaimed:§! [magiks_hyperlane_system_0.GetName]"
+			text = magiks_event_hyperlane_system_0_unclaimed
 		}
 		trigger = { exists = event_target:magiks_hyperlane_system_0 }
 		custom_tooltip = magiks_event_hyperlane_out_border_resource_fail
@@ -500,11 +500,11 @@ system_event = {
 	option = {
 		name = {
 			trigger = { exists = event_target:magiks_hyperlane_system_1.space_owner }
-			text = "§H[magiks_hyperlane_system_1.space_owner.GetName]:§! [magiks_hyperlane_system_1.GetName]"
+			text = magiks_event_hyperlane_system_1_claimed
 		}
 		name = {
 			trigger = { NOT = { exists = event_target:magiks_hyperlane_system_1.space_owner } }
-			text = "§HUnclaimed:§! [magiks_hyperlane_system_1.GetName]"
+			text = magiks_event_hyperlane_system_1_unclaimed
 		}
 		trigger = { exists = event_target:magiks_hyperlane_system_1 }
 		custom_tooltip = magiks_event_hyperlane_out_border_resource_fail
@@ -525,11 +525,11 @@ system_event = {
 	option = {
 		name = {
 			trigger = { exists = event_target:magiks_hyperlane_system_2.space_owner }
-			text = "§H[magiks_hyperlane_system_2.solar_system.space_owner.GetName]:§! [magiks_hyperlane_system_2.GetName]"
+			text = magiks_event_hyperlane_system_2_claimed
 		}
 		name = {
 			trigger = { NOT = { exists = event_target:magiks_hyperlane_system_2.space_owner } }
-			text = "§HUnclaimed:§! [magiks_hyperlane_system_2.GetName]"
+			text = magiks_event_hyperlane_system_2_unclaimed
 		}
 		trigger = { exists = event_target:magiks_hyperlane_system_2 }
 		custom_tooltip = magiks_event_hyperlane_out_border_resource_fail
@@ -550,11 +550,11 @@ system_event = {
 	option = {
 		name = {
 			trigger = { exists = event_target:magiks_hyperlane_system_3.space_owner }
-			text = "§H[magiks_hyperlane_system_3.space_owner.GetName]:§! [magiks_hyperlane_system_3.GetName]"
+			text = magiks_event_hyperlane_system_3_claimed
 		}
 		name = {
 			trigger = { NOT = { exists = event_target:magiks_hyperlane_system_3.space_owner } }
-			text = "§HUnclaimed:§! [magiks_hyperlane_system_3.GetName]"
+			text = magiks_event_hyperlane_system_3_unclaimed
 		}
 		trigger = { exists = event_target:magiks_hyperlane_system_3 }
 		custom_tooltip = magiks_event_hyperlane_out_border_resource_fail
@@ -575,11 +575,11 @@ system_event = {
 	option = {
 		name = {
 			trigger = { exists = event_target:magiks_hyperlane_system_4.space_owner }
-			text = "§H[magiks_hyperlane_system_4.space_owner.GetName]:§! [magiks_hyperlane_system_4.GetName]"
+			text = magiks_event_hyperlane_system_4_claimed
 		}
 		name = {
 			trigger = { NOT = { exists = event_target:magiks_hyperlane_system_4.space_owner } }
-			text = "§HUnclaimed:§! [magiks_hyperlane_system_4.GetName]"
+			text = magiks_event_hyperlane_system_4_unclaimed
 		}
 		trigger = { exists = event_target:magiks_hyperlane_system_4 }
 		custom_tooltip = magiks_event_hyperlane_out_border_resource_fail
@@ -612,11 +612,11 @@ system_event = {
 	option = {
 		name = {
 			trigger = { exists = event_target:magiks_hyperlane_system_0.solar_system.space_owner }
-			text = "§H[magiks_hyperlane_system_0.solar_system.space_owner.GetName]:§! [magiks_hyperlane_system_0.GetName]"
+			text = magiks_event_hyperlane_system_0_claimed
 		}
 		name = {
 			trigger = { NOT = { exists = event_target:magiks_hyperlane_system_0.solar_system.space_owner } }
-			text = "§HUnclaimed:§! [magiks_hyperlane_system_0.GetName]"
+			text = magiks_event_hyperlane_system_0_unclaimed
 		}
 		trigger = { exists = event_target:magiks_hyperlane_system_0 }
 		custom_tooltip = magiks_event_hyperlane_out_border_resource_fail
@@ -637,11 +637,11 @@ system_event = {
 	option = {
 		name = {
 			trigger = { exists = event_target:magiks_hyperlane_system_1.solar_system.space_owner }
-			text = "§H[magiks_hyperlane_system_1.solar_system.space_owner.GetName]:§! [magiks_hyperlane_system_1.GetName]"
+			text = magiks_event_hyperlane_system_1_claimed
 		}
 		name = {
 			trigger = { NOT = { exists = event_target:magiks_hyperlane_system_1.solar_system.space_owner } }
-			text = "§HUnclaimed:§! [magiks_hyperlane_system_1.GetName]"
+			text = magiks_event_hyperlane_system_1_unclaimed
 		}
 		trigger = { exists = event_target:magiks_hyperlane_system_1 }
 		custom_tooltip = magiks_event_hyperlane_out_border_resource_fail
@@ -662,11 +662,11 @@ system_event = {
 	option = {
 		name = {
 			trigger = { exists = event_target:magiks_hyperlane_system_2.solar_system.space_owner }
-			text = "§H[magiks_hyperlane_system_2.solar_system.space_owner.GetName]:§! [magiks_hyperlane_system_2.GetName]"
+			text = magiks_event_hyperlane_system_2_claimed
 		}
 		name = {
 			trigger = { NOT = { exists = event_target:magiks_hyperlane_system_2.solar_system.space_owner } }
-			text = "§HUnclaimed:§! [magiks_hyperlane_system_2.GetName]"
+			text = magiks_event_hyperlane_system_2_unclaimed
 		}
 		trigger = { exists = event_target:magiks_hyperlane_system_2 }
 		custom_tooltip = magiks_event_hyperlane_out_border_resource_fail
@@ -687,11 +687,11 @@ system_event = {
 	option = {
 		name = {
 			trigger = { exists = event_target:magiks_hyperlane_system_3.solar_system.space_owner }
-			text = "§H[magiks_hyperlane_system_3.solar_system.space_owner.GetName]:§! [magiks_hyperlane_system_3.GetName]"
+			text = magiks_event_hyperlane_system_3_claimed
 		}
 		name = {
 			trigger = { NOT = { exists = event_target:magiks_hyperlane_system_3.solar_system.space_owner } }
-			text = "§HUnclaimed:§! [magiks_hyperlane_system_3.GetName]"
+			text = magiks_event_hyperlane_system_3_unclaimed
 		}
 		trigger = { exists = event_target:magiks_hyperlane_system_3 }
 		custom_tooltip = magiks_event_hyperlane_out_border_resource_fail
@@ -712,11 +712,11 @@ system_event = {
 	option = {
 		name = {
 			trigger = { exists = event_target:magiks_hyperlane_system_4.solar_system.space_owner }
-			text = "§H[magiks_hyperlane_system_4.solar_system.space_owner.GetName]:§! [magiks_hyperlane_system_4.GetName]"
+			text = magiks_event_hyperlane_system_4_claimed
 		}
 		name = {
 			trigger = { NOT = { exists = event_target:magiks_hyperlane_system_4.solar_system.space_owner } }
-			text = "§HUnclaimed:§! [magiks_hyperlane_system_4.GetName]"
+			text = magiks_event_hyperlane_system_4_unclaimed
 		}
 		trigger = { exists = event_target:magiks_hyperlane_system_4 }
 		custom_tooltip = magiks_event_hyperlane_out_border_resource_fail
