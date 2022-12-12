@@ -66,6 +66,10 @@ magiks_find_neighbours_for_hyperlane_creation_into_unowned_space = {
 
 magiks_find_neighbours_for_hyperlane_creation_into_unowned_space_ordered_by_distance = {
 	ordered_neighbor_system_euclidean = {
+		set_variable = {
+			which = distance_to_neighbour
+			value = 999
+		}
 		limit = {
 			distance = {
 				source = PREV
@@ -76,10 +80,10 @@ magiks_find_neighbours_for_hyperlane_creation_into_unowned_space_ordered_by_dist
 			NOR = {
 				has_hyperlane_to = PREV
 				is_inside_border = PREV.owner
-			}
+			}		
 		}
 		position = $POSITION$
-		order_by = trigger:distance_to_core_percent
+		order_by = trigger:num_planets_in_system
 		inverse = yes
 		save_event_target_as = $TARGET$
 	}
