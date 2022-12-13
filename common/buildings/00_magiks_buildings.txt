@@ -460,11 +460,11 @@ magiks_building_mage_college = {
 		category = planet_buildings
 		cost = {
 			minerals = @b2_minerals
-			exotic_gases = @b2_rare_cost
+			manacite = @b2_rare_cost
 		}
 		upkeep = {
 			energy = @b2_upkeep
-			exotic_gases = @b2_rare_upkeep
+			manacite = @b2_rare_upkeep
 		}
 	}
 
@@ -531,11 +531,11 @@ magiks_building_mage_university = {
 		category = planet_buildings
 		cost = {
 			minerals = @b3_minerals
-			exotic_gases = @b3_rare_cost
+			manacite = @b3_rare_cost
 		}
 		upkeep = {
 			energy = @b3_upkeep
-			exotic_gases = @b3_rare_upkeep
+			manacite = @b3_rare_upkeep
 		}
 		upkeep = {
 			trigger = {
@@ -591,11 +591,11 @@ magiks_building_mage_arcanium = {
 		category = planet_buildings
 		cost = {
 			minerals = @b2_minerals
-			exotic_gases = @b2_rare_cost
+			manacite = @b2_rare_cost
 		}
 		upkeep = {
 			energy = @b2_upkeep
-			exotic_gases = @b2_rare_upkeep
+			manacite = @b2_rare_upkeep
 		}
 	}
 
@@ -624,3 +624,54 @@ magiks_building_mage_arcanium = {
 		engineering_research = 5
 	}
 }
+
+# magiks_building_construct_builder = {
+# 	base_buildtime = @b1_time
+
+# 	category = pop_assembly
+
+# 	base_cap_amount = 1
+
+# 	potential = {
+# 		exists = owner
+# 		owner = {
+# 			has_ascension_perk = ap_engineered_evolution
+# 			has_authority = magiks_auth_magocracy
+# 		}
+# 		NOT = { has_modifier = resort_colony }
+# 		exists = owner_species
+# 		owner_species = { is_archetype = MAGIKAL }
+# 	}
+
+# 	destroy_trigger = {
+# 		exists = owner
+# 		NOT = {
+# 			owner = {
+# 				has_ascension_perk = ap_engineered_evolution
+# 				has_authority = magiks_auth_magocracy
+# 			}
+# 		}
+# 		exists = owner_species
+# 		NOT = { owner_species = { is_archetype = MAGIKAL }}
+# 	}
+
+# 	planet_modifier = {
+# 		planet_pop_assembly_add = 3
+# 	}
+
+# 	resources = {
+# 		category = planet_buildings
+
+# 		# Base cost
+# 		cost = {
+# 			minerals = 500
+# 			food = 500
+# 		}
+
+# 		# Base upkeep
+# 		upkeep = {
+# 			energy = 2
+# 			food = 30
+# 		}
+# 	}
+# }

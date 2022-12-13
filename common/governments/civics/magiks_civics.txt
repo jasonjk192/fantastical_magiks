@@ -330,6 +330,21 @@ magiks_civic_rhythmic_fanatics = {
 	}
 }
 
+magiks_civic_ascended_mages = {
+	potential = { 
+		authority = { value = magiks_auth_magocracy }
+		ethics = { NOT = { value = ethic_gestalt_consciousness } } 
+	}
+	modification = no
+	random_weight = { base = 0 }
+	modifier = {
+		planet_jobs_physics_research_produces_mult = 0.1
+		planet_jobs_engineering_research_produces_mult = 0.1
+		planet_jobs_society_research_produces_mult = 0.1
+	}
+	traits = { trait = "magiks_trait_hard_magicians" }
+}
+
 ###MAGICAL CIVICS###
 	
 magiks_civic_dark_cultists = {
@@ -502,8 +517,7 @@ magiks_civic_dragon_tamers = {
 
 magiks_machine_civic_waifu_bots = {
 	potential = { 
-		authority = { value = magiks_auth_magocracy }
-		ethics = { NOT = { value = ethic_gestalt_consciousness } } 
+		authority = { value = auth_machine_intelligence }
 	}
 	possible = {
 		ethics = {
@@ -528,17 +542,38 @@ magiks_machine_civic_waifu_bots = {
 	modification = no
 	random_weight = {
 		base = 5
-		modifier = {
-			factor = 0
-			has_global_flag = game_started
-		}
 	}
 	traits = {
 		trait = "magiks_trait_robot_waifu_bots"
 	}
 }
 
+magiks_machine_civic_gifted_souls = {
+	potential = { 
+		authority = { value = auth_machine_intelligence }
+	}
+	modification = no
+	random_weight = { base = 0 }
+	modifier = {
+		planet_jobs_unity_produces_mult = 0.10
+		pop_happiness = 0.15
+	}
+}
+
 ### Hive mind related civics ###
+
+magiks_hive_mind_civic_shared_mana = {
+	potential = { 
+		authority = { value = auth_hive_mind }
+	}
+	modification = no
+	random_weight = { base = 0 }
+	modifier = {
+		planet_jobs_worker_produces_mult = 0.1
+		planet_jobs_specialist_produces_mult = 0.1
+	}
+	traits = { trait = "magiks_trait_hard_magicians" }
+}
 
 # magiks_civic_hive_mind_hunger = {
 # 	potential = { 

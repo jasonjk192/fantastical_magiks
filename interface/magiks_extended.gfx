@@ -1,5 +1,8 @@
+# ####################
+# Planets
+# ####################
+
 spriteTypes = {	
-	# Planets
 	spriteType = { 
 		name = "GFX_planet_type_magikal"
 		alwaystransparent = yes
@@ -19,5 +22,76 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_planet_magikal_bg"
 		texturefile = "gfx/interface/icons/planet_backgrounds/pc_magikal.dds"
+	}
+}
+
+# ####################
+# Traditions
+# ####################
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_adopted_tradition_category_bg_tradition_magicka"
+		textureFile = "gfx/interface/traditions/adopted_tradition_category_bg_magicka.dds"
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_tradition_category_tile_tradition_magicka"
+		textureFile = "gfx/interface/tiles/tradition_category_tile_magicka.dds"
+		borderSize = { x=140 y=140 }
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+
+	spriteType = {
+		name = "GFX_tradition_category_bg_tradition_magicka"
+		textureFile = "gfx/interface/tiles/tradition_category_tile_magicka.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tradition_hex_bg_tradition_magicka"
+		textureFile = "gfx/interface/traditions/tradition_hex_bg_magicka.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tradition_category_icon_tradition_magicka"
+		textureFile = "gfx/interface/icons/traditions/tree_icons/tradition_icon_magicka.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_tr_magicka_1"
+		textureFile = "gfx/interface/icons/traditions/tr_magicka_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tr_magicka_2"
+		textureFile = "gfx/interface/icons/traditions/tr_magicka_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tr_magicka_3"
+		textureFile = "gfx/interface/icons/traditions/tr_magicka_3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tr_magicka_4"
+		textureFile = "gfx/interface/icons/traditions/tr_magicka_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tr_magicka_5"
+		textureFile = "gfx/interface/icons/traditions/tr_magicka_5.dds"
+	}
+}
+
+# ####################
+# Events
+# ####################
+spriteTypes = {
+	spriteType = {
+		name = "GFX_evt_hyperlane"
+		texturefile = "gfx/event_pictures/event_hyperlane.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
 	}
 }

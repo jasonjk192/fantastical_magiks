@@ -1,3 +1,7 @@
+#################
+# Dragons
+#################
+
 # Add Dragons
 magiks_descisions_add_dragons = {
 	owned_planets_only = yes
@@ -92,5 +96,227 @@ magiks_descisions_exterminate_dragons = {
 	
 	ai_weight = {
 		weight = 200
+	}
+}
+
+#################
+# Hyperlane
+#################
+
+################################################################################
+# Super Weird Bug: 	For some reason if at least 1 NEIGBOURING system is found then the next option or more
+# 					gets a seemingly far off random system and will create hyperlane if you choose that option.
+# How to trigger:	As long as you have 1 nearby system found then the next few options may contain that
+#					random far off system.
+# Why (Cause):		Unknown at this point. Needs further research altho above trigger may help.
+################################################################################
+
+magiks_descisions_create_hyperlane = {
+	owned_planets_only = yes
+	enactment_time = 180
+	icon = decision_engineering_research
+	potential = {
+		exists = owner
+		owner = {
+			is_regular_empire = yes 
+			has_technology = magiks_tech_hyperlane_manipulation			
+		}
+	}
+	allow = {
+		space_owner = {
+			has_resource = { type = energy amount >= 2500 }
+			has_resource = { type = manacite amount >= 150 }
+			has_resource = { type = influence amount >= 4 }
+		}
+	}
+	effect = {
+		# planet.solar_system = {
+		# 	magiks_find_neighbours_for_hyperlane_creation_ordered_by_distance = {
+		# 		POSITION = 0
+		# 		TARGET = magiks_hyperlane_system
+		# 	}
+		# 	if = {
+		# 		limit = { exists = event_target:magiks_hyperlane_system }
+		# 		system_event = {
+		# 			id = magiks_event.4 days = 1
+		# 			scopes = { from = event_target:magiks_hyperlane_system }
+		# 		}
+		# 	}
+		# 	else = {
+		# 		system_event = {
+		# 			id = magiks_event.5 days = 1
+		# 		}
+		# 	}
+		# }
+		planet.solar_system = {
+			magiks_find_neighbours_for_hyperlane_creation_ordered_by_distance = {
+				POSITION = 0 TARGET = magiks_hyperlane_system_0
+			}
+			magiks_find_neighbours_for_hyperlane_creation_ordered_by_distance = {
+				POSITION = 1 TARGET = magiks_hyperlane_system_1
+			}
+			magiks_find_neighbours_for_hyperlane_creation_ordered_by_distance = {
+				POSITION = 2 TARGET = magiks_hyperlane_system_2
+			}
+			magiks_find_neighbours_for_hyperlane_creation_ordered_by_distance = {
+				POSITION = 3 TARGET = magiks_hyperlane_system_3
+			}
+			magiks_find_neighbours_for_hyperlane_creation_ordered_by_distance = {
+				POSITION = 4 TARGET = magiks_hyperlane_system_4
+			}
+			if = {
+				limit = { exists = event_target:magiks_hyperlane_system_0 }
+				system_event = { id = magiks_event.12 days = 1 }
+			}
+			else = {
+				system_event = { id = magiks_event.5 days = 1 }
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+magiks_descisions_delete_hyperlane = {
+	owned_planets_only = yes
+	enactment_time = 180
+	icon = decision_engineering_research
+	potential = {
+		exists = owner
+		owner = {
+			is_regular_empire = yes 
+			has_technology = magiks_tech_hyperlane_manipulation			
+		}
+	}
+	allow = {
+		space_owner = {
+			has_resource = { type = energy amount >= 2500 }
+			has_resource = { type = manacite amount >= 150 }
+			has_resource = { type = influence amount >= 4 }
+		}
+	}
+	effect = {
+		planet.solar_system = {
+			magiks_find_neighbours_for_hyperlane_removal_ordered_by_distance = {
+				POSITION = 0 TARGET = magiks_hyperlane_system_0
+			}
+			magiks_find_neighbours_for_hyperlane_removal_ordered_by_distance = {
+				POSITION = 1 TARGET = magiks_hyperlane_system_1
+			}
+			magiks_find_neighbours_for_hyperlane_removal_ordered_by_distance = {
+				POSITION = 2 TARGET = magiks_hyperlane_system_2
+			}
+			magiks_find_neighbours_for_hyperlane_removal_ordered_by_distance = {
+				POSITION = 3 TARGET = magiks_hyperlane_system_3
+			}
+			magiks_find_neighbours_for_hyperlane_removal_ordered_by_distance = {
+				POSITION = 4 TARGET = magiks_hyperlane_system_4
+			}
+			if = {
+				limit = { exists = event_target:magiks_hyperlane_system_0 }
+				system_event = { id = magiks_event.13 days = 1 }
+			}
+			else = {
+				system_event = { id = magiks_event.7 days = 1 }
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+magiks_descisions_create_hyperlane_into_unowned_space = {
+	owned_planets_only = yes
+	enactment_time = 180
+	icon = decision_engineering_research
+	potential = {
+		exists = owner
+		owner = {
+			is_regular_empire = yes 
+			has_technology = magiks_tech_hyperlane_manipulation			
+		}
+	}
+	allow = {
+		space_owner = {
+			has_resource = { type = energy amount >= 2500 }
+			has_resource = { type = manacite amount >= 150 }
+			has_resource = { type = influence amount >= 4 }
+		}
+	}
+	effect = {
+		planet.solar_system = {
+			magiks_find_neighbours_for_hyperlane_creation_into_unowned_space_ordered_by_distance = {
+				POSITION = 0 TARGET = magiks_hyperlane_system_0
+			}
+			magiks_find_neighbours_for_hyperlane_creation_into_unowned_space_ordered_by_distance = {
+				POSITION = 1 TARGET = magiks_hyperlane_system_1
+			}
+			magiks_find_neighbours_for_hyperlane_creation_into_unowned_space_ordered_by_distance = {
+				POSITION = 2 TARGET = magiks_hyperlane_system_2
+			}
+			magiks_find_neighbours_for_hyperlane_creation_into_unowned_space_ordered_by_distance = {
+				POSITION = 3 TARGET = magiks_hyperlane_system_3
+			}
+			magiks_find_neighbours_for_hyperlane_creation_into_unowned_space_ordered_by_distance = {
+				POSITION = 4 TARGET = magiks_hyperlane_system_4
+			}
+			if = {
+				limit = { exists = event_target:magiks_hyperlane_system_0 }
+				system_event = { id = magiks_event.10  }
+			}
+			else = {
+				system_event = { id = magiks_event.5  }
+			}
+		}
+	}
+}
+
+magiks_descisions_delete_hyperlane_into_unowned_space = {
+	owned_planets_only = yes
+	enactment_time = 180
+	icon = decision_engineering_research
+	potential = {
+		exists = owner
+		owner = {
+			is_regular_empire = yes 
+			has_technology = magiks_tech_hyperlane_manipulation			
+		}
+	}
+	allow = {
+		space_owner = {
+			has_resource = { type = energy amount >= 2500 }
+			has_resource = { type = manacite amount >= 150 }
+			has_resource = { type = influence amount >= 4 }
+		}
+	}
+	effect = {
+		planet.solar_system = {
+			magiks_find_neighbours_for_hyperlane_removal_into_unowned_space_ordered_by_distance = {
+				POSITION = 0 TARGET = magiks_hyperlane_system_0
+			}
+			magiks_find_neighbours_for_hyperlane_removal_into_unowned_space_ordered_by_distance = {
+				POSITION = 1 TARGET = magiks_hyperlane_system_1
+			}
+			magiks_find_neighbours_for_hyperlane_removal_into_unowned_space_ordered_by_distance = {
+				POSITION = 2 TARGET = magiks_hyperlane_system_2
+			}
+			magiks_find_neighbours_for_hyperlane_removal_into_unowned_space_ordered_by_distance = {
+				POSITION = 3 TARGET = magiks_hyperlane_system_3
+			}
+			magiks_find_neighbours_for_hyperlane_removal_into_unowned_space_ordered_by_distance = {
+				POSITION = 4 TARGET = magiks_hyperlane_system_4
+			}
+			if = {
+				limit = { exists = event_target:magiks_hyperlane_system_0 }
+				system_event = { id = magiks_event.11  }
+			}
+			else = {
+				system_event = { id = magiks_event.7  }
+			}
+		}
 	}
 }

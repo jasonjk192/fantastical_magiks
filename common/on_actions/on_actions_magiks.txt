@@ -31,11 +31,17 @@ empire_init_add_technologies = {
 
 on_game_start_country = {
 	events = {
+		magiks_game_start.0
 		magiks_game_start.3
 		magiks_game_start.4
 		magiks_game_start.8
 		magiks_game_start.9
 		# magiks_game_start.10
+	}
+}
+
+on_game_start_system = {
+	events = {
 	}
 }
 

@@ -1,5 +1,4 @@
 ﻿l_english: 
-### List of localization that were not available in the original (prevent error.log bloat)
 
 #####################
 # Technology
@@ -16,6 +15,9 @@ magiks_tech_magiks_engineered_evolution_desc:0 "Magikal species forgot to pick u
 magiks_tech_magiks_evolutionary_mastery:0 "Magikal Evolutionary Mastery"
 magiks_tech_magiks_evolutionary_mastery_desc:0 "Magikal species forgot to pick up these sweet points."
 
+magiks_tech_hyperlane_manipulation:0 "Hyperlane Manipulation"
+magiks_tech_hyperlane_manipulation_desc:0 "Unlock the power of the manacites to channel our abilities and manipulate hyperlanes to our advantage."
+
 #####################
 # Decisions
 #####################
@@ -26,6 +28,19 @@ magiks_descisions_tame_dragons:0 "Tame Dragons"
 magiks_descisions_tame_dragons_desc:0 "Since this world already has dragons present, colonization is not required. However, these dragons are wild and dangerous, and require training before they can be useful to our cause."
 magiks_descisions_exterminate_dragons:0 "Exterminate Dragons"
 magiks_descisions_exterminate_dragons_desc:0 "The monsters covering this planet are a collosal nussance, and we should exterminate them when we have the chance."
+
+magiks_descisions_create_hyperlane:0 "Create Hyperlane"
+magiks_descisions_create_hyperlane_desc:0 "Channel our resources and mana to generate a new hyperlane randomly to a new star system"
+magiks_descisions_delete_hyperlane:0 "Delete Hyperlane"
+magiks_descisions_delete_hyperlane_desc:0 "Channel our resources and mana to dissolve a hyperlane between a random star system"
+
+magiks_descisions_create_hyperlane_into_unowned_space:0 "Create Hyperlane (Not Empire Space)"
+magiks_descisions_create_hyperlane_into_unowned_space_desc:0 "Channeling our mana beyond our borders in search of unconnected systems."
+
+magiks_descisions_delete_hyperlane_into_unowned_space:0 "Delete Hyperlane (Not Empire Space)"
+magiks_descisions_delete_hyperlane_into_unowned_space_desc:0 "Channeling our mana beyond our borders and break the bonds between the star systems"
+
+triggered_opinion_disapprove_of_hyperlane_manipulation:0 "Hyperlane Connection Disapproved"
 
 #####################
 # Species
@@ -190,3 +205,114 @@ Dol:0 "Dol"
 Drakiel:0 "Drakiel"
 Noadica:0 "Noadica"
 Ivirus:0 "Ivirus"
+
+# ####################
+# Traditions
+# ####################
+
+tradition_magicka:0 "Magicka"
+tradition_magicka_desc:0 "Study of magic"
+tradition_magicka_magocracy_desc:0 "Mage's journey into the arcane."
+tr_magicka_adopt:0 "Magicka Tradition"
+tr_magicka_finish:0 "Magicka Traditions Finished"
+tr_magicka_adopt_magocracy:0 "Magicka Tradition"
+tr_magicka_finish_magocracy:0 "Magicka Traditions Finished"
+tr_magicka_finish_hive_mind:0 "Magicka Traditions Finished"
+tr_magicka_finish_machine:0 "Magicka Traditions Finished"
+
+tr_magicka_finish_desc:0 "Unlock leader potential: Raises leader skill levels by §G+3§!.\nThe government changes to §H$magiks_gov_magocracy$§! authority and gains random civics in place of the current ones, as well as the §H$magiks_civic_ascended_mages$§! civic.\nAscension Perks Unlocked: §G+1§!"
+tr_magicka_finish_magocracy_desc:0 "Unlock leader potential: Raises leader skill levels by §G+4§!.\nAscension Perks Unlocked: §G+1§!"
+tr_magicka_finish_hive_mind_desc:0 "Unlock leader potential: Raises leader skill levels by §G+3§!. Gains the §H$magiks_hive_mind_civic_shared_mana$§! civic.\nAscension Perks Unlocked: §G+1§!"
+tr_magicka_finish_machine_desc:0 "Unlock leader potential: Raises leader skill levels by §G+3§!. Gains the §H$magiks_machine_civic_gifted_souls$§! civic.\nAscension Perks Unlocked: §G+1§!"
+
+tr_magicka_1:0 "Grimoire's secrets"
+tr_magicka_1_delayed:0 "This book of magick gives alternative insights into various technologies as well as aiding our mages in their research."
+
+tr_magicka_2:0 "Blessings of Tarot"
+tr_magicka_2_delayed:0 "Luck is on our side, improving our discovery into the unknown."
+
+tr_magicka_3:0 "Numero Uno"
+tr_magicka_3_delayed:0 "Improvements in our empire's trade using Numerology."
+
+tr_magicka_4:0 "Dreamcatcher"
+tr_magicka_4_delayed:0 "Nightmares have become rarer and our people can live more happily."
+
+tr_magicka_5:0 "Star Signed"
+tr_magicka_5_delayed:0 "Blessed by the stars, our empire will flourish."
+
+# ####################
+# Civics
+# ####################
+
+magiks_civic_ascended_mages:0 "Ascended Mages"
+magiks_civic_ascended_mages_desc:0 "Magical abilities are bestowed through study and research of the arcane arts and over time, have learnt to master this powerful gift."
+
+magiks_hive_mind_civic_shared_mana:0 "Shared Mana"
+magiks_hive_mind_civic_shared_mana_desc:0 "Mana is distributed efficiently amongst the populace, improving the productivity and output of our resources."
+
+magiks_machine_civic_gifted_souls:0 "Gifted Souls"
+magiks_machine_civic_gifted_souls_desc:0 "Mana permeates these mechanical beings and souls begin to manifest within them."
+
+# ####################
+# Misc
+# ####################
+
+magiks_decision_hyperlane_found_desc:0 "Found suitable Hyperlane from [From.GetName] to [This.GetName]!"
+
+magiks_event_hyperlane_no_system_found_desc:0 "No valid neighbour was found for [This.GetName]"
+magiks_event_hyperlane_create_found_desc:0 "Found suitable systems for new hyperlane connections"
+magiks_event_hyperlane_remove_found_desc:0 "Found suitable hyperlane connections for removal"
+magiks_event_hyperlane_in_border_resource_fail:0 "Requires 1000 energy, 1 influence and 50 manacite"
+magiks_event_hyperlane_out_border_resource_fail:0 "Requires 2500 energy, 4 influence and 150 manacite"
+
+NEVERMIND:0 "Nevermind."
+LETS_START:0 "Let's start"
+COMMENCE_REMOVAL:0 "Commence removal"
+
+magiks_event_hyperlane_system_0_unclaimed:0 "§HUnclaimed:§! [magiks_hyperlane_system_0.GetName]"
+magiks_event_hyperlane_system_1_unclaimed:0 "§HUnclaimed:§! [magiks_hyperlane_system_1.GetName]"
+magiks_event_hyperlane_system_2_unclaimed:0 "§HUnclaimed:§! [magiks_hyperlane_system_2.GetName]"
+magiks_event_hyperlane_system_3_unclaimed:0 "§HUnclaimed:§! [magiks_hyperlane_system_3.GetName]"
+magiks_event_hyperlane_system_4_unclaimed:0 "§HUnclaimed:§! [magiks_hyperlane_system_4.GetName]"
+
+magiks_event_hyperlane_system_0_owner_system:0 "[magiks_hyperlane_system_0.GetName]"
+magiks_event_hyperlane_system_1_owner_system:0 "[magiks_hyperlane_system_1.GetName]"
+magiks_event_hyperlane_system_2_owner_system:0 "[magiks_hyperlane_system_2.GetName]"
+magiks_event_hyperlane_system_3_owner_system:0 "[magiks_hyperlane_system_3.GetName]"
+magiks_event_hyperlane_system_4_owner_system:0 "[magiks_hyperlane_system_4.GetName]"
+
+magiks_event_hyperlane_system_0_claimed:0 "§H[magiks_hyperlane_system_0.space_owner.GetName]:§! [magiks_hyperlane_system_0.GetName]"
+magiks_event_hyperlane_system_1_claimed:0 "§H[magiks_hyperlane_system_1.space_owner.GetName]:§! [magiks_hyperlane_system_1.GetName]"
+magiks_event_hyperlane_system_2_claimed:0 "§H[magiks_hyperlane_system_2.space_owner.GetName]:§! [magiks_hyperlane_system_2.GetName]"
+magiks_event_hyperlane_system_3_claimed:0 "§H[magiks_hyperlane_system_3.space_owner.GetName]:§! [magiks_hyperlane_system_3.GetName]"
+magiks_event_hyperlane_system_4_claimed:0 "§H[magiks_hyperlane_system_4.space_owner.GetName]:§! [magiks_hyperlane_system_4.GetName]"
+
+magiks_dmineral_deposit:0 ""
+magiks_drich_mineral_deposit:0 ""
+magiks_dvast_mineral_deposit:0 ""
+magiks_dimmense_mineral_deposit:0 ""
+magiks_dmineral_energy_deposit:0 ""
+magiks_drich_mineral_energy_deposit:0 ""
+magiks_dmineral_food_deposit:0 ""
+magiks_drich_food_mineral_deposit:0 ""
+magiks_denergy_deposit:0 ""
+magiks_drich_energy_deposit:0 ""
+magiks_dvast_energy_deposit:0 ""
+magiks_dimmense_energy_deposit:0 ""
+magiks_dfarmland_deposit:0 ""
+magiks_drich_farmland_deposit:0 ""
+magiks_dvast_farmland_deposit:0 ""
+magiks_dimmense_farmland_deposit:0 ""
+magiks_dsociety_deposit:0 ""
+magiks_drich_society_deposit:0 ""
+magiks_dvast_society_deposit:0 ""
+magiks_dimmense_society_deposit:0 ""
+magiks_dphysics_deposit:0 ""
+magiks_drich_physics_deposit:0 ""
+magiks_dvast_physics_deposit:0 ""
+magiks_dimmense_physics_deposit:0 ""
+magiks_dengineering_deposit:0 ""
+magiks_drich_engineering_deposit:0 ""
+magiks_dvast_engineering_deposit:0 ""
+magiks_dimmense_engineering_deposit:0 ""
+d_manacite_1:0 ""

@@ -737,3 +737,21 @@ triggered_opinion_mulcubi_one_track_mind = {
 		base = -15
 	}
 }
+
+		##############################£##
+		### Hyperlane into neighbours ###
+		#############################£###
+
+triggered_opinion_disapprove_of_hyperlane_manipulation = {
+	opinion = {
+		base = -50
+		modifier = { add = -25 has_ethic = "ethic_xenophobe" }
+		modifier = { add = -50 has_ethic = "ethic_fanatic_xenophobe" }
+	}
+	accumulative = yes
+	monthly = yes
+	max = -15
+	decay = {
+		base = 1
+	}
+}		
