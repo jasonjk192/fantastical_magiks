@@ -156,10 +156,13 @@ empire_name_format = {
 			NOT = { is_country_type = awakened_fallen_empire }
 		}
 	}
-	lookups = "[This.GetSpeciesName] <magocracy_gen.1>"
-	format = format.magocracy_gen.1
-	noun = format.species # "[This.GetSpeciesName]"
-	prefix_format = format.magocracy_gen.1 # "[This.GetSpeciesName] <magocracy_gen.1>"
+	format = "{[This.GetSpeciesName] {<magocracy_gen.1>}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesName] {<magocracy_gen.1>}}"
+	# lookups = "[This.GetSpeciesName] <magocracy_gen.1>"
+	# format = format.magocracy_gen.1
+	# noun = format.species # "[This.GetSpeciesName]"
+	# prefix_format = format.magocracy_gen.1 # "[This.GetSpeciesName] <magocracy_gen.1>"
 }
 
 empire_name_format = {
@@ -184,10 +187,13 @@ empire_name_format = {
 			NOT = { is_country_type = awakened_fallen_empire }
 		}
 	}
-	lookups = "[This.GetSpeciesName] <magocracy_gen.3> <magocracy_gen.2>"
-	format = format.magocracy_gen.2
-	noun = format.species # "[This.GetSpeciesName]"
-	prefix_format = format.magocracy_gen.2 # "[This.GetSpeciesName] <magocracy_gen.3> <magocracy_gen.2>"
+	format = "{[This.GetSpeciesName] {<magocracy_gen.3> {<magocracy_gen.2>}}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesName] {<magocracy_gen.3> {<magocracy_gen.2>}}}"
+	# lookups = "[This.GetSpeciesName] <magocracy_gen.3> <magocracy_gen.2>"
+	# format = format.magocracy_gen.2
+	# noun = format.species # "[This.GetSpeciesName]"
+	# prefix_format = format.magocracy_gen.2 # "[This.GetSpeciesName] <magocracy_gen.3> <magocracy_gen.2>"
 }
 
 ###	Generic Magocracy ###
@@ -206,10 +212,13 @@ empire_name_format = {
 			NOT = { is_country_type = awakened_fallen_empire }
 		}
 	}
-	lookups = "[This.GetSpeciesName] <magocracy_gen.1>"
-	format = "format.magocracy_gen.1"
-	noun = "[This.GetSpeciesName]"
-	prefix_format = "[This.GetSpeciesName] <magocracy_gen.1>"
+	format = "{[This.GetSpeciesName] {<magocracy_gen.1>}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesName] {<magocracy_gen.1>}}"
+	# lookups = "[This.GetSpeciesName] <magocracy_gen.1>"
+	# format = "format.magocracy_gen.1"
+	# noun = "[This.GetSpeciesName]"
+	# prefix_format = "[This.GetSpeciesName] <magocracy_gen.1>"
 }
 
 empire_name_format = {
@@ -226,10 +235,13 @@ empire_name_format = {
 			NOT = { is_country_type = awakened_fallen_empire }
 		}
 	}
-	lookups = "[This.GetSpeciesName] <magocracy_gen.3> <magocracy_gen.2>"
-	format = "format.magocracy_gen.2"
-	noun = "[This.GetSpeciesName]"
-	prefix_format = "[This.GetSpeciesName] <magocracy_gen.3> <magocracy_gen.2>"
+	format = "{[This.GetSpeciesName] {<magocracy_gen.3> {<magocracy_gen.2>}}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesName] {<magocracy_gen.3> {<magocracy_gen.2>}}}"
+	# lookups = "[This.GetSpeciesName] <magocracy_gen.3> <magocracy_gen.2>"
+	# format = "format.magocracy_gen.2"
+	# noun = "[This.GetSpeciesName]"
+	# prefix_format = "[This.GetSpeciesName] <magocracy_gen.3> <magocracy_gen.2>"
 }
 
 ###	Dragon Lords ###
@@ -248,10 +260,13 @@ empire_name_format = {
 			NOT = { is_country_type = awakened_fallen_empire }
 		}
 	}
-	lookups = "<magocracy_gen.3> <magocracy_dragon.1> [This.GetSpeciesName]"
-	format = "format.magocracy_dragon.1"
-	noun = "[This.GetSpeciesName]"
-	prefix_format = "<magocracy_gen.3> <magocracy_dragon.1> of [This.Capital.GetName]"
+	format = "{<magocracy_dragon.1> {AofB{<magocracy_gen.2> [This.Capital.GetName]}}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{AofBpfx{[This.Capital.GetName] <magocracy_gen.2>}}"
+	# lookups = "<magocracy_gen.3> <magocracy_dragon.1> [This.GetSpeciesName]"
+	# format = "format.magocracy_dragon.1"
+	# noun = "[This.GetSpeciesName]"
+	# prefix_format = "<magocracy_gen.3> <magocracy_dragon.1> of [This.Capital.GetName]"
 }
 
 empire_name_format = {
@@ -268,10 +283,13 @@ empire_name_format = {
 			NOT = { is_country_type = awakened_fallen_empire }
 		}
 	}
-	lookups = "<magocracy_dragon.1> [This.Capital.GetName]"
-	format = "format.magocracy_dragon.2"
-	noun = "[This.GetSpeciesName]"
-	prefix_format = "<magocracy_dragon.1> of [This.Capital.GetName]"
+	format = "{<magocracy_dragon.1> {AofB{<magocracy_dragon.2> [This.Capital.GetName]}}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{AofBpfx{[This.Capital.GetName] <magocracy_dragon.2>}}"
+	# lookups = "<magocracy_dragon.1> [This.Capital.GetName]"
+	# format = "format.magocracy_dragon.2"
+	# noun = "[This.GetSpeciesName]"
+	# prefix_format = "<magocracy_dragon.1> of [This.Capital.GetName]"
 }
 
 empire_name_format = {
@@ -288,10 +306,13 @@ empire_name_format = {
 			NOT = { is_country_type = awakened_fallen_empire }
 		}
 	}
-	lookups = "[This.GetSpeciesName] <magocracy_gen.3> <magocracy_dragon.1>"
-	format = "format.magocracy_dragon.3"
-	noun = "[This.GetSpeciesName]"
-	prefix_format = "[This.GetSpeciesName] <magocracy_gen.3> <magocracy_dragon.1>"
+	format = "{[This.GetSpeciesName] {<magocracy_gen.3> {<magocracy_dragon.2>}}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesName] {<magocracy_gen.3> {<magocracy_dragon.2>}}}"
+	# lookups = "[This.GetSpeciesName] <magocracy_gen.3> <magocracy_dragon.1>"
+	# format = "format.magocracy_dragon.3"
+	# noun = "[This.GetSpeciesName]"
+	# prefix_format = "[This.GetSpeciesName] <magocracy_gen.3> <magocracy_dragon.1>"
 }
 
 empire_name_format = {
@@ -308,10 +329,13 @@ empire_name_format = {
 			NOT = { is_country_type = awakened_fallen_empire }
 		}
 	}
-	lookups = "[This.GetSpeciesName] <magocracy_dragon.1>"
-	format = "format.magocracy_dragon.4"
-	noun = "[This.GetSpeciesName]"
-	prefix_format = "[This.GetSpeciesName] <magocracy_dragon.1>"
+	format = "{[This.GetSpeciesName] {<magocracy_dragon.2>}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesName] {<magocracy_dragon.2>}}"
+	# lookups = "[This.GetSpeciesName] <magocracy_dragon.1>"
+	# format = "format.magocracy_dragon.4"
+	# noun = "[This.GetSpeciesName]"
+	# prefix_format = "[This.GetSpeciesName] <magocracy_dragon.1>"
 }
 
 ###	Ministry of Magic ###
@@ -330,10 +354,13 @@ empire_name_format = {
 			NOT = { is_country_type = awakened_fallen_empire }
 		}
 	}
-	lookups = "<magocracy_gen.3> <magocracy_ministry.1> [This.Capital.GetName]"
-	format = "format.magocracy_ministry.1"
-	noun = "[This.GetSpeciesName]"
-	prefix_format = "<magocracy_gen.3> <magocracy_ministry.1> of [This.Capital.GetName]"
+	format = "{<magocracy_gen.3> {AofB{<magocracy_ministry.1> [This.Capital.GetName]}}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{<magocracy_gen.3> {AofBpfx{<magocracy_ministry.1> [This.Capital.GetName]}}}"
+	# lookups = "<magocracy_gen.3> <magocracy_ministry.1> [This.Capital.GetName]"
+	# format = "format.magocracy_ministry.1"
+	# noun = "[This.GetSpeciesName]"
+	# prefix_format = "<magocracy_gen.3> <magocracy_ministry.1> of [This.Capital.GetName]"
 }
 
 empire_name_format = {
@@ -350,10 +377,13 @@ empire_name_format = {
 			NOT = { is_country_type = awakened_fallen_empire }
 		}
 	}
-	lookups = "<magocracy_ministry.1> [This.Capital.GetName]"
-	format = "format.magocracy_ministry.2"
-	noun = "[This.GetSpeciesName]"
-	prefix_format = "<magocracy_ministry.1> of [This.Capital.GetName]"
+	format = "{AofB{<magocracy_ministry.1> [This.Capital.GetName]}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{AofBpfx{<magocracy_ministry.1> [This.Capital.GetName]}}"
+	# lookups = "<magocracy_ministry.1> [This.Capital.GetName]"
+	# format = "format.magocracy_ministry.2"
+	# noun = "[This.GetSpeciesName]"
+	# prefix_format = "<magocracy_ministry.1> of [This.Capital.GetName]"
 }
 
 empire_name_format = {
@@ -370,10 +400,13 @@ empire_name_format = {
 			NOT = { is_country_type = awakened_fallen_empire }
 		}
 	}
-	lookups = "[This.GetSpeciesName] <magocracy_gen.3> <magocracy_ministry.1>"
-	format = "format.magocracy_ministry.3"
-	noun = "[This.GetSpeciesName]"
-	prefix_format = "[This.GetSpeciesName] <magocracy_gen.3> <magocracy_ministry.1>"
+	format = "{[This.GetSpeciesName] {<magocracy_gen.3> {<magocracy_ministry.1>}}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesAdj] {<magocracy_gen.3>}}"
+	# lookups = "[This.GetSpeciesName] <magocracy_gen.3> <magocracy_ministry.1>"
+	# format = "format.magocracy_ministry.3"
+	# noun = "[This.GetSpeciesName]"
+	# prefix_format = "[This.GetSpeciesName] <magocracy_gen.3> <magocracy_ministry.1>"
 }
 
 empire_name_format = {
@@ -390,10 +423,13 @@ empire_name_format = {
 			NOT = { is_country_type = awakened_fallen_empire }
 		}
 	}
-	lookups = "[This.GetSpeciesName] <magocracy_ministry.1>"
-	format = "format.magocracy_ministry.4"
-	noun = "[This.GetSpeciesName]"
-	prefix_format = "[This.GetSpeciesName] <magocracy_ministry.1>"
+	format = "{[This.GetSpeciesName] {<magocracy_ministry.1>}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesName] {<magocracy_ministry.1>}}"
+	# lookups = "[This.GetSpeciesName] <magocracy_ministry.1>"
+	# format = "format.magocracy_ministry.4"
+	# noun = "[This.GetSpeciesName]"
+	# prefix_format = "[This.GetSpeciesName] <magocracy_ministry.1>"
 }
 
 ###	Council of Sorcery ###
@@ -412,10 +448,13 @@ empire_name_format = {
 			NOT = { is_country_type = awakened_fallen_empire }
 		}
 	}
-	lookups = "[This.GetSpeciesName] <magocracy_council.1>"
-	format = "format.magocracy_council.1"
-	noun = "[This.GetSpeciesName]"
-	prefix_format = "[This.GetSpeciesName] <magocracy_council.1>"
+	format = "{[This.GetSpeciesName] {<magocracy_council.1>}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesName] {<magocracy_council.1>}}"
+	# lookups = "[This.GetSpeciesName] <magocracy_council.1>"
+	# format = "format.magocracy_council.1"
+	# noun = "[This.GetSpeciesName]"
+	# prefix_format = "[This.GetSpeciesName] <magocracy_council.1>"
 }
 
 empire_name_format = {
@@ -432,10 +471,13 @@ empire_name_format = {
 			NOT = { is_country_type = awakened_fallen_empire }
 		}
 	}
-	lookups = "<magocracy_council.1> [This.Capital.GetName]"
-	format = "format.magocracy_council.2"
-	noun = "[This.GetSpeciesName]"
-	prefix_format = "<magocracy_council.1> of [This.Capital.GetName]"
+	format = "{AofB{<magocracy_council.1> [This.Capital.GetName]}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{AofBpfx{<magocracy_council.1> [This.Capital.GetName]}}"
+	# lookups = "<magocracy_council.1> [This.Capital.GetName]"
+	# format = "format.magocracy_council.2"
+	# noun = "[This.GetSpeciesName]"
+	# prefix_format = "<magocracy_council.1> of [This.Capital.GetName]"
 }
 
 ###	Harmonious State ###
@@ -454,10 +496,13 @@ empire_name_format = {
 			NOT = { is_country_type = awakened_fallen_empire }
 		}
 	}
-	lookups = "[This.GetSpeciesName] <magocracy_harmonious.1> <magocracy_harmonious.2>"
-	format = "format.magocracy_harmonious.1"
-	noun = "[This.GetSpeciesName]"
-	prefix_format = "[This.GetSpeciesName] <magocracy_harmonious.1> <magocracy_harmonious.2>"
+	format = "{[This.GetSpeciesName] {<magocracy_harmonious.1> {<magocracy_harmonious.2>}}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesName] {<magocracy_harmonious.1> {<magocracy_harmonious.2>}}}"
+	# lookups = "[This.GetSpeciesName] <magocracy_harmonious.1> <magocracy_harmonious.2>"
+	# format = "format.magocracy_harmonious.1"
+	# noun = "[This.GetSpeciesName]"
+	# prefix_format = "[This.GetSpeciesName] <magocracy_harmonious.1> <magocracy_harmonious.2>"
 }
 
 empire_name_format = {
@@ -474,10 +519,13 @@ empire_name_format = {
 			NOT = { is_country_type = awakened_fallen_empire }
 		}
 	}
-	lookups = "<magocracy_harmonious.1> <magocracy_harmonious.2> [This.Capital.GetName]"
-	format = "format.magocracy_harmonious.2"
-	noun = "[This.GetSpeciesName]"
-	prefix_format = "<magocracy_harmonious.1> <magocracy_harmonious.2> [This.Capital.GetName]"
+	format = "{<magocracy_harmonious.1> {AofB{<magocracy_harmonious.2> [This.Capital.GetName]}}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{<magocracy_harmonious.1> {AofB{<magocracy_harmonious.2> [This.Capital.GetName]}}}"
+	# lookups = "<magocracy_harmonious.1> <magocracy_harmonious.2> [This.Capital.GetName]"
+	# format = "format.magocracy_harmonious.2"
+	# noun = "[This.GetSpeciesName]"
+	# prefix_format = "<magocracy_harmonious.1> <magocracy_harmonious.2> [This.Capital.GetName]"
 }
 
 ###	Rockin' Regime ###
@@ -496,10 +544,13 @@ empire_name_format = {
 			NOT = { is_country_type = awakened_fallen_empire }
 		}
 	}
-	lookups = "<magocracy_rockin.1> <magocracy_rockin.2> [This.Capital.GetName]"
-	format = "format.magocracy_rockin.1"
-	noun = "[This.GetSpeciesName]"
-	prefix_format = "<magocracy_rockin.1> <magocracy_rockin.2> of [This.Capital.GetName]"
+	format = "{<magocracy_rockin.1> {AofB{<magocracy_rockin.2> [This.Capital.GetName]}}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{<magocracy_rockin.1> {AofBpfx{<magocracy_rockin.2> [This.Capital.GetName]}}}"
+	# lookups = "<magocracy_rockin.1> <magocracy_rockin.2> [This.Capital.GetName]"
+	# format = "format.magocracy_rockin.1"
+	# noun = "[This.GetSpeciesName]"
+	# prefix_format = "<magocracy_rockin.1> <magocracy_rockin.2> of [This.Capital.GetName]"
 }
 
 empire_name_format = {
@@ -516,10 +567,13 @@ empire_name_format = {
 			NOT = { is_country_type = awakened_fallen_empire }
 		}
 	}
-	lookups = "<magocracy_rockin.2> [This.Capital.GetName]"
-	format = "format.magocracy_rockin.2"
-	noun = "[This.GetSpeciesName]"
-	prefix_format = "<magocracy_rockin.2> of [This.Capital.GetName]"
+	format = "{AofB{<magocracy_rockin.2> [This.Capital.GetName]}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{AofBpfx{<magocracy_rockin.2> [This.Capital.GetName]}}"
+	# lookups = "<magocracy_rockin.2> [This.Capital.GetName]"
+	# format = "format.magocracy_rockin.2"
+	# noun = "[This.GetSpeciesName]"
+	# prefix_format = "<magocracy_rockin.2> of [This.Capital.GetName]"
 }
 
 empire_name_format = {
@@ -536,10 +590,13 @@ empire_name_format = {
 			NOT = { is_country_type = awakened_fallen_empire }
 		}
 	}
-	lookups = "[This.GetSpeciesName] <magocracy_rockin.1> <magocracy_rockin.2>"
-	format = "format.magocracy_rockin.3"
-	noun = "[This.GetSpeciesName]"
-	prefix_format = "[This.GetSpeciesName] <magocracy_rockin.1> <magocracy_rockin.2>"
+	format = "{[This.GetSpeciesName] {<magocracy_rockin.1> {<magocracy_rockin.2>}}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesName] {<magocracy_rockin.1> {<magocracy_rockin.2>}}}"
+	# lookups = "[This.GetSpeciesName] <magocracy_rockin.1> <magocracy_rockin.2>"
+	# format = "format.magocracy_rockin.3"
+	# noun = "[This.GetSpeciesName]"
+	# prefix_format = "[This.GetSpeciesName] <magocracy_rockin.1> <magocracy_rockin.2>"
 }
 
 empire_name_format = {
@@ -556,8 +613,11 @@ empire_name_format = {
 			NOT = { is_country_type = awakened_fallen_empire }
 		}
 	}
-	lookups = "[This.GetSpeciesName] <magocracy_rockin.2>"
-	format = "format.magocracy_rockin.4"
-	noun = "[This.GetSpeciesName]"
-	prefix_format = "[This.GetSpeciesName] <magocracy_rockin.2>"
+	format = "{[This.GetSpeciesName] {<magocracy_rockin.2>}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesName] {<magocracy_rockin.2>}}"
+	# lookups = "[This.GetSpeciesName] <magocracy_rockin.2>"
+	# format = "format.magocracy_rockin.4"
+	# noun = "[This.GetSpeciesName]"
+	# prefix_format = "[This.GetSpeciesName] <magocracy_rockin.2>"
 }
