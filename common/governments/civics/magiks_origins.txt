@@ -1,0 +1,84 @@
+magiks_origin_world_of_legend = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_ocean_paradise.dds"
+	picture = GFX_origin_ocean_paradise
+	flags = { custom_start_screen }
+	starting_colony = pc_magikal
+	habitability_preference = pc_magikal
+	initializers = { custom_starting_init_09 }
+
+	potential = { 
+		authority = { value = magiks_auth_magocracy }
+		ethics = { NOT = { value = ethic_gestalt_consciousness } } 
+	}
+	playable = { host_has_dlc = "Utopia" host_has_dlc = "Apocalypse" }
+	possible = {
+	}
+	random_weight = { base = 1 }
+	description = "civic_tooltip_world_of_legend_effects"
+}
+
+magiks_origin_reunited_siblings = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_ocean_paradise.dds"
+	picture = GFX_origin_ocean_paradise
+	flags = { custom_start_screen }
+
+	playable = { host_has_dlc = "Utopia" host_has_dlc = "Apocalypse" }
+	potential = { 
+		authority = { value = magiks_auth_magocracy }
+		ethics = { NOT = { value = ethic_gestalt_consciousness } } 
+	}
+	possible = {
+		civics = {
+			NOR = {
+				value = civic_fanatic_purifiers
+				value = civic_agrarian_idyll
+				value = civic_inwards_perfection
+			}
+		}
+	}
+	random_weight = { base = 2 }
+	traits = { trait = magiks_trait_strong_souls }
+	description = magiks_civic_reunited_siblings_effects
+	has_secondary_species = {	# see game_start.11
+		title = magiks_civic_reunited_siblings_secondary_species
+		traits = { trait = magiks_trait_weak_souls }
+	}
+}
+
+magiks_origin_duelistic_magics = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_ocean_paradise.dds"
+	picture = GFX_origin_ocean_paradise
+	flags = { custom_start_screen }
+
+	playable = { host_has_dlc = "Utopia" host_has_dlc = "Apocalypse" }
+	potential = { 
+		authority = { value = magiks_auth_magocracy }
+		ethics = { NOT = { value = ethic_gestalt_consciousness } } 
+	}
+	possible = {
+		civics = {
+			NOR = {
+				value = civic_fanatic_purifiers
+				value = civic_agrarian_idyll
+				value = civic_inwards_perfection
+				value = magiks_civic_elite_mages
+				value = magiks_civic_magical_lineages
+				value = magiks_civic_alchemical_ministry
+				value = magiks_civic_state_necromancy
+				value = magiks_civic_natures_listeners
+				value = magiks_civic_idol_crazy
+				value = magiks_civic_rhythmic_fanatics
+			}
+		}
+	}
+	random_weight = { base = 2 }
+	traits = { trait = magiks_trait_hard_magicians }
+	description = magiks_civic_duelistic_magics_effects
+	has_secondary_species = {	# see magiks_start_of_game_events.txt
+		title = magiks_civic_duelistic_magics_secondary_species
+		traits = { trait = magiks_trait_soft_magicians }
+	}
+}

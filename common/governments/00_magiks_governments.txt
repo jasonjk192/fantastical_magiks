@@ -280,7 +280,8 @@ magiks_gov_dragon_magocracy = {
 
 	possible = {
 		has_authority = magiks_auth_magocracy
-		has_valid_civic = magiks_civic_duelistic_magics
+		# has_valid_civic = magiks_civic_duelistic_magics
+		has_origin = magiks_origin_duelistic_magics
 		has_valid_civic = magiks_civic_dragon_tamers
 	}
 	weight = {

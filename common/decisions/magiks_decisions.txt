@@ -109,6 +109,9 @@ magiks_descisions_exterminate_dragons = {
 # How to trigger:	As long as you have 1 nearby system found then the next few options may contain that
 #					random far off system.
 # Why (Cause):		Unknown at this point. Needs further research altho above trigger may help.
+#
+# Additional note:	It's also seen that sometimes not one but multiple far off systems can be found as long as
+#					the above trigger is, well, triggered.
 ################################################################################
 
 magiks_descisions_create_hyperlane = {

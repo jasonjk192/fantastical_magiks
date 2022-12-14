@@ -46,7 +46,8 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_civic = magiks_civic_world_of_legend
+		has_origin = magiks_origin_world_of_legend
+		# has_civic = magiks_civic_world_of_legend
 	}
 
 	immediate = {
@@ -219,7 +220,10 @@ planet_event = {
 				is_a_planet = yes
 				THIS = {
 					exists = owner
-					OWNER = { has_valid_civic = magiks_civic_reunited_siblings }
+					OWNER = { 
+						# has_valid_civic = magiks_civic_reunited_siblings 
+						has_origin = magiks_origin_reunited_siblings 
+					}
 				}
 			}
 			generate_start_the_underground = yes
