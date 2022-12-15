@@ -15,13 +15,17 @@ magiks_civic_elite_mages = {
 		}
 		civics = {
 			NOR = {
-				value = magiks_civic_magical_lineages
 				value = magiks_civic_alchemical_ministry
 				value = magiks_civic_state_necromancy
-				value = magiks_civic_duelistic_magics
 				value = magiks_civic_natures_listeners
 				value = magiks_civic_idol_crazy
 				value = magiks_civic_rhythmic_fanatics
+			}
+		}
+		origin = {
+			NOR = {
+				value = magiks_origin_duelistic_magics
+				value = magiks_origin_magical_lineages
 			}
 		}
 	}
@@ -37,42 +41,46 @@ magiks_civic_elite_mages = {
 	traits = { trait = "magiks_trait_hard_magicians" }
 }
 
-magiks_civic_magical_lineages = {
-	potential = { 
-		authority = { value = magiks_auth_magocracy }
-		ethics = { NOT = { value = ethic_gestalt_consciousness } } 
-	}
-	possible = {
-		ethics = {
-			NOR = {
-				text = civic_tooltip_not_egalitarian
-				value = ethic_fanatic_egalitarian
-				value = ethic_egalitarian
-			}
-		}
-		civics = {
-			NOR = {
-				value = magiks_civic_elite_mages
-				value = magiks_civic_alchemical_ministry
-				value = magiks_civic_state_necromancy
-				value = magiks_civic_duelistic_magics
-				value = magiks_civic_natures_listeners
-				value = magiks_civic_idol_crazy
-				value = magiks_civic_rhythmic_fanatics
-			}
-		}
-	}
-	modification = no
-	random_weight = {
-		base = 5
-		modifier = { factor = 0 has_global_flag = game_started }
-	}
-	modifier = {
-		army_damage_mult = 0.2
-		armies_upkeep_mult = -0.2
-	}
-	traits = { trait = "magiks_trait_soft_magicians" }
-}
+# magiks_civic_magical_lineages = {
+# 	potential = { 
+# 		authority = { value = magiks_auth_magocracy }
+# 		ethics = { NOT = { value = ethic_gestalt_consciousness } } 
+# 	}
+# 	possible = {
+# 		ethics = {
+# 			NOR = {
+# 				text = civic_tooltip_not_egalitarian
+# 				value = ethic_fanatic_egalitarian
+# 				value = ethic_egalitarian
+# 			}
+# 		}
+# 		civics = {
+# 			NOR = {
+# 				value = magiks_civic_elite_mages
+# 				value = magiks_civic_alchemical_ministry
+# 				value = magiks_civic_state_necromancy
+# 				value = magiks_civic_natures_listeners
+# 				value = magiks_civic_idol_crazy
+# 				value = magiks_civic_rhythmic_fanatics
+# 			}
+# 		}
+# 		origins = {
+# 			NOR = {
+# 				value = magiks_origin_duelistic_magics
+# 			}
+# 		}
+# 	}
+# 	modification = no
+# 	random_weight = {
+# 		base = 5
+# 		modifier = { factor = 0 has_global_flag = game_started }
+# 	}
+# 	modifier = {
+# 		army_damage_mult = 0.2
+# 		armies_upkeep_mult = -0.2
+# 	}
+# 	traits = { trait = "magiks_trait_soft_magicians" }
+# }
 
 magiks_civic_alchemical_ministry = {
 	potential = { 
@@ -90,12 +98,16 @@ magiks_civic_alchemical_ministry = {
 		civics = {
 			NOR = {
 				value = magiks_civic_elite_mages
-				value = magiks_civic_magical_lineages
 				value = magiks_civic_state_necromancy
-				value = magiks_civic_duelistic_magics
 				value = magiks_civic_natures_listeners
 				value = magiks_civic_idol_crazy
 				value = magiks_civic_rhythmic_fanatics
+			}
+		}
+		origin = {
+			NOR = {
+				value = magiks_origin_magical_lineages
+				value = magiks_origin_duelistic_magics
 			}
 		}
 	}
@@ -133,17 +145,21 @@ magiks_civic_state_necromancy = {
 		civics = {
 			NOR = {
 				value = magiks_civic_elite_mages
-				value = magiks_civic_magical_lineages
 				value = magiks_civic_alchemical_ministry
-				value = magiks_civic_duelistic_magics
 				value = magiks_civic_natures_listeners
 				value = magiks_civic_idol_crazy
 				value = magiks_civic_rhythmic_fanatics
 			}
 		}
+		origin = {
+			NOR = {
+				value = magiks_origin_duelistic_magics
+				value = magiks_origin_magical_lineages
+			}
+		}
 	}
 	playable = {
-		NOT = { host_has_dlc = "Necroid Species Pack" }
+		NOT = { host_has_dlc = "Necroids Species Pack" }
 	}
 	modification = no
 	random_weight = {
@@ -220,10 +236,8 @@ magiks_civic_natures_listeners = {
 				value = civic_agrarian_idyll
 				value = civic_inwards_perfection
 				value = magiks_civic_elite_mages
-				value = magiks_civic_magical_lineages
 				value = magiks_civic_alchemical_ministry
 				value = magiks_civic_state_necromancy
-				value = magiks_civic_duelistic_magics
 				value = magiks_civic_idol_crazy
 				value = magiks_civic_rhythmic_fanatics
 			}
@@ -232,6 +246,8 @@ magiks_civic_natures_listeners = {
 			NOR = {
 				value = origin_mechanists
 				value = origin_syncretic_evolution
+				value = magiks_origin_magical_lineages
+				value = magiks_origin_duelistic_magics
 			}
 		}
 	}
@@ -268,10 +284,8 @@ magiks_civic_idol_crazy = {
 				value = civic_agrarian_idyll
 				value = civic_inwards_perfection
 				value = magiks_civic_elite_mages
-				value = magiks_civic_magical_lineages
 				value = magiks_civic_alchemical_ministry
 				value = magiks_civic_state_necromancy
-				value = magiks_civic_duelistic_magics
 				value = magiks_civic_natures_listeners
 			}
 		}
@@ -279,6 +293,8 @@ magiks_civic_idol_crazy = {
 			NOR = {
 				value = origin_mechanists
 				value = origin_syncretic_evolution
+				value = magiks_origin_magical_lineages
+				value = magiks_origin_duelistic_magics
 			}
 		}
 	}
@@ -306,10 +322,8 @@ magiks_civic_rhythmic_fanatics = {
 		civics = {
 			NOR = {
 				value = magiks_civic_elite_mages
-				value = magiks_civic_magical_lineages
 				value = magiks_civic_alchemical_ministry
 				value = magiks_civic_state_necromancy
-				value = magiks_civic_duelistic_magics
 				value = magiks_civic_natures_listeners
 				value = magiks_civic_idol_crazy
 			}
@@ -321,8 +335,13 @@ magiks_civic_rhythmic_fanatics = {
 				value = ethic_materialist
 			}
 		}
+		origin = {
+			NOR = {
+				value = magiks_origin_magical_lineages
+				value = magiks_origin_duelistic_magics
+			}
+		}
 	}
-	modification = no
 	random_weight = {
 		base = 5
 		modifier = { factor = 0 has_global_flag = game_started }
@@ -334,12 +353,9 @@ magiks_civic_rhythmic_fanatics = {
 }
 
 magiks_civic_ascended_mages = {
-	potential = { 
-		authority = { value = magiks_auth_magocracy }
-		ethics = { NOT = { value = ethic_gestalt_consciousness } } 
-	}
+	potential = {  always = no }
 	modification = no
-	random_weight = { base = 0 }
+	pickable_at_start = no
 	modifier = {
 		planet_jobs_physics_research_produces_mult = 0.1
 		planet_jobs_engineering_research_produces_mult = 0.1
@@ -350,36 +366,36 @@ magiks_civic_ascended_mages = {
 
 ###MAGICAL CIVICS###
 	
-magiks_civic_dark_cultists = {
-	potential = { 
-		authority = { value = magiks_auth_magocracy }
-		ethics = { NOT = { value = ethic_gestalt_consciousness } } 
-	}
-	possible = {
-		authority = {
-			OR = {
-				value = auth_imperial
-				value = auth_dictatorial
-				value = auth_oligarchic
-			}
-		}
-		ethics = {
-			OR = {
-				value = ethic_spiritualist
-				value = ethic_fanatic_spiritualist
-			}
-		}
-	}
-	random_weight = {
-		base = 1.5
-		#modifier = { factor = 0 has_global_flag = game_started }
-	}
+# magiks_civic_dark_cultists = {
+# 	potential = { 
+# 		authority = { value = magiks_auth_magocracy }
+# 		ethics = { NOT = { value = ethic_gestalt_consciousness } } 
+# 	}
+# 	possible = {
+# 		authority = {
+# 			OR = {
+# 				value = auth_imperial
+# 				value = auth_dictatorial
+# 				value = auth_oligarchic
+# 			}
+# 		}
+# 		ethics = {
+# 			OR = {
+# 				value = ethic_spiritualist
+# 				value = ethic_fanatic_spiritualist
+# 			}
+# 		}
+# 	}
+# 	random_weight = {
+# 		base = 1.5
+# 		#modifier = { factor = 0 has_global_flag = game_started }
+# 	}
 
-	modifier = {
-		pop_happiness = -0.05
-		pop_government_ethic_attraction = 0.15
-	}
-}
+# 	modifier = {
+# 		pop_happiness = -0.05
+# 		pop_government_ethic_attraction = 0.15
+# 	}
+# }
 
 # magiks_civic_world_of_legend = {
 # 	potential = { 
@@ -448,38 +464,37 @@ magiks_civic_dark_cultists = {
 # 	}
 # }
 
-magiks_civic_drained_survivors = {
-	potential = { 
-		authority = { value = magiks_auth_magocracy }
-		ethics = { NOT = { value = ethic_gestalt_consciousness } } 	
-	}
-	playable = { host_has_dlc = "Utopia" host_has_dlc = "Apocalypse" }
-	possible = {
-		civics = {
-			NOR = {
-				value = civic_agrarian_idyll
-				value = magiks_civic_reunited_siblings
-				value = magiks_civic_world_of_legend
-			}
-		}
-		origin = {
-			NOR = {
-				value = origin_mechanists
-				value = origin_syncretic_evolution
-				value = origin_post_apocalyptic
-				value = origin_life_seeded
-			}
-		}
-	}
-	modification = no
-	random_weight = {
-		base = 1
-		modifier = { factor = 0 has_global_flag = game_started }
-	}
-	description = "magiks_civic_tooltip_drained_survivors_effects"
+# magiks_civic_drained_survivors = {
+# 	potential = { 
+# 		authority = { value = magiks_auth_magocracy }
+# 		ethics = { NOT = { value = ethic_gestalt_consciousness } } 	
+# 	}
+# 	playable = { host_has_dlc = "Utopia" host_has_dlc = "Apocalypse" }
+# 	possible = {
+# 		civics = {
+# 			NOR = {
+# 				value = civic_agrarian_idyll
+# 			}
+# 		}
+# 		origin = {
+# 			NOR = {
+# 				value = origin_mechanists
+# 				value = origin_syncretic_evolution
+# 				value = origin_post_apocalyptic
+# 				value = origin_life_seeded
+# 				value = magiks_origin_reunited_siblings
+# 			}
+# 		}
+# 	}
+# 	modification = no
+# 	random_weight = {
+# 		base = 1
+# 		modifier = { factor = 0 has_global_flag = game_started }
+# 	}
+# 	description = "magiks_civic_tooltip_drained_survivors_effects"
 
-	traits = { trait = magiks_trait_adapted_optimists }
-}
+# 	traits = { trait = magiks_trait_adapted_optimists }
+# }
 
 magiks_civic_dragon_tamers = {
 	potential = { 
@@ -491,9 +506,6 @@ magiks_civic_dragon_tamers = {
 		civics = {
 			NOR = {
 				value = civic_agrarian_idyll
-				value = magiks_civic_reunited_siblings
-				value = magiks_civic_world_of_legend
-				value = magiks_civic_drained_survivors
 			}
 		}
 		origin = {
@@ -502,6 +514,7 @@ magiks_civic_dragon_tamers = {
 				value = origin_syncretic_evolution
 				value = origin_post_apocalyptic
 				value = origin_life_seeded
+				value = magiks_origin_reunited_siblings
 			}
 		}
 	}
@@ -518,45 +531,47 @@ magiks_civic_dragon_tamers = {
 
 # Note: magiks_gov_cultural_controllers required this civic but it was not in the scripts
 
-magiks_machine_civic_waifu_bots = {
-	potential = { 
-		authority = { value = auth_machine_intelligence }
-	}
-	possible = {
-		ethics = {
-			NOR = {
-				text = civic_tooltip_not_egalitarian
-				value = ethic_fanatic_egalitarian
-				value = ethic_egalitarian
-				}
-			}
-		civics = {
-			NOR = {
-				value = magiks_civic_elite_mages
-				value = magiks_civic_alchemical_ministry
-				value = magiks_civic_state_necromancy
-				value = magiks_civic_duelistic_magics
-				value = magiks_civic_natures_listeners
-				value = magiks_civic_idol_crazy
-				value = magiks_civic_rhythmic_fanatics
-			}
-		}
-	}
-	modification = no
-	random_weight = {
-		base = 5
-	}
-	traits = {
-		trait = "magiks_trait_robot_waifu_bots"
-	}
-}
+# magiks_machine_civic_waifu_bots = {
+# 	potential = { 
+# 		authority = { value = auth_machine_intelligence }
+# 	}
+# 	possible = {
+# 		ethics = {
+# 			NOR = {
+# 				text = civic_tooltip_not_egalitarian
+# 				value = ethic_fanatic_egalitarian
+# 				value = ethic_egalitarian
+# 				}
+# 			}
+# 		civics = {
+# 			NOR = {
+# 				value = magiks_civic_elite_mages
+# 				value = magiks_civic_alchemical_ministry
+# 				value = magiks_civic_state_necromancy
+# 				value = magiks_civic_natures_listeners
+# 				value = magiks_civic_idol_crazy
+# 				value = magiks_civic_rhythmic_fanatics
+# 			}
+# 		}
+# 		origins = {
+# 			NOR = {
+# 				value = magiks_origin_duelistic_magics
+# 			}
+# 		}
+# 	}
+# 	modification = no
+# 	random_weight = {
+# 		base = 5
+# 	}
+# 	traits = {
+# 		trait = "magiks_trait_robot_waifu_bots"
+# 	}
+# }
 
 magiks_machine_civic_gifted_souls = {
-	potential = { 
-		authority = { value = auth_machine_intelligence }
-	}
+	potential = {  always = no }
 	modification = no
-	random_weight = { base = 0 }
+	pickable_at_start = no
 	modifier = {
 		planet_jobs_unity_produces_mult = 0.10
 		pop_happiness = 0.15
@@ -566,11 +581,9 @@ magiks_machine_civic_gifted_souls = {
 ### Hive mind related civics ###
 
 magiks_hive_mind_civic_shared_mana = {
-	potential = { 
-		authority = { value = auth_hive_mind }
-	}
+	potential = {  always = no }
 	modification = no
-	random_weight = { base = 0 }
+	pickable_at_start = no
 	modifier = {
 		planet_jobs_worker_produces_mult = 0.1
 		planet_jobs_specialist_produces_mult = 0.1

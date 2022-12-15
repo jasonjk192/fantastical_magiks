@@ -1,5 +1,5 @@
 magiks_generate_start_pops = {	
-	if = { limit = { owner = { has_valid_civic = magiks_civic_reunited_siblings } }
+	if = { limit = { owner = { has_origin = magiks_origin_reunited_siblings } }
 		
 		last_created_species = {
 			set_citizenship_type = {
@@ -35,7 +35,7 @@ generate_start_the_underground = {
 	if = {
 		limit = { 
 			owner = {
-				has_civic = magiks_civic_reunited_siblings
+				has_origin = magiks_origin_reunited_siblings
 			}
 		}
 		add_deposit = magiks_d_the_underground

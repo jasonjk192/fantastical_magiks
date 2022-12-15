@@ -96,7 +96,7 @@ country_event = {
 
 	trigger = { 
 		OR = { 
-			has_civic = magiks_civic_drained_survivors
+			has_origin = magiks_origin_drained_survivors
 		}
 	}
 

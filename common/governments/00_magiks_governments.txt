@@ -281,7 +281,7 @@ magiks_gov_dragon_magocracy = {
 	possible = {
 		has_authority = magiks_auth_magocracy
 		# has_valid_civic = magiks_civic_duelistic_magics
-		has_origin = magiks_origin_duelistic_magics
+		# has_origin = magiks_origin_duelistic_magics
 		has_valid_civic = magiks_civic_dragon_tamers
 	}
 	weight = {
@@ -333,7 +333,7 @@ magiks_gov_council_of_sorcery = {
 
 	possible = {
 		has_authority = magiks_auth_magocracy
-		has_valid_civic = magiks_civic_magical_lineages
+		has_origin = magiks_origin_magical_lineages
 	}
 
 	weight = {
@@ -388,7 +388,7 @@ magiks_gov_cultural_controllers = {
 	should_force_rename = yes
 	
 	possible = {
-		has_valid_civic = magiks_machine_civic_waifu_bots
+		has_origin = magiks_machine_origin_waifu_bots
 	}
 	
 	weight = {

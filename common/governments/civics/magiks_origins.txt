@@ -65,7 +65,6 @@ magiks_origin_duelistic_magics = {
 				value = civic_agrarian_idyll
 				value = civic_inwards_perfection
 				value = magiks_civic_elite_mages
-				value = magiks_civic_magical_lineages
 				value = magiks_civic_alchemical_ministry
 				value = magiks_civic_state_necromancy
 				value = magiks_civic_natures_listeners
@@ -80,5 +79,177 @@ magiks_origin_duelistic_magics = {
 	has_secondary_species = {	# see magiks_start_of_game_events.txt
 		title = magiks_civic_duelistic_magics_secondary_species
 		traits = { trait = magiks_trait_soft_magicians }
+	}
+}
+
+magiks_origin_drained_survivors = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_ocean_paradise.dds"
+	picture = GFX_origin_ocean_paradise
+	flags = { custom_start_screen }
+	
+	potential = { 
+		authority = { value = magiks_auth_magocracy }
+		ethics = { NOT = { value = ethic_gestalt_consciousness } } 	
+	}
+	playable = { host_has_dlc = "Utopia" host_has_dlc = "Apocalypse" }
+	possible = {
+		civics = {
+			NOT = {
+				value = civic_agrarian_idyll
+			}
+		}
+	}
+	random_weight = {
+		base = 1
+	}
+	description = "magiks_civic_tooltip_drained_survivors_effects"
+
+	traits = { trait = magiks_trait_adapted_optimists }
+}
+
+magiks_origin_magical_lineages = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_ocean_paradise.dds"
+	picture = GFX_origin_ocean_paradise
+	flags = { custom_start_screen }
+
+	potential = { 
+		authority = { value = magiks_auth_magocracy }
+		ethics = { NOT = { value = ethic_gestalt_consciousness } } 
+	}
+	possible = {
+		ethics = {
+			NOR = {
+				text = civic_tooltip_not_egalitarian
+				value = ethic_fanatic_egalitarian
+				value = ethic_egalitarian
+			}
+		}
+		civics = {
+			NOR = {
+				value = magiks_civic_elite_mages
+				value = magiks_civic_alchemical_ministry
+				value = magiks_civic_state_necromancy
+				value = magiks_civic_natures_listeners
+				value = magiks_civic_idol_crazy
+				value = magiks_civic_rhythmic_fanatics
+			}
+		}
+	}
+	random_weight = {
+		base = 5
+		modifier = { factor = 0 has_global_flag = game_started }
+	}
+	modifier = {
+		army_damage_mult = 0.2
+		armies_upkeep_mult = -0.2
+	}
+	traits = { trait = "magiks_trait_soft_magicians" }
+}
+
+magiks_origin_dark_cultists = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_ocean_paradise.dds"
+	picture = GFX_origin_ocean_paradise
+	flags = { custom_start_screen }
+
+	potential = { 
+		authority = { value = magiks_auth_magocracy }
+		ethics = { NOT = { value = ethic_gestalt_consciousness } } 
+	}
+	possible = {
+		authority = {
+			OR = {
+				value = auth_imperial
+				value = auth_dictatorial
+				value = auth_oligarchic
+			}
+		}
+		ethics = {
+			OR = {
+				value = ethic_spiritualist
+				value = ethic_fanatic_spiritualist
+			}
+		}
+	}
+	random_weight = {
+		base = 1.5
+		#modifier = { factor = 0 has_global_flag = game_started }
+	}
+
+	modifier = {
+		pop_happiness = -0.05
+		pop_government_ethic_attraction = 0.15
+	}
+}
+
+### Missing waifu robots data ###
+
+# Note: magiks_gov_cultural_controllers required this civic but it was not in the scripts (Now changed to origin instead)
+
+magiks_machine_origin_waifu_bots = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_ocean_paradise.dds"
+	picture = GFX_origin_ocean_paradise
+	flags = { custom_start_screen }
+
+	potential = { 
+		authority = { value = auth_machine_intelligence }
+	}
+	possible = {
+		ethics = {
+			NOR = {
+				text = civic_tooltip_not_egalitarian
+				value = ethic_fanatic_egalitarian
+				value = ethic_egalitarian
+				}
+			}
+		civics = {
+			NOR = {
+				value = magiks_civic_elite_mages
+				value = magiks_civic_alchemical_ministry
+				value = magiks_civic_state_necromancy
+				value = magiks_civic_natures_listeners
+				value = magiks_civic_idol_crazy
+				value = magiks_civic_rhythmic_fanatics
+			}
+		}
+	}
+	random_weight = {
+		base = 1
+	}
+	traits = {
+		trait = "magiks_trait_robot_waifu_bots"
+	}
+}
+
+magiks_origin_dragon_kinship = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origin_here_be_dragons.dds"
+	picture = GFX_origin_here_be_dragons
+	flags = { custom_start_screen first_alien_life }
+
+	possible = {
+		civics = {
+			NOR = {
+				value = civic_fanatic_purifiers
+				value = civic_hive_devouring_swarm
+			}
+			value = magiks_civic_dragon_tamers
+		}
+	}
+	potential = { 
+		authority = { value = magiks_auth_magocracy }
+		ethics = { NOT = { value = ethic_gestalt_consciousness } } 
+	}
+
+	description = civic_tooltip_aquatics_effects
+
+	advanced_start = yes
+	max_once_global = yes
+
+	random_weight = {
+		base = 5
 	}
 }
