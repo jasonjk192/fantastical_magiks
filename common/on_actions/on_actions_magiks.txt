@@ -36,6 +36,8 @@ on_game_start_country = {
 		magiks_game_start.4
 		magiks_game_start.8
 		magiks_game_start.9
+		magiks_game_start.11
+		magiks_game_start.12
 		# magiks_game_start.10
 	}
 }
@@ -53,5 +55,17 @@ on_planet_transfer = {
 
 on_monthly_pulse = {
 	events = {
+	}
+}
+
+on_entering_battle = {
+	events = {
+		magiks_event.100
+	}
+}
+
+on_space_battle_won = {
+	events = {
+		magiks_event.101
 	}
 }

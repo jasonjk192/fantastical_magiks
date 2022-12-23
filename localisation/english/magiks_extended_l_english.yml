@@ -254,6 +254,58 @@ magiks_machine_civic_gifted_souls:0 "Gifted Souls"
 magiks_machine_civic_gifted_souls_desc:0 "Mana permeates these mechanical beings and souls begin to manifest within them."
 
 # ####################
+# Origins
+# ####################
+
+ magiks_origin_magical_lineages:0 "Magical Lineages"
+ magiks_origin_magical_lineages_desc:0 "Powerful sorcerer bloodlines have long taken positions of power over their less magically gifted kin. This has led to great houses based on magical blood to hold great power and sway in this nation."
+
+ magiks_machine_origin_waifu_bots:0 "Waifu Bots"
+ magiks_machine_origin_waifu_bots_desc:0 "Through extensive species-wide reconditioning, these machines have manged to convert their creators into one single culture, designed specially for pleasure and compliance. Strangely enough, due to it's 'perfect design', said machines have become a bit obsessed with it themselves."
+
+ magiks_origin_duelistic_magics:0 "Duelistic Magics"
+ magiks_origin_duelistic_magics_desc:0 "The world has evolved two seperate but equally magical species, who, even though they united long ago, share a deep and somewhat friendly rivalry between eachother."
+ magiks_origin_duelistic_magics_secondary_species:0 "Magical Rivals"
+ magiks_origin_duelistic_magics_effects:0 "Start the game with 4 Pops being of another codominant species."
+
+ magiks_origin_reunited_siblings:0 "Reunited Siblings"
+ magiks_origin_reunited_siblings_desc:0 "Long ago, the primary species of this world, worried about their souls being harvested, banished the other species into a large cavern, isolating them from the outside world. Only recently have the two reunited, having to now share their futures together."
+ magiks_origin_reunited_siblings_secondary_species:0 "Cave Dwellers"
+ magiks_origin_reunited_siblings_effects:0 "Start the game with 2 Pops being of another codominant species."
+
+ magiks_origin_world_of_legend:0 "World of Legend"
+ magiks_origin_world_of_legend_desc:0 "One of myth and legend, the homeworld of this species is a magic-filled paradise, whether they have the talent to apreciate it or not."
+
+ magiks_origin_drained_survivors:0 "Drained Survivors"
+ magiks_origin_drained_survivors_desc:0 "After years of draining the energy from our world, it finally gave out, leading to a miserable poverty-filled and disunited existance. After finally breaking free from the iron grip of our latest tyrants, we united under one flag, and are now more dedicated than ever before to travel to the stars, hoping to one day fix the world we came from."
+
+ magiks_origin_dark_cultists:0 "Dark Cultists"
+ magiks_origin_dark_cultists_desc:0 "Originally created from a belief that the forces of darkness would bring great fortune, this society commited mass-atrocities and genocide at the request of their dark religion. However, that was long ago, and while more modern reforms have greatly reduced the unethical treatment caused by the people's beliefs, the roots are still present, and cause great distrust among other spiritualists."
+
+ magiks_origin_dragon_kinship:0 "Dragon Kinship"
+ magiks_origin_dragon_kinship_desc:0 "This homeworld is shared between a magical civilization and a space-faring dragon. Eventually after a long time, the dragon has been tamed and serves under the command of the dragon tamers."
+
+ magiks_origin_geomancers:0 "Geomancers"
+ magiks_origin_geomancers_desc:0 "REPLACE_ME"
+
+ magiks_origin_eldritch_children:0 "Eldritch Children"
+ magiks_origin_eldritch_children_desc:0 "Long ago, this species was influenced by an eldritch being, forever influenced by its presence. Even when this being is long since chalked up to fairytales and myths. They must endure to find their purpose and reconnect with destiny."
+
+ Congress:0 "Congress"
+ Excellent:0 "Excellent"
+
+ FantasticalMagiks_organ_plural:0 "REPLACE_ME"
+ FantasticalMagiks_hand_plural:0 "REPLACE_ME"
+ FantasticalMagiks_ear_plural:0 "REPLACE_ME"
+ FantasticalMagiks_tooth_plural:0 "REPLACE_ME"
+ FantasticalMagiks_fossil_plural:0 "REPLACE_ME"
+ FantasticalMagiks_remnant_plural:0 "REPLACE_ME"
+ name_list_Drakiel:0 "REPLACE_ME"
+ Aerisia:0 "REPLACE_ME"
+ Aeris:0 "REPLACE_ME"
+ TIE:0 "REPLACE_ME"
+
+# ####################
 # Misc
 # ####################
 
@@ -268,6 +320,8 @@ magiks_event_hyperlane_out_border_resource_fail:0 "Requires 2500 energy, 4 influ
 NEVERMIND:0 "Nevermind."
 LETS_START:0 "Let's start"
 COMMENCE_REMOVAL:0 "Commence removal"
+
+magiks_Progenitor:0 "Progenitor"
 
 magiks_event_hyperlane_system_0_unclaimed:0 "§HUnclaimed:§! [magiks_hyperlane_system_0.GetName]"
 magiks_event_hyperlane_system_1_unclaimed:0 "§HUnclaimed:§! [magiks_hyperlane_system_1.GetName]"

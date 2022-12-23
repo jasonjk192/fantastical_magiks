@@ -118,7 +118,7 @@ empire_name_parts_list = {
 }
 
 empire_name_parts_list = {
-	key = "magocracy_dragons.2"
+	key = "magocracy_dragon.2"
 	parts = {
 		"Regime" = 10
 		"Empire" = 10

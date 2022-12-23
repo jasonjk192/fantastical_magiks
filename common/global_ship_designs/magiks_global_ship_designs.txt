@@ -1,0 +1,85 @@
+#####################################
+#									#
+#			Tiyanki Matriarch		#
+#									#
+#####################################
+
+ship_design = {
+	name = "magiks_Progenitor"
+	ship_size = leviathan_01_elder_tiyanki
+	is_event_design = no
+	hide_size = yes
+
+	section = {
+		template = "elderly_tiyanki_key"
+		slot = "mid"
+
+		component = {
+			slot = "TITAN_01"
+			template = "ELDER_SPACE_WHALE_WEAPON"
+		}
+		component = {
+			slot = "LARGE_GUN_01"
+			template = "ELDER_SPACE_WHALE_SPIKE"
+		}
+		component = {
+			slot = "LARGE_UTILITY_1"
+			template = "LARGE_TIYANKI_ARMOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_2"
+			template = "LARGE_TIYANKI_ARMOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_3"
+			template = "LARGE_TIYANKI_ARMOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_4"
+			template = "LARGE_TIYANKI_ARMOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_5"
+			template = "LARGE_TIYANKI_ARMOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_6"
+			template = "LARGE_TIYANKI_ARMOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_7"
+			template = "LARGE_TIYANKI_ARMOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_8"
+			template = "LARGE_TIYANKI_ARMOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_9"
+			template = "LARGE_TIYANKI_ARMOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_10"
+			template = "LARGE_TIYANKI_ARMOR"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "AUTO_REPAIR"
+		}
+		component = {
+			slot = "AUX_UTILITY_3"
+			template = "AUTO_REPAIR"
+		}
+		component = {
+			slot = "AUX_UTILITY_4"
+			template = "AUTO_REPAIR"
+		}
+	}
+	required_component="BIO_DRIVE"
+	required_component="BIO_PROPULSION"
+	required_component="BIO_SENSORS"
+}
