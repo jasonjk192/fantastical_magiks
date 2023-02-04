@@ -46,7 +46,8 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_civic = magiks_civic_world_of_legend
+		has_origin = magiks_origin_world_of_legend
+		# has_civic = magiks_civic_world_of_legend
 	}
 
 	immediate = {
@@ -95,7 +96,7 @@ country_event = {
 
 	trigger = { 
 		OR = { 
-			has_civic = magiks_civic_drained_survivors
+			has_origin = magiks_origin_drained_survivors
 		}
 	}
 
@@ -219,10 +220,138 @@ planet_event = {
 				is_a_planet = yes
 				THIS = {
 					exists = owner
-					OWNER = { has_valid_civic = magiks_civic_reunited_siblings }
+					OWNER = { 
+						# has_valid_civic = magiks_civic_reunited_siblings 
+						has_origin = magiks_origin_reunited_siblings 
+					}
 				}
 			}
 			generate_start_the_underground = yes
+		}
+	}
+}
+
+# ID 11
+country_event = {
+	id = magiks_game_start.11
+	hide_window = yes
+	is_triggered_only = yes	
+	trigger = { has_origin = magiks_origin_eldritch_children }
+	immediate = {
+		if = {
+			limit = { NOT = { exists = event_target:elderly_tiyanki_country } }
+			log = "No Matriarch country found. Creating one now."
+			create_country = {
+				name = "NAME_Tiyanki_Space_Whale_Ancient"
+				type = guardian_elderly_tiyanki
+				flag = {
+					icon = {
+						category = "zoological"
+						file = "flag_zoological_17.dds"
+					}
+					background = {
+						category = "backgrounds"
+						file = "00_solid.dds"
+					}
+					colors = {
+						"blue"
+						"blue"
+						"null"
+						"null"
+					}
+				}
+			}
+			last_created_country = {
+				if = {
+					limit = { NOT = { has_modifier = elderly_tiyanki_power } }
+					add_modifier = { modifier = elderly_tiyanki_power days = -1 }
+				}
+				save_global_event_target_as = elderly_tiyanki_country
+			}
+			random_system = {
+				limit = { has_owner = no }
+				random_system_planet = {
+					limit = { is_star = no }
+					save_event_target_as = new_location
+				}
+				random_system_planet = {
+					limit = { is_star = yes }
+					save_event_target_as = start_point
+					event_target:elderly_tiyanki_country = {
+						create_fleet = {
+							name = "NAME_Elderly_Tiyanki"
+							settings = {
+								spawn_debris = no
+								is_boss = yes
+							}
+							effect = {
+								set_owner = event_target:elderly_tiyanki_country
+								create_ship = {
+									name = "NAME_Elder"
+									design = "NAME_Progenitor"
+								}
+								set_location = event_target:start_point
+								set_fleet_stance = aggressive
+								set_aggro_range_measure_from = self
+								set_aggro_range = 50
+								save_global_event_target_as = elderly_tiyanki_fleet
+								auto_move_to_planet = {
+									target = event_target:new_location
+									clear_auto_move_on_arrival = no		# distar.136 sets a new auto move target
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# ID 12
+country_event = {
+	id = magiks_game_start.12
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = { has_origin = magiks_origin_dragon_kinship }
+	immediate = {
+		create_fleet = {
+			name = "Dragon Wing"
+			effect = {
+				set_owner = prev
+				create_ship = {
+					name = "Dragoness"
+					design = "NAME_Grand_Dragon"
+				}
+				set_location = prev.home_planet
+				set_fleet_stance = passive
+			}
+		}
+		create_ship_design = { design = "NAME_Grand_Dragon" }
+		add_ship_design = last_created_design
+	}
+}
+
+country_event = {
+	id = magiks_game_start.13
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = { has_origin = magiks_origin_geomancers }
+	immediate = {
+		home_planet = {
+			random_owned_pop = { kill_pop = yes }
+			random_owned_pop = { kill_pop = yes }
+			random_owned_pop = { kill_pop = yes }
+			create_species = { class = LITHOID }
+			create_pop = { species = last_created_species }
+			create_pop = { species = last_created_species }
+			create_pop = { species = last_created_species }
+			last_created_species = {
+				set_citizenship_type = {
+					country = prevprev
+					type = citizenship_slavery
+				}
+			}
 		}
 	}
 }

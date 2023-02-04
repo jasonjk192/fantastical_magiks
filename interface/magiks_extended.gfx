@@ -87,11 +87,30 @@ spriteTypes = {
 # ####################
 # Events
 # ####################
+
 spriteTypes = {
 	spriteType = {
 		name = "GFX_evt_hyperlane"
 		texturefile = "gfx/event_pictures/event_hyperlane.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+}
+
+# ####################
+# Origins
+# ####################
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_origin_magical_lineage"
+		texturefile = "gfx/event_pictures/origins/origin_magical_lineage.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_origin_world_of_legend"
+		texturefile = "gfx/event_pictures/origins/origin_world_of_legend.dds"
 		alwaystransparent = yes
 	}
 }

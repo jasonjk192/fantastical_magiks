@@ -1,0 +1,147 @@
+###################
+# Governor Traits #
+###################
+
+magiks_leader_trait_fire = {
+	cost = 1
+	icon = "gfx/interface/icons/traits/leader_traits/magiks_leader_trait_fire.dds"
+	modifier = {
+		ship_fire_rate_mult = 0.05
+	}
+	leader_potential_add = {
+		from = { has_authority = magiks_auth_magocracy }
+	}
+	initial = no
+	randomized = no
+	leader_trait = { ruler }
+	leader_class = { ruler }
+	opposites = {
+		"magiks_leader_trait_ice"
+		"magiks_leader_trait_earth"
+		"magiks_leader_trait_electric"
+	}
+}
+
+magiks_leader_trait_water = {
+	cost = 1
+	icon = "gfx/interface/icons/traits/leader_traits/magiks_leader_trait_water.dds"
+	modifier = {
+		country_food_produces_mult = 0.05
+	}
+	leader_potential_add = {
+		from = { has_authority = magiks_auth_magocracy }
+	}
+	initial = no
+	randomized = no
+	leader_trait = { ruler }
+	leader_class = { ruler }
+	opposites = {
+		"magiks_leader_trait_fire"
+		"magiks_leader_trait_ice"
+		"magiks_leader_trait_electric"
+	}
+}
+
+magiks_leader_trait_ice = {
+	cost = 1
+	icon = "gfx/interface/icons/traits/leader_traits/magiks_leader_trait_ice.dds"
+	modifier = {
+		ship_armor_mult = 0.05
+	}
+	leader_potential_add = {
+		from = { has_authority = magiks_auth_magocracy }
+	}
+	initial = no
+	randomized = no
+	leader_trait = { ruler }
+	leader_class = { ruler }
+	opposites = { "leader_trait_army_veteran" }
+	opposites = {
+		"magiks_leader_trait_fire"
+		"magiks_leader_trait_earth"
+		"magiks_leader_trait_electric"
+	}
+}
+
+magiks_leader_trait_electric = {
+	cost = 1
+	icon = "gfx/interface/icons/traits/leader_traits/magiks_leader_trait_electric.dds"
+	modifier = {
+		country_energy_produces_mult = 0.05
+	}
+	leader_potential_add = {
+		from = { has_authority = magiks_auth_magocracy }
+	}
+	initial = no
+	randomized = no
+	leader_trait = { ruler }
+	leader_class = { ruler }
+	opposites = {
+		"magiks_leader_trait_fire"
+		"magiks_leader_trait_ice"
+		"magiks_leader_trait_earth"
+	}
+}
+
+magiks_leader_trait_metal = {
+	cost = 1
+	icon = "gfx/interface/icons/traits/leader_traits/magiks_leader_trait_metal.dds"
+	modifier = {
+		country_alloys_produces_mult = 0.05
+		country_consumer_goods_produces_mult = 0.05
+	}
+	leader_potential_add = {
+		from = { has_authority = magiks_auth_magocracy }
+	}
+	initial = no
+	randomized = no
+	leader_trait = { ruler }
+	leader_class = { ruler }
+	opposites = {
+		"magiks_leader_trait_fire"
+		"magiks_leader_trait_ice"
+		"magiks_leader_trait_electric"
+	}
+}
+
+magiks_leader_trait_earth = {
+	cost = 1
+	icon = "gfx/interface/icons/traits/leader_traits/magiks_leader_trait_earth.dds"
+	modifier = {
+		terraform_speed_mult = 0.05
+		terraforming_cost_mult = -0.05
+	}
+	leader_potential_add = {
+		from = { has_authority = magiks_auth_magocracy }
+	}
+	initial = no
+	randomized = no
+	leader_trait = { ruler }
+	leader_class = { ruler }
+	opposites = {
+		"magiks_leader_trait_fire"
+		"magiks_leader_trait_ice"
+		"magiks_leader_trait_electric"
+	}
+}
+
+magiks_leader_trait_illusion = {
+	cost = 1
+	icon = "gfx/interface/icons/traits/leader_traits/magiks_leader_trait_illusion.dds"
+	modifier = {
+		intel_encryption_add = 10
+		intel_decryption_add = 10
+	}
+	leader_potential_add = {
+		from = { has_authority = magiks_auth_magocracy }
+	}
+	initial = no
+	randomized = no
+	leader_trait = { ruler }
+	leader_class = { ruler }
+	opposites = {
+		"magiks_leader_trait_fire"
+		"magiks_leader_trait_ice"
+		"magiks_leader_trait_electric"
+	}
+}

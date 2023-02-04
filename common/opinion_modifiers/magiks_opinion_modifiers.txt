@@ -615,14 +615,14 @@ triggered_opinion_fellow_infernal_origin = {
 triggered_opinion_dark_cultists_bad = {
 	trigger = {
 		FROM = {
-			has_civic = "magiks_civic_dark_cultists"			
+			has_origin = "magiks_origin_dark_cultists"			
 		}
 		OR = {
 			has_ethic = "ethic_spiritualist"
 			has_ethic = "ethic_fanatic_spiritualist"
 		}
 		NOT = {
-			has_civic = "magiks_civic_dark_cultists"
+			has_origin = "magiks_origin_dark_cultists"
 		}
 	}
 	opinion = {
@@ -633,9 +633,9 @@ triggered_opinion_dark_cultists_bad = {
 triggered_opinion_dark_cultists_good = {
 	trigger = {
 		FROM = {
-			has_civic = "magiks_civic_dark_cultists"			
+			has_origin = "magiks_origin_dark_cultists"			
 		}
-		has_civic = "magiks_civic_dark_cultists"
+		has_origin = "magiks_origin_dark_cultists"
 	}
 	opinion = {
 		base = 25
@@ -657,7 +657,7 @@ triggered_opinion_dark_cultists_demons = {
 				}
 			}
 		}
-		has_civic = "magiks_civic_dark_cultists"
+		has_origin = "magiks_origin_dark_cultists"
 	}
 	opinion = {
 		base = 30
@@ -684,7 +684,7 @@ triggered_opinion_anti_demon_spiritualist = {
 		NOT = {
 			OR = {
 				has_ethic = ethic_gestalt_consciousness
-				has_civic = "magiks_civic_dark_cultists"
+				has_origin = "magiks_origin_dark_cultists"
 				AND = {
 					exists = ruler
 					ruler = {

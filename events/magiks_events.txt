@@ -29,7 +29,7 @@ planet_event = {
 	}
 }
 
-### Hyperlane events ###
+### Hyperlane Events ###
 
 #-- Creation (Not Found Event) [ID 5]
 system_event = {
@@ -736,5 +736,112 @@ system_event = {
 	}
 	option = {
 		name = NEVERMIND
+	}
+}
+
+### Eldritch Children Origin Events ###
+
+#-- Encounter Tiyanki Matriarch [ID 100]
+country_event = {
+	id = magiks_event.100
+	is_triggered_only = yes
+	#fire_only_once = yes
+	trigger = {
+		has_origin = magiks_origin_eldritch_children
+		from = { is_country_type = guardian_elderly_tiyanki }
+	}
+	option = {
+		name = "An offering to the dark lord!"
+		allow = {
+			this = { has_resource = { type = food amount >= 10000 } }
+		}
+		fromfromfrom = {
+			set_fleet_stance = passive
+			set_owner = prev
+			remove_auto_move_target = yes
+		}
+		hidden_effect = {
+			from = { destroy_country = yes }
+			this = { add_resource = { food = -10000 } }
+		}
+	}
+	option = {
+		name = "We don't have resources. We must retreat!"
+		fromfrom = { set_mia = yes }
+	}
+	option = {
+		name = "We will bring down the matriarch!"
+		hidden_effect = {
+			set_country_flag = magiks_eldritch_children_fight_matriarch
+		}
+	}
+}
+
+#-- Won against Tiyanki Matriarch [ID 101]
+country_event = {
+	id = magiks_event.101
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		has_origin = magiks_origin_eldritch_children
+		has_country_flag = magiks_eldritch_children_fight_matriarch
+	}
+	option = {
+		name = "Excellent"
+		create_ship_design = { design = magiks_Progenitor }
+		add_ship_design = last_created_design
+		hidden_effect = {
+			remove_country_flag = magiks_eldritch_children_fight_matriarch
+		}
+	}
+}
+
+#-- Magocracy government ruler traits [ID 50]
+country_event = {
+	id = magiks_event.50
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		has_authority = magiks_auth_magocracy
+	}
+	immediate = {
+		if = {
+			limit = { exists = ruler }
+			ruler = {
+				random_list = {
+					10 = { add_trait = magiks_leader_trait_earth }
+					10 = { add_trait = magiks_leader_trait_fire }
+					10 = { add_trait = magiks_leader_trait_ice }
+					10 = { add_trait = magiks_leader_trait_electric }
+					10 = { add_trait = magiks_leader_trait_water }
+					10 = { add_trait = magiks_leader_trait_metal }
+					10 = { add_trait = magiks_leader_trait_illusion }
+				}
+			}
+		}
+	}
+}
+
+#-- Magocracy government ruler traits (remove passive traits) [ID 51]
+country_event = {
+	id = magiks_event.51
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		has_authority = magiks_auth_magocracy
+	}
+	immediate = {
+		if = {
+			limit = { exists = ruler }
+			ruler = {
+				remove_trait = magiks_leader_trait_earth
+				remove_trait = magiks_leader_trait_fire 
+				remove_trait = magiks_leader_trait_ice 
+				remove_trait = magiks_leader_trait_electric 
+				remove_trait = magiks_leader_trait_water 
+				remove_trait = magiks_leader_trait_metal 
+				remove_trait = magiks_leader_trait_illusion 
+			}
+		}
 	}
 }

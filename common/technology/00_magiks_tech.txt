@@ -346,10 +346,10 @@ magiks_tech_mage_academy = {
 		modifier = {
 			factor = 2
 			has_civic = "magiks_civic_elite_mages"
-			has_civic = "magiks_civic_magical_lineages"
 			has_civic = "magiks_civic_alchemical_ministry"
-			has_civic = "magiks_civic_duelistic_magics"
 			has_civic = "magiks_civic_state_necromancy"
+			has_origin = "magiks_origin_magical_lineages"
+			has_origin = "magiks_origin_duelistic_magics"
 		}
 	}
 	
@@ -394,10 +394,10 @@ magiks_tech_mage_college = {
 		modifier = {
 			factor = 2
 			has_civic = "magiks_civic_elite_mages"
-			has_civic = "magiks_civic_magical_lineages"
 			has_civic = "magiks_civic_alchemical_ministry"
-			has_civic = "magiks_civic_duelistic_magics"
 			has_civic = "magiks_civic_state_necromancy"
+			has_origin = "magiks_origin_magical_lineages"
+			has_origin = "magiks_origin_duelistic_magics"
 		}
 	}
 	
@@ -435,10 +435,10 @@ magiks_tech_mage_university = {
 		modifier = {
 			factor = 2
 			has_civic = "magiks_civic_elite_mages"
-			has_civic = "magiks_civic_magical_lineages"
 			has_civic = "magiks_civic_alchemical_ministry"
-			has_civic = "magiks_civic_duelistic_magics"
 			has_civic = "magiks_civic_state_necromancy"
+			has_origin = "magiks_origin_magical_lineages"
+			has_origin = "magiks_origin_duelistic_magics"
 		}
 	}
 	
@@ -519,10 +519,10 @@ magiks_tech_manacite_extraction = {
 		modifier = {
 			factor = 2
 			has_civic = "magiks_civic_elite_mages"
-			has_civic = "magiks_civic_magical_lineages"
 			has_civic = "magiks_civic_alchemical_ministry"
-			has_civic = "magiks_civic_duelistic_magics"
 			has_civic = "magiks_civic_state_necromancy"
+			has_origin = "magiks_origin_magical_lineages"
+			has_origin = "magiks_origin_duelistic_magics"
 		}
 		modifier = {
 			factor = 0

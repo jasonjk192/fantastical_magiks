@@ -1,0 +1,131 @@
+draconian ={
+	name="Draconic Imperialia"
+	adjective="Draconian"
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	spawn_enabled=yes
+	ship_prefix = "DRA"
+
+	species = {
+		class = "FantasticalMagiks"
+		portrait = "dragonborn"
+		name = "Draconian"
+		plural = "Draconians"
+		adjective = "Draconian"
+		name_list="Drakiel"
+		trait="trait_wasteful"
+		trait="magiks_trait_draconic_nobility"
+		trait="magiks_trait_dragon_blooded"
+		trait="magiks_trait_strong_souls"
+	}
+	room="personality_migrating_flock_room"
+	authority="magiks_auth_magocracy"
+	government="magiks_gov_dragon_magocracy"
+	civics={ "magiks_civic_dragon_tamers" "civic_functional_architecture" }
+	
+	ethic="ethic_fanatic_materialist"
+	ethic="ethic_authoritarian"
+	
+	origin = "magiks_origin_dragon_kinship"
+
+	planet_name="Aerisia"
+	planet_class="pc_continental"
+	system_name="Aeris"
+	initializer=""
+
+	graphical_culture="magiks_01"
+	city_graphical_culture="magiks_01"
+
+	empire_flag={
+		icon={
+			category="zoological"
+			file="flag_zoological_5.dds"
+		}
+		background={
+			category="backgrounds"
+			file="flag_BG_48.dds"
+		}
+		colors={
+			"pink"
+			"light_blue"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=female
+		name="Amari Nervress"
+		portrait="femdragon0"
+		texture=0
+		attachment=0
+		clothes=0
+		ruler_title="Supreme Mage"
+		ruler_title_female="Supreme Mage"
+	}
+}
+
+tiefling ={
+	name="Tiefling Empire"
+	adjective="Tiefling"
+	spawn_as_fallen=no
+	ignore_portrait_duplication=no
+	spawn_enabled=yes
+	ship_prefix = "TIE"
+
+	species = {
+		class = "FantasticalMagiks"
+		portrait = "tiefling"
+		name = "Tiefling"
+		plural = "Tieflings"
+		adjective = "Tiefling"
+		name_list="Drakiel"
+		trait="trait_wasteful"
+		trait="magiks_trait_draconic_nobility"
+		trait="magiks_trait_dragon_blooded"
+		trait="magiks_trait_strong_souls"
+	}
+	room="personality_migrating_flock_room"
+	authority="magiks_auth_magocracy"
+	government="magiks_gov_dragon_magocracy"
+	civics={ "magiks_civic_dragon_tamers" "civic_functional_architecture" }
+	
+	ethic="ethic_fanatic_materialist"
+	ethic="ethic_authoritarian"
+	
+	origin = "magiks_origin_dragon_kinship"
+
+	planet_name="Aerisia"
+	planet_class="pc_continental"
+	system_name="Aeris"
+	initializer=""
+
+	graphical_culture="magiks_01"
+	city_graphical_culture="magiks_01"
+
+	empire_flag={
+		icon={
+			category="zoological"
+			file="flag_zoological_5.dds"
+		}
+		background={
+			category="backgrounds"
+			file="flag_BG_48.dds"
+		}
+		colors={
+			"pink"
+			"light_blue"
+			"null"
+			"null"
+		}
+	}
+	ruler={
+		gender=male
+		name="Amari Nervress"
+		portrait="maletief0"
+		texture=0
+		attachment=0
+		clothes=0
+		ruler_title="Supreme Mage"
+		ruler_title_female="Supreme Mage"
+	}
+}

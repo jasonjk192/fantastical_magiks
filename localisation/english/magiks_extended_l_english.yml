@@ -118,6 +118,7 @@ Songwriters:0 "Songwriters"
 Magocracy:0 "Magocracy"
 Sector:0 "Sector"
 Sectors:0 "Sectors"
+Congress:0 "Congress"
 
 #####################
 # Species
@@ -254,6 +255,55 @@ magiks_machine_civic_gifted_souls:0 "Gifted Souls"
 magiks_machine_civic_gifted_souls_desc:0 "Mana permeates these mechanical beings and souls begin to manifest within them."
 
 # ####################
+# Origins
+# ####################
+
+ magiks_origin_magical_lineages:0 "Magical Lineages"
+ magiks_origin_magical_lineages_desc:0 "Powerful sorcerer bloodlines have long taken positions of power over their less magically gifted kin. This has led to great houses based on magical blood to hold great power and sway in this nation."
+
+ magiks_machine_origin_waifu_bots:0 "Waifu Bots"
+ magiks_machine_origin_waifu_bots_desc:0 "Through extensive species-wide reconditioning, these machines have manged to convert their creators into one single culture, designed specially for pleasure and compliance. Strangely enough, due to it's 'perfect design', said machines have become a bit obsessed with it themselves."
+
+ magiks_origin_duelistic_magics:0 "Duelistic Magics"
+ magiks_origin_duelistic_magics_desc:0 "The world has evolved two seperate but equally magical species, who, even though they united long ago, share a deep and somewhat friendly rivalry between eachother."
+ magiks_origin_duelistic_magics_secondary_species:0 "Magical Rivals"
+ magiks_origin_duelistic_magics_effects:0 "Start the game with 4 Pops being of another codominant species."
+
+ magiks_origin_reunited_siblings:0 "Reunited Siblings"
+ magiks_origin_reunited_siblings_desc:0 "Long ago, the primary species of this world, worried about their souls being harvested, banished the other species into a large cavern, isolating them from the outside world. Only recently have the two reunited, having to now share their futures together."
+ magiks_origin_reunited_siblings_secondary_species:0 "Cave Dwellers"
+ magiks_origin_reunited_siblings_effects:0 "Start the game with 2 Pops being of another codominant species."
+
+ magiks_origin_world_of_legend:0 "World of Legend"
+ magiks_origin_world_of_legend_desc:0 "One of myth and legend, the homeworld of this species is a magic-filled paradise, whether they have the talent to apreciate it or not."
+
+ magiks_origin_drained_survivors:0 "Drained Survivors"
+ magiks_origin_drained_survivors_desc:0 "After years of draining the energy from our world, it finally gave out, leading to a miserable poverty-filled and disunited existance. After finally breaking free from the iron grip of our latest tyrants, we united under one flag, and are now more dedicated than ever before to travel to the stars, hoping to one day fix the world we came from."
+
+ magiks_origin_dark_cultists:0 "Dark Cultists"
+ magiks_origin_dark_cultists_desc:0 "Originally created from a belief that the forces of darkness would bring great fortune, this society commited mass-atrocities and genocide at the request of their dark religion. However, that was long ago, and while more modern reforms have greatly reduced the unethical treatment caused by the people's beliefs, the roots are still present, and cause great distrust among other spiritualists."
+
+ magiks_origin_dragon_kinship:0 "Dragon Kinship"
+ magiks_origin_dragon_kinship_desc:0 "This homeworld is shared between a magical civilization and a space-faring dragon. Eventually after a long time, the dragon has been tamed and serves under the command of the dragon tamers."
+
+ magiks_origin_geomancers:0 "Geomancers"
+ magiks_origin_geomancers_desc:0 "This world belongs to a magical species who have mastered the art of bending the earth and stone to their will. They have achieved the ability to create golems, creatures of rocks, whose purpose is to serve their masters."
+
+ magiks_origin_eldritch_children:0 "Eldritch Children"
+ magiks_origin_eldritch_children_desc:0 "Long ago, this species was influenced by an eldritch being, forever influenced by its presence. Even when this being is long since chalked up to fairytales and myths. They must endure to find their purpose and reconnect with destiny."
+
+ FantasticalMagiks_organ_plural:0 "REPLACE_ME"
+ FantasticalMagiks_hand_plural:0 "REPLACE_ME"
+ FantasticalMagiks_ear_plural:0 "REPLACE_ME"
+ FantasticalMagiks_tooth_plural:0 "REPLACE_ME"
+ FantasticalMagiks_fossil_plural:0 "REPLACE_ME"
+ FantasticalMagiks_remnant_plural:0 "REPLACE_ME"
+ name_list_Drakiel:0 "REPLACE_ME"
+ Aerisia:0 "REPLACE_ME"
+ Aeris:0 "REPLACE_ME"
+ TIE:0 "REPLACE_ME"
+
+# ####################
 # Misc
 # ####################
 
@@ -268,6 +318,9 @@ magiks_event_hyperlane_out_border_resource_fail:0 "Requires 2500 energy, 4 influ
 NEVERMIND:0 "Nevermind."
 LETS_START:0 "Let's start"
 COMMENCE_REMOVAL:0 "Commence removal"
+Excellent:0 "Excellent"
+
+magiks_Progenitor:0 "Progenitor"
 
 magiks_event_hyperlane_system_0_unclaimed:0 "§HUnclaimed:§! [magiks_hyperlane_system_0.GetName]"
 magiks_event_hyperlane_system_1_unclaimed:0 "§HUnclaimed:§! [magiks_hyperlane_system_1.GetName]"
@@ -316,3 +369,23 @@ magiks_drich_engineering_deposit:0 ""
 magiks_dvast_engineering_deposit:0 ""
 magiks_dimmense_engineering_deposit:0 ""
 d_manacite_1:0 ""
+
+ magiks_descisions_build_construct:0 "REPLACE_ME"
+ magiks_descisions_build_construct_desc:0 "REPLACE_ME"
+ magiks_descisions_create_hyperlane_general:0 "REPLACE_ME"
+ magiks_descisions_create_hyperlane_general_desc:0 "REPLACE_ME"
+ elderly_tiyanki_key:0 "REPLACE_ME"
+ magiks_leader_trait_fire:0 "Fire"
+ magiks_leader_trait_fire_desc:0 "Passive ability: Increase fire rate"
+ magiks_leader_trait_ice:0 "Ice"
+ magiks_leader_trait_ice_desc:0 "Passive ability: Increase ship armor"
+ magiks_leader_trait_earth:0 "Earth"
+ magiks_leader_trait_earth_desc:0 "Passive ability: Increase terraforming speed and decrease cost"
+ magiks_leader_trait_electric:0 "Electric"
+ magiks_leader_trait_electric_desc:0 "Passive ability: Increase energy production"
+ magiks_leader_trait_water:0 "Water"
+ magiks_leader_trait_water_desc:0 "Passive ability: Increase food production"
+ magiks_leader_trait_metal:0 "Metal"
+ magiks_leader_trait_metal_desc:0 "Passive ability: Increase alloy and consumer goods production"
+ magiks_leader_trait_illusion:0 "Illusion"
+ magiks_leader_trait_illusion_desc:0 "Passive ability: Increase encryption and decryption abilities"

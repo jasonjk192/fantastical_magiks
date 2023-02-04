@@ -326,7 +326,7 @@ magiks_dragon_lord_army = {
 					has_authority = auth_machine_intelligence
 				}
 				has_civic = magiks_civic_dragon_tamers
-				has_civic = magiks_civic_duelistic_magics
+				# has_origin = magiks_origin_duelistic_magics
 			}
 		}
 	}

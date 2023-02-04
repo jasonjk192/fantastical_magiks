@@ -242,7 +242,7 @@ part = {
 	localization = "MAGIKS_START_SCREEN_SOUR_TWO"
 	
 	trigger = {
-		has_civic = magiks_civic_drained_survivors
+		has_origin = magiks_origin_drained_survivors
 		NOR = { 
 			has_country_flag = custom_start_screen 
 			has_authority = auth_hive_mind
