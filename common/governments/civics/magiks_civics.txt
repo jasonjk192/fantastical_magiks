@@ -64,10 +64,8 @@ magiks_civic_elite_mages = {
 			}
 		}
 	}
-	modification = no
 	random_weight = {
 		base = 5
-		modifier = { factor = 0 has_global_flag = game_started }
 	}
 	modifier = {
 		leader_skill_levels = 2
@@ -155,10 +153,8 @@ magiks_civic_state_necromancy = {
 	playable = {
 		NOT = { host_has_dlc = "Necroids Species Pack" }
 	}
-	modification = no
 	random_weight = {
 		base = 5
-		modifier = { factor = 0 has_global_flag = game_started }
 	}
 	modifier = {
 		leader_age = 20
@@ -202,10 +198,8 @@ magiks_civic_natures_listeners = {
 			}
 		}
 	}
-	modification = no
 	random_weight = {
 		base = 5
-		modifier = { factor = 0 has_global_flag = game_started }
 	}
 	modifier = {
 		pop_growth_speed = 0.10
@@ -249,10 +243,8 @@ magiks_civic_idol_crazy = {
 			}
 		}
 	}
-	modification = no
 	random_weight = {
 		base = 5
-		modifier = { factor = 0 has_global_flag = game_started }
 	}
 	modifier = {
 		pop_happiness = 0.05
@@ -264,7 +256,6 @@ magiks_civic_idol_crazy = {
 }
 
 magiks_civic_rhythmic_fanatics = {
-	modification = no
 	potential = { 
 		authority = { value = magiks_auth_magocracy }
 		ethics = { NOT = { value = ethic_gestalt_consciousness } } 
@@ -295,7 +286,6 @@ magiks_civic_rhythmic_fanatics = {
 	}
 	random_weight = {
 		base = 5
-		modifier = { factor = 0 has_global_flag = game_started }
 	}
 	traits = {
 		trait = magiks_trait_enchanting_musicians

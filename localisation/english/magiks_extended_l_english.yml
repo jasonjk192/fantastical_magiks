@@ -118,6 +118,7 @@ Songwriters:0 "Songwriters"
 Magocracy:0 "Magocracy"
 Sector:0 "Sector"
 Sectors:0 "Sectors"
+Congress:0 "Congress"
 
 #####################
 # Species
@@ -286,13 +287,10 @@ magiks_machine_civic_gifted_souls_desc:0 "Mana permeates these mechanical beings
  magiks_origin_dragon_kinship_desc:0 "This homeworld is shared between a magical civilization and a space-faring dragon. Eventually after a long time, the dragon has been tamed and serves under the command of the dragon tamers."
 
  magiks_origin_geomancers:0 "Geomancers"
- magiks_origin_geomancers_desc:0 "REPLACE_ME"
+ magiks_origin_geomancers_desc:0 "This world belongs to a magical species who have mastered the art of bending the earth and stone to their will. They have achieved the ability to create golems, creatures of rocks, whose purpose is to serve their masters."
 
  magiks_origin_eldritch_children:0 "Eldritch Children"
  magiks_origin_eldritch_children_desc:0 "Long ago, this species was influenced by an eldritch being, forever influenced by its presence. Even when this being is long since chalked up to fairytales and myths. They must endure to find their purpose and reconnect with destiny."
-
- Congress:0 "Congress"
- Excellent:0 "Excellent"
 
  FantasticalMagiks_organ_plural:0 "REPLACE_ME"
  FantasticalMagiks_hand_plural:0 "REPLACE_ME"
@@ -320,6 +318,7 @@ magiks_event_hyperlane_out_border_resource_fail:0 "Requires 2500 energy, 4 influ
 NEVERMIND:0 "Nevermind."
 LETS_START:0 "Let's start"
 COMMENCE_REMOVAL:0 "Commence removal"
+Excellent:0 "Excellent"
 
 magiks_Progenitor:0 "Progenitor"
 
@@ -370,3 +369,23 @@ magiks_drich_engineering_deposit:0 ""
 magiks_dvast_engineering_deposit:0 ""
 magiks_dimmense_engineering_deposit:0 ""
 d_manacite_1:0 ""
+
+ magiks_descisions_build_construct:0 "REPLACE_ME"
+ magiks_descisions_build_construct_desc:0 "REPLACE_ME"
+ magiks_descisions_create_hyperlane_general:0 "REPLACE_ME"
+ magiks_descisions_create_hyperlane_general_desc:0 "REPLACE_ME"
+ elderly_tiyanki_key:0 "REPLACE_ME"
+ magiks_leader_trait_fire:0 "Fire"
+ magiks_leader_trait_fire_desc:0 "Passive ability: Increase fire rate"
+ magiks_leader_trait_ice:0 "Ice"
+ magiks_leader_trait_ice_desc:0 "Passive ability: Increase ship armor"
+ magiks_leader_trait_earth:0 "Earth"
+ magiks_leader_trait_earth_desc:0 "Passive ability: Increase terraforming speed and decrease cost"
+ magiks_leader_trait_electric:0 "Electric"
+ magiks_leader_trait_electric_desc:0 "Passive ability: Increase energy production"
+ magiks_leader_trait_water:0 "Water"
+ magiks_leader_trait_water_desc:0 "Passive ability: Increase food production"
+ magiks_leader_trait_metal:0 "Metal"
+ magiks_leader_trait_metal_desc:0 "Passive ability: Increase alloy and consumer goods production"
+ magiks_leader_trait_illusion:0 "Illusion"
+ magiks_leader_trait_illusion_desc:0 "Passive ability: Increase encryption and decryption abilities"

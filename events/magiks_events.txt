@@ -795,3 +795,53 @@ country_event = {
 		}
 	}
 }
+
+#-- Magocracy government ruler traits [ID 50]
+country_event = {
+	id = magiks_event.50
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		has_authority = magiks_auth_magocracy
+	}
+	immediate = {
+		if = {
+			limit = { exists = ruler }
+			ruler = {
+				random_list = {
+					10 = { add_trait = magiks_leader_trait_earth }
+					10 = { add_trait = magiks_leader_trait_fire }
+					10 = { add_trait = magiks_leader_trait_ice }
+					10 = { add_trait = magiks_leader_trait_electric }
+					10 = { add_trait = magiks_leader_trait_water }
+					10 = { add_trait = magiks_leader_trait_metal }
+					10 = { add_trait = magiks_leader_trait_illusion }
+				}
+			}
+		}
+	}
+}
+
+#-- Magocracy government ruler traits (remove passive traits) [ID 51]
+country_event = {
+	id = magiks_event.51
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		has_authority = magiks_auth_magocracy
+	}
+	immediate = {
+		if = {
+			limit = { exists = ruler }
+			ruler = {
+				remove_trait = magiks_leader_trait_earth
+				remove_trait = magiks_leader_trait_fire 
+				remove_trait = magiks_leader_trait_ice 
+				remove_trait = magiks_leader_trait_electric 
+				remove_trait = magiks_leader_trait_water 
+				remove_trait = magiks_leader_trait_metal 
+				remove_trait = magiks_leader_trait_illusion 
+			}
+		}
+	}
+}

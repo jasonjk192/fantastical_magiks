@@ -38,6 +38,8 @@ on_game_start_country = {
 		magiks_game_start.9
 		magiks_game_start.11
 		magiks_game_start.12
+		magiks_game_start.13
+		magiks_event.50
 		# magiks_game_start.10
 	}
 }
@@ -67,5 +69,17 @@ on_entering_battle = {
 on_space_battle_won = {
 	events = {
 		magiks_event.101
+	}
+}
+
+on_post_government_changed = {
+	events = {
+		magiks_event.50
+	}
+}
+
+on_pre_government_changed = {
+	events = {
+		magiks_event.51
 	}
 }

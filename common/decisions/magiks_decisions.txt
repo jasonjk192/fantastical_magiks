@@ -323,3 +323,69 @@ magiks_descisions_delete_hyperlane_into_unowned_space = {
 		}
 	}
 }
+
+#################
+# Geomancer
+#################
+
+magiks_descisions_build_construct = {
+	owned_planets_only = yes
+	enactment_time = 300
+	resources = {
+		category = decisions
+		cost = {
+			energy = 250
+			minerals = 500
+			manacite = 15
+		}
+	}
+	
+	potential = {
+		owner = { 
+			is_regular_empire = yes
+			has_origin = magiks_origin_geomancers
+		}
+	}
+	
+	effect = {
+		create_pop = { species = LITHOID }
+	}
+	
+	ai_weight = {
+		weight = 5
+	}
+}
+
+
+magiks_descisions_create_hyperlane_general = {
+	owned_planets_only = no
+	enactment_time = 0
+	icon = decision_engineering_research
+	effect = {
+		solar_system = {
+			log = "System: [This.GetName]"
+			set_variable = { which = HL_count value = 0 }
+			every_neighbor_system_euclidean = {
+				limit = {
+					distance = {
+						source = PREV
+						max_distance <= 800
+						type = euclidean
+						same_solar_system = no
+					}
+					NOR = {
+						has_hyperlane_to = PREV
+						is_inside_border = ROOT.owner
+					}
+				}
+				log = "This: [This.GetName] Prev: [Prev.GetName] var: [Prev.HL_count]"
+				set_star_flag = HL_system
+				save_event_target_as = HL_system_$prev.HL_count$
+				prev = { change_variable = { which = HL_count value = 1 } }
+			}
+		}
+		event_target:HL_system_0 = {
+			log = "TargetThis: [This.GetName] Prev: [Prev.GetName]"
+		}
+	}
+}

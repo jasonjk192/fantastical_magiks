@@ -1,7 +1,7 @@
 magiks_origin_world_of_legend = {
 	is_origin = yes
 	icon = "gfx/interface/icons/origins/origins_ocean_paradise.dds"
-	picture = GFX_origin_ocean_paradise
+	picture = GFX_origin_world_of_legend
 	flags = { custom_start_screen }
 	starting_colony = pc_magikal
 	habitability_preference = pc_magikal
@@ -20,7 +20,7 @@ magiks_origin_world_of_legend = {
 
 magiks_origin_reunited_siblings = {
 	is_origin = yes
-	icon = "gfx/interface/icons/origins/origin_common_ground.dds"
+	icon = "gfx/interface/icons/origins/origins_common_ground.dds"
 	picture = GFX_origin_common_ground
 	flags = { custom_start_screen }
 
@@ -49,7 +49,7 @@ magiks_origin_reunited_siblings = {
 
 magiks_origin_duelistic_magics = {
 	is_origin = yes
-	icon = "gfx/interface/icons/origins/origin_default.dds"
+	icon = "gfx/interface/icons/origins/origins_default.dds"
 	picture = GFX_origin_default
 	flags = { custom_start_screen }
 
@@ -84,7 +84,7 @@ magiks_origin_duelistic_magics = {
 
 magiks_origin_drained_survivors = {
 	is_origin = yes
-	icon = "gfx/interface/icons/origins/origin_fratricide.dds"
+	icon = "gfx/interface/icons/origins/origins_fratricide.dds"
 	picture = GFX_origin_fratricide
 	flags = { custom_start_screen }
 	
@@ -111,7 +111,7 @@ magiks_origin_drained_survivors = {
 magiks_origin_magical_lineages = {
 	is_origin = yes
 	icon = "gfx/interface/icons/origins/origins_ocean_paradise.dds"
-	picture = GFX_origin_ocean_paradise
+	picture = GFX_origin_magical_lineage
 	flags = { custom_start_screen }
 
 	potential = { 
@@ -159,13 +159,6 @@ magiks_origin_dark_cultists = {
 		ethics = { NOT = { value = ethic_gestalt_consciousness } } 
 	}
 	possible = {
-		authority = {
-			OR = {
-				value = auth_imperial
-				value = auth_dictatorial
-				value = auth_oligarchic
-			}
-		}
 		ethics = {
 			OR = {
 				value = ethic_spiritualist
@@ -268,19 +261,16 @@ magiks_origin_geomancers = {
 				value = civic_fanatic_purifiers
 				value = civic_hive_devouring_swarm
 			}
-			value = magiks_civic_dragon_tamers
 		}
 	}
 	potential = { 
 		authority = { value = magiks_auth_magocracy }
 		ethics = { NOT = { value = ethic_gestalt_consciousness } } 
 	}
+	playable = { host_has_dlc = "Lithoids Species Pack" }
 
 	# description = civic_tooltip_aquatics_effects
-
-	random_weight = {
-		base = 5
-	}
+	random_weight = { base = 2 }
 }
 
 magiks_origin_eldritch_children = {

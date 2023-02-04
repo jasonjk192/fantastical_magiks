@@ -331,3 +331,27 @@ country_event = {
 		add_ship_design = last_created_design
 	}
 }
+
+country_event = {
+	id = magiks_game_start.13
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = { has_origin = magiks_origin_geomancers }
+	immediate = {
+		home_planet = {
+			random_owned_pop = { kill_pop = yes }
+			random_owned_pop = { kill_pop = yes }
+			random_owned_pop = { kill_pop = yes }
+			create_species = { class = LITHOID }
+			create_pop = { species = last_created_species }
+			create_pop = { species = last_created_species }
+			create_pop = { species = last_created_species }
+			last_created_species = {
+				set_citizenship_type = {
+					country = prevprev
+					type = citizenship_slavery
+				}
+			}
+		}
+	}
+}
