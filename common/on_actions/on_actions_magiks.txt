@@ -83,3 +83,17 @@ on_pre_government_changed = {
 		magiks_event.51
 	}
 }
+
+on_terraforming_begun = {
+	events = {
+		magiks_terra_event.100
+	}
+}
+
+
+on_terraforming_complete = {
+	events = {
+		magiks_terra_event.101
+		magiks_terra_event.102
+	}
+}

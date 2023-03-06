@@ -1,7 +1,10 @@
 ### Magicka Tradition Related Civics ###
 
 magiks_civic_ascended_mages = {
-	potential = {  always = no }
+	potential = { 
+		authority = { value = magiks_auth_magocracy }
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+	}
 	modification = no
 	pickable_at_start = no
 	modifier = {
@@ -13,7 +16,10 @@ magiks_civic_ascended_mages = {
 }
 
 magiks_machine_civic_gifted_souls = {
-	potential = {  always = no }
+	potential = { 
+		authority = { value = auth_machine_intelligence }
+		ethics = { value = ethic_gestalt_consciousness }
+	}
 	modification = no
 	pickable_at_start = no
 	modifier = {
@@ -23,7 +29,10 @@ magiks_machine_civic_gifted_souls = {
 }
 
 magiks_hive_mind_civic_shared_mana = {
-	potential = {  always = no }
+	potential = { 
+		authority = { value = auth_hive_mind }
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+	}
 	modification = no
 	pickable_at_start = no
 	modifier = {

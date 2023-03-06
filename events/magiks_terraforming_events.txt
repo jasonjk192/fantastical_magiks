@@ -1,0 +1,95 @@
+namespace = magiks_terra_event
+
+# Count Gaia world deposits [ID 100]
+planet_event = {
+	id = magiks_terra_event.100
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		exists = space_owner
+		is_planet_class = pc_gaia
+	}
+	immediate = {
+		set_variable = { which = mineral_deposit_count value = 0 }
+		set_variable = { which = energy_deposit_count value = 0 }
+		set_variable = { which = food_deposit_count value = 0 }
+		set_variable = { which = rare_deposit_count value = 0 }
+		every_deposit = { limit = { has_deposit_category = deposit_cat_minerals } prev = { change_variable = { which = mineral_deposit_count value = 1 } } }
+		every_deposit = { limit = { has_deposit_category = deposit_cat_energy } prev = { change_variable = { which = energy_deposit_count value = 1 } } }
+		every_deposit = { limit = { has_deposit_category = deposit_cat_food } prev = { change_variable = { which = food_deposit_count value = 1 } } }
+		every_deposit = { limit = { has_deposit_category = deposit_cat_rare } prev = { change_variable = { which = rare_deposit_count value = 1 } } }
+	}
+}
+
+# Terraformed Gaia into Magical world (add/convert deposits) [ID 101]
+planet_event = {
+	id = magiks_terra_event.101
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		exists = space_owner
+		is_planet_class = pc_magikal
+	}
+	immediate = {
+		set_planet_flag = terraformed_once
+		add_modifier = { modifier = "mana_infused" days = -1 }
+
+		reroll_deposits = yes
+		clear_blockers = yes
+		while = {
+			count = mineral_deposit_count
+			random_list = {
+				10 = { add_deposit = magiks_d_shimmeringfields }
+				10 = { add_deposit = magiks_d_forgottenhoard }
+				10 = { add_deposit = magiks_d_deepdark }
+			}
+		}
+		while = {
+			count = energy_deposit_count
+			random_list = {
+				10 = { add_deposit = magiks_d_cloudforest }
+				10 = { add_deposit = magiks_d_deepgrandreef }
+				10 = { add_deposit = magiks_d_electrifruitforest }
+			}
+		}
+		while = {
+			count = food_deposit_count
+			random_list = {
+				10 = { add_deposit = magiks_d_blessedfields }
+				10 = { add_deposit = magiks_d_enchantedforest }
+				10 = { add_deposit = magiks_d_allignedhills }
+			}
+		}
+		while = {
+			count = rare_deposit_count
+			random_list = {
+				10 = { add_deposit = magiks_d_powerful_leyline }
+				10 = { add_deposit = magiks_d_leyline_convergence }
+				10 = { add_deposit = magiks_d_natural_manacite_caverns }
+			}
+		}
+	}
+}
+
+# Clear count variables on Gaia-Magical world [ID 102]
+planet_event = {
+	id = magiks_terra_event.102
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		exists = space_owner
+		OR = {
+			is_planet_class = pc_gaia
+			is_planet_class = pc_magikal
+		}
+	}
+	immediate = {
+		clear_variable = mineral_deposit_count
+		clear_variable = energy_deposit_count
+		clear_variable = food_deposit_count
+		clear_variable = rare_deposit_count
+	}
+}
