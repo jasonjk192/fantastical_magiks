@@ -70,22 +70,22 @@ planet_event = {
 				10 = { add_deposit = magiks_d_natural_manacite_caverns }
 			}
 		}
+
+		clear_variable = mineral_deposit_count
+		clear_variable = energy_deposit_count
+		clear_variable = food_deposit_count
+		clear_variable = rare_deposit_count
 	}
 }
 
-# Clear count variables on Gaia-Magical world [ID 102]
+# Clear count variables terraformed world [ID 102]
 planet_event = {
 	id = magiks_terra_event.102
 	hide_window = yes
 	is_triggered_only = yes
 
-	trigger = {
-		exists = space_owner
-		OR = {
-			is_planet_class = pc_gaia
-			is_planet_class = pc_magikal
-		}
-	}
+	trigger = { is_variable_set = mineral_deposit_count }
+
 	immediate = {
 		clear_variable = mineral_deposit_count
 		clear_variable = energy_deposit_count

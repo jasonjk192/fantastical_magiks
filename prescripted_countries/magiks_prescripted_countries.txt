@@ -13,20 +13,19 @@ draconian ={
 		plural = "Draconians"
 		adjective = "Draconian"
 		name_list="Drakiel"
-		trait="trait_wasteful"
-		trait="magiks_trait_draconic_nobility"
+		trait="magiks_trait_draconic_pride"
 		trait="magiks_trait_dragon_blooded"
-		trait="magiks_trait_strong_souls"
+		trait="magiks_trait_alchemy"
 	}
 	room="personality_migrating_flock_room"
 	authority="magiks_auth_magocracy"
 	government="magiks_gov_dragon_magocracy"
-	civics={ "magiks_civic_dragon_tamers" "civic_functional_architecture" }
+	civics={ "magiks_civic_dragon_tamers" "magiks_civic_alchemical_ministry" }
 	
 	ethic="ethic_fanatic_materialist"
 	ethic="ethic_authoritarian"
 	
-	origin = "magiks_origin_dragon_kinship"
+	origin = "magiks_origin_world_of_legend"
 
 	planet_name="Aerisia"
 	planet_class="pc_continental"
@@ -46,8 +45,8 @@ draconian ={
 			file="flag_BG_48.dds"
 		}
 		colors={
-			"pink"
-			"light_blue"
+			"red"
+			"black"
 			"null"
 			"null"
 		}
@@ -65,7 +64,7 @@ draconian ={
 }
 
 tiefling ={
-	name="Tiefling Empire"
+	name="Tiefling Magical Council"
 	adjective="Tiefling"
 	spawn_as_fallen=no
 	ignore_portrait_duplication=no
@@ -79,24 +78,23 @@ tiefling ={
 		plural = "Tieflings"
 		adjective = "Tiefling"
 		name_list="Drakiel"
-		trait="trait_wasteful"
-		trait="magiks_trait_draconic_nobility"
-		trait="magiks_trait_dragon_blooded"
+		trait="magiks_trait_hard_magicians"
+		trait="magiks_trait_voidseepers"
 		trait="magiks_trait_strong_souls"
 	}
 	room="personality_migrating_flock_room"
 	authority="magiks_auth_magocracy"
-	government="magiks_gov_dragon_magocracy"
-	civics={ "magiks_civic_dragon_tamers" "civic_functional_architecture" }
+	government="magiks_gov_ministry_of_magic"
+	civics={ "magiks_civic_elite_mages" "civic_functional_architecture" }
 	
-	ethic="ethic_fanatic_materialist"
-	ethic="ethic_authoritarian"
+	ethic="ethic_egalitarian"
+	ethic="ethic_fanatic_spiritualist"
 	
-	origin = "magiks_origin_dragon_kinship"
+	origin = "magiks_origin_world_of_legend"
 
-	planet_name="Aerisia"
+	planet_name="Mishri"
 	planet_class="pc_continental"
-	system_name="Aeris"
+	system_name="Shar"
 	initializer=""
 
 	graphical_culture="magiks_01"
@@ -104,23 +102,23 @@ tiefling ={
 
 	empire_flag={
 		icon={
-			category="zoological"
-			file="flag_zoological_5.dds"
+			category="spherical"
+			file="flag_spherical_18.dds"
 		}
 		background={
 			category="backgrounds"
-			file="flag_BG_48.dds"
+			file="circle.dds"
 		}
 		colors={
-			"pink"
-			"light_blue"
-			"null"
+			"brown"
+			"yellow"
+			"red"
 			"null"
 		}
 	}
 	ruler={
 		gender=male
-		name="Amari Nervress"
+		name="Nahua"
 		portrait="maletief0"
 		texture=0
 		attachment=0

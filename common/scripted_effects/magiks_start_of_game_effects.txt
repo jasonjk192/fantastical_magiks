@@ -1,4 +1,6 @@
 magiks_generate_start_pops = {	
+
+	# Reunited Siblings
 	if = { limit = { owner = { has_origin = magiks_origin_reunited_siblings } }
 		
 		last_created_species = {
@@ -8,36 +10,44 @@ magiks_generate_start_pops = {
 			}
 		}
 		while = {
+			count = 2
+			random_owned_pop = { kill_pop = yes }
+		}
+		while = {
+			count = 2
+			create_pop = {
+				species = last_created_species
+				ethos = random
+			}
+		}
+	}
+
+	# Deulistic Magics
+	else_if = { limit = { owner = { has_origin = magiks_origin_duelistic_magics } }
+
+		last_created_species = {
+			set_citizenship_type = {
+				country = root.owner
+				type = citizenship_full
+			}
+		}
+		while = {
+			count = 4
+			random_owned_pop = { kill_pop = yes }
+		}
+		while = {
 			count = 4
 			create_pop = {
 				species = last_created_species
 				ethos = random
 			}
 		}
-		while = {
-			count = 4
-			random_owned_pop = { kill_pop = yes }
-			#kill_pop = { species = owner_species }
-		}
-	}
-	else = {
-		while = {
-			limit = { num_pops < 24 }
-			create_pop = {
-				species = owner_main_species
-				ethos = random
-			}
-		}		
+		
 	}
 }
 
 generate_start_the_underground = {
-	if = {
-		limit = { 
-			owner = {
-				has_origin = magiks_origin_reunited_siblings
-			}
-		}
+	if = { limit = {  owner = { has_origin = magiks_origin_reunited_siblings } }
 		add_deposit = magiks_d_the_underground
 	}
 }

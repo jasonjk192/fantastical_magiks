@@ -11,7 +11,7 @@ magiks_origin_world_of_legend = {
 		authority = { value = magiks_auth_magocracy }
 		ethics = { NOT = { value = ethic_gestalt_consciousness } } 
 	}
-	playable = { host_has_dlc = "Utopia" host_has_dlc = "Apocalypse" }
+	# playable = { host_has_dlc = "Utopia" host_has_dlc = "Apocalypse" }
 	possible = {
 	}
 	random_weight = { base = 1 }
@@ -24,7 +24,7 @@ magiks_origin_reunited_siblings = {
 	picture = GFX_origin_common_ground
 	flags = { custom_start_screen }
 
-	playable = { host_has_dlc = "Utopia" host_has_dlc = "Apocalypse" }
+	# playable = { host_has_dlc = "Utopia" host_has_dlc = "Apocalypse" }
 	potential = { 
 		authority = { value = magiks_auth_magocracy }
 		ethics = { NOT = { value = ethic_gestalt_consciousness } } 
@@ -53,7 +53,7 @@ magiks_origin_duelistic_magics = {
 	picture = GFX_origin_default
 	flags = { custom_start_screen }
 
-	playable = { host_has_dlc = "Utopia" host_has_dlc = "Apocalypse" }
+	# playable = { host_has_dlc = "Utopia" host_has_dlc = "Apocalypse" }
 	potential = { 
 		authority = { value = magiks_auth_magocracy }
 		ethics = { NOT = { value = ethic_gestalt_consciousness } } 
@@ -92,7 +92,7 @@ magiks_origin_drained_survivors = {
 		authority = { value = magiks_auth_magocracy }
 		ethics = { NOT = { value = ethic_gestalt_consciousness } } 	
 	}
-	playable = { host_has_dlc = "Utopia" host_has_dlc = "Apocalypse" }
+	# playable = { host_has_dlc = "Utopia" host_has_dlc = "Apocalypse" }
 	possible = {
 		civics = {
 			NOT = {
