@@ -12,11 +12,27 @@ magiks_tech_rhythm4_desc:0 "With the access of sound manipulation at the most fu
 
 magiks_tech_magiks_engineered_evolution:0 "Magikal Engineered Evolution"
 magiks_tech_magiks_engineered_evolution_desc:0 "Magikal species forgot to pick up these sweet points."
+
 magiks_tech_magiks_evolutionary_mastery:0 "Magikal Evolutionary Mastery"
 magiks_tech_magiks_evolutionary_mastery_desc:0 "Magikal species forgot to pick up these sweet points."
 
 magiks_tech_hyperlane_manipulation:0 "Hyperlane Manipulation"
 magiks_tech_hyperlane_manipulation_desc:0 "Unlock the power of the manacites to channel our abilities and manipulate hyperlanes to our advantage."
+
+magiks_tech_arcane_missiles:0 "Arcane Missiles"
+magiks_tech_arcane_missiles_desc:0 "Harness the mystical energies to launch devastating arcane missiles that pierce through enemy defenses."
+
+magiks_tech_mystic_beams:0 "Mystic Beams"
+magiks_tech_mystic_beams_desc:0 "Channel the power of the cosmos into concentrated beams of mystic energy, obliterating anything in their path."
+
+magiks_tech_enchanted_cannons:0 "Enchanted Cannons"
+magiks_tech_enchanted_cannons_desc:0 "Unleash the fury of enchanted cannons, imbued with ancient magic to deliver powerful blasts against enemies."
+
+magiks_tech_magical_assistance:0 "Magical Assistance"
+magiks_tech_magical_assistance_desc:0 "By using our knowledge of magic and the power of manacites, we can further boost our capabilities."
+
+ magiks_tech_mana_infused_evolution:0 "Mana-infused Evolution"
+ magiks_tech_mana_infused_evolution_desc:0 "Further enhance our genetic code to enable us to integrate more adaptations for our continued survival and dominance."
 
 #####################
 # Decisions
@@ -40,7 +56,39 @@ magiks_descisions_create_hyperlane_into_unowned_space_desc:0 "Channeling our man
 magiks_descisions_delete_hyperlane_into_unowned_space:0 "Delete Hyperlane (Not Empire Space)"
 magiks_descisions_delete_hyperlane_into_unowned_space_desc:0 "Channeling our mana beyond our borders and break the bonds between the star systems"
 
+magiks_descisions_create_hyperlane_tooltip:0 "After a period of time, we will be able to compile a list of potential candidates (within our empire) that are close enough for us to connect with new hyperlanes"
+magiks_descisions_delete_hyperlane_tooltip:0 "After a period of time, we will be able to compile a list of potential candidates (within our empire) that are close enough for us to sever the hyperlane"
+magiks_descisions_create_hyperlane_unowned_tooltip:0 "After a period of time, we will be able to compile a list of potential candidates (not within our empire) that are close enough for us to connect with new hyperlanes"
+magiks_descisions_delete_hyperlane_unowned_tooltip:0 "After a period of time, we will be able to compile a list of potential candidates (not within our empire) that are close enough for us to sever the hyperlane"
+
 triggered_opinion_disapprove_of_hyperlane_manipulation:0 "Hyperlane Connection Disapproved"
+
+#####################
+# Edicts
+#####################
+
+edict_magiks_magical_excavator:0 "Magical Excavator"
+edict_magiks_magical_excavator_desc:0 "Use manacites to power up our archaeological research"
+edict_magiks_teleporter:0 "Mana-aided Teleportation"
+edict_magiks_teleporter_desc:0 "Magic can help us find our way across the galaxy faster"
+edict_magiks_booster_terraforming_gases:0 "§SBooster:§! Terraforming Gases"
+edict_magiks_booster_terraforming_gases_desc:0 "Terraform even faster with the help of manacites"
+edict_magiks_booster_fuel_gases:0 "§SBooster:§! Exotic Gas Fuel"
+edict_magiks_booster_fuel_gases_desc:0 "Move at a greater speed by adding in manacites as an added magical source"
+edict_magiks_booster_shield_gases:0 "§SBooster:§! Shield Boost"
+edict_magiks_booster_shield_gases_desc:0 "Strengthen shields even further with the use of manacites"
+edict_magiks_booster_clearing_motes:0 "§SBooster:§! Volatile Land Clearance"
+edict_magiks_booster_clearing_motes_desc:0 "Chuck a few manacites along with motes and watch them explode!"
+edict_magiks_booster_motes_kinetic:0 "§SBooster:§! Volatile Ammumition"
+edict_magiks_booster_motes_kinetic_desc:0 "Combine motes and manacites as explosives in our arsenal"
+edict_magiks_booster_motes_explosives:0 "§SBooster:§! Volatile Explosives"
+edict_magiks_booster_motes_explosives_desc:0 "Improve destruction capabilities by introduction manacites too"
+edict_magiks_booster_motes_armor:0 "§SBooster:§! Volatile Reactive Armor"
+edict_magiks_booster_motes_armor_desc:0 "Enhance our armor further with the help of manacites"
+edict_magiks_booster_crystalline_sensors:0 "§SBooster:§! Crystalline Sensors"
+edict_magiks_booster_crystalline_sensors_desc:0 "Harness magical energy of manacites to gain an even crystal clear picture"
+edict_magiks_booster_crystal_focus:0 "§SBooster:§! Focusing Crystals"
+edict_magiks_booster_crystal_focus_desc:0 "Improve energy weapon damage even further by utilizing an additional focusing layer made of manacites"
 
 #####################
 # Species
@@ -72,29 +120,29 @@ FantasticalMagiks_remnant:0 "skeleton"
 # Governments
 #####################
 
- magiks_gov_celebrated_monarchy:0 "Celebrated Monarchy"
- magiks_gov_celebrated_monarchy_desc:0 "As popular media spread across the globe, celebrities were slowly worshiped more and more, gradually wining in state elections, until eventually all positions of governance were held by a single family, now ruling as monarical head."
+magiks_gov_celebrated_monarchy:0 "Celebrated Monarchy"
+magiks_gov_celebrated_monarchy_desc:0 "As popular media spread across the globe, celebrities were slowly worshiped more and more, gradually wining in state elections, until eventually all positions of governance were held by a single family, now ruling as monarical head."
 
- magiks_gov_band_bureaucracy:0 "Band Bureaucracy"
- magiks_gov_band_bureaucracy_desc:0 "A great war had broken out, not of blood and bullets, but of culture and music. It wouldn't be till several decades later that it would finally end, giving rise to the current establishment, dedicated to never letting another war if culture break out, ever again."
+magiks_gov_band_bureaucracy:0 "Band Bureaucracy"
+magiks_gov_band_bureaucracy_desc:0 "A great war had broken out, not of blood and bullets, but of culture and music. It wouldn't be till several decades later that it would finally end, giving rise to the current establishment, dedicated to never letting another war if culture break out, ever again."
 
- magiks_gov_instrumental_institution:0 "Instrumental Institution"
- magiks_gov_instrumental_institution_desc:0 "After a fierce debate on the position of music and celebrities in politics, it was decided by popular vote that those in power must wield great musical talent."
+magiks_gov_instrumental_institution:0 "Instrumental Institution"
+magiks_gov_instrumental_institution_desc:0 "After a fierce debate on the position of music and celebrities in politics, it was decided by popular vote that those in power must wield great musical talent."
 
- magiks_gov_harmonious_court:0 "Harmonious Court"
- magiks_gov_harmonious_court_desc:0 "After rampant pollution of our world both chemically and culturally, one family stepped up with a plan to live in harmony with the world, in every way imaginable."
+magiks_gov_harmonious_court:0 "Harmonious Court"
+magiks_gov_harmonious_court_desc:0 "After rampant pollution of our world both chemically and culturally, one family stepped up with a plan to live in harmony with the world, in every way imaginable."
 
- magiks_gov_harmonious_gathering:0 "Harmonious Gathering"
- magiks_gov_harmonious_gathering_desc:0 "After rampant pollution of our world both chemically and culturally, a council was formed to ensure the survival of our world and species. Through their guidance we restored our planet, and our culture, coming to peace with ourselves"
+magiks_gov_harmonious_gathering:0 "Harmonious Gathering"
+magiks_gov_harmonious_gathering_desc:0 "After rampant pollution of our world both chemically and culturally, a council was formed to ensure the survival of our world and species. Through their guidance we restored our planet, and our culture, coming to peace with ourselves"
 
- magiks_gov_harmonious_democracy:0 "Harmonious Democracy"
- magiks_gov_harmonious_democracy_desc:0 "After rampant pollution of our world both chemically and culturally, our people came together to form a new type of government, based on the public's common desire for a more harmonious relationship with nature."
+magiks_gov_harmonious_democracy:0 "Harmonious Democracy"
+magiks_gov_harmonious_democracy_desc:0 "After rampant pollution of our world both chemically and culturally, our people came together to form a new type of government, based on the public's common desire for a more harmonious relationship with nature."
 
- magiks_gov_magical_monarchy:0 "Magical Monarchy"
- magiks_gov_magical_monarchy_desc:0 "After centuries of war between the various empires of our world, one monarch, who possesed immense and powerful magics, came to dominate over all, and their genetic line continues to rule to this day, and into the future."
+magiks_gov_magical_monarchy:0 "Magical Monarchy"
+magiks_gov_magical_monarchy_desc:0 "After centuries of war between the various empires of our world, one monarch, who possesed immense and powerful magics, came to dominate over all, and their genetic line continues to rule to this day, and into the future."
 
- magiks_gov_dark_dictatorship:0 "Dark Dictatorship"
- magiks_gov_dark_dictatorship_desc:0 "After centuries of war between the various empires of our world, one monarch, who possesed immense and powerful dark magics, came to dominate over all. Never having children themselves, it became tradition for the title of ruler to be decided at the death of the previous ruler, as apointed by popular vote."
+magiks_gov_dark_dictatorship:0 "Dark Dictatorship"
+magiks_gov_dark_dictatorship_desc:0 "After centuries of war between the various empires of our world, one monarch, who possesed immense and powerful dark magics, came to dominate over all. Never having children themselves, it became tradition for the title of ruler to be decided at the death of the previous ruler, as apointed by popular vote."
 
 #####################
 # Empire Name Parts
@@ -221,6 +269,7 @@ tr_magicka_finish_magocracy:0 "Magicka Traditions Finished"
 tr_magicka_finish_hive_mind:0 "Magicka Traditions Finished"
 tr_magicka_finish_machine:0 "Magicka Traditions Finished"
 
+tr_magicka_adopt_desc:0 "Our newfound powers have enabled us to move further down this path and enabled us to research tech faster than ever!"
 tr_magicka_finish_desc:0 "Unlock leader potential: Raises leader skill levels by §G+3§!.\nThe government changes to §H$magiks_gov_magocracy$§! authority and gains random civics in place of the current ones, as well as the §H$magiks_civic_ascended_mages$§! civic.\nAscension Perks Unlocked: §G+1§!"
 tr_magicka_finish_magocracy_desc:0 "Unlock leader potential: Raises leader skill levels by §G+4§!.\nAscension Perks Unlocked: §G+1§!"
 tr_magicka_finish_hive_mind_desc:0 "Unlock leader potential: Raises leader skill levels by §G+3§!. Gains the §H$magiks_hive_mind_civic_shared_mana$§! civic.\nAscension Perks Unlocked: §G+1§!"
@@ -258,54 +307,58 @@ magiks_machine_civic_gifted_souls_desc:0 "Mana permeates these mechanical beings
 # Origins
 # ####################
 
- magiks_origin_magical_lineages:0 "Magical Lineages"
- magiks_origin_magical_lineages_desc:0 "Powerful sorcerer bloodlines have long taken positions of power over their less magically gifted kin. This has led to great houses based on magical blood to hold great power and sway in this nation."
+magiks_origin_magical_lineages:0 "Magical Lineages"
+magiks_origin_magical_lineages_desc:0 "Powerful sorcerer bloodlines have long taken positions of power over their less magically gifted kin. This has led to great houses based on magical blood to hold great power and sway in this nation."
 
- magiks_machine_origin_waifu_bots:0 "Waifu Bots"
- magiks_machine_origin_waifu_bots_desc:0 "Through extensive species-wide reconditioning, these machines have manged to convert their creators into one single culture, designed specially for pleasure and compliance. Strangely enough, due to it's 'perfect design', said machines have become a bit obsessed with it themselves."
+magiks_machine_origin_waifu_bots:0 "Waifu Bots"
+magiks_machine_origin_waifu_bots_desc:0 "Through extensive species-wide reconditioning, these machines have manged to convert their creators into one single culture, designed specially for pleasure and compliance. Strangely enough, due to it's 'perfect design', said machines have become a bit obsessed with it themselves."
 
- magiks_origin_duelistic_magics:0 "Duelistic Magics"
- magiks_origin_duelistic_magics_desc:0 "The world has evolved two seperate but equally magical species, who, even though they united long ago, share a deep and somewhat friendly rivalry between eachother."
- magiks_origin_duelistic_magics_secondary_species:0 "Magical Rivals"
- magiks_origin_duelistic_magics_effects:0 "Start the game with 4 Pops being of another codominant species."
+magiks_origin_duelistic_magics:0 "Duelistic Magics"
+magiks_origin_duelistic_magics_desc:0 "The world has evolved two seperate but equally magical species, who, even though they united long ago, share a deep and somewhat friendly rivalry between eachother."
+magiks_origin_duelistic_magics_secondary_species:0 "Magical Rivals"
+magiks_origin_duelistic_magics_effects:0 "Start the game with 4 Pops being of another codominant species."
 
- magiks_origin_reunited_siblings:0 "Reunited Siblings"
- magiks_origin_reunited_siblings_desc:0 "Long ago, the primary species of this world, worried about their souls being harvested, banished the other species into a large cavern, isolating them from the outside world. Only recently have the two reunited, having to now share their futures together."
- magiks_origin_reunited_siblings_secondary_species:0 "Cave Dwellers"
- magiks_origin_reunited_siblings_effects:0 "Start the game with 2 Pops being of another codominant species."
+magiks_origin_reunited_siblings:0 "Reunited Siblings"
+magiks_origin_reunited_siblings_desc:0 "Long ago, the primary species of this world, worried about their souls being harvested, banished the other species into a large cavern, isolating them from the outside world. Only recently have the two reunited, having to now share their futures together."
+magiks_origin_reunited_siblings_secondary_species:0 "Cave Dwellers"
+magiks_origin_reunited_siblings_effects:0 "Start the game with 2 Pops being of another codominant species."
 
- magiks_origin_world_of_legend:0 "World of Legend"
- magiks_origin_world_of_legend_desc:0 "One of myth and legend, the homeworld of this species is a magic-filled paradise, whether they have the talent to apreciate it or not."
+magiks_origin_world_of_legend:0 "World of Legend"
+magiks_origin_world_of_legend_desc:0 "One of myth and legend, the homeworld of this species is a magic-filled paradise, whether they have the talent to apreciate it or not."
 
- magiks_origin_drained_survivors:0 "Drained Survivors"
- magiks_origin_drained_survivors_desc:0 "After years of draining the energy from our world, it finally gave out, leading to a miserable poverty-filled and disunited existance. After finally breaking free from the iron grip of our latest tyrants, we united under one flag, and are now more dedicated than ever before to travel to the stars, hoping to one day fix the world we came from."
+magiks_origin_drained_survivors:0 "Drained Survivors"
+magiks_origin_drained_survivors_desc:0 "After years of draining the energy from our world, it finally gave out, leading to a miserable poverty-filled and disunited existance. After finally breaking free from the iron grip of our latest tyrants, we united under one flag, and are now more dedicated than ever before to travel to the stars, hoping to one day fix the world we came from."
 
- magiks_origin_dark_cultists:0 "Dark Cultists"
- magiks_origin_dark_cultists_desc:0 "Originally created from a belief that the forces of darkness would bring great fortune, this society commited mass-atrocities and genocide at the request of their dark religion. However, that was long ago, and while more modern reforms have greatly reduced the unethical treatment caused by the people's beliefs, the roots are still present, and cause great distrust among other spiritualists."
+magiks_origin_dark_cultists:0 "Dark Cultists"
+magiks_origin_dark_cultists_desc:0 "Originally created from a belief that the forces of darkness would bring great fortune, this society commited mass-atrocities and genocide at the request of their dark religion. However, that was long ago, and while more modern reforms have greatly reduced the unethical treatment caused by the people's beliefs, the roots are still present, and cause great distrust among other spiritualists."
 
- magiks_origin_dragon_kinship:0 "Dragon Kinship"
- magiks_origin_dragon_kinship_desc:0 "This homeworld is shared between a magical civilization and a space-faring dragon. Eventually after a long time, the dragon has been tamed and serves under the command of the dragon tamers."
+magiks_origin_dragon_kinship:0 "Dragon Kinship"
+magiks_origin_dragon_kinship_desc:0 "This homeworld is shared between a magical civilization and a space-faring dragon. Eventually after a long time, the dragon has been tamed and serves under the command of the dragon tamers."
 
- magiks_origin_geomancers:0 "Geomancers"
- magiks_origin_geomancers_desc:0 "This world belongs to a magical species who have mastered the art of bending the earth and stone to their will. They have achieved the ability to create golems, creatures of rocks, whose purpose is to serve their masters."
+magiks_origin_geomancers:0 "Geomancers"
+magiks_origin_geomancers_desc:0 "This world belongs to a magical species who have mastered the art of bending the earth and stone to their will. They have achieved the ability to create golems, creatures of rocks, whose purpose is to serve their masters."
 
- magiks_origin_eldritch_children:0 "Eldritch Children"
- magiks_origin_eldritch_children_desc:0 "Long ago, this species was influenced by an eldritch being, forever influenced by its presence. Even when this being is long since chalked up to fairytales and myths. They must endure to find their purpose and reconnect with destiny."
+magiks_origin_eldritch_children:0 "Eldritch Children"
+magiks_origin_eldritch_children_desc:0 "Long ago, this species was influenced by an eldritch being, forever influenced by its presence. Even when this being is long since chalked up to fairytales and myths. They must endure to find their purpose and reconnect with destiny."
 
- FantasticalMagiks_organ_plural:0 "REPLACE_ME"
- FantasticalMagiks_hand_plural:0 "REPLACE_ME"
- FantasticalMagiks_ear_plural:0 "REPLACE_ME"
- FantasticalMagiks_tooth_plural:0 "REPLACE_ME"
- FantasticalMagiks_fossil_plural:0 "REPLACE_ME"
- FantasticalMagiks_remnant_plural:0 "REPLACE_ME"
- name_list_Drakiel:0 "REPLACE_ME"
- Aerisia:0 "REPLACE_ME"
- Aeris:0 "REPLACE_ME"
- TIE:0 "REPLACE_ME"
+FantasticalMagiks_organ_plural:0 "REPLACE_ME"
+FantasticalMagiks_hand_plural:0 "REPLACE_ME"
+FantasticalMagiks_ear_plural:0 "REPLACE_ME"
+FantasticalMagiks_tooth_plural:0 "REPLACE_ME"
+FantasticalMagiks_fossil_plural:0 "REPLACE_ME"
+FantasticalMagiks_remnant_plural:0 "REPLACE_ME"
+name_list_Drakiel:0 "Drakiel"
+name_list_ELVISH:0 "Elvish"
+Aerisia:0 "Aerisia"
+Aeris:0 "Aeris"
+TIE:0 "TIE"
+DRA:0 "DRA"
 
 # ####################
 # Misc
 # ####################
+
+magikal_ruler_trait:0 "§YMagikal §vRuler Trait§!"
 
 magiks_decision_hyperlane_found_desc:0 "Found suitable Hyperlane from [From.GetName] to [This.GetName]!"
 
@@ -370,22 +423,83 @@ magiks_dvast_engineering_deposit:0 ""
 magiks_dimmense_engineering_deposit:0 ""
 d_manacite_1:0 ""
 
- magiks_descisions_build_construct:0 "REPLACE_ME"
- magiks_descisions_build_construct_desc:0 "REPLACE_ME"
- magiks_descisions_create_hyperlane_general:0 "REPLACE_ME"
- magiks_descisions_create_hyperlane_general_desc:0 "REPLACE_ME"
- elderly_tiyanki_key:0 "REPLACE_ME"
- magiks_leader_trait_fire:0 "Fire"
- magiks_leader_trait_fire_desc:0 "Passive ability: Increase fire rate"
- magiks_leader_trait_ice:0 "Ice"
- magiks_leader_trait_ice_desc:0 "Passive ability: Increase ship armor"
- magiks_leader_trait_earth:0 "Earth"
- magiks_leader_trait_earth_desc:0 "Passive ability: Increase terraforming speed and decrease cost"
- magiks_leader_trait_electric:0 "Electric"
- magiks_leader_trait_electric_desc:0 "Passive ability: Increase energy production"
- magiks_leader_trait_water:0 "Water"
- magiks_leader_trait_water_desc:0 "Passive ability: Increase food production"
- magiks_leader_trait_metal:0 "Metal"
- magiks_leader_trait_metal_desc:0 "Passive ability: Increase alloy and consumer goods production"
- magiks_leader_trait_illusion:0 "Illusion"
- magiks_leader_trait_illusion_desc:0 "Passive ability: Increase encryption and decryption abilities"
+magiks_descisions_build_construct:0 "Build Contruct"
+magiks_descisions_build_construct_desc:0 "Create a contruct to assist and work any available job on this planet."
+elderly_tiyanki_key:0 "Elderly Tiyanki"
+magiks_leader_trait_fire:0 "Fire"
+magiks_leader_trait_fire_desc:0 "Passive ability: Increase armor and shield damage"
+magiks_leader_trait_ice:0 "Ice"
+magiks_leader_trait_ice_desc:0 "Passive ability: Increase ship armor and shield"
+magiks_leader_trait_earth:0 "Earth"
+magiks_leader_trait_earth_desc:0 "Passive ability: Increase terraforming speed and decrease cost"
+magiks_leader_trait_electric:0 "Electric"
+magiks_leader_trait_electric_desc:0 "Passive ability: Increase energy production and decrease upkeep"
+magiks_leader_trait_water:0 "Water"
+magiks_leader_trait_water_desc:0 "Passive ability: Increase food and energy production"
+magiks_leader_trait_metal:0 "Metal"
+magiks_leader_trait_metal_desc:0 "Passive ability: Increase alloy and consumer goods production"
+magiks_leader_trait_illusion:0 "Illusion"
+magiks_leader_trait_illusion_desc:0 "Passive ability: Increase encryption and decryption abilities"
+magiks_leader_trait_air:0 "Air"
+magiks_leader_trait_air_desc:0 "Passive ability: Increase survey and ship speed"
+magiks_leader_trait_life:0 "Life"
+magiks_leader_trait_life_desc:0 "Passive ability: Increase food and mineral production"
+
+
+#  magiks_dmineral_deposit_desc:0 "REPLACE_ME"
+#  magiks_drich_mineral_deposit_desc:0 "REPLACE_ME"
+#  magiks_dvast_mineral_deposit_desc:0 "REPLACE_ME"
+#  magiks_dimmense_mineral_deposit_desc:0 "REPLACE_ME"
+#  magiks_dmineral_energy_deposit_desc:0 "REPLACE_ME"
+#  magiks_drich_mineral_energy_deposit_desc:0 "REPLACE_ME"
+#  magiks_dmineral_food_deposit_desc:0 "REPLACE_ME"
+#  magiks_drich_food_mineral_deposit_desc:0 "REPLACE_ME"
+#  magiks_denergy_deposit_desc:0 "REPLACE_ME"
+#  magiks_drich_energy_deposit_desc:0 "REPLACE_ME"
+#  magiks_dvast_energy_deposit_desc:0 "REPLACE_ME"
+#  magiks_dimmense_energy_deposit_desc:0 "REPLACE_ME"
+#  magiks_dfarmland_deposit_desc:0 "REPLACE_ME"
+#  magiks_drich_farmland_deposit_desc:0 "REPLACE_ME"
+#  magiks_dvast_farmland_deposit_desc:0 "REPLACE_ME"
+#  magiks_dimmense_farmland_deposit_desc:0 "REPLACE_ME"
+#  magiks_dsociety_deposit_desc:0 "REPLACE_ME"
+#  magiks_drich_society_deposit_desc:0 "REPLACE_ME"
+#  magiks_dvast_society_deposit_desc:0 "REPLACE_ME"
+#  magiks_dimmense_society_deposit_desc:0 "REPLACE_ME"
+#  magiks_dphysics_deposit_desc:0 "REPLACE_ME"
+#  magiks_drich_physics_deposit_desc:0 "REPLACE_ME"
+#  magiks_dvast_physics_deposit_desc:0 "REPLACE_ME"
+#  magiks_dimmense_physics_deposit_desc:0 "REPLACE_ME"
+#  magiks_dengineering_deposit_desc:0 "REPLACE_ME"
+#  magiks_drich_engineering_deposit_desc:0 "REPLACE_ME"
+#  magiks_dvast_engineering_deposit_desc:0 "REPLACE_ME"
+#  magiks_dimmense_engineering_deposit_desc:0 "REPLACE_ME"
+#  d_manacite_1_desc:0 "REPLACE_ME"
+#  magiks_Grand_Dragon:0 "Grand Dragon"
+
+#####################
+# Events
+#####################
+
+magiks_event.100.a:0 "An offering to the dark lord!"
+magiks_event.100.b:0 "We don't have resources. We must retreat!"
+magiks_event.100.c:0 "We will bring down the matriarch!"
+
+magiks_event.105.a:0 "Let us feed the dragon!"
+magiks_event.105.b:0 "We don't have resources. We must retreat!"
+magiks_event.105.c:0 "Dragons are no match for us!"
+
+#####################
+# Components
+#####################
+
+ARCANE_MISSILE:0 "Arcane Missile"
+MYSTIC_BEAM:0 "Mystic Beam"
+ENCHANTED_CANNON:0 "Enchanted Cannon"
+
+SMALL_ARCANE_MISSILE:0 "Small Arcane Missile"
+SMALL_MYSTIC_BEAM:0 "Small Mystic Beam"
+MEDIUM_MYSTIC_BEAM:0 "Medium Mystic Beam"
+SMALL_ENCHANTED_CANNON:0 "Small Enchanted Cannon"
+MEDIUM_ENCHANTED_CANNON:0 "Medium Enchanted Cannon"
+LARGE_ENCHANTED_CANNON:0 "Large Enchanted Cannon"

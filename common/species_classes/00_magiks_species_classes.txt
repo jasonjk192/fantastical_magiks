@@ -3,10 +3,10 @@ FantasticalMagiks = {
 
 	possible = { authority = { NOT = { value = auth_machine_intelligence text = SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE } } }
 
-	portraits = {
-		"tiefling"
-		"dragonborn"
-	}
+	# portraits = {
+	# 	"tiefling"
+	# 	"dragonborn"
+	# }
 	graphical_culture = magiks_01
 	move_pop_sound_effect = "moving_pop_confirmation"
 }

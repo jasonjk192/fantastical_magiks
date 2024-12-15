@@ -1,0 +1,7 @@
+entity = {
+	name = "magiks_tiefling_portrait_entity"
+}
+
+entity = {
+	name = "magiks_dragonborn_portrait_entity"
+}

@@ -1,0 +1,13 @@
+# artifact = {
+#     name = "my_relic"
+#     icon = "gfx/interface/icons/relics/my_relic.dds"
+#     activation_duration = 3650
+#     activation_tooltip = "my_relic_tooltip"
+#     activation_sound = "my_relic_sound"
+#     activation_effect = {
+#         add_modifier = {
+#             modifier = "my_relic_modifier"
+#             days = 3650
+#         }
+#     }
+# }

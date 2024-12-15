@@ -1,0 +1,341 @@
+﻿ELVISH = {
+    alias = "Elvish"
+    category = FantasticalMagiks
+
+    ship_names = {
+        generic = {
+            DEF_ScorpionSting
+            DEF_FiendishSkewer
+            DEF_Windwhisper
+            DEF_HarpysHeartstrings
+            DEF_HolyMessenger
+            DEF_ScourgeoftheForest
+            DEF_SweetLadyPain
+            DEF_Skyshatter
+            DEF_RangersRevenge
+            DEF_ArcofDestruction
+            DEF_ImpendingDoom
+            DEF_RoughlyHewnTreebow
+            DEF_BowyersOpus
+            DEF_Appleseeker
+            DEF_WickedPuncturer
+        }
+        corvette = {
+            DEF_Persuader
+            DEF_Tiebreaker
+            DEF_DirePromise
+            DEF_Lament
+            DEF_Howler
+            DEF_PerditionsEdge
+            DEF_YoungHunter
+        }
+        destroyer = {
+            DEF_IgnisFatis
+            DEF_Constania
+            DEF_PericulaLudus
+            DEF_CurtainCall
+        }
+        cruiser = {
+            DEF_Xenophage
+            DEF_Duality
+            DEF_Anarchy
+            DEF_Riskrunner
+        }
+        battleship = {
+            DEF_Conqueror
+            DEF_Skyfire
+            DEF_Skyscorher
+            DEF_MeteorShower
+        }
+        titan = {
+            DEF_Pariah
+            DEF_Purgatory
+            DEF_CursedCurveofCerunnos
+            DEF_ValkyriesFlight
+        }
+        colossus = {
+            DEF_Calamity
+            DEF_WickedHunterofTheHunt
+        }
+        constructor = {
+            DEF_Solarflare
+            DEF_Dreamshadow
+            DEF_Dawnlight
+            DEF_Prophecy
+        }
+        colonizer = {
+            DEF_TheBlazingSun
+            DEF_GuardiansCage
+            DEF_LightningJewel
+        }
+        science = {
+            DEF_UnbrokenManacles
+            DEF_CompassoftheTracklessSea
+            DEF_AlchemistsRunes
+            DEF_FatesHorn
+            DEF_DivineElixir
+        }
+        transport = {
+            DEF_AeriesBlessing
+            DEF_WildingsMercy
+            DEF_ArchoftheAngel
+            DEF_TravellingFang
+        }
+        military_station_small = {
+            DEF_Nexus
+            DEF_Glimmer
+        }
+        ion_cannon = {
+            DEF_Phantomsong
+            DEF_Torchlight
+        }
+    }
+    fleet_names = {
+        sequential_name = DEF_xxDagger_SEQ
+    }
+    army_names = {
+        machine_defense = {
+        }
+        machine_assault_1 = {
+        }
+        machine_assault_2 = {
+        }
+        machine_assault_3 = {
+        }
+        defense_army = {
+            sequential_name = DEF_xxElvishGuard_SEQ
+        }
+        assault_army = {
+            sequential_name = DEF_xxElvishMarines_SEQ
+        }
+        slave_army = {
+            sequential_name = DEF_xxIndenturedElves_SEQ
+        }
+        clone_army = {
+            sequential_name = DEF_xxCloneArmy_SEQ
+        }
+        undead_army = {
+        }
+        robotic_army = {
+            sequential_name = DEF_xxHunter-KillerGroup_SEQ
+        }
+        robotic_defense_army = {
+            sequential_name = DEF_xxGroundDefenseMatrix_SEQ
+        }
+        psionic_army = {
+            sequential_name = DEF_xxPsionicSpecialForces_SEQ
+        }
+        xenomorph_army = {
+            sequential_name = DEF_xxXenomorphicDivision_SEQ
+        }
+        gene_warrior_army = {
+            sequential_name = DEF_xxEnhancedSpecialForces_SEQ
+        }
+        occupation_army = {
+            sequential_name = DEF_xxElvishSecurityForces_SEQ
+        }
+        robotic_occupation_army = {
+        }
+        primitive_army = {
+        }
+        industrial_army = {
+        }
+        postatomic_army = {
+            sequential_name = DEF_xxElvishGuard_SEQ
+        }
+    }
+    planet_names = {
+        generic = {
+            names = {
+                DEF_Elvelume
+                DEF_IsanaEsari
+                DEF_LelvaBelanore
+                DEF_Fyllmelle
+                DEF_NythlaThaloreMathanahil
+                DEF_InyveLenora
+                DEF_Olyanaes
+                DEF_Nytfrius
+                DEF_OmyfeThalore
+                DEF_Lerretfha
+                DEF_QuinaludunKith
+                DEF_Larandel
+                DEF_Ikaesiluth
+                DEF_ArivaealudunKith
+                DEF_GlangruLaeth
+                DEF_Arivaeagh
+                DEF_Lanidel
+                DEF_NilasaselDrannor
+                DEF_Daraelh
+                DEF_Rairun
+                DEF_MaetrazaethenQuor
+                DEF_ElaludunMellath
+                DEF_Kyrefha
+            }
+        }
+        pc_desert ={             names = {}}
+        pc_tropical ={             names = {}}
+        pc_arid ={             names = {}}
+        pc_continental ={             names = {}}
+        pc_ocean = {            names = {}}
+        pc_tundra = {            names = {}}
+        pc_arctic = {            names = {}}
+        pc_savannah = {            names = {}}
+        pc_alpine = {            names = {}}
+        pc_nuked = {            names = {}}
+    }
+    character_names = {
+        names1 = {
+            weight = 100
+            first_names_male = {
+                DEF_Sudryl
+                DEF_Ceadar
+                DEF_Paeris
+                DEF_Galuil
+                DEF_Haell
+                DEF_Rivvikyn
+                DEF_Barauil
+                DEF_Haluil
+                DEF_Halbor
+                DEF_Cluym
+                DEF_Aran
+                DEF_Orris
+                DEF_Cymbiir
+                DEF_Inialos
+                DEF_Cererindur
+                DEF_Aethon
+                DEF_Ravaphine
+                DEF_Selmer
+                DEF_Ievos
+                DEF_Corym
+                DEF_Eladan
+                DEF_Faelyn
+                DEF_Yrauos
+                DEF_Cluym
+                DEF_Cererindur
+                DEF_Iliathorr
+                DEF_Gael
+                DEF_Selakiir
+                DEF_Dakath
+                DEF_Bialaer
+            }
+            first_names_female = {
+                DEF_Eiresti
+                DEF_Kaeda
+                DEF_Mailia
+                DEF_Iriel
+                DEF_Elaria
+                DEF_Irgil
+                DEF_Morriel
+                DEF_Galadhel
+                DEF_Viansola
+                DEF_Glynnii
+                DEF_Alais
+                DEF_Hironna
+                DEF_Eiraira
+                DEF_Nuovis
+                DEF_Shesha
+                DEF_Tiaela
+                DEF_Nuesti
+                DEF_Ardis
+                DEF_Saelihn
+                DEF_Nimel
+                DEF_Haela
+                DEF_Nasha
+                DEF_Idril
+                DEF_Elora
+                DEF_Eilsha
+                DEF_Melriel
+                DEF_Haela
+                DEF_Tarasynora
+                DEF_Edhelraen
+                DEF_Hirnesa
+            }
+            first_names = {}
+            second_names = {
+                DEF_Pernan
+                DEF_Cardithas
+                DEF_Quilen
+                DEF_Balxisys
+                DEF_Petthyra
+                DEF_Perceran
+                DEF_Aravaris
+                DEF_Heidan
+                DEF_Kearalei
+                DEF_Ilihana
+                DEF_Chaeneiros
+                DEF_Keacan
+                DEF_Uriqen
+                DEF_Fathana
+                DEF_Shaydark
+                DEF_Valqen
+                DEF_Favaris
+                DEF_Keymenor
+                DEF_Ercaryn
+                DEF_Eilpetor
+                DEF_Valsatra
+                DEF_Waesberos
+                DEF_Shamoira
+                DEF_Wynsys
+                DEF_Ralokrana
+                DEF_Vamaer
+                DEF_Trisleth
+                DEF_Phiroris
+                DEF_Elzeiros
+                DEF_Wynjyre
+                DEF_Qinnelis
+                DEF_Genthyra
+                DEF_Chaewenys
+                DEF_Lorabalar
+                DEF_Wynmoira
+                DEF_Leorie
+                DEF_Tortumal
+                DEF_Trapetor
+                DEF_Urizana
+                DEF_Aeqirelle
+            }
+            regnal_first_names_female = {
+                DEF_Eilae
+                DEF_Andanor
+                DEF_Melwen
+                DEF_Firela
+                DEF_Ardis
+                DEF_Tiaesti
+                DEF_Shefel
+                DEF_Ialantha
+                DEF_Iriel
+                DEF_Allannia
+                DEF_Idril
+                DEF_Alea
+                DEF_Nuesti
+                DEF_Dolel
+                DEF_Edhelgil
+            }
+            regnal_first_names_male = {
+                DEF_Lindor
+                DEF_Helion
+                DEF_Ylyndar
+                DEF_Mythanthar
+                DEF_Amrod
+                DEF_Ylyndar
+                DEF_Mithrandir
+                DEF_Quaeth
+                DEF_Ailmar
+                DEF_Amadar
+                DEF_Aelrindel
+                DEF_Eldaernth
+                DEF_Baraion
+                DEF_Jhaan
+                DEF_Intevar
+                DEF_Curuion
+                DEF_Mythanthar
+                DEF_Ulrod
+                DEF_Cluym
+                DEF_Aegrandir
+            }
+            regnal_second_names = {}
+            full_names_male = {}
+            full_names_female = {}
+        }
+    }
+}
+

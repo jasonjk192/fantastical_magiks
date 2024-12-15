@@ -15,7 +15,6 @@ mana_infused = {
 	planet_jobs_physics_research_produces_mult = -0.40
 	planet_jobs_society_research_produces_mult = -0.40
 	
-	
 	icon = "gfx/interface/icons/planet_modifiers/magiks_mana_infused.dds"
 	icon_frame = 1
 }
@@ -54,3 +53,5 @@ magiks_dragons_tamed = {
 	icon = "gfx/interface/icons/planet_modifiers/magiks_dragons_tamed.dds"
 	icon_frame = 1
 }
+
+##################

@@ -9,6 +9,8 @@
 #		and also create 'x' number of options (and disable them accordingly if the systems aren't found)
 ######################################################################################################
 
+@maxEuclideanDistance = 800
+
 ### Creation ###
 
 magiks_find_neighbours_for_hyperlane_creation = {
@@ -16,7 +18,7 @@ magiks_find_neighbours_for_hyperlane_creation = {
 		limit = {
 			distance = {
 				source = PREV
-				max_distance <= 800
+				max_distance <= @maxEuclideanDistance
 				type = euclidean
 				same_solar_system = no
 			}
@@ -32,7 +34,7 @@ magiks_find_neighbours_for_hyperlane_creation_ordered_by_distance = {
 		limit = {
 			distance = {
 				source = PREV
-				max_distance <= 800
+				max_distance <= @maxEuclideanDistance
 				type = euclidean
 				same_solar_system = no
 			}
@@ -42,7 +44,22 @@ magiks_find_neighbours_for_hyperlane_creation_ordered_by_distance = {
 		position = $POSITION$
 		order_by = trigger:distance_to_core_percent
 		inverse = yes
-		save_event_target_as = $TARGET$
+		
+		if = {
+			limit = {
+				distance = {
+					source = PREV
+					max_distance <= @maxEuclideanDistance
+					type = euclidean
+					same_solar_system = no
+				}
+				is_inside_border = PREV.owner
+				NOT = { has_hyperlane_to = PREV }	
+			 }
+			hidden_effect = {
+				save_event_target_as = $TARGET$
+			}
+		}	
 	}
 }
 
@@ -51,7 +68,7 @@ magiks_find_neighbours_for_hyperlane_creation_into_unowned_space = {
 		limit = {
 			distance = {
 				source = PREV
-				max_distance <= 800
+				max_distance <= @maxEuclideanDistance
 				type = euclidean
 				same_solar_system = no
 			}
@@ -66,26 +83,41 @@ magiks_find_neighbours_for_hyperlane_creation_into_unowned_space = {
 
 magiks_find_neighbours_for_hyperlane_creation_into_unowned_space_ordered_by_distance = {
 	ordered_neighbor_system_euclidean = {
-		set_variable = {
-			which = distance_to_neighbour
-			value = 999
-		}
 		limit = {
 			distance = {
 				source = PREV
-				max_distance <= 800
+				max_distance <= @maxEuclideanDistance
 				type = euclidean
 				same_solar_system = no
 			}
 			NOR = {
 				has_hyperlane_to = PREV
 				is_inside_border = PREV.owner
-			}		
-		}
+			}	
+			
+			}
+		
 		position = $POSITION$
 		order_by = trigger:num_planets_in_system
 		inverse = yes
-		save_event_target_as = $TARGET$
+
+		if = {
+			limit = {
+				distance = {
+					source = PREV
+					max_distance <= @maxEuclideanDistance
+					type = euclidean
+					same_solar_system = no
+				}
+				NOR = {
+					has_hyperlane_to = PREV
+					is_inside_border = PREV.owner
+				}	
+			 }
+			hidden_effect = {
+				save_event_target_as = $TARGET$
+			}
+		}	
 	}
 }
 
@@ -96,7 +128,7 @@ magiks_find_neighbours_for_hyperlane_removal = {
 		limit = {
 			distance = {
 				source = PREV
-				max_distance <= 800
+				max_distance <= @maxEuclideanDistance
 				type = euclidean
 				same_solar_system = no
 			}
@@ -116,7 +148,7 @@ magiks_find_neighbours_for_hyperlane_removal_ordered_by_distance = {
 		limit = {
 			distance = {
 				source = PREV
-				max_distance <= 800
+				max_distance <= @maxEuclideanDistance
 				type = euclidean
 				same_solar_system = no
 			}
@@ -126,7 +158,22 @@ magiks_find_neighbours_for_hyperlane_removal_ordered_by_distance = {
 		position = $POSITION$
 		order_by = distance_to_neighbour
 		inverse = yes
-		save_event_target_as = $TARGET$
+		
+		if = {
+			limit = {
+				distance = {
+					source = PREV
+					max_distance <= @maxEuclideanDistance
+					type = euclidean
+					same_solar_system = no
+				}
+				is_inside_border = PREV.owner
+				has_hyperlane_to = PREV	
+			}
+			hidden_effect = {
+				save_event_target_as = $TARGET$
+			}
+		}	
 	}
 }
 
@@ -135,7 +182,7 @@ magiks_find_neighbours_for_hyperlane_removal_into_unowned_space = {
 		limit = {
 			distance = {
 				source = PREV
-				max_distance <= 800
+				max_distance <= @maxEuclideanDistance
 				type = euclidean
 				same_solar_system = no
 			}
@@ -151,7 +198,7 @@ magiks_find_neighbours_for_hyperlane_removal_into_unowned_space_ordered_by_dista
 		limit = {
 			distance = {
 				source = PREV
-				max_distance <= 800
+				max_distance <= @maxEuclideanDistance
 				type = euclidean
 				same_solar_system = no
 			}
@@ -161,7 +208,22 @@ magiks_find_neighbours_for_hyperlane_removal_into_unowned_space_ordered_by_dista
 		position = $POSITION$
 		order_by = trigger:distance_to_core_percent
 		inverse = yes
-		save_event_target_as = $TARGET$
+		
+		if = {
+			limit = {
+				distance = {
+					source = PREV
+					max_distance <= @maxEuclideanDistance
+					type = euclidean
+					same_solar_system = no
+				}
+				NOT = { is_inside_border = PREV.owner }
+				has_hyperlane_to = PREV	
+			}
+			hidden_effect = {
+				save_event_target_as = $TARGET$
+			}
+		}	
 	}
 }
 

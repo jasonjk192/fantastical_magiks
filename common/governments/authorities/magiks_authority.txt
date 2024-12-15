@@ -1,11 +1,13 @@
 magiks_auth_magocracy = {
 	election_type = oligarchic
 	can_have_emergency_elections = yes
-	emergency_election_cost = 500
+	#emergency_election_cost = 500
 	max_election_candidates = 4
 	can_reform = yes
 
 	has_agendas = yes
+
+	ruler_council_position = councilor_ruler_dictatorial
 
 	icon = "gfx/interface/icons/governments/authorities/magiks_auth_magocracy.dds"
 	

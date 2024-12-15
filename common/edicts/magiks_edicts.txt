@@ -1,0 +1,407 @@
+magiks_magical_excavator = {
+	length = -1
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = rare_edicts
+		cost = {
+			manacite = 1
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			manacite = 1
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	modifier = {
+		ship_archaeological_site_excavation_speed_mult = 0.5
+	}
+
+	prerequisites = {
+		magiks_tech_magical_assistance
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = @EdictHighPrio
+			any_planet_within_border = {
+				is_currently_excavating_site = yes
+			}
+		}
+	}
+}
+
+magiks_teleporter = {
+	length = -1
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = rare_edicts
+		cost = {
+			manacite = 3
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			manacite = 3
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	modifier = {
+		ship_ftl_jumpdrive_range_mult = 0.5
+		ship_emergency_ftl_min_days_mult = -0.5
+	}
+
+	prerequisites = {
+		magiks_tech_magical_assistance
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = @EdictHighPrio
+			has_ethic = ethic_pacifist
+			is_in_combat = yes
+		}
+	}
+}
+
+
+magiks_booster_terraforming_gases = {
+	length = -1
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = rare_edicts
+		cost = {
+			manacite = 1
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			manacite = 1
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	modifier = {
+		terraform_speed_mult = 0.5
+	}
+
+	prerequisites = {
+		magiks_tech_magical_assistance
+	}
+
+	potential = {
+		has_resource = { type = manacite amount > 0 }
+		has_edict = terraforming_gas
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = @EdictHighPrio
+			any_planet_within_border = {
+				is_terraforming = yes
+			}
+		}
+	}
+}
+
+
+magiks_booster_fuel_gases = {
+	length = -1
+	icon = "GFX_edict_type_time"
+	is_wartime_edict = yes
+
+	resources = {
+		category = ship_edicts
+		cost = {
+			manacite = 1
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			manacite = 1
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	prerequisites = {
+		magiks_tech_magical_assistance
+	}
+
+	potential = {
+		has_resource = { type = manacite amount > 0 }
+		has_edict = fuel_gases
+	}
+
+	modifier = {
+		ship_speed_mult = 0.15
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = @EdictMedPrio
+			is_at_war = yes
+			has_resource = { type = manacite amount > 100 }
+		}
+	}
+}
+
+magiks_booster_shield_gases = {
+	length = -1
+	icon = "GFX_edict_type_time"
+	is_wartime_edict = yes
+
+	resources = {
+		category = ship_edicts
+		cost = {
+			manacite = 1
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			manacite = 1
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	prerequisites = {
+		magiks_tech_magical_assistance
+	}
+
+	potential = {
+		has_resource = { type = manacite amount > 0 }
+		has_edict = shield_gases
+	}
+
+	modifier = {
+		ship_shield_mult = 0.25
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = @EdictMedPrio
+			is_at_war = yes
+			has_resource = { type = manacite amount > 100 }
+		}
+	}
+}
+
+magiks_booster_clearing_motes = {
+	length = -1
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = rare_edicts
+		cost = {
+			manacite = 0.5
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			manacite = 0.5
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	prerequisites = {
+		magiks_tech_magical_assistance
+	}
+
+	potential = {
+		has_resource = { type = manacite amount > 0 }
+		has_edict = clearing_motes
+	}
+
+	modifier = {
+		deposit_blockers_cost_mult = -0.25
+		planet_clear_blocker_speed_mult = 0.25
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+magiks_booster_motes_kinetic = {
+	length = -1
+	icon = "GFX_edict_type_time"
+	is_wartime_edict = yes
+
+	resources = {
+		category = ship_edicts
+		cost = {
+			manacite = 1
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			manacite = 1
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	prerequisites = {
+		magiks_tech_magical_assistance
+	}
+
+	potential = {
+		has_resource = { type = manacite amount > 0 }
+		has_edict = motes_kinetic
+	}
+
+	modifier = {
+		weapon_type_kinetic_weapon_damage_mult = 0.25
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = @EdictHighPrio
+			is_at_war = yes
+			has_resource = { type = manacite amount > 100 }
+		}
+	}
+}
+
+magiks_booster_motes_explosives = {
+	length = -1
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = ship_edicts
+		cost = {
+			manacite = 1
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			manacite = 1
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	prerequisites = {
+		magiks_tech_magical_assistance
+	}
+
+	potential = {
+		has_resource = { type = manacite amount > 0 }
+		has_edict = motes_explosives
+	}
+
+	modifier = {
+		weapon_type_explosive_weapon_damage_mult = 0.25
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+magiks_booster_motes_armor = {
+	length = -1
+	icon = "GFX_edict_type_time"
+	is_wartime_edict = yes
+
+	resources = {
+		category = ship_edicts
+		cost = {
+			manacite = 1
+			multiplier = value:edict_size_effect
+		}	
+		upkeep = {
+			manacite = 1
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	prerequisites = {
+		magiks_tech_magical_assistance
+	}
+
+	potential = {
+		has_resource = { type = manacite amount > 0 }
+		has_edict = motes_armor
+	}
+
+	modifier = {
+		ship_armor_mult = 0.25
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = @EdictMedPrio
+			is_at_war = yes
+			has_resource = { type = manacite amount > 100 }
+		}
+	}
+}
+
+magiks_booster_crystalline_sensors = {
+	length = -1
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = rare_edicts
+		cost = {
+			manacite = 0.5
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			manacite = 0.5
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	prerequisites = {
+		magiks_tech_magical_assistance
+	}
+
+	potential = {
+		has_resource = { type = manacite amount > 0 }
+		has_edict = crystalline_sensors
+	}
+
+	modifier = {
+		ship_sensor_range_add = 1
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+magiks_booster_crystal_focus = {
+	length = -1
+	icon = "GFX_edict_type_time"
+	is_wartime_edict = yes
+	resources = {
+		category = ship_edicts
+		cost = {
+			manacite = 1
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			manacite = 1
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	prerequisites = {
+		magiks_tech_magical_assistance
+	}
+
+	potential = {
+		has_resource = { type = manacite amount > 0 }
+		has_edict = crystal_focus
+	}
+
+	modifier = {
+		weapon_type_energy_weapon_damage_mult = 0.25
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = @EdictHighPrio
+			is_at_war = yes
+			has_resource = { type = manacite amount > 100 }
+		}
+	}
+}

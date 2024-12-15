@@ -221,12 +221,12 @@ planet_event = {
 				THIS = {
 					exists = owner
 					OWNER = { 
-						# has_valid_civic = magiks_civic_reunited_siblings 
-						has_origin = magiks_origin_reunited_siblings 
+						has_valid_civic = magiks_civic_reunited_siblings 
+						# has_origin = magiks_origin_reunited_siblings 
 					}
 				}
 			}
-			generate_start_the_underground = yes
+			magiks_generate_start_the_underground = yes
 		}
 	}
 }

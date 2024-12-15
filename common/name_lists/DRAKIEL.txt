@@ -4,6 +4,7 @@
 DRAKIEL = {
 	# randomized = yes # Default is yes anyways
 	alias = "Drakiel"
+	category = FantasticalMagiks
 
 	ship_names = {
 		

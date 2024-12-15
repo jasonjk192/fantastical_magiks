@@ -1,0 +1,225 @@
+weapon_component_template = {
+    key = "SMALL_ARCANE_MISSILE"
+    size = small
+    type = instant
+    icon = "GFX_ship_part_arcane_missile_1"
+    icon_frame = 1
+    prerequisites = { "magiks_tech_arcane_missiles" }
+    component_set = "ARCANE_MISSILE"
+    projectile_gfx = "uv_laser_s"
+    tags = { weapon_type_energy s_slot }
+    ai_tags = { weapon_role_anti_armor gunship }
+    upgrades_to = "SMALL_MYSTIC_BEAM"
+    resources = {
+        category = ship_components
+        cost = {
+            alloys = @s_t2_cost
+			manacite = 3
+        }
+        upkeep = {
+            energy = @s_t2_upkeep_energy
+            alloys = @s_t2_upkeep_alloys
+			manacite = 1
+        }
+    }
+
+    damage = { min = 9 max = 20 }
+    power = -5
+    hull_damage = 1.25
+    shield_damage = 0.5
+    armor_damage = 1.5
+    windup = { min = 5  max = 20 }
+    range = 40
+    #cooldown = 25
+    accuracy = 0.9
+    tracking = 0.5
+    military_power_multiplier = 1.0
+}
+
+weapon_component_template = {
+    key = "SMALL_MYSTIC_BEAM"
+    size = small
+    type = instant
+    icon = "GFX_ship_part_mystic_beam_1"
+    icon_frame = 1
+    prerequisites = { "magiks_tech_mystic_beams" }
+    component_set = "MYSTIC_BEAM"
+    projectile_gfx = "uv_laser_s"
+    tags = { weapon_type_energy s_slot }
+    ai_tags = { weapon_role_anti_armor gunship }
+    upgrades_to = "SMALL_ENCHANTED_CANNON"
+    resources = {
+        category = ship_components
+        cost = {
+            alloys = @s_t2_cost
+			manacite = 5
+        }
+        upkeep = {
+            energy = @s_t2_upkeep_energy
+            alloys = @s_t2_upkeep_alloys
+			manacite = 2
+        }
+    }
+
+    damage = { min = 20 max = 60 }
+    power = -10
+    hull_damage = 1.25
+    shield_damage = 0.5
+    armor_damage = 1.5
+    windup = { min = 6  max = 24 }
+    range = 60
+    #cooldown = 30
+    accuracy = 0.9
+    tracking = 0.3
+    military_power_multiplier = 1.0
+}
+
+weapon_component_template = {
+    key = "MEDIUM_MYSTIC_BEAM"
+    size = medium
+    type = instant
+    icon = "GFX_ship_part_mystic_beam_1"
+    icon_frame = 1
+    prerequisites = { "magiks_tech_mystic_beams" }
+    component_set = "MYSTIC_BEAM"
+    projectile_gfx = "uv_laser_m"
+    tags = { weapon_type_energy m_slot }
+    ai_tags = { weapon_role_anti_armor gunship }
+    upgrades_to = "MEDIUM_ENCHANTED_CANNON"
+    resources = {
+        category = ship_components
+        cost = {
+            alloys = @m_t2_cost
+			manacite = 7
+        }
+        upkeep = {
+            energy = @m_t2_upkeep_energy
+            alloys = @m_t2_upkeep_alloys
+			manacite = 3
+        }
+    }
+
+    damage = { min = 45 max = 118 }
+    power = -15
+    hull_damage = 1.25
+    shield_damage = 0.5
+    armor_damage = 1.5
+    windup = { min = 7  max = 27 }
+    range = 80
+    #cooldown = 35
+    accuracy = 0.9
+    tracking = 0.05
+    military_power_multiplier = 1.0
+}
+
+weapon_component_template = {
+    key = "SMALL_ENCHANTED_CANNON"
+    size = small
+    type = instant
+    icon = "GFX_ship_part_enchanted_cannon_1"
+    icon_frame = 1
+    prerequisites = { "magiks_tech_enchanted_cannons" }
+    component_set = "ENCHANTED_CANNON"
+    projectile_gfx = "uv_laser_s"
+    tags = { weapon_type_energy s_slot }
+    ai_tags = { weapon_role_anti_armor gunship }
+    resources = {
+        category = ship_components
+        cost = {
+            alloys = @s_t2_cost
+			manacite = 10
+        }
+        upkeep = {
+            energy = @s_t2_upkeep_energy
+            alloys = @s_t2_upkeep_alloys
+			manacite = 4
+        }
+    }
+
+    damage = { min = 12 max = 30 }
+    power = -12
+    hull_damage = 1.25
+    shield_damage = 0.5
+    armor_damage = 1.5
+    windup = { min = 5  max = 20 }
+    range = 40
+    #cooldown = 25
+    accuracy = 0.9
+    tracking = 0.5
+    military_power_multiplier = 1.0
+}
+
+weapon_component_template = {
+    key = "MEDIUM_ENCHANTED_CANNON"
+    size = medium
+    type = instant
+    icon = "GFX_ship_part_enchanted_cannon_1"
+    icon_frame = 1
+    prerequisites = { "magiks_tech_enchanted_cannons" }
+    component_set = "ENCHANTED_CANNON"
+    projectile_gfx = "uv_laser_m"
+    tags = { weapon_type_energy m_slot }
+    ai_tags = { weapon_role_anti_armor gunship }
+    resources = {
+        category = ship_components
+        cost = {
+            alloys = @m_t2_cost
+			manacite = 15
+        }
+        upkeep = {
+            energy = @m_t2_upkeep_energy
+            alloys = @m_t2_upkeep_alloys
+			manacite = 6
+        }
+    }
+
+    damage = { min = 30 max = 72 }
+    power = -25
+    hull_damage = 1.25
+    shield_damage = 0.5
+    armor_damage = 1.5
+    windup = { min = 6  max = 24 }
+    range = 60
+    #cooldown = 30
+    accuracy = 0.9
+    tracking = 0.3
+    military_power_multiplier = 1.0
+}
+
+weapon_component_template = {
+    key = "LARGE_ENCHANTED_CANNON"
+    size = large
+    type = instant
+    icon = "GFX_ship_part_enchanted_cannon_1"
+    icon_frame = 1
+    prerequisites = { "magiks_tech_enchanted_cannons" }
+    component_set = "ENCHANTED_CANNON"
+    projectile_gfx = "uv_laser_l"
+    tags = { weapon_type_energy l_slot }
+    ai_tags = { weapon_role_anti_armor gunship }
+    resources = {
+        category = ship_components
+        cost = {
+            alloys = @l_t2_cost
+			manacite = 20
+        }
+        upkeep = {
+            energy = @l_t2_upkeep_energy
+            alloys = @l_t2_upkeep_alloys
+			manacite = 8
+        }
+    }
+
+    damage = { min = 60 max = 150 }
+    power = -35
+    hull_damage = 1.25
+    shield_damage = 0.5
+    armor_damage = 1.5
+    windup = { min = 7  max = 27 }
+    range = 80
+    #cooldown = 35
+    accuracy = 0.9
+    tracking = 0.05
+    military_power_multiplier = 1.0
+}
+

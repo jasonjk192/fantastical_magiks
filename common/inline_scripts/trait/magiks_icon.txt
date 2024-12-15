@@ -1,0 +1,14 @@
+custom_subtitle = magikal_ruler_trait
+icon = {
+	layer = {
+		icon = "GFX_trait_bg"
+		color = "trait_bg_default"
+	}
+	inline_script = trait/icon_element/rarity_magikal
+	layer = {
+		icon = $ICON$
+	}
+	inline_script = trait/icon_element/tier_$TIER$
+}
+leader_trait_rarity = $RARITY$
+#sorting_priority = @trait_sorting_priority_$RARITY$_$COUNCIL$_$TIER$

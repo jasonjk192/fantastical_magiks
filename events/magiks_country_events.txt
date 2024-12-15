@@ -1,0 +1,129 @@
+namespace = magiks_country
+
+###################################
+# Simple Events
+###################################
+
+country_event = {
+    id = magiks_country.1
+    title = "Arcane Surge"
+    desc = "An unexpected surge of arcane energy has swept through our empire §H[this.GetName]§! boosting the magical abilities of our citizens. This surge is seen as a blessing from the arcane realms."
+    picture = GFX_evt_atmospheric_entry
+    show_sound = event_mystic_reveal
+
+    mean_time_to_happen = { months = 600 }
+
+    trigger = {
+        has_authority = magiks_auth_magocracy
+        NOT = { has_country_flag = magik_country_event_1_triggered }
+    }
+
+    immediate = { set_country_flag = magik_country_event_1_triggered }
+
+    option = {
+        name = "Empowering!"
+        add_monthly_resource_mult = {
+            resource = unity
+            value = @tier1unityreward
+            min = 10
+            max = 40
+        }
+    }
+}
+
+country_event = {
+    id = magiks_country.2
+    title = "Celestial Convergence"
+    desc = "A rare celestial event has aligned the stars in a way that enhances the magical abilities of our people. Our leader,§H[this.GetRulerName]§!, believes that this convergence will bring great fortune and power to our empire."
+    picture = GFX_evt_atmospheric_entry
+    show_sound = event_mystic_reveal
+
+    mean_time_to_happen = { months = 800 }
+
+    trigger = {
+        has_authority = magiks_auth_magocracy
+        NOT = { has_country_flag = magik_country_event_2_triggered }
+    }
+
+    immediate = { set_country_flag = magik_country_event_2_triggered }
+
+    option = {
+        name = "Inspiring!"
+        add_monthly_resource_mult = {
+            resource = unity
+            value = @tier1unityreward
+            min = 40
+            max = 160
+        }
+    }
+}
+
+country_event = {
+    id = magiks_country.3
+    title = "Mystic Revelation"
+    desc = "A group of mystics has uncovered ancient knowledge that could revolutionize our understanding of magic. This revelation has the potential to greatly enhance our magical capabilities."
+    picture = GFX_evt_atmospheric_entry
+    show_sound = event_mystic_reveal
+
+    mean_time_to_happen = { months = 1200 }
+
+    trigger = {
+        has_authority = magiks_auth_magocracy
+        NOT = { has_country_flag = magik_country_event_3_triggered }
+    }
+
+    immediate = { set_country_flag = magik_country_event_3_triggered }
+
+    option = {
+        name = "Enlightening!"
+        add_monthly_resource_mult = {
+            resource = unity
+            value = @tier1unityreward
+            min = 100
+            max = 400
+        }
+    }
+}
+
+country_event = {
+	id = magiks_country.100
+	title = "The Mysterious Leylines"
+	desc = "Our mystics have felt a strange disturbance in the leylines. The origin of this disturbance is still unknown, but it could hold some potential or disaster for our empire."
+	picture = GFX_evt_atmospheric_entry
+	show_sound = event_mystic_reveal
+
+	mean_time_to_happen = { months = 750 }
+
+    trigger = {
+        has_authority = magiks_auth_magocracy
+        NOT = { has_country_flag = magik_country_event_100_triggered }
+    }
+
+    immediate = { set_country_flag = magik_country_event_100_triggered }
+
+    option = {
+        name = "This is a serious matter. We must find out the source immediately"
+		allow = {
+			this = { 
+				has_resource = { type = energy amount >= 1000 } 
+				has_resource = { type = influence amount >= 5 } 
+			}
+		}
+		add_resource = {
+			energy = -1000
+			influence = -5
+		}
+		hidden_effect = {
+			random_owned_planet = {
+				limit = { num_pops > 0 }
+				planet_event = {
+					id = magiks_event.10
+					days = 30
+				}
+			}
+		}	
+    }
+	option = {
+        name = "Disturbance in the leylines is rare but not surprising. We should'nt concern with such trivial matters"
+    }
+}

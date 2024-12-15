@@ -1,0 +1,125 @@
+give_ruler_magik_trait = {
+	if = { limit = { exists = ruler }
+		ruler = {
+			# Checks if they already have an inactive trait
+			if = { limit = { has_leader_flag = magiks_leader_trait_earth_inactive }
+				remove_leader_flag = magiks_leader_trait_earth_inactive
+				add_trait = magiks_leader_trait_earth
+			}
+			else_if = { limit = { has_leader_flag = magiks_leader_trait_fire_inactive }
+				remove_leader_flag = magiks_leader_trait_fire_inactive
+				add_trait = magiks_leader_trait_fire
+			}
+			else_if = { limit = { has_leader_flag = magiks_leader_trait_ice_inactive }
+				remove_leader_flag = magiks_leader_trait_ice_inactive
+				add_trait = magiks_leader_trait_ice
+			}
+			else_if = { limit = { has_leader_flag = magiks_leader_trait_electric_inactive }
+				remove_leader_flag = magiks_leader_trait_electric_inactive
+				add_trait = magiks_leader_trait_electric
+			}
+			else_if = { limit = { has_leader_flag = magiks_leader_trait_water_inactive }
+				remove_leader_flag = magiks_leader_trait_water_inactive
+				add_trait = magiks_leader_trait_water
+			}
+			else_if = { limit = { has_leader_flag = magiks_leader_trait_metal_inactive }
+				remove_leader_flag = magiks_leader_trait_metal_inactive
+				add_trait = magiks_leader_trait_metal
+			}
+			else_if = { limit = { has_leader_flag = magiks_leader_trait_illusion_inactive }
+				remove_leader_flag = magiks_leader_trait_illusion_inactive
+				add_trait = magiks_leader_trait_illusion
+			}
+			else_if = { limit = { species = { has_trait = magiks_trait_firebender } }
+				add_trait = magiks_leader_trait_fire
+			}
+			else_if = { limit = { species = { has_trait = magiks_trait_airbender } }
+				add_trait = magiks_leader_trait_air
+			}
+			else_if = { limit = { species = { has_trait = magiks_trait_earthbender } }
+				add_trait = magiks_leader_trait_earth
+			}
+			else_if = { limit = { species = { has_trait = magiks_trait_waterbender } }
+				add_trait = magiks_leader_trait_water
+			}
+			else_if = { limit = { species = { has_trait = magiks_trait_lifebender } }
+				add_trait = magiks_leader_trait_life
+			}
+
+			# Assign new one
+			else = {
+				random_list = {
+					10 = { add_trait = magiks_leader_trait_earth }
+					10 = { add_trait = magiks_leader_trait_fire }
+					10 = { add_trait = magiks_leader_trait_ice }
+					10 = { add_trait = magiks_leader_trait_electric }
+					10 = { add_trait = magiks_leader_trait_water }
+					10 = { add_trait = magiks_leader_trait_metal }
+					10 = { add_trait = magiks_leader_trait_illusion }
+					10 = { add_trait = magiks_leader_trait_air }
+					10 = { add_trait = magiks_leader_trait_life }
+				}
+				set_variable = { which = magiks_leader_trait_exp value = 0 }
+			}
+		}
+	}
+}
+
+disable_ruler_magik_trait = {
+	if = { limit = { exists = ruler }
+		ruler = {
+			if = { limit = { has_trait = magiks_leader_trait_earth }
+				remove_trait = magiks_leader_trait_earth
+				set_leader_flag = magiks_leader_trait_earth_inactive
+			}
+			else_if = { limit = { has_trait = magiks_leader_trait_fire }
+				remove_trait = magiks_leader_trait_fire
+				set_leader_flag = magiks_leader_trait_fire_inactive
+			}
+			else_if = { limit = { has_trait = magiks_leader_trait_ice }
+				remove_trait = magiks_leader_trait_ice
+				set_leader_flag = magiks_leader_trait_ice_inactive
+			}
+			else_if = { limit = { has_trait = magiks_leader_trait_electric }
+				remove_trait = magiks_leader_trait_electric
+				set_leader_flag = magiks_leader_trait_electric_inactive
+			}
+			else_if = { limit = { has_trait = magiks_leader_trait_water }
+				remove_trait = magiks_leader_trait_water
+				set_leader_flag = magiks_leader_trait_water_inactive
+			}
+			else_if = { limit = { has_trait = magiks_leader_trait_metal }
+				remove_trait = magiks_leader_trait_metal
+				set_leader_flag = magiks_leader_trait_metal_inactive
+			}
+			else_if = { limit = { has_trait = magiks_leader_trait_illusion }
+				remove_trait = magiks_leader_trait_illusion
+				set_leader_flag = magiks_leader_trait_illusion_inactive
+			}
+			else_if = { limit = { has_trait = magiks_leader_trait_air }
+				remove_trait = magiks_leader_trait_air
+				set_leader_flag = magiks_leader_trait_air_inactive
+			}
+			else_if = { limit = { has_trait = magiks_leader_trait_life }
+				remove_trait = magiks_leader_trait_life
+				set_leader_flag = magiks_leader_trait_life_inactive
+			}
+		}
+	}
+}
+
+remove_ruler_magik_trait = {
+	if = { limit = { exists = ruler }
+		ruler = {
+			remove_trait = magiks_leader_trait_earth
+			remove_trait = magiks_leader_trait_fire 
+			remove_trait = magiks_leader_trait_ice 
+			remove_trait = magiks_leader_trait_electric 
+			remove_trait = magiks_leader_trait_water 
+			remove_trait = magiks_leader_trait_metal 
+			remove_trait = magiks_leader_trait_illusion 
+			remove_trait = magiks_leader_trait_air
+			remove_trait = magiks_leader_trait_life
+		}
+	}
+}

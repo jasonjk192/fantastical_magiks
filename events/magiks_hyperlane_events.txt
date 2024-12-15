@@ -1,0 +1,818 @@
+namespace = magiks_hyperlane_event
+
+### Hyperlane Events ###
+
+#-- Creation (Not Found Event) [ID 5]
+system_event = {
+	id = magiks_hyperlane_event.5
+	title = BLANK_STRING
+	picture = GFX_evt_hyperlane
+	desc = magiks_event_hyperlane_no_system_found_desc
+	is_triggered_only = yes
+	option = {
+		name = UNFORTUNATE
+	}
+}
+
+#-- Deletion (Not Found Event) [ID 7]
+system_event = {
+	id = magiks_hyperlane_event.7
+	title = BLANK_STRING
+	picture = GFX_evt_hyperlane
+	desc = magiks_event_hyperlane_no_system_found_desc
+	is_triggered_only = yes
+	option = {
+		name = UNFORTUNATE
+	}
+}
+
+#-- Still here for educational purpose (Mainly coz me dum dum sumtimes)
+###########################################################################################################
+#-- Creates within own border [ID 4]
+system_event = {
+	id = magiks_hyperlane_event.4
+	title = BLANK_STRING
+	picture = GFX_evt_hyperlane
+	desc = magiks_decision_hyperlane_found_desc
+	is_triggered_only = yes
+	option = {
+		name = LETS_START
+		custom_tooltip = magiks_event_hyperlane_in_border_resource_fail
+		allow = {
+			space_owner = {
+				has_resource = {
+					type = energy
+					amount >= 1000
+				}
+				has_resource = {
+					type = manacite
+					amount >= 50
+				}
+				has_resource = {
+					type = influence
+					amount >= 1
+				}
+			}
+		}
+		hidden_effect = {
+			add_hyperlane = {
+				from = From.solar_system
+				to = This
+			}
+			space_owner = {
+				add_resource = {
+					energy = -1000
+					manacite = -50
+					influence = -1
+				}
+			}
+		} 
+	}
+	option = {
+		name = NEVERMIND
+	}
+}
+#-- Deletes within own border [ID 6]
+system_event = {
+	id = magiks_hyperlane_event.6
+	title = BLANK_STRING
+	picture = GFX_evt_hyperlane
+	desc = magiks_decision_hyperlane_found_desc
+	is_triggered_only = yes
+	option = {
+		name = COMMENCE_REMOVAL
+		custom_tooltip = magiks_event_hyperlane_in_border_resource_fail
+		allow = {
+			space_owner = {
+				has_resource = {
+					type = energy
+					amount >= 1000
+				}
+				has_resource = {
+					type = manacite
+					amount >= 50
+				}
+				has_resource = {
+					type = influence
+					amount >= 1
+				}
+			}
+		}
+		hidden_effect = {
+			remove_hyperlane = {
+				from = From.solar_system
+				to = This
+			}
+			space_owner = {
+				add_resource = {
+					energy = -1000
+					manacite = -50
+					influence = -1
+				}
+			}
+		} 
+	}
+	option = {
+		name = NEVERMIND
+	}
+}
+#-- Creates out of border (One at a time, very inconvenient and random) [ID 8]
+system_event = {
+	id = magiks_hyperlane_event.8
+	title = BLANK_STRING
+	picture = GFX_evt_hyperlane
+	desc = magiks_decision_hyperlane_found_desc
+	is_triggered_only = yes
+	option = {
+		name = LETS_START
+		custom_tooltip = magiks_event_hyperlane_out_border_resource_fail
+		allow = {
+			space_owner = {
+				has_resource = {
+					type = energy
+					amount >= 2500
+				}
+				has_resource = {
+					type = manacite
+					amount >= 150
+				}
+				has_resource = {
+					type = influence
+					amount >= 4
+				}
+			}
+		}
+		hidden_effect = {
+			add_hyperlane = {
+				from = From.solar_system
+				to = This
+			}
+			space_owner = {
+				add_resource = {
+					energy = -1000
+					manacite = -50
+					influence = -1
+				}
+			}
+			From = {
+				if = {
+					limit = { exists = space_owner }
+					space_owner = {
+						#log = "Space Owner: [This.GetName] PrevPrev: [PrevPrev.GetName] PrevPrevspace_owner: [PrevPrev.space_owner.GetName]"
+						add_opinion_modifier = {
+							who = PrevPrev.space_owner
+							modifier = triggered_opinion_disapprove_of_hyperlane_manipulation
+						}
+					}
+				}
+			}
+		} 
+	}
+	option = {
+		name = NEVERMIND
+	}
+}
+#-- Deletes out of border (One at a time, very inconvenient and random) [ID 9]
+system_event = {
+	id = magiks_hyperlane_event.9
+	title = BLANK_STRING
+	picture = GFX_evt_hyperlane
+	desc = magiks_decision_hyperlane_found_desc
+	is_triggered_only = yes
+	option = {
+		name = LETS_START
+		custom_tooltip = magiks_event_hyperlane_out_border_resource_fail
+		allow = {
+			space_owner = {
+				has_resource = {
+					type = energy
+					amount >= 2500
+				}
+				has_resource = {
+					type = manacite
+					amount >= 150
+				}
+				has_resource = {
+					type = influence
+					amount >= 4
+				}
+			}
+		}
+		hidden_effect = {
+			remove_hyperlane = {
+				from = From.solar_system
+				to = This
+			}
+			space_owner = {
+				add_resource = {
+					energy = -1000
+					manacite = -50
+					influence = -1
+				}
+			}
+			From = {
+				if = {
+					limit = { exists = space_owner }
+					space_owner = {
+						#log = "Space Owner: [This.GetName] PrevPrev: [PrevPrev.GetName] PrevPrevspace_owner: [PrevPrev.space_owner.GetName]"
+						add_opinion_modifier = {
+							who = PrevPrev.space_owner
+							modifier = triggered_opinion_disapprove_of_hyperlane_manipulation
+						}
+					}
+				}
+			}
+		} 
+	}
+	option = {
+		name = NEVERMIND
+	}
+}
+###########################################################################################################
+
+#-- Creates within own border (Waaaaay Better) [ID 12]
+system_event = {
+	id = magiks_hyperlane_event.12
+	title = BLANK_STRING
+	picture = GFX_evt_hyperlane
+	desc = magiks_event_hyperlane_create_found_desc
+	is_triggered_only = yes
+	option = {
+		name = magiks_event_hyperlane_system_0_owner_system
+		trigger = { exists = event_target:magiks_hyperlane_system_0 }
+		custom_tooltip = magiks_event_hyperlane_in_border_resource_fail
+		allow = {
+			space_owner = {
+				has_resource = { type = energy amount >= 1000 }
+				has_resource = { type = manacite amount >= 50 }
+				has_resource = { type = influence amount >= 1 }
+			}
+		}
+		hidden_effect = {
+			magiks_events_hyperlane_create_hidden_effect_in_border = {
+				FROM_SYS = event_target:magiks_hyperlane_system_0
+				THIS_SYS = this
+			}
+		}
+	}
+	option = {
+		name = magiks_event_hyperlane_system_1_owner_system
+		trigger = { exists = event_target:magiks_hyperlane_system_1 }
+		custom_tooltip = magiks_event_hyperlane_in_border_resource_fail
+		allow = {
+			space_owner = {
+				has_resource = { type = energy amount >= 1000 }
+				has_resource = { type = manacite amount >= 50 }
+				has_resource = { type = influence amount >= 1 }
+			}
+		}
+		hidden_effect = {
+			magiks_events_hyperlane_create_hidden_effect_in_border = {
+				FROM_SYS = event_target:magiks_hyperlane_system_1
+				THIS_SYS = this
+			}
+		}
+	}
+	option = {
+		name = magiks_event_hyperlane_system_2_owner_system
+		trigger = { exists = event_target:magiks_hyperlane_system_2 }
+		custom_tooltip = magiks_event_hyperlane_in_border_resource_fail
+		allow = {
+			space_owner = {
+				has_resource = { type = energy amount >= 1000 }
+				has_resource = { type = manacite amount >= 50 }
+				has_resource = { type = influence amount >= 1 }
+			}
+		}
+		hidden_effect = {
+			magiks_events_hyperlane_create_hidden_effect_in_border = {
+				FROM_SYS = event_target:magiks_hyperlane_system_2
+				THIS_SYS = this
+			}
+		}
+	}
+	option = {
+		name = magiks_event_hyperlane_system_3_owner_system
+		trigger = { exists = event_target:magiks_hyperlane_system_3 }
+		custom_tooltip = magiks_event_hyperlane_in_border_resource_fail
+		allow = {
+			space_owner = {
+				has_resource = { type = energy amount >= 1000 }
+				has_resource = { type = manacite amount >= 50 }
+				has_resource = { type = influence amount >= 1 }
+			}
+		}
+		hidden_effect = {
+			magiks_events_hyperlane_create_hidden_effect_in_border = {
+				FROM_SYS = event_target:magiks_hyperlane_system_3
+				THIS_SYS = this
+			}
+		}
+	}
+	option = {
+		name = magiks_event_hyperlane_system_4_owner_system
+		trigger = { exists = event_target:magiks_hyperlane_system_4 }
+		custom_tooltip = magiks_event_hyperlane_in_border_resource_fail
+		allow = {
+			space_owner = {
+				has_resource = { type = energy amount >= 1000 }
+				has_resource = { type = manacite amount >= 50 }
+				has_resource = { type = influence amount >= 1 }
+			}
+		}
+		hidden_effect = {
+			magiks_events_hyperlane_create_hidden_effect_in_border = {
+				FROM_SYS = event_target:magiks_hyperlane_system_4
+				THIS_SYS = this
+			}
+		}
+	}
+	option = {
+		name = NEVERMIND
+	}
+}
+
+#-- Deletes within own border (Waaaaay Better) [ID 13]
+system_event = {
+	id = magiks_hyperlane_event.13
+	title = BLANK_STRING
+	picture = GFX_evt_hyperlane
+	desc = magiks_event_hyperlane_remove_found_desc
+	is_triggered_only = yes
+	option = {
+		name = magiks_event_hyperlane_system_0_owner_system
+		trigger = { exists = event_target:magiks_hyperlane_system_0 }
+		custom_tooltip = magiks_event_hyperlane_in_border_resource_fail
+		allow = {
+			space_owner = {
+				has_resource = { type = energy amount >= 1000 }
+				has_resource = { type = manacite amount >= 50 }
+				has_resource = { type = influence amount >= 1 }
+			}
+		}
+		hidden_effect = {
+			magiks_events_hyperlane_remove_hidden_effect_in_border = {
+				FROM_SYS = event_target:magiks_hyperlane_system_0
+				THIS_SYS = this
+			}
+		}
+	}
+	option = {
+		name = magiks_event_hyperlane_system_1_owner_system
+		trigger = { exists = event_target:magiks_hyperlane_system_1 }
+		custom_tooltip = magiks_event_hyperlane_in_border_resource_fail
+		allow = {
+			space_owner = {
+				has_resource = { type = energy amount >= 1000 }
+				has_resource = { type = manacite amount >= 50 }
+				has_resource = { type = influence amount >= 1 }
+			}
+		}
+		hidden_effect = {
+			magiks_events_hyperlane_remove_hidden_effect_in_border = {
+				FROM_SYS = event_target:magiks_hyperlane_system_1
+				THIS_SYS = this
+			}
+		}
+	}
+	option = {
+		name = magiks_event_hyperlane_system_2_owner_system
+		trigger = { exists = event_target:magiks_hyperlane_system_2 }
+		custom_tooltip = magiks_event_hyperlane_in_border_resource_fail
+		allow = {
+			space_owner = {
+				has_resource = { type = energy amount >= 1000 }
+				has_resource = { type = manacite amount >= 50 }
+				has_resource = { type = influence amount >= 1 }
+			}
+		}
+		hidden_effect = {
+			magiks_events_hyperlane_remove_hidden_effect_in_border = {
+				FROM_SYS = event_target:magiks_hyperlane_system_2
+				THIS_SYS = this
+			}
+		}
+	}
+	option = {
+		name = magiks_event_hyperlane_system_3_owner_system
+		trigger = { exists = event_target:magiks_hyperlane_system_3 }
+		custom_tooltip = magiks_event_hyperlane_in_border_resource_fail
+		allow = {
+			space_owner = {
+				has_resource = { type = energy amount >= 1000 }
+				has_resource = { type = manacite amount >= 50 }
+				has_resource = { type = influence amount >= 1 }
+			}
+		}
+		hidden_effect = {
+			magiks_events_hyperlane_remove_hidden_effect_in_border = {
+				FROM_SYS = event_target:magiks_hyperlane_system_3
+				THIS_SYS = this
+			}
+		}
+	}
+	option = {
+		name = magiks_event_hyperlane_system_4_owner_system
+		trigger = { exists = event_target:magiks_hyperlane_system_4 }
+		custom_tooltip = magiks_event_hyperlane_in_border_resource_fail
+		allow = {
+			space_owner = {
+				has_resource = { type = energy amount >= 1000 }
+				has_resource = { type = manacite amount >= 50 }
+				has_resource = { type = influence amount >= 1 }
+			}
+		}
+		hidden_effect = {
+			magiks_events_hyperlane_remove_hidden_effect_in_border = {
+				FROM_SYS = event_target:magiks_hyperlane_system_4
+				THIS_SYS = this
+			}
+		}
+	}
+	option = {
+		name = NEVERMIND
+	}
+}
+
+#-- Creates out of border (Waaaaay Better) [ID 10]
+system_event = {
+	id = magiks_hyperlane_event.10
+	title = BLANK_STRING
+	picture = GFX_evt_hyperlane
+	desc = magiks_event_hyperlane_create_found_desc
+	is_triggered_only = yes
+	option = {
+		name = {
+			trigger = { exists = event_target:magiks_hyperlane_system_0.space_owner }
+			text = magiks_event_hyperlane_system_0_claimed
+		}
+		name = {
+			trigger = { NOT = { exists = event_target:magiks_hyperlane_system_0.space_owner } }
+			text = magiks_event_hyperlane_system_0_unclaimed
+		}
+		trigger = { 
+			exists = event_target:magiks_hyperlane_system_0 
+		}
+		custom_tooltip = magiks_event_hyperlane_out_border_resource_fail
+		allow = {
+			space_owner = {
+				has_resource = { type = energy amount >= 2500 }
+				has_resource = { type = manacite amount >= 150 }
+				has_resource = { type = influence amount >= 4 }
+			}
+		}
+
+		if = {
+			limit = { exists = event_target:magiks_hyperlane_system_0.space_owner }
+			event_target:magiks_hyperlane_system_0.space_owner = {
+				add_opinion_modifier = {
+					who = THIS
+					modifier = triggered_opinion_disapprove_of_hyperlane_manipulation
+				}
+			}
+		}
+
+		hidden_effect = {
+			magiks_events_hyperlane_create_hidden_effect_out_border = {
+				FROM_SYS = event_target:magiks_hyperlane_system_0
+				THIS_SYS = this
+			}
+		}
+	}
+	option = {
+		name = {
+			trigger = { exists = event_target:magiks_hyperlane_system_1.space_owner }
+			text = magiks_event_hyperlane_system_1_claimed
+		}
+		name = {
+			trigger = { NOT = { exists = event_target:magiks_hyperlane_system_1.space_owner } }
+			text = magiks_event_hyperlane_system_1_unclaimed
+		}
+		trigger = { 
+			exists = event_target:magiks_hyperlane_system_1	
+		}
+		custom_tooltip = magiks_event_hyperlane_out_border_resource_fail
+		allow = {
+			space_owner = {
+				has_resource = { type = energy amount >= 2500 }
+				has_resource = { type = manacite amount >= 150 }
+				has_resource = { type = influence amount >= 4 }
+			}
+		}
+
+		if = {
+			limit = { exists = event_target:magiks_hyperlane_system_1.space_owner }
+			event_target:magiks_hyperlane_system_1.space_owner = {
+				add_opinion_modifier = {
+					who = THIS
+					modifier = triggered_opinion_disapprove_of_hyperlane_manipulation
+				}
+			}
+		}
+
+		hidden_effect = {
+			magiks_events_hyperlane_create_hidden_effect_out_border = {
+				FROM_SYS = event_target:magiks_hyperlane_system_1
+				THIS_SYS = this
+			}
+		}
+	}
+	option = {
+		name = {
+			trigger = { exists = event_target:magiks_hyperlane_system_2.space_owner }
+			text = magiks_event_hyperlane_system_2_claimed
+		}
+		name = {
+			trigger = { NOT = { exists = event_target:magiks_hyperlane_system_2.space_owner } }
+			text = magiks_event_hyperlane_system_2_unclaimed
+		}
+		trigger = { 
+			exists = event_target:magiks_hyperlane_system_2	
+		}
+		custom_tooltip = magiks_event_hyperlane_out_border_resource_fail
+		allow = {
+			space_owner = {
+				has_resource = { type = energy amount >= 2500 }
+				has_resource = { type = manacite amount >= 150 }
+				has_resource = { type = influence amount >= 4 }
+			}
+		}
+		if = {
+			limit = { exists = event_target:magiks_hyperlane_system_2.space_owner }
+			event_target:magiks_hyperlane_system_2.space_owner = {
+				add_opinion_modifier = {
+					who = THIS
+					modifier = triggered_opinion_disapprove_of_hyperlane_manipulation
+				}
+			}
+		}
+		hidden_effect = {
+			magiks_events_hyperlane_create_hidden_effect_out_border = {
+				FROM_SYS = event_target:magiks_hyperlane_system_2
+				THIS_SYS = this
+			}
+		}
+	}
+	option = {
+		name = {
+			trigger = { exists = event_target:magiks_hyperlane_system_3.space_owner }
+			text = magiks_event_hyperlane_system_3_claimed
+		}
+		name = {
+			trigger = { NOT = { exists = event_target:magiks_hyperlane_system_3.space_owner } }
+			text = magiks_event_hyperlane_system_3_unclaimed
+		}
+		trigger = { 
+			exists = event_target:magiks_hyperlane_system_3	
+		}
+		custom_tooltip = magiks_event_hyperlane_out_border_resource_fail
+		allow = {
+			space_owner = {
+				has_resource = { type = energy amount >= 2500 }
+				has_resource = { type = manacite amount >= 150 }
+				has_resource = { type = influence amount >= 4 }
+			}
+		}
+		if = {
+			limit = { exists = event_target:magiks_hyperlane_system_3.space_owner }
+			event_target:magiks_hyperlane_system_3.space_owner = {
+				add_opinion_modifier = {
+					who = THIS
+					modifier = triggered_opinion_disapprove_of_hyperlane_manipulation
+				}
+			}
+		}
+		hidden_effect = {
+			magiks_events_hyperlane_create_hidden_effect_out_border = {
+				FROM_SYS = event_target:magiks_hyperlane_system_3
+				THIS_SYS = this
+			}
+		}
+	}
+	option = {
+		name = {
+			trigger = { exists = event_target:magiks_hyperlane_system_4.space_owner }
+			text = magiks_event_hyperlane_system_4_claimed
+		}
+		name = {
+			trigger = { NOT = { exists = event_target:magiks_hyperlane_system_4.space_owner } }
+			text = magiks_event_hyperlane_system_4_unclaimed
+		}
+		trigger = { 
+			exists = event_target:magiks_hyperlane_system_4 
+		}
+		custom_tooltip = magiks_event_hyperlane_out_border_resource_fail
+		allow = {
+			space_owner = {
+				has_resource = { type = energy amount >= 2500 }
+				has_resource = { type = manacite amount >= 150 }
+				has_resource = { type = influence amount >= 4 }
+			}
+		}
+		if = {
+			limit = { exists = event_target:magiks_hyperlane_system_4.space_owner }
+			event_target:magiks_hyperlane_system_4.space_owner = {
+				add_opinion_modifier = {
+					who = THIS
+					modifier = triggered_opinion_disapprove_of_hyperlane_manipulation
+				}
+			}
+		}
+		hidden_effect = {
+			magiks_events_hyperlane_create_hidden_effect_out_border = {
+				FROM_SYS = event_target:magiks_hyperlane_system_4
+				THIS_SYS = this
+			}
+		}
+	}
+	option = {
+		name = NEVERMIND
+
+		hidden_effect = {
+		}
+	}
+
+	
+}
+
+#-- Deletes out of border (Waaaaay Better) [ID 11]
+system_event = {
+	id = magiks_hyperlane_event.11
+	title = BLANK_STRING
+	picture = GFX_evt_hyperlane
+	desc = magiks_event_hyperlane_remove_found_desc
+	is_triggered_only = yes
+	option = {
+		name = {
+			trigger = { exists = event_target:magiks_hyperlane_system_0.solar_system.space_owner }
+			text = magiks_event_hyperlane_system_0_claimed
+		}
+		name = {
+			trigger = { NOT = { exists = event_target:magiks_hyperlane_system_0.solar_system.space_owner } }
+			text = magiks_event_hyperlane_system_0_unclaimed
+		}
+		trigger = { exists = event_target:magiks_hyperlane_system_0 }
+		custom_tooltip = magiks_event_hyperlane_out_border_resource_fail
+		allow = {
+			space_owner = {
+				has_resource = { type = energy amount >= 2500 }
+				has_resource = { type = manacite amount >= 150 }
+				has_resource = { type = influence amount >= 4 }
+			}
+		}
+		if = {
+			limit = { exists = event_target:magiks_hyperlane_system_0.solar_system.space_owner }
+			event_target:magiks_hyperlane_system_0.solar_system.space_owner = {
+				add_opinion_modifier = {
+					who = THIS
+					modifier = triggered_opinion_disapprove_of_hyperlane_manipulation
+				}
+			}
+		}
+		hidden_effect = {
+			magiks_events_hyperlane_remove_hidden_effect_out_border = {
+				FROM_SYS = event_target:magiks_hyperlane_system_0
+				THIS_SYS = this
+			}
+		}
+	}
+	option = {
+		name = {
+			trigger = { exists = event_target:magiks_hyperlane_system_1.solar_system.space_owner }
+			text = magiks_event_hyperlane_system_1_claimed
+		}
+		name = {
+			trigger = { NOT = { exists = event_target:magiks_hyperlane_system_1.solar_system.space_owner } }
+			text = magiks_event_hyperlane_system_1_unclaimed
+		}
+		trigger = { exists = event_target:magiks_hyperlane_system_1 }
+		custom_tooltip = magiks_event_hyperlane_out_border_resource_fail
+		allow = {
+			space_owner = {
+				has_resource = { type = energy amount >= 2500 }
+				has_resource = { type = manacite amount >= 150 }
+				has_resource = { type = influence amount >= 4 }
+			}
+		}
+		if = {
+			limit = { exists = event_target:magiks_hyperlane_system_1.solar_system.space_owner }
+			event_target:magiks_hyperlane_system_1.solar_system.space_owner = {
+				add_opinion_modifier = {
+					who = THIS
+					modifier = triggered_opinion_disapprove_of_hyperlane_manipulation
+				}
+			}
+		}
+		hidden_effect = {
+			magiks_events_hyperlane_remove_hidden_effect_out_border = {
+				FROM_SYS = event_target:magiks_hyperlane_system_1
+				THIS_SYS = this
+			}
+		}
+	}
+	option = {
+		name = {
+			trigger = { exists = event_target:magiks_hyperlane_system_2.solar_system.space_owner }
+			text = magiks_event_hyperlane_system_2_claimed
+		}
+		name = {
+			trigger = { NOT = { exists = event_target:magiks_hyperlane_system_2.solar_system.space_owner } }
+			text = magiks_event_hyperlane_system_2_unclaimed
+		}
+		trigger = { exists = event_target:magiks_hyperlane_system_2 }
+		custom_tooltip = magiks_event_hyperlane_out_border_resource_fail
+		allow = {
+			space_owner = {
+				has_resource = { type = energy amount >= 2500 }
+				has_resource = { type = manacite amount >= 150 }
+				has_resource = { type = influence amount >= 4 }
+			}
+		}
+		if = {
+			limit = { exists = event_target:magiks_hyperlane_system_2.solar_system.space_owner }
+			event_target:magiks_hyperlane_system_2.solar_system.space_owner = {
+				add_opinion_modifier = {
+					who = THIS
+					modifier = triggered_opinion_disapprove_of_hyperlane_manipulation
+				}
+			}
+		}
+		hidden_effect = {
+			magiks_events_hyperlane_remove_hidden_effect_out_border = {
+				FROM_SYS = event_target:magiks_hyperlane_system_2
+				THIS_SYS = this
+			}
+		}
+	}
+	option = {
+		name = {
+			trigger = { exists = event_target:magiks_hyperlane_system_3.solar_system.space_owner }
+			text = magiks_event_hyperlane_system_3_claimed
+		}
+		name = {
+			trigger = { NOT = { exists = event_target:magiks_hyperlane_system_3.solar_system.space_owner } }
+			text = magiks_event_hyperlane_system_3_unclaimed
+		}
+		trigger = { exists = event_target:magiks_hyperlane_system_3 }
+		custom_tooltip = magiks_event_hyperlane_out_border_resource_fail
+		allow = {
+			space_owner = {
+				has_resource = { type = energy amount >= 2500 }
+				has_resource = { type = manacite amount >= 150 }
+				has_resource = { type = influence amount >= 4 }
+			}
+		}
+		if = {
+			limit = { exists = event_target:magiks_hyperlane_system_3.solar_system.space_owner }
+			event_target:magiks_hyperlane_system_3.solar_system.space_owner = {
+				add_opinion_modifier = {
+					who = THIS
+					modifier = triggered_opinion_disapprove_of_hyperlane_manipulation
+				}
+			}
+		}
+		hidden_effect = {
+			magiks_events_hyperlane_remove_hidden_effect_out_border = {
+				FROM_SYS = event_target:magiks_hyperlane_system_3
+				THIS_SYS = this
+			}
+		}
+	}
+	option = {
+		name = {
+			trigger = { exists = event_target:magiks_hyperlane_system_4.solar_system.space_owner }
+			text = magiks_event_hyperlane_system_4_claimed
+		}
+		name = {
+			trigger = { NOT = { exists = event_target:magiks_hyperlane_system_4.solar_system.space_owner } }
+			text = magiks_event_hyperlane_system_4_unclaimed
+		}
+		trigger = { exists = event_target:magiks_hyperlane_system_4 }
+		custom_tooltip = magiks_event_hyperlane_out_border_resource_fail
+		allow = {
+			space_owner = {
+				has_resource = { type = energy amount >= 2500 }
+				has_resource = { type = manacite amount >= 150 }
+				has_resource = { type = influence amount >= 4 }
+			}
+		}
+		if = {
+			limit = { exists = event_target:magiks_hyperlane_system_4.solar_system.space_owner }
+			event_target:magiks_hyperlane_system_4.solar_system.space_owner = {
+				add_opinion_modifier = {
+					who = THIS
+					modifier = triggered_opinion_disapprove_of_hyperlane_manipulation
+				}
+			}
+		}
+		hidden_effect = {
+			magiks_events_hyperlane_remove_hidden_effect_out_border = {
+				FROM_SYS = event_target:magiks_hyperlane_system_4
+				THIS_SYS = this
+			}
+		}
+	}
+	option = {
+		name = NEVERMIND
+	}
+}

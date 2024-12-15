@@ -114,3 +114,75 @@ spriteTypes = {
 		alwaystransparent = yes
 	}
 }
+
+# ####################
+# Traits
+# ####################
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_magiks_leader_trait_fire"
+		texturefile = "gfx/interface/icons/traits/leader_traits/magiks_leader_trait_fire.dds"
+	}
+
+	spriteType = {
+		name = "GFX_magiks_leader_trait_water"
+		texturefile = "gfx/interface/icons/traits/leader_traits/magiks_leader_trait_water.dds"
+	}
+
+	spriteType = {
+		name = "GFX_magiks_leader_trait_ice"
+		texturefile = "gfx/interface/icons/traits/leader_traits/magiks_leader_trait_ice.dds"
+	}
+
+	spriteType = {
+		name = "GFX_magiks_leader_trait_electric"
+		texturefile = "gfx/interface/icons/traits/leader_traits/magiks_leader_trait_electric.dds"
+	}
+
+	spriteType = {
+		name = "GFX_magiks_leader_trait_metal"
+		texturefile = "gfx/interface/icons/traits/leader_traits/magiks_leader_trait_metal.dds"
+	}
+
+	spriteType = {
+		name = "GFX_magiks_leader_trait_earth"
+		texturefile = "gfx/interface/icons/traits/leader_traits/magiks_leader_trait_earth.dds"
+	}
+
+	spriteType = {
+		name = "GFX_magiks_leader_trait_illusion"
+		texturefile = "gfx/interface/icons/traits/leader_traits/magiks_leader_trait_illusion.dds"
+	}
+
+	spriteType = {
+		name = "GFX_magiks_leader_trait_air"
+		texturefile = "gfx/interface/icons/traits/leader_traits/magiks_leader_trait_air.dds"
+	}
+
+	spriteType = {
+		name = "GFX_magiks_leader_trait_life"
+		texturefile = "gfx/interface/icons/traits/leader_traits/magiks_leader_trait_life.dds"
+	}
+}
+
+# ####################
+# Components
+# ####################
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ship_part_arcane_missile_1"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_arcane_missile_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_mystic_beam_1"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_mystic_beam_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_enchanted_cannon_1"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_enchanted_cannon_1.dds"
+	}
+}

@@ -23,24 +23,24 @@ magiks_gov_band_bureaucracy = {
 	ruler_title = RT_COORDINATOR
 	ruler_title_female = RT_COORDINATOR_FEMALE
 
-	election_candidates = {
-		modifier = {
-			add = 100
-			leader_class = ruler
-		}
-		modifier = {
-			add = 10
-			OR = {
-				leader_class = scientist
-				leader_class = governor
-			}
-		}
-		modifier = {
-			factor = 0
-			leader_class = admiral
-			leader_class = general
-		}
-	}
+	#election_candidates = {
+	#	modifier = {
+	#		add = 100
+	#		leader_class = ruler
+	#	}
+	#	modifier = {
+	#		add = 10
+	#		OR = {
+	#			leader_class = scientist
+	#			leader_class = governor
+	#		}
+	#	}
+	#	modifier = {
+	#		factor = 0
+	#		leader_class = admiral
+	#		leader_class = general
+	#	}
+	#}
 
 	possible = {
 		has_authority = magiks_auth_magocracy
@@ -64,18 +64,18 @@ magiks_gov_instrumental_institution = {
 
 	should_force_rename = yes
 
-	leader_class = scientist	# Initial ruler will become this if elected out of office
+	# leader_class = scientist	# Initial ruler will become this if elected out of office
 
-	election_candidates = {
-		modifier = {
-			add = 100
-			leader_class = ruler
-		}
-		modifier = {
-			add = 10
-			leader_class = scientist
-		}
-	}
+	# election_candidates = {
+	# 	modifier = {
+	# 		add = 100
+	# 		leader_class = ruler
+	# 	}
+	# 	modifier = {
+	# 		add = 10
+	# 		leader_class = scientist
+	# 	}
+	# }
 
 	possible = {
 		has_authority = magiks_auth_magocracy
@@ -91,24 +91,24 @@ magiks_gov_harmonious_court = {
 	ruler_title = RT_COORDINATOR
 	ruler_title_female = RT_COORDINATOR_FEMALE
 
-	election_candidates = {
-		modifier = {
-			add = 100
-			leader_class = ruler
-		}
-		modifier = {
-			add = 10
-			OR = {
-				leader_class = scientist
-				leader_class = governor
-			}
-		}
-		modifier = {
-			factor = 0
-			leader_class = admiral
-			leader_class = general
-		}
-	}
+	# election_candidates = {
+	# 	modifier = {
+	# 		add = 100
+	# 		leader_class = ruler
+	# 	}
+	# 	modifier = {
+	# 		add = 10
+	# 		OR = {
+	# 			leader_class = scientist
+	# 			leader_class = governor
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		factor = 0
+	# 		leader_class = admiral
+	# 		leader_class = general
+	# 	}
+	# }
 
 	possible = {
 		has_authority = magiks_auth_magocracy
@@ -132,21 +132,21 @@ magiks_gov_harmonious_gathering = {
 
 	should_force_rename = yes
 
-	leader_class = admiral	# Initial ruler will become this if elected out of office
+	# leader_class = admiral	# Initial ruler will become this if elected out of office
 
-	election_candidates = {
-		modifier = {
-			add = 100
-			leader_class = ruler
-		}
-		modifier = {
-			add = 10
-			OR = {
-				leader_class = admiral
-				leader_class = general
-			}
-		}
-	}
+	# election_candidates = {
+	# 	modifier = {
+	# 		add = 100
+	# 		leader_class = ruler
+	# 	}
+	# 	modifier = {
+	# 		add = 10
+	# 		OR = {
+	# 			leader_class = admiral
+	# 			leader_class = general
+	# 		}
+	# 	}
+	# }
 
 	possible = {
 		has_authority = magiks_auth_magocracy
@@ -162,24 +162,24 @@ magiks_gov_harmonious_democracy = {
 	ruler_title = RT_PRIME_MINISTER
 	ruler_title_female = RT_PRIME_MINISTER_FEMALE
 
-	election_candidates = {
-		modifier = {
-			add = 100
-			leader_class = ruler
-		}
-		modifier = {
-			add = 10
-			OR = {
-				leader_class = scientist
-				leader_class = governor
-			}
-		}
-		modifier = {
-			factor = 0
-			leader_class = admiral
-			leader_class = general
-		}
-	}
+	# election_candidates = {
+	# 	modifier = {
+	# 		add = 100
+	# 		leader_class = ruler
+	# 	}
+	# 	modifier = {
+	# 		add = 10
+	# 		OR = {
+	# 			leader_class = scientist
+	# 			leader_class = governor
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		factor = 0
+	# 		leader_class = admiral
+	# 		leader_class = general
+	# 	}
+	# }
 
 	possible = {
 		has_authority = magiks_auth_magocracy
@@ -229,21 +229,21 @@ magiks_gov_dark_dictatorship = {
 
 	should_force_rename = yes
 
-	leader_class = admiral	# Initial ruler will become this if elected out of office
+	# leader_class = admiral	# Initial ruler will become this if elected out of office
 
-	election_candidates = {
-		modifier = {
-			add = 100
-			leader_class = ruler
-		}
-		modifier = {
-			add = 10
-			OR = {
-				leader_class = admiral
-				leader_class = general
-			}
-		}
-	}
+	# election_candidates = {
+	# 	modifier = {
+	# 		add = 100
+	# 		leader_class = ruler
+	# 	}
+	# 	modifier = {
+	# 		add = 10
+	# 		OR = {
+	# 			leader_class = admiral
+	# 			leader_class = general
+	# 		}
+	# 	}
+	# }
 
 	possible = {
 		has_authority = magiks_auth_magocracy

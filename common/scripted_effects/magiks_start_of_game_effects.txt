@@ -1,7 +1,7 @@
 magiks_generate_start_pops = {	
 
 	# Reunited Siblings
-	if = { limit = { owner = { has_origin = magiks_origin_reunited_siblings } }
+	if = { limit = { owner = { has_valid_civic = magiks_civic_reunited_siblings } }
 		
 		last_created_species = {
 			set_citizenship_type = {
@@ -23,7 +23,7 @@ magiks_generate_start_pops = {
 	}
 
 	# Deulistic Magics
-	else_if = { limit = { owner = { has_origin = magiks_origin_duelistic_magics } }
+	else_if = { limit = { owner = { has_valid_civic = magiks_civic_duelistic_magics } }
 
 		last_created_species = {
 			set_citizenship_type = {
@@ -46,8 +46,8 @@ magiks_generate_start_pops = {
 	}
 }
 
-generate_start_the_underground = {
-	if = { limit = {  owner = { has_origin = magiks_origin_reunited_siblings } }
+magiks_generate_start_the_underground = {
+	if = { limit = {  owner = { has_valid_civic = magiks_civic_duelistic_magics } }
 		add_deposit = magiks_d_the_underground
 	}
 }

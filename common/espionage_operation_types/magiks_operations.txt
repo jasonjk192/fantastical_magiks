@@ -1,0 +1,119 @@
+operation_criminal_induction = {
+	target = none
+	categories = { op_cat_subterfuge }
+	picture = GFX_evt_spymaster
+	desc = {
+		trigger = { has_nemesis = yes }
+		text = operation_gather_information_desc
+	}
+	desc = {
+		trigger = { has_nemesis = no }
+		text = operation_gather_information_no_dlc_desc
+	}
+	stages = 1
+
+	resources = {
+		category = operations
+		cost = {
+			influence = 20
+		}
+		upkeep = {
+			energy = 4
+		}
+	}
+
+	spy_power_cost = 1
+	potential = {
+		target = { is_primitive = no }
+	}
+	allow = {
+		custom_tooltip = {
+			is_running_espionage_operation = no
+			fail_text = operation_one_at_a_time
+		}
+	}
+	stage = {
+		difficulty = 1 # @diff_t0
+		icon = GFX_espionage_chapter_icon_document
+		event = magiks_operation.1
+	}
+
+	on_roll_failed = {
+		standard_espionage_operation_on_roll_failed = {
+			RANDOM_EVENTS = operation_random_events_low_stakes
+		}
+	}
+	on_create = {
+		target = {
+			set_timed_country_flag = {
+				flag = espionage_operation_targeted_by@root.owner #Used in random Spy Network events
+				days = 10800
+			}
+		}
+	}
+}
+
+# operation_diplomatic_incident = {
+# 	target = none
+# 	categories = { op_cat_manipulation op_cat_diplomacy }
+# 	picture = GFX_evt_tradedeal
+# 	desc = operation_diplomatic_incident_desc
+# 	stages = 3
+
+# 	resources = {
+# 		category = operations
+# 		cost = {
+# 			influence = 30
+# 		}
+# 		upkeep = {
+# 			energy = 5
+# 		}
+# 	}
+
+# 	spy_power_cost = 25
+# 	potential = {
+# 		has_nemesis = yes
+# 		owner = { num_communications > 3 }
+# 		target = {
+# 			is_primitive = no
+# 			is_homicidal = no
+# 		}
+# 	}
+# 	allow = {
+# 		custom_tooltip = {
+# 			fail_text = saturated_with_scandals
+# 			NOT = { has_spynetwork_flag = operation_diplomatic_incident_timer }
+# 		}
+# 		target = {
+# 			num_communications > 3
+# 			custom_tooltip = {
+# 				fail_text = gestalts_are_boring
+# 				is_gestalt = no
+# 			}
+# 		}
+# 		custom_tooltip = {
+# 			is_running_espionage_operation = no
+# 			fail_text = operation_one_at_a_time
+# 		}
+# 	}
+# 	stage = {
+# 		difficulty = @diff_t1
+# 		icon = GFX_espionage_chapter_icon_surveillance
+# 		event = operation.8200
+# 	}
+# 	stage = {
+# 		difficulty = @diff_t1
+# 		icon = GFX_espionage_chapter_icon_motion
+# 		event = operation.8205
+# 	}
+# 	stage = {
+# 		difficulty = @diff_t1
+# 		icon = GFX_espionage_chapter_icon_target
+# 		event = operation.8210
+# 	}
+# 	on_roll_failed = {
+# 		standard_espionage_operation_on_roll_failed = { RANDOM_EVENTS = operation_random_events_generic }
+# 	}
+# 	on_create = {
+# 	}
+# }

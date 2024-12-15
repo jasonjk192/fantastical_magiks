@@ -1,0 +1,192 @@
+################
+# Ruler Traits #
+################
+
+magiks_leader_trait_fire = {
+	#cost = 1
+	inline_script = {
+		script = trait/magiks_icon
+		ICON = GFX_magiks_leader_trait_fire
+		RARITY = veteran
+		TIER = 1
+	}
+
+	councilor_modifier = { 
+		ship_armor_damage_mult = 0.03
+		ship_shield_damage_mult = 0.03
+	}
+	leader_potential_add = { from = { has_authority = magiks_auth_magocracy } }
+	initial = no
+	randomized = no
+	leader_class = { scientist commander official }
+}
+
+magiks_leader_trait_water = {
+	#cost = 1
+	inline_script = {
+		script = trait/magiks_icon
+		ICON = GFX_magiks_leader_trait_water
+		RARITY = veteran
+		TIER = 1
+	}
+	
+	councilor_modifier = {
+		country_food_produces_mult = 0.03
+		country_energy_produces_mult = 0.02
+		planet_jobs_energy_upkeep_mult = -0.01
+	}
+	leader_potential_add = {
+		from = { has_authority = magiks_auth_magocracy }
+	}
+	initial = no
+	randomized = no
+	leader_class = { scientist commander official }
+}
+
+magiks_leader_trait_ice = {
+	#cost = 1
+	inline_script = {
+		script = trait/magiks_icon
+		ICON = GFX_magiks_leader_trait_ice
+		RARITY = veteran
+		TIER = 1
+	}
+
+	councilor_modifier = {
+		ship_armor_mult = 0.03
+		ship_shield_mult = 0.03
+	}
+	leader_potential_add = {
+		from = { has_authority = magiks_auth_magocracy }
+	}
+	initial = no
+	randomized = no
+	leader_class = { scientist commander official }
+}
+
+magiks_leader_trait_electric = {
+	#cost = 1
+	inline_script = {
+		script = trait/magiks_icon
+		ICON = GFX_magiks_leader_trait_electric
+		RARITY = veteran
+		TIER = 1
+	}
+
+	councilor_modifier = {
+		country_energy_produces_mult = 0.05
+		planet_jobs_energy_upkeep_mult = -0.03
+	}
+	leader_potential_add = {
+		from = { has_authority = magiks_auth_magocracy }
+	}
+	initial = no
+	randomized = no
+	leader_class = { scientist commander official }
+}
+
+magiks_leader_trait_metal = {
+	#cost = 1
+	inline_script = {
+		script = trait/magiks_icon
+		ICON = GFX_magiks_leader_trait_metal
+		RARITY = veteran
+		TIER = 1
+	}
+
+	councilor_modifier = {
+		country_alloys_produces_mult = 0.05
+		country_consumer_goods_produces_mult = 0.05
+	}
+	leader_potential_add = {
+		from = { has_authority = magiks_auth_magocracy }
+	}
+	initial = no
+	randomized = no
+	leader_class = { scientist commander official }
+}
+
+magiks_leader_trait_earth = {
+	#cost = 1
+	inline_script = {
+		script = trait/magiks_icon
+		ICON = GFX_magiks_leader_trait_earth
+		RARITY = veteran
+		TIER = 1
+	}
+
+	councilor_modifier = {
+		terraform_speed_mult = 0.05
+		terraforming_cost_mult = -0.05
+	}
+	leader_potential_add = {
+		from = { has_authority = magiks_auth_magocracy }
+	}
+	initial = no
+	randomized = no
+	leader_class = { scientist commander official }
+}
+
+magiks_leader_trait_illusion = {
+	#cost = 1
+	inline_script = {
+		script = trait/magiks_icon
+		ICON = GFX_magiks_leader_trait_illusion
+		RARITY = veteran
+		TIER = 1
+	}
+
+	councilor_modifier = {
+		intel_encryption_add = 10
+		intel_decryption_add = 10
+	}
+	leader_potential_add = {
+		from = { has_authority = magiks_auth_magocracy }
+	}
+	initial = no
+	randomized = no
+	leader_class = { scientist commander official }
+}
+
+magiks_leader_trait_air = {
+	#cost = 1
+	inline_script = {
+		script = trait/magiks_icon
+		ICON = GFX_magiks_leader_trait_air
+		RARITY = veteran
+		TIER = 1
+	}
+
+	councilor_modifier = {
+		ship_speed_mult = 0.15
+		science_ship_survey_speed = 0.05
+	}
+	leader_potential_add = {
+		from = { has_authority = magiks_auth_magocracy }
+	}
+	initial = no
+	randomized = no
+	leader_class = { scientist commander official }
+}
+
+magiks_leader_trait_life = {
+	#cost = 1
+	inline_script = {
+		script = trait/magiks_icon
+		ICON = GFX_magiks_leader_trait_life
+		RARITY = veteran
+		TIER = 1
+	}
+
+	councilor_modifier = {
+		planet_pops_food_upkeep_mult = -0.01
+		country_food_produces_mult = 0.03
+		country_minerals_produces_mult = 0.02
+	}
+	leader_potential_add = {
+		from = { has_authority = magiks_auth_magocracy }
+	}
+	initial = no
+	randomized = no
+	leader_class = { scientist commander official }
+}

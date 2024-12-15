@@ -112,17 +112,22 @@ magiks_descisions_exterminate_dragons = {
 #
 # Additional note:	It's also seen that sometimes not one but multiple far off systems can be found as long as
 #					the above trigger is, well, triggered.
+# Potential fix:	Using added conditions to control the event targets and also do exist check in the options.
 ################################################################################
 
 magiks_descisions_create_hyperlane = {
 	owned_planets_only = yes
 	enactment_time = 180
-	icon = decision_engineering_research
+	icon = magiks_descisions_create_hyperlane_own
+
+	prerequisites = {
+		magiks_tech_hyperlane_manipulation
+	}
+	
 	potential = {
 		exists = owner
 		owner = {
-			is_regular_empire = yes 
-			has_technology = magiks_tech_hyperlane_manipulation			
+			is_regular_empire = yes 	
 		}
 	}
 	allow = {
@@ -133,48 +138,44 @@ magiks_descisions_create_hyperlane = {
 		}
 	}
 	effect = {
-		# planet.solar_system = {
-		# 	magiks_find_neighbours_for_hyperlane_creation_ordered_by_distance = {
-		# 		POSITION = 0
-		# 		TARGET = magiks_hyperlane_system
-		# 	}
-		# 	if = {
-		# 		limit = { exists = event_target:magiks_hyperlane_system }
-		# 		system_event = {
-		# 			id = magiks_event.4 days = 1
-		# 			scopes = { from = event_target:magiks_hyperlane_system }
-		# 		}
-		# 	}
-		# 	else = {
-		# 		system_event = {
-		# 			id = magiks_event.5 days = 1
-		# 		}
-		# 	}
-		# }
-		planet.solar_system = {
-			magiks_find_neighbours_for_hyperlane_creation_ordered_by_distance = {
-				POSITION = 0 TARGET = magiks_hyperlane_system_0
-			}
-			magiks_find_neighbours_for_hyperlane_creation_ordered_by_distance = {
-				POSITION = 1 TARGET = magiks_hyperlane_system_1
-			}
-			magiks_find_neighbours_for_hyperlane_creation_ordered_by_distance = {
-				POSITION = 2 TARGET = magiks_hyperlane_system_2
-			}
-			magiks_find_neighbours_for_hyperlane_creation_ordered_by_distance = {
-				POSITION = 3 TARGET = magiks_hyperlane_system_3
-			}
-			magiks_find_neighbours_for_hyperlane_creation_ordered_by_distance = {
-				POSITION = 4 TARGET = magiks_hyperlane_system_4
-			}
-			if = {
-				limit = { exists = event_target:magiks_hyperlane_system_0 }
-				system_event = { id = magiks_event.12 days = 1 }
-			}
-			else = {
-				system_event = { id = magiks_event.5 days = 1 }
+		custom_tooltip = magiks_descisions_create_hyperlane_tooltip
+		
+		hidden_effect = {
+			planet.solar_system = {
+				magiks_find_neighbours_for_hyperlane_creation_ordered_by_distance = {
+					POSITION = 0 TARGET = magiks_hyperlane_system_0
+				}
+				magiks_find_neighbours_for_hyperlane_creation_ordered_by_distance = {
+					POSITION = 1 TARGET = magiks_hyperlane_system_1
+				}
+				magiks_find_neighbours_for_hyperlane_creation_ordered_by_distance = {
+					POSITION = 2 TARGET = magiks_hyperlane_system_2
+				}
+				magiks_find_neighbours_for_hyperlane_creation_ordered_by_distance = {
+					POSITION = 3 TARGET = magiks_hyperlane_system_3
+				}
+				magiks_find_neighbours_for_hyperlane_creation_ordered_by_distance = {
+					POSITION = 4 TARGET = magiks_hyperlane_system_4
+				}
+				if = {
+					limit = { 
+						OR = {
+							exists = event_target:magiks_hyperlane_system_0 
+							exists = event_target:magiks_hyperlane_system_1 
+							exists = event_target:magiks_hyperlane_system_2 
+							exists = event_target:magiks_hyperlane_system_3 
+							exists = event_target:magiks_hyperlane_system_4
+						}
+						
+					}
+					system_event = { id = magiks_hyperlane_event.12 days = 1 }
+				}
+				else = {
+					system_event = { id = magiks_hyperlane_event.5 days = 1 }
+				}
 			}
 		}
+		
 	}
 	
 	ai_weight = {
@@ -185,12 +186,16 @@ magiks_descisions_create_hyperlane = {
 magiks_descisions_delete_hyperlane = {
 	owned_planets_only = yes
 	enactment_time = 180
-	icon = decision_engineering_research
+	icon = magiks_descisions_remove_hyperlane_own
+
+	prerequisites = {
+		magiks_tech_hyperlane_manipulation
+	}
+
 	potential = {
 		exists = owner
 		owner = {
-			is_regular_empire = yes 
-			has_technology = magiks_tech_hyperlane_manipulation			
+			is_regular_empire = yes 	
 		}
 	}
 	allow = {
@@ -201,28 +206,41 @@ magiks_descisions_delete_hyperlane = {
 		}
 	}
 	effect = {
-		planet.solar_system = {
-			magiks_find_neighbours_for_hyperlane_removal_ordered_by_distance = {
-				POSITION = 0 TARGET = magiks_hyperlane_system_0
-			}
-			magiks_find_neighbours_for_hyperlane_removal_ordered_by_distance = {
-				POSITION = 1 TARGET = magiks_hyperlane_system_1
-			}
-			magiks_find_neighbours_for_hyperlane_removal_ordered_by_distance = {
-				POSITION = 2 TARGET = magiks_hyperlane_system_2
-			}
-			magiks_find_neighbours_for_hyperlane_removal_ordered_by_distance = {
-				POSITION = 3 TARGET = magiks_hyperlane_system_3
-			}
-			magiks_find_neighbours_for_hyperlane_removal_ordered_by_distance = {
-				POSITION = 4 TARGET = magiks_hyperlane_system_4
-			}
-			if = {
-				limit = { exists = event_target:magiks_hyperlane_system_0 }
-				system_event = { id = magiks_event.13 days = 1 }
-			}
-			else = {
-				system_event = { id = magiks_event.7 days = 1 }
+		custom_tooltip = magiks_descisions_delete_hyperlane_tooltip
+
+		hidden_effect = {
+			planet.solar_system = {
+				magiks_find_neighbours_for_hyperlane_removal_ordered_by_distance = {
+					POSITION = 0 TARGET = magiks_hyperlane_system_0
+				}
+				magiks_find_neighbours_for_hyperlane_removal_ordered_by_distance = {
+					POSITION = 1 TARGET = magiks_hyperlane_system_1
+				}
+				magiks_find_neighbours_for_hyperlane_removal_ordered_by_distance = {
+					POSITION = 2 TARGET = magiks_hyperlane_system_2
+				}
+				magiks_find_neighbours_for_hyperlane_removal_ordered_by_distance = {
+					POSITION = 3 TARGET = magiks_hyperlane_system_3
+				}
+				magiks_find_neighbours_for_hyperlane_removal_ordered_by_distance = {
+					POSITION = 4 TARGET = magiks_hyperlane_system_4
+				}
+				if = {
+					limit = { 
+						OR = {
+							exists = event_target:magiks_hyperlane_system_0 
+							exists = event_target:magiks_hyperlane_system_1 
+							exists = event_target:magiks_hyperlane_system_2 
+							exists = event_target:magiks_hyperlane_system_3 
+							exists = event_target:magiks_hyperlane_system_4
+						}
+						
+					}
+					system_event = { id = magiks_hyperlane_event.13 days = 1  }
+				}
+				else = {
+					system_event = { id = magiks_hyperlane_event.7 days = 1 }
+				}
 			}
 		}
 	}
@@ -235,12 +253,16 @@ magiks_descisions_delete_hyperlane = {
 magiks_descisions_create_hyperlane_into_unowned_space = {
 	owned_planets_only = yes
 	enactment_time = 180
-	icon = decision_engineering_research
+	icon = magiks_descisions_create_hyperlane
+
+	prerequisites = {
+		magiks_tech_hyperlane_manipulation
+	}
+
 	potential = {
 		exists = owner
 		owner = {
-			is_regular_empire = yes 
-			has_technology = magiks_tech_hyperlane_manipulation			
+			is_regular_empire = yes	
 		}
 	}
 	allow = {
@@ -250,29 +272,45 @@ magiks_descisions_create_hyperlane_into_unowned_space = {
 			has_resource = { type = influence amount >= 4 }
 		}
 	}
+
+	
 	effect = {
-		planet.solar_system = {
-			magiks_find_neighbours_for_hyperlane_creation_into_unowned_space_ordered_by_distance = {
-				POSITION = 0 TARGET = magiks_hyperlane_system_0
-			}
-			magiks_find_neighbours_for_hyperlane_creation_into_unowned_space_ordered_by_distance = {
-				POSITION = 1 TARGET = magiks_hyperlane_system_1
-			}
-			magiks_find_neighbours_for_hyperlane_creation_into_unowned_space_ordered_by_distance = {
-				POSITION = 2 TARGET = magiks_hyperlane_system_2
-			}
-			magiks_find_neighbours_for_hyperlane_creation_into_unowned_space_ordered_by_distance = {
-				POSITION = 3 TARGET = magiks_hyperlane_system_3
-			}
-			magiks_find_neighbours_for_hyperlane_creation_into_unowned_space_ordered_by_distance = {
-				POSITION = 4 TARGET = magiks_hyperlane_system_4
-			}
-			if = {
-				limit = { exists = event_target:magiks_hyperlane_system_0 }
-				system_event = { id = magiks_event.10  }
-			}
-			else = {
-				system_event = { id = magiks_event.5  }
+		custom_tooltip = magiks_descisions_create_hyperlane_unowned_tooltip
+
+		hidden_effect = {
+			planet.solar_system = {
+				magiks_find_neighbours_for_hyperlane_creation_into_unowned_space_ordered_by_distance = {
+					POSITION = 0 TARGET = magiks_hyperlane_system_0
+				}
+				magiks_find_neighbours_for_hyperlane_creation_into_unowned_space_ordered_by_distance = {
+					POSITION = 1 TARGET = magiks_hyperlane_system_1
+				}
+				magiks_find_neighbours_for_hyperlane_creation_into_unowned_space_ordered_by_distance = {
+					POSITION = 2 TARGET = magiks_hyperlane_system_2
+				}
+				magiks_find_neighbours_for_hyperlane_creation_into_unowned_space_ordered_by_distance = {
+					POSITION = 3 TARGET = magiks_hyperlane_system_3
+				}
+				magiks_find_neighbours_for_hyperlane_creation_into_unowned_space_ordered_by_distance = {
+					POSITION = 4 TARGET = magiks_hyperlane_system_4
+				}
+	
+				if = {
+					limit = { 
+						OR = {
+							exists = event_target:magiks_hyperlane_system_0 
+							exists = event_target:magiks_hyperlane_system_1 
+							exists = event_target:magiks_hyperlane_system_2 
+							exists = event_target:magiks_hyperlane_system_3 
+							exists = event_target:magiks_hyperlane_system_4
+						}
+						
+					}
+					system_event = { id = magiks_hyperlane_event.10  }
+				}
+				else = {
+					system_event = { id = magiks_hyperlane_event.5  }
+				}
 			}
 		}
 	}
@@ -281,12 +319,16 @@ magiks_descisions_create_hyperlane_into_unowned_space = {
 magiks_descisions_delete_hyperlane_into_unowned_space = {
 	owned_planets_only = yes
 	enactment_time = 180
-	icon = decision_engineering_research
+	icon = magiks_descisions_remove_hyperlane
+
+	prerequisites = {
+		magiks_tech_hyperlane_manipulation
+	}
+
 	potential = {
 		exists = owner
 		owner = {
-			is_regular_empire = yes 
-			has_technology = magiks_tech_hyperlane_manipulation			
+			is_regular_empire = yes		
 		}
 	}
 	allow = {
@@ -297,28 +339,41 @@ magiks_descisions_delete_hyperlane_into_unowned_space = {
 		}
 	}
 	effect = {
-		planet.solar_system = {
-			magiks_find_neighbours_for_hyperlane_removal_into_unowned_space_ordered_by_distance = {
-				POSITION = 0 TARGET = magiks_hyperlane_system_0
-			}
-			magiks_find_neighbours_for_hyperlane_removal_into_unowned_space_ordered_by_distance = {
-				POSITION = 1 TARGET = magiks_hyperlane_system_1
-			}
-			magiks_find_neighbours_for_hyperlane_removal_into_unowned_space_ordered_by_distance = {
-				POSITION = 2 TARGET = magiks_hyperlane_system_2
-			}
-			magiks_find_neighbours_for_hyperlane_removal_into_unowned_space_ordered_by_distance = {
-				POSITION = 3 TARGET = magiks_hyperlane_system_3
-			}
-			magiks_find_neighbours_for_hyperlane_removal_into_unowned_space_ordered_by_distance = {
-				POSITION = 4 TARGET = magiks_hyperlane_system_4
-			}
-			if = {
-				limit = { exists = event_target:magiks_hyperlane_system_0 }
-				system_event = { id = magiks_event.11  }
-			}
-			else = {
-				system_event = { id = magiks_event.7  }
+		custom_tooltip = magiks_descisions_delete_hyperlane_unowned_tooltip
+
+		hidden_effect = {
+			planet.solar_system = {
+				magiks_find_neighbours_for_hyperlane_removal_into_unowned_space_ordered_by_distance = {
+					POSITION = 0 TARGET = magiks_hyperlane_system_0
+				}
+				magiks_find_neighbours_for_hyperlane_removal_into_unowned_space_ordered_by_distance = {
+					POSITION = 1 TARGET = magiks_hyperlane_system_1
+				}
+				magiks_find_neighbours_for_hyperlane_removal_into_unowned_space_ordered_by_distance = {
+					POSITION = 2 TARGET = magiks_hyperlane_system_2
+				}
+				magiks_find_neighbours_for_hyperlane_removal_into_unowned_space_ordered_by_distance = {
+					POSITION = 3 TARGET = magiks_hyperlane_system_3
+				}
+				magiks_find_neighbours_for_hyperlane_removal_into_unowned_space_ordered_by_distance = {
+					POSITION = 4 TARGET = magiks_hyperlane_system_4
+				}
+				if = {
+					limit = { 
+						OR = {
+							exists = event_target:magiks_hyperlane_system_0 
+							exists = event_target:magiks_hyperlane_system_1 
+							exists = event_target:magiks_hyperlane_system_2 
+							exists = event_target:magiks_hyperlane_system_3 
+							exists = event_target:magiks_hyperlane_system_4
+						}
+						
+					}
+					system_event = { id = magiks_hyperlane_event.11 }
+				}
+				else = {
+					system_event = { id = magiks_hyperlane_event.7  }
+				}
 			}
 		}
 	}
@@ -357,35 +412,38 @@ magiks_descisions_build_construct = {
 }
 
 
-magiks_descisions_create_hyperlane_general = {
-	owned_planets_only = no
-	enactment_time = 0
-	icon = decision_engineering_research
-	effect = {
-		solar_system = {
-			log = "System: [This.GetName]"
-			set_variable = { which = HL_count value = 0 }
-			every_neighbor_system_euclidean = {
-				limit = {
-					distance = {
-						source = PREV
-						max_distance <= 800
-						type = euclidean
-						same_solar_system = no
-					}
-					NOR = {
-						has_hyperlane_to = PREV
-						is_inside_border = ROOT.owner
-					}
-				}
-				log = "This: [This.GetName] Prev: [Prev.GetName] var: [Prev.HL_count]"
-				set_star_flag = HL_system
-				save_event_target_as = HL_system_$prev.HL_count$
-				prev = { change_variable = { which = HL_count value = 1 } }
-			}
-		}
-		event_target:HL_system_0 = {
-			log = "TargetThis: [This.GetName] Prev: [Prev.GetName]"
-		}
-	}
-}
+# magiks_descisions_create_hyperlane_general = {
+# 	owned_planets_only = no
+# 	enactment_time = 0
+# 	icon = decision_engineering_research
+
+# 	potential = no
+
+# 	effect = {
+# 		solar_system = {
+# 			log = "System: [This.GetName]"
+# 			set_variable = { which = HL_count value = 0 }
+# 			every_neighbor_system_euclidean = {
+# 				limit = {
+# 					distance = {
+# 						source = PREV
+# 						max_distance <= 800
+# 						type = euclidean
+# 						same_solar_system = no
+# 					}
+# 					NOR = {
+# 						has_hyperlane_to = PREV
+# 						is_inside_border = ROOT.owner
+# 					}
+# 				}
+# 				log = "This: [This.GetName] Prev: [Prev.GetName] var: [Prev.HL_count]"
+# 				set_star_flag = HL_system
+# 				save_event_target_as = HL_system_$prev.HL_count$
+# 				prev = { change_variable = { which = HL_count value = 1 } }
+# 			}
+# 		}
+# 		event_target:HL_system_0 = {
+# 			log = "TargetThis: [This.GetName] Prev: [Prev.GetName]"
+# 		}
+# 	}
+# }

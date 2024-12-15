@@ -1,0 +1,10 @@
+key;cost;power;min_damage;max_damage;hull_damage;shield_damage;shield_penetration;armor_damage;armor_penetration;min_windup;max_windup;cooldown;range;accuracy;tracking;size_damage_factor;military_power_multiplier;missile_speed;missile_evasion;missile_shield;missile_armor;missile_health;missile_retarget_range;end
+# Arcane Missile
+SMALL_ARCANE_MISSILE;10.00;-5.00;9;20;1.25;0.50;0.00;1.50;0.00;5.00;20.00;25.00;40.00;0.90;0.50;0.00;1.00;0.00;0.00;0.00;0.00;0.00;0.00;
+# Mystic Beam
+SMALL_MYSTIC_BEAM;15.00;-10.00;20.00;60;1.25;0.50;0.00;1.50;0.00;6.00;24.00;30.00;60.00;0.90;0.30;0.00;1.00;0.00;0.00;0.00;0.00;0.00;0.00;
+MEDIUM_MYSTIC_BEAM;25.00;-15.00;45.00;118;1.25;0.50;0.00;1.50;0.00;7.00;27.00;35;80.00;0.90;0.05;0.00;1.00;0.00;0.00;0.00;0.00;0.00;0.00;
+# Enchanted Cannon
+SMALL_ENCHANTED_CANNON;20.00;-12.00;12.00;30;1.25;0.50;0.00;1.50;0.00;5.00;20.00;25.00;40.00;0.90;0.50;0.00;1.00;0.00;0.00;0.00;0.00;0.00;0.00;
+MEDIUM_ENCHANTED_CANNON;55.00;-25.00;30.00;72;1.25;0.50;0.00;1.50;0.00;6.00;24.00;30;60.00;0.90;0.30;0.00;1.00;0.00;0.00;0.00;0.00;0.00;0.00;
+LARGE_ENCHANTED_CANNON;90.00;-35.00;60.00;150;1.25;0.50;0.00;1.50;0.00;7.00;27.00;35;80.00;0.90;0.05;0.00;1.00;0.00;0.00;0.00;0.00;0.00;0.00;

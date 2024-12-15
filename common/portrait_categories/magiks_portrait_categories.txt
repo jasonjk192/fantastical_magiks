@@ -1,0 +1,8 @@
+magiks = {
+	name = Magiks
+
+	sets = {
+		tiefling
+		dragonborn
+	}
+}

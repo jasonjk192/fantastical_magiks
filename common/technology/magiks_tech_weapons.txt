@@ -1,0 +1,199 @@
+magiks_tech_arcane_missiles = {
+    area = physics
+    cost = @tier1cost2
+    tier = 1
+    category = { particles }
+    ai_update_type = military
+    prerequisites = { tech_lasers_1 magiks_tech_manacite_extraction }
+    weight = @tier1weight2
+
+    gateway = energy_weapons
+
+    weight_modifier = {
+        modifier = {
+            factor = 1.25
+            has_ethic = ethic_militarist
+        }
+        modifier = {
+            factor = 1.5
+            has_ethic = ethic_fanatic_militarist
+        }
+		modifier = {
+			factor = 1.5
+			has_authority = magiks_auth_magocracy
+		}
+		modifier = {
+			factor = 2
+			has_tradition = tr_magicka_adopt
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_authority = magiks_auth_magocracy }
+		}
+    }
+
+    ai_weight = {
+        modifier = {
+            factor = 1.25
+            has_ethic = ethic_militarist
+        }
+        modifier = {
+            factor = 1.5
+            has_ethic = ethic_fanatic_militarist
+        }
+		modifier = {
+			factor = 1.5
+			has_authority = magiks_auth_magocracy
+		}
+		modifier = {
+			factor = 2
+			has_tradition = tr_magicka_adopt
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_authority = magiks_auth_magocracy }
+		}
+
+        modifier = {
+            factor = @favored_weapon_ai_tech_factor
+            is_preferred_weapons = weapon_type_energy
+        }
+        modifier = {
+            factor = @disfavored_weapon_ai_tech_factor
+            NOT = { is_preferred_weapons = weapon_type_energy }
+        }
+    }
+}
+
+magiks_tech_mystic_beams = {
+    area = physics
+    cost = @tier2cost2
+    tier = 2
+    category = { particles }
+    ai_update_type = military
+    prerequisites = { magiks_tech_arcane_missiles magiks_tech_manacite_extraction }
+    weight = @tier2weight2
+
+    gateway = energy_weapons
+
+    weight_modifier = {
+        modifier = {
+            factor = 1.25
+            has_ethic = ethic_militarist
+        }
+        modifier = {
+            factor = 1.5
+            has_ethic = ethic_fanatic_militarist
+        }
+		modifier = {
+			factor = 1.5
+			has_authority = magiks_auth_magocracy
+		}
+		modifier = {
+			factor = 2
+			has_tradition = tr_magicka_adopt
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_authority = magiks_auth_magocracy }
+		}
+    }
+
+    ai_weight = {
+        modifier = {
+            factor = 1.25
+            has_ethic = ethic_militarist
+        }
+        modifier = {
+            factor = 1.5
+            has_ethic = ethic_fanatic_militarist
+        }
+		modifier = {
+			factor = 1.5
+			has_authority = magiks_auth_magocracy
+		}
+		modifier = {
+			factor = 2
+			has_tradition = tr_magicka_adopt
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_authority = magiks_auth_magocracy }
+		}
+
+        modifier = {
+            factor = @favored_weapon_ai_tech_factor
+            is_preferred_weapons = weapon_type_energy
+        }
+        modifier = {
+            factor = @disfavored_weapon_ai_tech_factor
+            NOT = { is_preferred_weapons = weapon_type_energy }
+        }
+    }
+}
+
+magiks_tech_enchanted_cannons = {
+    area = physics
+    cost = @tier3cost2
+    tier = 3
+    category = { particles }
+    ai_update_type = military
+    prerequisites = { magiks_tech_mystic_beams magiks_tech_manacite_extraction }
+    weight = @tier3weight2
+
+    gateway = energy_weapons
+
+    weight_modifier = {
+        modifier = {
+            factor = 1.25
+            has_ethic = ethic_militarist
+        }
+        modifier = {
+            factor = 1.5
+            has_ethic = ethic_fanatic_militarist
+        }
+		modifier = {
+			factor = 1.5
+			has_authority = magiks_auth_magocracy
+		}
+		modifier = {
+			factor = 2
+			has_tradition = tr_magicka_adopt
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_authority = magiks_auth_magocracy }
+		}
+    }
+
+    ai_weight = {
+        modifier = {
+            factor = 1.25
+            has_ethic = ethic_militarist
+        }
+        modifier = {
+            factor = 1.5
+            has_ethic = ethic_fanatic_militarist
+        }
+		modifier = {
+			factor = 1.5
+			has_authority = magiks_auth_magocracy
+		}
+		modifier = {
+			factor = 2
+			has_tradition = tr_magicka_adopt
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_authority = magiks_auth_magocracy }
+		}
+        modifier = {
+            factor = @favored_weapon_ai_tech_factor
+            is_preferred_weapons = weapon_type_energy
+        }
+        modifier = {
+            factor = @disfavored_weapon_ai_tech_factor
+            NOT = { is_preferred_weapons = weapon_type_energy }
+        }
+    }
+}

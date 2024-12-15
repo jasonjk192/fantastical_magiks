@@ -250,3 +250,17 @@ part = {
 		}
 	}
 }
+
+part = {
+	location = 0
+	localization = "MAGIKS_START_SCREEN_MAGIKAL_ONE"
+	
+	trigger = {
+		has_origin = magiks_origin_world_of_legend
+		has_country_flag = custom_start_screen
+		NOR = { 
+			has_authority = auth_hive_mind
+			has_authority = auth_machine_intelligence
+		}
+	}
+}

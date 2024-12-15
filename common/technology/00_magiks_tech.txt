@@ -10,19 +10,19 @@ magiks_tech_necro1 = {
 	weight = @tier1weight2
 	
 	potential = {
-		has_civic = "magiks_civic_state_necromancy"
+		has_civic = magiks_civic_state_necromancy
 	}
 	
 	weight_modifier = {
 	
 		modifier = {
 			factor = 2
-			has_civic = "magiks_civic_state_necromancy"
+			has_civic = magiks_civic_state_necromancy
 		}
 		modifier = {
 			factor = 0
 			NOT = {
-				has_civic = "magiks_civic_state_necromancy"
+				has_civic = magiks_civic_state_necromancy
 			}
 		}
 	}
@@ -30,12 +30,12 @@ magiks_tech_necro1 = {
 	ai_weight = {
 		modifier = {
 			factor = 2
-			has_civic = "magiks_civic_state_necromancy"
+			has_civic = magiks_civic_state_necromancy
 		}
 		modifier = {
 			factor = 0
 			NOT = {
-				has_civic = "magiks_civic_state_necromancy"
+				has_civic = magiks_civic_state_necromancy
 			}
 		}
 	}
@@ -44,25 +44,25 @@ magiks_tech_necro1 = {
 magiks_tech_necro2 = {
 	cost = @tier2cost3
 	area = society
-	prerequisites = { "magiks_tech_necro1" }
+	prerequisites = { magiks_tech_necro1 }
 	tier = 2
 	category = { biology }
 	weight = @tier2weight2
 	
 	potential = {
-		has_civic = "magiks_civic_state_necromancy"
+		has_civic = magiks_civic_state_necromancy
 	}
 	
 	weight_modifier = {
 	
 		modifier = {
 			factor = 2
-			has_civic = "magiks_civic_state_necromancy"
+			has_civic = magiks_civic_state_necromancy
 		}
 		modifier = {
 			factor = 0
 			NOT = {
-				has_civic = "magiks_civic_state_necromancy"
+				has_civic = magiks_civic_state_necromancy
 			}
 		}
 	}
@@ -70,12 +70,12 @@ magiks_tech_necro2 = {
 	ai_weight = {
 		modifier = {
 			factor = 2
-			has_civic = "magiks_civic_state_necromancy"
+			has_civic = magiks_civic_state_necromancy
 		}
 		modifier = {
 			factor = 0
 			NOT = {
-				has_civic = "magiks_civic_state_necromancy"
+				has_civic = magiks_civic_state_necromancy
 			}
 		}
 	}
@@ -84,25 +84,25 @@ magiks_tech_necro2 = {
 magiks_tech_necro3 = {
 	cost = @tier3cost3
 	area = society
-	prerequisites = { "magiks_tech_necro2" }
+	prerequisites = { magiks_tech_necro2 }
 	tier = 2
 	category = { biology }
 	weight = @tier3weight2
 	
 	potential = {
-		has_civic = "magiks_civic_state_necromancy"
+		has_civic = magiks_civic_state_necromancy
 	}
 	
 	weight_modifier = {
 	
 		modifier = {
 			factor = 2
-			has_civic = "magiks_civic_state_necromancy"
+			has_civic = magiks_civic_state_necromancy
 		}
 		modifier = {
 			factor = 0
 			NOT = {
-				has_civic = "magiks_civic_state_necromancy"
+				has_civic = magiks_civic_state_necromancy
 			}
 		}
 	}
@@ -110,12 +110,12 @@ magiks_tech_necro3 = {
 	ai_weight = {
 		modifier = {
 			factor = 2
-			has_civic = "magiks_civic_state_necromancy"
+			has_civic = magiks_civic_state_necromancy
 		}
 		modifier = {
 			factor = 0
 			NOT = {
-				has_civic = "magiks_civic_state_necromancy"
+				has_civic = magiks_civic_state_necromancy
 			}
 		}
 	}
@@ -129,31 +129,31 @@ magiks_tech_rhythm1 = {
 	weight = @tier1weight2
 	
 	potential = {
-		has_civic = "magiks_civic_rhythmic_fanatics"
+		has_civic = magiks_civic_rhythmic_fanatics
 	}
 	
 	weight_modifier = {
 	
 		modifier = {
 			factor = 2
-			has_civic = "magiks_civic_rhythmic_fanatics"
+			has_civic = magiks_civic_rhythmic_fanatics
 		}
 		modifier = {
 			factor = 0
 			NOT = {
-				has_civic = "magiks_civic_rhythmic_fanatics"
+				has_civic = magiks_civic_rhythmic_fanatics
 			}
 		}
 	}
 	ai_weight = {
 		modifier = {
 			factor = 2
-			has_civic = "magiks_civic_rhythmic_fanatics"
+			has_civic = magiks_civic_rhythmic_fanatics
 		}
 		modifier = {
 			factor = 0
 			NOT = {
-				has_civic = "magiks_civic_rhythmic_fanatics"
+				has_civic = magiks_civic_rhythmic_fanatics
 			}
 		}
 	}
@@ -162,25 +162,25 @@ magiks_tech_rhythm1 = {
 magiks_tech_rhythm2 = {
 	cost = @tier2cost3
 	area = society
-	prerequisites = { "magiks_tech_rhythm1" }
+	prerequisites = { magiks_tech_rhythm1 }
 	tier = 2
 	category = { statecraft }
 	weight = @tier2weight2
 	
 	potential = {
-		has_civic = "magiks_civic_rhythmic_fanatics"
+		has_civic = magiks_civic_rhythmic_fanatics
 	}
 	
 	weight_modifier = {
 	
 		modifier = {
 			factor = 2
-			has_civic = "magiks_civic_rhythmic_fanatics"
+			has_civic = magiks_civic_rhythmic_fanatics
 		}
 		modifier = {
 			factor = 0
 			NOT = {
-				has_civic = "magiks_civic_rhythmic_fanatics"
+				has_civic = magiks_civic_rhythmic_fanatics
 			}
 		}
 	}
@@ -188,12 +188,12 @@ magiks_tech_rhythm2 = {
 	ai_weight = {
 		modifier = {
 			factor = 2
-			has_civic = "magiks_civic_rhythmic_fanatics"
+			has_civic = magiks_civic_rhythmic_fanatics
 		}
 		modifier = {
 			factor = 0
 			NOT = {
-				has_civic = "magiks_civic_rhythmic_fanatics"
+				has_civic = magiks_civic_rhythmic_fanatics
 			}
 		}
 	}
@@ -202,13 +202,13 @@ magiks_tech_rhythm2 = {
 magiks_tech_rhythm3 = {
 	cost = @tier3cost3
 	area = society
-	prerequisites = { "magiks_tech_rhythm2" }
+	prerequisites = { magiks_tech_rhythm2 }
 	tier = 2
 	category = { statecraft }
 	weight = @tier3weight2
 	
 	potential = {
-		has_civic = "magiks_civic_rhythmic_fanatics"
+		has_civic = magiks_civic_rhythmic_fanatics
 	}
 	modifier = {
 		#tile_resource_unity_mult = 0.05
@@ -219,12 +219,12 @@ magiks_tech_rhythm3 = {
 	
 		modifier = {
 			factor = 2
-			has_civic = "magiks_civic_rhythmic_fanatics"
+			has_civic = magiks_civic_rhythmic_fanatics
 		}
 		modifier = {
 			factor = 0
 			NOT = {
-				has_civic = "magiks_civic_rhythmic_fanatics"
+				has_civic = magiks_civic_rhythmic_fanatics
 			}
 		}
 	}
@@ -232,12 +232,12 @@ magiks_tech_rhythm3 = {
 	ai_weight = {
 		modifier = {
 			factor = 2
-			has_civic = "magiks_civic_rhythmic_fanatics"
+			has_civic = magiks_civic_rhythmic_fanatics
 		}
 		modifier = {
 			factor = 0
 			NOT = {
-				has_civic = "magiks_civic_rhythmic_fanatics"
+				has_civic = magiks_civic_rhythmic_fanatics
 			}
 		}
 	}
@@ -248,30 +248,35 @@ magiks_tech_rhythm4 = {
 	area = society
 	category = { statecraft }
 	tier = 4
-	prerequisites = { "magiks_tech_rhythm3" "tech_galactic_administration" }
+	prerequisites = { 
+		magiks_tech_rhythm3
+		tech_galactic_administration
+	}
 	weight = @tier4weight2
 	
 	potential = {
-		has_civic = "magiks_civic_state_necromancy"
+		has_civic = magiks_civic_state_necromancy
 	}
 	
 	weight_modifier = {
 		modifier = {
 			factor = 1.50
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
+			# research_leader = {
+			# 	#area = society
+			# 	has_trait = "leader_trait_expertise_statecraft"
+			# }
 		}
 	}
 	
 	ai_weight = {
 		modifier = {
 			factor = 1.50
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
+			# research_leader = {
+			# 	#area = society
+			# 	has_trait = "leader_trait_expertise_statecraft"
+			# }
 		}
 	}
 }
@@ -284,24 +289,24 @@ magiks_tech_magiks_gene = {
 	weight = @tier3weight1
 	
 	potential = {
-		has_ascension_perk = "ap_magiks_genes"
+		has_ascension_perk = ap_magiks_genes
 	}
 	
 	modifier = {
 		description = magiks_tech_magiks_gene_effects
-		modify_species_cost_mult = -0.0
+		modify_species_cost_mult = -0.05
 	}
 	
 	weight_modifier = {
 	
 		modifier = {
 			factor = 2
-			has_ascension_perk = "ap_magiks_genes"
+			has_ascension_perk = ap_magiks_genes
 		}
 		modifier = {
 			factor = 0
 			NOT = {
-				has_ascension_perk = "ap_magiks_genes"
+				has_ascension_perk = ap_magiks_genes
 			}
 		}
 	}
@@ -309,12 +314,12 @@ magiks_tech_magiks_gene = {
 	ai_weight = {
 		modifier = {
 			factor = 2
-			has_ascension_perk = "ap_magiks_genes"
+			has_ascension_perk = ap_magiks_genes
 		}
 		modifier = {
 			factor = 0
 			NOT = {
-				has_ascension_perk = "ap_magiks_genes"
+				has_ascension_perk = ap_magiks_genes
 			}
 		}
 	}
@@ -338,28 +343,31 @@ magiks_tech_mage_academy = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
+			# research_leader = {
+			# 	#area = society
+			# 	has_trait = "leader_trait_expertise_statecraft"
+			# }
 		}
 		modifier = {
 			factor = 2
-			has_civic = "magiks_civic_elite_mages"
-			has_civic = "magiks_civic_alchemical_ministry"
-			has_civic = "magiks_civic_state_necromancy"
-			has_origin = "magiks_origin_magical_lineages"
-			has_origin = "magiks_origin_duelistic_magics"
+			has_civic = magiks_civic_elite_mages
+			has_civic = magiks_civic_alchemical_ministry
+			has_civic = magiks_civic_state_necromancy
+			has_origin = magiks_origin_magical_lineages
+			has_civic = magiks_civic_duelistic_magics
+			#has_origin = "magiks_origin_duelistic_magics"
 		}
 	}
 	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
+			# research_leader = {
+			# 	#area = society
+			# 	has_trait = "leader_trait_expertise_statecraft"
+			# }
 		}
 	}
 }
@@ -369,7 +377,7 @@ magiks_tech_mage_college = {
 	area = society
 	category = { statecraft }
 	tier = 2
-	prerequisites = { "magiks_tech_mage_academy" }
+	prerequisites = { magiks_tech_mage_academy }
 	weight = @tier2weight2
 	
 	potential = {
@@ -386,28 +394,31 @@ magiks_tech_mage_college = {
 		}
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
+			# research_leader = {
+			# 	#area = society
+			# 	has_trait = "leader_trait_expertise_statecraft"
+			# }
 		}
 		modifier = {
 			factor = 2
-			has_civic = "magiks_civic_elite_mages"
-			has_civic = "magiks_civic_alchemical_ministry"
-			has_civic = "magiks_civic_state_necromancy"
-			has_origin = "magiks_origin_magical_lineages"
-			has_origin = "magiks_origin_duelistic_magics"
+			has_civic = magiks_civic_elite_mages
+			has_civic = magiks_civic_alchemical_ministry
+			has_civic = magiks_civic_state_necromancy
+			has_origin = magiks_origin_magical_lineages
+			has_civic = magiks_civic_duelistic_magics
+			#has_origin = "magiks_origin_duelistic_magics"
 		}
 	}
 	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
+			# research_leader = {
+			# 	#area = society
+			# 	has_trait = "leader_trait_expertise_statecraft"
+			# }
 		}
 	}
 }
@@ -417,7 +428,10 @@ magiks_tech_mage_university = {
 	area = society
 	category = { statecraft }
 	tier = 3
-	prerequisites = { "magiks_tech_mage_college" "tech_colonial_centralization" }
+	prerequisites = { 
+		magiks_tech_mage_college
+		tech_colonial_centralization
+	}
 	weight = @tier3weight2
 		
 	potential = {
@@ -427,28 +441,31 @@ magiks_tech_mage_university = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
+			# research_leader = {
+			# 	#area = society
+			# 	has_trait = "leader_trait_expertise_statecraft"
+			# }
 		}
 		modifier = {
 			factor = 2
-			has_civic = "magiks_civic_elite_mages"
-			has_civic = "magiks_civic_alchemical_ministry"
-			has_civic = "magiks_civic_state_necromancy"
-			has_origin = "magiks_origin_magical_lineages"
-			has_origin = "magiks_origin_duelistic_magics"
+			has_civic = magiks_civic_elite_mages
+			has_civic = magiks_civic_alchemical_ministry
+			has_civic = magiks_civic_state_necromancy
+			has_origin = magiks_origin_magical_lineages
+			has_civic = magiks_civic_duelistic_magics
+			#has_origin = "magiks_origin_duelistic_magics"
 		}
 	}
 	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
+			# research_leader = {
+			# 	#area = society
+			# 	has_trait = "leader_trait_expertise_statecraft"
+			# }
 		}
 	}
 }
@@ -458,7 +475,10 @@ magiks_tech_mage_arcanium = {
 	area = society
 	category = { statecraft }
 	tier = 4
-	prerequisites = { "magiks_tech_mage_university" "tech_galactic_administration"}
+	prerequisites = { 
+		magiks_tech_mage_university
+		tech_galactic_administration
+	}
 	weight = @tier4weight2	
 	
 	potential = {
@@ -468,20 +488,22 @@ magiks_tech_mage_arcanium = {
 	weight_modifier = {	
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
+			# research_leader = {
+			# 	#area = society
+			# 	has_trait = "leader_trait_expertise_statecraft"
+			# }
 		}
 	}
 	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
+			# research_leader = {
+			# 	#area = society
+			# 	has_trait = "leader_trait_expertise_statecraft"
+			# }
 		}
 	}
 }
@@ -495,7 +517,7 @@ magiks_tech_manacite_extraction = {
 	area = engineering
 	tier = 2
 	category = { materials }
-	prerequisites = { "tech_space_construction" }
+	prerequisites = { tech_space_construction }
 	weight = @tier2weight1
 
 	potential = {
@@ -511,18 +533,20 @@ magiks_tech_manacite_extraction = {
 		}
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_materials"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_materials }
+			# research_leader = {
+			# 	#area = engineering
+			# 	has_trait = "leader_trait_expertise_materials"
+			# }
 		}
 		modifier = {
 			factor = 2
-			has_civic = "magiks_civic_elite_mages"
-			has_civic = "magiks_civic_alchemical_ministry"
-			has_civic = "magiks_civic_state_necromancy"
-			has_origin = "magiks_origin_magical_lineages"
-			has_origin = "magiks_origin_duelistic_magics"
+			has_civic = magiks_civic_elite_mages
+			has_civic = magiks_civic_alchemical_ministry
+			has_civic = magiks_civic_state_necromancy
+			has_origin = magiks_origin_magical_lineages
+			has_civic = magiks_civic_duelistic_magics
+			#has_origin = "magiks_origin_duelistic_magics"
 		}
 		modifier = {
 			factor = 0
@@ -542,10 +566,11 @@ magiks_tech_manacite_extraction = {
 		factor = 5 #important resource
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_materials"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_materials }
+			# research_leader = {
+			# 	#area = engineering
+			# 	has_trait = "leader_trait_expertise_materials"
+			# }
 		}
 	}
 }
@@ -569,7 +594,7 @@ magiks_tech_magiks_engineered_evolution = {
 	
 	modifier = {
 		description = magiks_tech_magiks_engineered_evolution_desc
-		# MAGIKAL_species_trait_points_add = 3
+		MAGIKAL_species_trait_points_add = 3
 	}
 }
 
@@ -588,7 +613,27 @@ magiks_tech_magiks_evolutionary_mastery = {
 	
 	modifier = {
 		description = magiks_tech_magiks_evolutionary_mastery_desc
-		# MAGIKAL_species_trait_points_add = 3
+		MAGIKAL_species_trait_points_add = 3
+	}
+}
+
+magiks_tech_mana_infused_evolution = {
+	cost = @tier5cost3
+	area = society
+	tier = 5
+	category = { biology }
+	weight = 5
+	levels = -1
+	cost_per_level = @repeatableTechLevelCost
+	is_dangerous = yes
+	
+	potential = {
+	    has_authority = magiks_auth_magocracy
+		has_technology = magiks_tech_manacite_extraction
+    }
+
+	modifier = {
+		BIOLOGICAL_species_trait_picks_add = 1
 	}
 }
 
@@ -606,6 +651,24 @@ magiks_tech_hyperlane_manipulation = {
 	
 	potential = {
 		has_technology = tech_jump_drive_1
+	    has_authority = magiks_auth_magocracy
+		has_technology = magiks_tech_manacite_extraction
+    }
+}
+
+#################
+# Edicts
+#################
+
+magiks_tech_magical_assistance = {
+	cost = @tier4cost2
+	area = society
+	tier = 0
+	category = { statecraft }
+	weight = 5
+	is_rare = yes
+	
+	potential = {
 	    has_authority = magiks_auth_magocracy
 		has_technology = magiks_tech_manacite_extraction
     }

@@ -1,0 +1,23 @@
+ruler_has_magik_trait_active = {
+	OR = {
+		has_trait = magiks_leader_trait_earth
+		has_trait = magiks_leader_trait_fire
+		has_trait = magiks_leader_trait_ice
+		has_trait = magiks_leader_trait_electric
+		has_trait = magiks_leader_trait_water
+		has_trait = magiks_leader_trait_metal
+		has_trait = magiks_leader_trait_illusion
+	}
+}
+
+ruler_has_magik_trait_inactive = {
+	OR = {
+		has_leader_flag = magiks_leader_trait_earth_inactive
+		has_leader_flag = magiks_leader_trait_fire_inactive
+		has_leader_flag = magiks_leader_trait_ice_inactive
+		has_leader_flag = magiks_leader_trait_electric_inactive
+		has_leader_flag = magiks_leader_trait_water_inactive
+		has_leader_flag = magiks_leader_trait_metal_inactive
+		has_leader_flag = magiks_leader_trait_illusion_inactive
+	}
+}

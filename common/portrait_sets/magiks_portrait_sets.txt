@@ -1,0 +1,15 @@
+tiefling = {
+	species_class = FantasticalMagiks
+
+	portraits = {
+		"tiefling"
+	}
+}
+
+dragonborn = {
+	species_class = FantasticalMagiks
+
+	portraits = {
+		"dragonborn"
+	}
+}

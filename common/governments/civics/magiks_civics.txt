@@ -64,11 +64,12 @@ magiks_civic_elite_mages = {
 				value = magiks_civic_natures_listeners
 				value = magiks_civic_idol_crazy
 				value = magiks_civic_rhythmic_fanatics
+				value = magiks_civic_duelistic_magics
 			}
 		}
 		origin = {
-			NOR = {
-				value = magiks_origin_duelistic_magics
+			NOT = {
+				#value = magiks_origin_duelistic_magics
 				value = magiks_origin_magical_lineages
 			}
 		}
@@ -103,12 +104,13 @@ magiks_civic_alchemical_ministry = {
 				value = magiks_civic_natures_listeners
 				value = magiks_civic_idol_crazy
 				value = magiks_civic_rhythmic_fanatics
+				value = magiks_civic_duelistic_magics
 			}
 		}
 		origin = {
-			NOR = {
+			NOT = {
 				value = magiks_origin_magical_lineages
-				value = magiks_origin_duelistic_magics
+				#value = magiks_origin_duelistic_magics
 			}
 		}
 	}
@@ -150,11 +152,12 @@ magiks_civic_state_necromancy = {
 				value = magiks_civic_natures_listeners
 				value = magiks_civic_idol_crazy
 				value = magiks_civic_rhythmic_fanatics
+				value = magiks_civic_duelistic_magics
 			}
 		}
 		origin = {
-			NOR = {
-				value = magiks_origin_duelistic_magics
+			NOT = {
+				#value = magiks_origin_duelistic_magics
 				value = magiks_origin_magical_lineages
 			}
 		}
@@ -166,7 +169,9 @@ magiks_civic_state_necromancy = {
 		base = 5
 	}
 	modifier = {
-		leader_age = 20
+		ruler_starting_age_add = 20
+		leader_starting_age_add = 20
+		#leader_age = 20
 		pop_growth_speed = 0.10
 	}
 	traits = { trait = "magiks_trait_undead_reliant" }
@@ -196,6 +201,7 @@ magiks_civic_natures_listeners = {
 				value = magiks_civic_state_necromancy
 				value = magiks_civic_idol_crazy
 				value = magiks_civic_rhythmic_fanatics
+				value = magiks_civic_duelistic_magics
 			}
 		}
 		origin = {
@@ -203,7 +209,7 @@ magiks_civic_natures_listeners = {
 				value = origin_mechanists
 				value = origin_syncretic_evolution
 				value = magiks_origin_magical_lineages
-				value = magiks_origin_duelistic_magics
+				#value = magiks_origin_duelistic_magics
 			}
 		}
 	}
@@ -241,6 +247,7 @@ magiks_civic_idol_crazy = {
 				value = magiks_civic_alchemical_ministry
 				value = magiks_civic_state_necromancy
 				value = magiks_civic_natures_listeners
+				value = magiks_civic_duelistic_magics
 			}
 		}
 		origin = {
@@ -248,7 +255,7 @@ magiks_civic_idol_crazy = {
 				value = origin_mechanists
 				value = origin_syncretic_evolution
 				value = magiks_origin_magical_lineages
-				value = magiks_origin_duelistic_magics
+				#value = magiks_origin_duelistic_magics
 			}
 		}
 	}
@@ -277,6 +284,7 @@ magiks_civic_rhythmic_fanatics = {
 				value = magiks_civic_state_necromancy
 				value = magiks_civic_natures_listeners
 				value = magiks_civic_idol_crazy
+				value = magiks_civic_duelistic_magics
 			}
 		}
 		ethics = {
@@ -287,9 +295,9 @@ magiks_civic_rhythmic_fanatics = {
 			}
 		}
 		origin = {
-			NOR = {
+			NOT = {
 				value = magiks_origin_magical_lineages
-				value = magiks_origin_duelistic_magics
+				#value = magiks_origin_duelistic_magics
 			}
 		}
 	}
@@ -343,48 +351,49 @@ magiks_civic_rhythmic_fanatics = {
 # 	traits = { trait = "magiks_trait_soft_magicians" }
 # }
 
-# magiks_civic_duelistic_magics = {
-# 	modification = no
-# 	playable = { host_has_dlc = "Utopia" host_has_dlc = "Apocalypse" }
-# 	potential = { 
-# 		authority = { value = magiks_auth_magocracy }
-# 		ethics = { NOT = { value = ethic_gestalt_consciousness } } 
-# 	}
-# 	possible = {
-# 		civics = {
-# 			NOR = {
-# 				value = civic_fanatic_purifiers
-# 				value = civic_agrarian_idyll
-# 				value = civic_inwards_perfection
-# 				value = magiks_civic_elite_mages
-# 				value = magiks_civic_magical_lineages
-# 				value = magiks_civic_alchemical_ministry
-# 				value = magiks_civic_state_necromancy
-# 				value = magiks_civic_natures_listeners
-# 				value = magiks_civic_idol_crazy
-# 				value = magiks_civic_rhythmic_fanatics
-# 			}
-# 		}
-# 		origin = {
-# 			NOR = {
-# 				value = origin_mechanists
-# 				value = origin_syncretic_evolution
-# 				value = origin_post_apocalyptic
-# 				value = origin_life_seeded
-# 			}
-# 		}
-# 	}
-# 	random_weight = {
-# 		base = 5
-# 		modifier = { factor = 0 has_global_flag = game_started }
-# 	}
-# 	traits = { trait = magiks_trait_hard_magicians }
-# 	description = magiks_civic_duelistic_magics_effects
-# 	has_secondary_species = {	# see magiks_start_of_game_events.txt
-# 		title = magiks_civic_duelistic_magics_secondary_species
-# 		traits = { trait = magiks_trait_soft_magicians }
-# 	}
-# }
+magiks_civic_duelistic_magics = {
+	modification = no
+	#playable = { host_has_dlc = "Utopia" host_has_dlc = "Apocalypse" }
+	potential = { 
+		authority = { value = magiks_auth_magocracy }
+		ethics = { NOT = { value = ethic_gestalt_consciousness } } 
+	}
+	possible = {
+		civics = {
+			NOR = {
+				value = civic_fanatic_purifiers
+				value = civic_agrarian_idyll
+				value = civic_inwards_perfection
+				value = magiks_civic_elite_mages
+				# value = magiks_civic_magical_lineages
+				value = magiks_civic_alchemical_ministry
+				value = magiks_civic_state_necromancy
+				value = magiks_civic_natures_listeners
+				value = magiks_civic_idol_crazy
+				value = magiks_civic_rhythmic_fanatics
+				value = magiks_civic_reunited_siblings
+			}
+		}
+		origin = {
+			NOR = {
+				value = origin_mechanists
+				value = origin_syncretic_evolution
+				value = origin_post_apocalyptic
+				value = origin_life_seeded
+			}
+		}
+	}
+	random_weight = {
+		base = 5
+		modifier = { factor = 0 has_global_flag = game_started }
+	}
+	traits = { trait = magiks_trait_hard_magicians }
+	description = magiks_civic_duelistic_magics_effects
+	has_secondary_species = {	# see magiks_start_of_game_events.txt
+		title = magiks_civic_duelistic_magics_secondary_species
+		traits = { trait = magiks_trait_soft_magicians }
+	}
+}
 
 ### MAGICAL CIVICS ###
 
@@ -398,6 +407,7 @@ magiks_civic_dragon_tamers = {
 		civics = {
 			NOR = {
 				value = civic_agrarian_idyll
+				value = magiks_civic_reunited_siblings
 			}
 		}
 		origin = {
@@ -406,7 +416,7 @@ magiks_civic_dragon_tamers = {
 				value = origin_syncretic_evolution
 				value = origin_post_apocalyptic
 				value = origin_life_seeded
-				value = magiks_origin_reunited_siblings
+				#value = magiks_origin_reunited_siblings
 			}
 		}
 	}
@@ -480,42 +490,42 @@ magiks_civic_dragon_tamers = {
 # 	description = "civic_tooltip_world_of_legend_effects"
 # }
 
-# magiks_civic_reunited_siblings = {
-# 	modification = no
-# 	playable = { host_has_dlc = "Utopia" host_has_dlc = "Apocalypse" }
-# 	potential = { 
-# 		authority = { value = magiks_auth_magocracy }
-# 		ethics = { NOT = { value = ethic_gestalt_consciousness } } 
-# 	}
-# 	possible = {
-# 		civics = {
-# 			NOR = {
-# 				value = civic_fanatic_purifiers
-# 				value = civic_agrarian_idyll
-# 				value = civic_inwards_perfection
-# 			}
-# 		}
-# 		origin = {
-# 			NOR = {
-# 				value = origin_mechanists
-# 				value = origin_syncretic_evolution
-# 				value = origin_post_apocalyptic
-# 				value = origin_life_seeded
-# 			}
-# 		}
-# 	}
-# 	modification = no
-# 	random_weight = {
-# 		base = 5
-# 		modifier = { factor = 0 has_global_flag = game_started }
-# 	}
-# 	traits = { trait = magiks_trait_strong_souls }
-# 	description = magiks_civic_reunited_siblings_effects
-# 	has_secondary_species = {	# see game_start.11
-# 		title = magiks_civic_reunited_siblings_secondary_species
-# 		traits = { trait = magiks_trait_weak_souls }
-# 	}
-# }
+magiks_civic_reunited_siblings = {
+	modification = no
+	#playable = { host_has_dlc = "Utopia" host_has_dlc = "Apocalypse" }
+	potential = { 
+		authority = { value = magiks_auth_magocracy }
+		ethics = { NOT = { value = ethic_gestalt_consciousness } } 
+	}
+	possible = {
+		civics = {
+			NOR = {
+				value = civic_fanatic_purifiers
+				value = civic_agrarian_idyll
+				value = civic_inwards_perfection
+				value = magiks_civic_duelistic_magics
+			}
+		}
+		origin = {
+			NOR = {
+				value = origin_mechanists
+				value = origin_syncretic_evolution
+				value = origin_post_apocalyptic
+				value = origin_life_seeded
+			}
+		}
+	}
+	random_weight = {
+		base = 5
+		modifier = { factor = 0 has_global_flag = game_started }
+	}
+	traits = { trait = magiks_trait_strong_souls }
+	description = magiks_civic_reunited_siblings_effects
+	has_secondary_species = {	# see game_start.11
+		title = magiks_civic_reunited_siblings_secondary_species
+		traits = { trait = magiks_trait_weak_souls }
+	}
+}
 
 # magiks_civic_drained_survivors = {
 # 	potential = { 

@@ -1,0 +1,289 @@
+namespace = magiks_operation
+
+# this = operation; from = target (country); owner = operation owner (country)
+
+espionage_operation_event = {
+	id = magiks_operation.1
+	title = "Criminal Induction"
+	desc = "Time to call in the mob to cause havoc"
+
+	picture = GFX_evt_spymaster
+	show_sound = event_espionage_concluded
+	espionage_operation = yes
+	is_triggered_only = yes
+
+	trigger = {
+		exists = from
+	}
+
+	immediate = {
+		owner = {
+			copy_random_tech_from = {
+				who = from
+			}
+		}
+		from = {
+			log = "From: [this.GetName]"
+			log = "Owner: [owner.GetName]"
+			country_event = {
+				id = crime.51
+			}
+		}
+	}
+
+	option = {
+		name = operation.7000.a
+	}
+
+
+	after = {
+		spynetwork = {
+			add_spy_network_level_on_success_effect = { VALUE = -5 }
+		}
+		#Scope doubled up for tooltip reasons
+		spynetwork = {
+			
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					owner = { NOT = { has_country_flag = operation_complete_gather_information } }
+				}
+				owner = {
+					change_variable = {
+						which = tinker_tailor_soldier_blorg_achievement_count
+						value = 1
+					}
+					set_country_flag = operation_complete_gather_information
+				}
+			}
+		}
+		destroy_espionage_operation = this
+	}
+}
+
+# ### Diplomatic Incident
+
+# # First Event
+# espionage_operation_event = {
+# 	id = magiks_operation.8200
+# 	title = operation.8200.name
+# 	desc = operation.8200.desc
+# 	espionage_operation = yes
+# 	picture = GFX_evt_decryption
+# 	show_sound = event_default
+# 	is_triggered_only = yes
+
+# 	option = { name = ACKNOWLEDGED }
+# }
+
+# # Second Event
+# espionage_operation_event = {
+# 	id = magiks_operation.8205
+# 	title = operation.8205.name
+# 	desc = operation.8205.desc
+# 	espionage_operation = yes
+# 	picture = GFX_evt_acquire_asset
+# 	show_sound = event_default
+# 	is_triggered_only = yes
+
+# 	option = { name = GOOD }
+# }
+
+# # Third Event: Launch Operation
+# espionage_operation_event = {
+# 	id = magiks_operation.8210
+# 	title = operation.8210.name
+# 	desc = {
+# 		trigger = {
+# 			target = { NOT = { has_country_flag = recent_envoy_event } }
+# 		}
+# 		text = operation.8210.desc
+# 	}
+# 	desc = {
+# 		trigger = {
+# 			target = { has_country_flag = recent_envoy_event }
+# 		}
+# 		text = operation.8210.desc.no_go
+# 	}
+# 	espionage_operation = yes
+# 	picture = GFX_evt_spy_network
+# 	show_sound = event_spymaster
+# 	is_triggered_only = yes
+
+# 	immediate = {
+# 		set_espionage_operation_progress_locked = yes
+# 		if = {
+# 			limit = {
+# 				target = { has_country_flag = recent_envoy_event }
+# 			}
+# 			set_espionage_operation_flag = operation_failed #country flag is timed, so could change between locs being generated and option being clicked
+# 		}
+# 	}
+
+# 	option = {
+# 		name = LAUNCH_OPERATION
+# 		trigger = {
+# 			NOT = { has_espionage_operation_flag = operation_failed }
+# 		}
+
+# 		hidden_effect = {
+# 			target = {
+# 				fire_on_action = {
+# 					on_action = on_five_year_random_pulse_country_negative_list
+# 				}
+# 			}
+# 			espionage_operation_event = { id = operation.8220 days = 15 }
+# 		}
+# 	}
+
+# 	option = {
+# 		name = UNFORTUNATE
+# 		trigger = {
+# 			has_espionage_operation_flag = operation_failed
+# 		}
+
+# 		hidden_effect = {
+# 			spynetwork = {
+# 				set_saved_date = {
+# 					key = operation_diplomatic_incident_timer
+# 					days_from_present = 2160 #6 years
+# 					expires = 2160
+# 				}
+# 			}
+# 		}
+# 	}
+
+# 	after = {
+# 		set_espionage_operation_progress_locked = no
+# 		if = {
+# 			limit = {
+# 				has_espionage_operation_flag = operation_failed
+# 			}
+# 			destroy_espionage_operation = this
+# 		}
+# 	}
+# }
+
+# espionage_operation_event = {
+# 	id = magiks_operation.8220
+# 	hide_window = yes
+# 	is_triggered_only = yes
+
+# 	immediate = {
+# 		if = { #Succeed
+# 			limit = { has_espionage_operation_flag = operation_succeeded }
+# 			espionage_operation_event = { id = operation.8230 }
+# 			spynetwork = {
+# 				set_saved_date = {
+# 					key = operation_diplomatic_incident_timer
+# 					days_from_present = 3600 #10 years
+# 					expires = 3600
+# 				}
+# 			}
+# 		}
+# 		else = { #Fail
+# 			espionage_operation_event = { id = operation.8225 }
+# 			spynetwork = {
+# 				set_saved_date = {
+# 					key = operation_diplomatic_incident_timer
+# 					days_from_present = 2160 #6 years
+# 					expires = 2160
+# 				}
+# 			}
+# 		}
+# 	}
+# }
+
+# # Finalé (failed)
+# espionage_operation_event = {
+# 	id = magiks_operation.8225
+# 	title = operation.8225.name
+# 	desc = operation.8225.desc
+# 	picture = GFX_evt_tradedeal
+# 	location = target.capital_scope
+# 	show_sound = event_espionage_concluded
+# 	is_triggered_only = yes
+
+
+# 	option = {
+# 		name = UNFORTUNATE
+# 		spynetwork = {
+# 			add_spy_network_level = -10
+# 		}
+# 	}
+
+# 	after = {
+# 		fire_on_action = { on_action = on_operation_cancelled }
+# 		destroy_espionage_operation = this
+# 	}
+# }
+
+# # Finalé (succeeded)
+# espionage_operation_event = {
+# 	id = magiks_operation.8230
+# 	title = operation.8230.name
+# 	desc = {
+# 		trigger = {
+# 			switch = {
+# 				trigger = has_espionage_operation_flag
+# 				salacious_affair = { text = operation.8230.desc.salacious_affair } #with event target offended_party
+# 				salacious_affair_self = { text = operation.8230.desc.salacious_affair_self } #in which event target offended_party = root
+# 				galactic_comedy = { text = operation.8230.desc.galactic_comedy }
+# 				insulting_envoy = { text = operation.8230.desc.insulting_envoy } #with event target offended_party
+# 				insulting_envoy_self = { text = operation.8230.desc.insulting_envoy_self } #in which event target offended_party = root
+# 				galcom_lobbying = { text = operation.8230.desc.lobbying }
+# 				eloping_envoy = { text = operation.8230.desc.elope }
+# 				wayward_envoy = { text = operation.8230.desc.wayward }
+# 				substance_abuse = { text = operation.8230.desc.substances }
+# 			}
+# 		}
+# 	}
+# 	picture = GFX_evt_tradedeal
+# 	location = target.capital_scope
+# 	show_sound = event_espionage_concluded
+# 	is_triggered_only = yes
+
+# 	immediate = {
+# 		random_country = {
+# 			limit = {
+# 				has_country_flag = offended_party@root
+# 			}
+# 			save_event_target_as = offended_party
+# 			remove_country_flag = offended_party@root
+# 		}
+# 	}
+
+# 	option = {
+# 		name = EXCELLENT
+
+# 		custom_tooltip = diplo_incident_succeeded
+# 		spynetwork = {
+# 			add_spy_network_level_on_success_effect = { VALUE = -10 }
+# 		}
+# 		owner = {
+# 			if = {
+# 				limit = { has_ascension_perk = ap_become_the_crisis }
+# 				complete_crisis_objective = crisobj_perform_upsetting_operations
+# 			}
+# 		}
+# 	}
+
+# 	after = {
+# 		hidden_effect = {
+# 			if = {
+# 				limit = {
+# 					owner = { NOT = { has_country_flag = operation_complete_diplo_incident } }
+# 				}
+# 				owner = {
+# 					change_variable = {
+# 						which = tinker_tailor_soldier_blorg_achievement_count
+# 						value = 1
+# 					}
+# 					set_country_flag = operation_complete_diplo_incident
+# 				}
+# 			}
+# 		}
+# 		destroy_espionage_operation = this
+# 	}
+# }

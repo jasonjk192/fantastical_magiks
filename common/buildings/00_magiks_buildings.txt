@@ -35,6 +35,7 @@ magiks_building_mass_grave = {
 	}
 	prerequisites = { "magiks_tech_necro1" }
 	base_cap_amount = 1 #planet_unique = yes (original)
+	category = amenity
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -83,6 +84,7 @@ magiks_building_tainted_factory = {
 	prerequisites = { "magiks_tech_necro2" }
 	base_cap_amount = 1 #planet_unique = yes
 	can_build = no #is_listed = no
+	category = amenity
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -129,6 +131,7 @@ magiks_building_corrupted_sanctum = {
 	prerequisites = { "magiks_tech_necro3" }
 	base_cap_amount = 1 #planet_unique = yes
 	can_build = no #is_listed = no
+	category = amenity
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -164,6 +167,7 @@ magiks_building_public_theater = {
 
 	prerequisites = { "magiks_tech_rhythm1" }
 	base_cap_amount = 1 #planet_unique = yes
+	category = amenity
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -209,6 +213,7 @@ magiks_building_grand_stadium = {
 	prerequisites = { "magiks_tech_rhythm2" }
 	base_cap_amount = 1 #planet_unique = yes
 	can_build = no #is_listed = no
+	category = amenity
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -255,6 +260,7 @@ magiks_building_planetary_stage = {
 	prerequisites = { "magiks_tech_rhythm3" }
 	base_cap_amount = 1 #planet_unique = yes
 	can_build = no #is_listed = no
+	category = amenity
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -283,6 +289,8 @@ magiks_building_galactway = {
 	base_buildtime = 360
 	can_build = no #is_listed = no
 	empire_limit = 1 #empire_unique = yes (Assuming only 1 can be built)
+	category = amenity
+	
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -292,7 +300,7 @@ magiks_building_galactway = {
 		upkeep = {
 			manacite = 1
 		}
-	}	
+	}
 	
 	planet_modifier = {
 		pop_happiness = 0.10

@@ -1,6 +1,6 @@
 #####################################
 #									#
-#			Tiyanki Matriarch		#
+#		Tiyanki Matriarch			#
 #									#
 #####################################
 
@@ -83,3 +83,153 @@ ship_design = {
 	required_component="BIO_PROPULSION"
 	required_component="BIO_SENSORS"
 }
+
+#####################################
+#									#
+#			Ether Drake				#
+#									#
+#####################################
+
+ship_design = {
+	name = "magiks_Grand_Dragon"
+	ship_size = space_dragon_red
+	is_event_design = no
+	hide_size = yes
+
+	section = {
+		template = "space_dragon_red_key"
+		slot = "mid"
+
+		component = {
+			slot = "PRIMARY_GUN_01"
+			template = "DRAGON_WEAPON"
+		}
+		component = {
+			slot = "SECONDARY_GUN_01"
+			template = "DRAGON_SECONDARY_WEAPON"
+		}
+		component = {
+			slot = "SECONDARY_GUN_02"
+			template = "DRAGON_SECONDARY_WEAPON"
+		}
+		component = {
+			slot = "SECONDARY_GUN_03"
+			template = "DRAGON_SECONDARY_WEAPON"
+		}
+		component = {
+			slot = "SECONDARY_GUN_04"
+			template = "DRAGON_SECONDARY_WEAPON"
+		}
+		component = {
+			slot = "SECONDARY_GUN_05"
+			template = "DRAGON_SECONDARY_WEAPON"
+		}
+		component = {
+			slot = "SECONDARY_GUN_06"
+			template = "DRAGON_SECONDARY_WEAPON"
+		}
+		component = {
+			slot = "SECONDARY_GUN_07"
+			template = "DRAGON_SECONDARY_WEAPON"
+		}
+		component = {
+			slot = "SECONDARY_GUN_08"
+			template = "DRAGON_SECONDARY_WEAPON"
+		}
+		component = {
+			slot = "TERTIARY_GUN_01"
+			template = "DRAGON_TERTIARY_WEAPON"
+		}
+		component = {
+			slot = "TERTIARY_GUN_02"
+			template = "DRAGON_TERTIARY_WEAPON"
+		}
+		component = {
+			slot = "TERTIARY_GUN_03"
+			template = "DRAGON_TERTIARY_WEAPON"
+		}
+		component = {
+			slot = "TERTIARY_GUN_04"
+			template = "DRAGON_TERTIARY_WEAPON"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_1"
+			template = "LARGE_DRAGON_ARMOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_2"
+			template = "LARGE_DRAGON_ARMOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_3"
+			template = "LARGE_DRAGON_ARMOR"
+		}
+		component = {
+			slot = "LARGE_UTILITY_4"
+			template = "LARGE_DRAGON_ARMOR"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "AUTO_REPAIR"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "AUTO_REPAIR"
+		}
+	}
+	required_component="GUARDIAN_DRIVE"
+	required_component="COMBAT_COMPUTER_LINE_DEFAULT"
+	required_component="GUARDIAN_PROPULSION"
+	required_component="GUARDIAN_SENSORS"
+}
+
+
+
+
+# # Big Space Whale
+# ship_design = {
+# 	name = "NAME_Tiyanki_Cow"
+# 	ship_size = space_whale_1
+# 	hide_size = yes
+# 	upgrades_to = "NAME_Tiyanki_Ox_Clonable"
+
+# 	section = {
+# 		template = "space_whale_1_section"
+# 		slot = "mid"
+
+# 		component = {
+# 			slot = "MEDIUM_GUN_01"
+# 			template = "SPACE_WHALE_WEAPON_3"
+# 		}
+# 		component = {
+# 			slot = "MEDIUM_GUN_02"
+# 			template = "SPACE_WHALE_WEAPON_3"
+# 		}
+# 		component = {
+# 			slot = "MEDIUM_GUN_03"
+# 			template = "SPACE_WHALE_WEAPON_3"
+# 		}
+# 		component = {
+# 			slot = "MEDIUM_GUN_04"
+# 			template = "SPACE_WHALE_WEAPON_3"
+# 		}
+# 		component = {
+# 			slot = "MEDIUM_GUN_05"
+# 			template = "SPACE_WHALE_WEAPON_3"
+# 		}
+# 		component = {
+# 			slot = "MEDIUM_GUN_06"
+# 			template = "SPACE_WHALE_WEAPON_3"
+# 		}
+# 		component = {
+# 			slot = "AUX_UTILITY_1"
+# 			template = "BIO_AUTO_REPAIR"
+# 		}
+# 	}
+
+# 	required_component="GUARDIAN_DRIVE"
+# 	required_component="COMBAT_COMPUTER_LINE_DEFAULT"
+# 	required_component="GUARDIAN_PROPULSION"
+# 	required_component="GUARDIAN_SENSORS"
+# }

@@ -13,3 +13,9 @@ initial version
 - Empire (random names) have been fixed
 - Mage Buildings now have magical researchers jobs
 - Other minor fixes
+
+v3.8
+- Updated code to reflect gameplay changes
+- Fixed incompatibilities and naming conflicts
+- A few new gameplay features added
+- Incompatible with previous versions

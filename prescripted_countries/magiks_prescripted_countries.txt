@@ -60,6 +60,8 @@ draconian ={
 		clothes=0
 		ruler_title="Supreme Mage"
 		ruler_title_female="Supreme Mage"
+		leader_class = commander
+		trait = trait_ruler_eye_for_talent
 	}
 }
 
@@ -77,7 +79,7 @@ tiefling ={
 		name = "Tiefling"
 		plural = "Tieflings"
 		adjective = "Tiefling"
-		name_list="Drakiel"
+		name_list="Elvish"
 		trait="magiks_trait_hard_magicians"
 		trait="magiks_trait_voidseepers"
 		trait="magiks_trait_strong_souls"
@@ -125,5 +127,7 @@ tiefling ={
 		clothes=0
 		ruler_title="Supreme Mage"
 		ruler_title_female="Supreme Mage"
+		leader_class = official
+		trait = trait_ruler_eye_for_talent
 	}
 }

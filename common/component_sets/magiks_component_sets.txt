@@ -1,0 +1,20 @@
+component_set = {
+	key = "ARCANE_MISSILE"
+
+	icon = "GFX_ship_part_arcane_missile_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "MYSTIC_BEAM"
+
+	icon = "GFX_ship_part_mystic_beam_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "ENCHANTED_CANNON"
+
+	icon = "GFX_ship_part_enchanted_cannon_1"
+	icon_frame = 1
+}

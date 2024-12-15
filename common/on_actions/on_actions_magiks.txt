@@ -55,20 +55,25 @@ on_planet_transfer = {
 	}
 }
 
-on_monthly_pulse = {
+on_monthly_pulse_country = {
 	events = {
+		magiks_event.60
 	}
 }
 
 on_entering_battle = {
 	events = {
 		magiks_event.100
+		magiks_event.105
+		#magiks_event.110
 	}
 }
 
 on_space_battle_won = {
 	events = {
 		magiks_event.101
+		magiks_event.106
+		#magiks_event.111
 	}
 }
 
@@ -84,12 +89,23 @@ on_pre_government_changed = {
 	}
 }
 
+on_ruler_set = {
+	events = {
+		magiks_event.50
+	}
+}
+
+on_ruler_removed = {
+	events = {
+		magiks_event.51
+	}
+}
+
 on_terraforming_begun = {
 	events = {
 		magiks_terra_event.100
 	}
 }
-
 
 on_terraforming_complete = {
 	events = {

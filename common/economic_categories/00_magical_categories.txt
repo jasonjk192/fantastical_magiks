@@ -2,6 +2,7 @@ planet_mages = {
 	icon = "dummy"
 	parent = planet_jobs
 }
+
 planet_undead = {
 	icon = "dummy"
 	parent = planet_jobs

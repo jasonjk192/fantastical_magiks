@@ -4,7 +4,7 @@ FantasticalMagiks = {
 		plural = Tieflings
 		home_planet = Fornica
 		home_system = Termiv
-		name_list = "HUM4"
+		name_list = "ELVISH"
 	}	
 
 	fimdossian = {
@@ -12,7 +12,7 @@ FantasticalMagiks = {
 		plural = Fimdossians
 		home_planet = Fimdoss
 		home_system = Lairmia
-		name_list = "HUM4"
+		name_list = "ELVISH"
 	}	
 
 	jedbir = {
